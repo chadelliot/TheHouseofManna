@@ -25,7 +25,7 @@
 <meta property="og:image:alt" content="The House of Manna homepage featuring a United States map silhouette, Baltimore community imagery, and the message Think. Grow. Live.">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The House of Manna — Think. Grow. Live.">
+<meta name="twitter:title" content="The House of Manna — Supporting Your Freedom to Think. Grow. Live.">
 <meta name="twitter:description" content="Food security, youth education, entrepreneurship, and community empowerment for Baltimore-area families.">
 <meta name="twitter:image" content="https://houseofmannamd.com/house-of-manna-social-share.png">
 <meta name="twitter:image:alt" content="The House of Manna homepage featuring a United States map silhouette, Baltimore community imagery, and the message Think. Grow. Live.">
@@ -712,7 +712,79 @@
     color:var(--ink-text); opacity:.85;
     text-align:center;
     max-width:620px;
-    margin:0 auto 88px;
+    margin:0 auto 56px;
+  }
+
+  /* ============================================================
+     PITCH DECK FLIPBOOK VIEWER — sits between the lead copy and
+     the 5-goal grid. Real deck pages rendered as optimized images,
+     paged with prev/next controls, a scrub slider, keyboard arrows,
+     and touch swipe. A quick fade+slide stands in for a literal
+     page-turn animation.
+     ============================================================ */
+  .deck-viewer{
+    max-width:640px;
+    margin:0 auto 64px;
+  }
+  .deck-frame{
+    position:relative;
+    background:#ffffff;
+    border:1px solid rgba(45,59,79,.14);
+    border-radius:14px;
+    box-shadow:0 20px 50px rgba(45,59,79,.12);
+    overflow:hidden;
+    aspect-ratio:1400/787;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .deck-page{
+    width:100%; height:100%;
+    object-fit:contain;
+    display:block;
+    opacity:1;
+    transform:translateX(0) scale(1);
+    transition:opacity .22s ease, transform .22s ease;
+  }
+  .deck-page.is-turning{
+    opacity:0;
+    transform:translateX(var(--deck-slide, -14px)) scale(.985);
+  }
+  .deck-nav{
+    position:absolute; top:50%; transform:translateY(-50%);
+    width:38px; height:38px;
+    border-radius:50%;
+    border:none;
+    background:rgba(23,35,52,.55);
+    color:#ffffff;
+    font-size:18px; line-height:1;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:background .2s ease;
+  }
+  .deck-nav:hover{ background:rgba(23,35,52,.8); }
+  .deck-nav:disabled{ opacity:.3; cursor:default; }
+  .deck-prev{ left:12px; }
+  .deck-next{ right:12px; }
+  .deck-controls{
+    display:flex; align-items:center; gap:14px;
+    margin-top:16px;
+  }
+  .deck-counter{
+    font-family:var(--font-body);
+    font-size:12.5px;
+    letter-spacing:.04em;
+    color:var(--hom-navy);
+    white-space:nowrap;
+  }
+  .deck-counter strong{ color:var(--hom-gold); font-weight:700; }
+  .deck-slider{
+    flex:1;
+    accent-color:var(--hom-gold);
+    cursor:pointer;
+  }
+
+  @media (max-width:640px){
+    .deck-viewer{ margin-bottom:48px; }
+    .deck-nav{ width:32px; height:32px; font-size:15px; }
   }
 
   .goals-grid{
@@ -1970,6 +2042,18 @@
       <h2>Measured by transformation.</h2>
       <p class="impact-lead">Success will not be measured solely by dollars raised or food distributed. Success will be measured by transformation &mdash; and here's what that looks like as real, working goals.</p>
 
+      <div class="deck-viewer" id="deckViewer">
+        <div class="deck-frame">
+          <button class="deck-nav deck-prev" id="deckPrev" type="button" aria-label="Previous page">&#8249;</button>
+          <img class="deck-page" id="deckPage" src="deck-pages/page-01.jpg" alt="House of Manna pitch deck, page 1 of 57" width="1400" height="787">
+          <button class="deck-nav deck-next" id="deckNext" type="button" aria-label="Next page">&#8250;</button>
+        </div>
+        <div class="deck-controls">
+          <span class="deck-counter">Page <strong id="deckCurrent">1</strong> / 57</span>
+          <input type="range" class="deck-slider" id="deckSlider" min="1" max="57" value="1" aria-label="Jump to page">
+        </div>
+      </div>
+
       <div class="goals-grid">
       <div class="goal-row" data-count-to="3000">
         <div class="goal-number"><span class="goal-count">0</span><span class="goal-suffix">+</span></div>
@@ -2750,6 +2834,88 @@
         var form = activeSubmission;
         window.setTimeout(function(){ finish(form); }, 150);
       });
+    })();
+  </script>
+
+  <script>
+    (function(){
+      var viewer = document.getElementById('deckViewer');
+      if (!viewer) return;
+
+      var TOTAL = 57;
+      var img = document.getElementById('deckPage');
+      var prevBtn = document.getElementById('deckPrev');
+      var nextBtn = document.getElementById('deckNext');
+      var counter = document.getElementById('deckCurrent');
+      var slider = document.getElementById('deckSlider');
+      var current = 1;
+
+      function pad(n){ return n < 10 ? '0' + n : '' + n; }
+
+      function goTo(n, direction){
+        n = Math.max(1, Math.min(TOTAL, n));
+        if (n === current) return;
+        direction = direction || (n > current ? 1 : -1);
+
+        img.style.setProperty('--deck-slide', (direction > 0 ? '-14px' : '14px'));
+        img.classList.add('is-turning');
+
+        window.setTimeout(function(){
+          current = n;
+          img.src = 'deck-pages/page-' + pad(current) + '.jpg';
+          img.alt = 'House of Manna pitch deck, page ' + current + ' of ' + TOTAL;
+          counter.textContent = current;
+          slider.value = current;
+          prevBtn.disabled = current === 1;
+          nextBtn.disabled = current === TOTAL;
+
+          // let the new image paint before fading back in
+          requestAnimationFrame(function(){
+            requestAnimationFrame(function(){
+              img.classList.remove('is-turning');
+            });
+          });
+        }, 180);
+      }
+
+      prevBtn.addEventListener('click', function(){ goTo(current - 1, -1); });
+      nextBtn.addEventListener('click', function(){ goTo(current + 1, 1); });
+      slider.addEventListener('input', function(){
+        goTo(parseInt(slider.value, 10));
+      });
+
+      // keyboard arrows, only when the viewer is in view / focused area
+      document.addEventListener('keydown', function(e){
+        var rect = viewer.getBoundingClientRect();
+        var inView = rect.top < window.innerHeight && rect.bottom > 0;
+        if (!inView) return;
+        if (e.key === 'ArrowRight') goTo(current + 1, 1);
+        if (e.key === 'ArrowLeft') goTo(current - 1, -1);
+      });
+
+      // touch swipe
+      var touchStartX = null;
+      var frame = viewer.querySelector('.deck-frame');
+      frame.addEventListener('touchstart', function(e){
+        touchStartX = e.touches[0].clientX;
+      }, { passive:true });
+      frame.addEventListener('touchend', function(e){
+        if (touchStartX === null) return;
+        var dx = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(dx) > 40){
+          if (dx < 0) goTo(current + 1, 1);
+          else goTo(current - 1, -1);
+        }
+        touchStartX = null;
+      }, { passive:true });
+
+      // preload the immediate neighbors so paging forward/back feels instant
+      function preload(n){
+        if (n < 1 || n > TOTAL) return;
+        var pre = new Image();
+        pre.src = 'deck-pages/page-' + pad(n) + '.jpg';
+      }
+      preload(2);
     })();
   </script>
 
