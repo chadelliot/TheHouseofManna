@@ -681,6 +681,22 @@
     .pillars-sticky{ padding-left:24px; }
     .pillar{ width:min(78vw, 420px); padding:38px 30px 34px; }
     .pillar::before{ left:30px; }
+
+    /* on touch/mobile widths, hand horizontal movement over to a
+       native swipe instead of the JS-driven pin animation — the two
+       fight each other otherwise, since the JS overwrites transform
+       on every scroll frame and blocks manual swiping entirely */
+    .pillars-section{ height:auto !important; }
+    .pillars-sticky{
+      position:relative !important;
+      height:auto !important;
+      overflow-x:auto !important;
+      -webkit-overflow-scrolling:touch;
+      scroll-snap-type:x proximity;
+      padding-bottom:24px !important;
+    }
+    .pillars-track{ transform:none !important; }
+    .pillar{ scroll-snap-align:start; }
   }
 
 
@@ -2108,13 +2124,15 @@
         if (!pillarsScroll || !pillarsSticky || !pillarsTrack) return;
 
         var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var isTouchWidth = document.documentElement.clientWidth <= 820;
         var shift = 0;
         var viewportHeight = window.innerHeight;
         var lastViewportWidth = document.documentElement.clientWidth;
         var ticking = false;
 
         function computeShift(){
-          if (reduceMotion){
+          isTouchWidth = document.documentElement.clientWidth <= 820;
+          if (reduceMotion || isTouchWidth){
             pillarsScroll.classList.remove('is-scroll-enhanced');
             pillarsScroll.style.height = '';
             pillarsTrack.style.transform = '';
@@ -2143,7 +2161,7 @@
         }
 
         function updatePillars(){
-          if (reduceMotion){
+          if (reduceMotion || isTouchWidth){
             ticking = false;
             return;
           }
