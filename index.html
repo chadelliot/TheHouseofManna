@@ -1384,7 +1384,8 @@
   }
 </style>
 
-  <style id="brevo-integration-styles">
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+  <style id="brevo-direct-styles">
     .visually-hidden{
       position:absolute!important;
       width:1px!important;
@@ -1397,60 +1398,167 @@
       border:0!important;
     }
 
-    .brevo-honeypot{
-      position:absolute!important;
-      left:-10000px!important;
-      width:1px!important;
-      height:1px!important;
-      opacity:0!important;
-      pointer-events:none!important;
+    #brevoFormHome,
+    #brevoFormModalMount,
+    .brevo-form-shell{
+      width:100%;
     }
 
-    .brevo-subscription-form button[disabled]{
-      cursor:wait;
-      opacity:.72;
-    }
-
-    .brevo-form-status{
-      min-height:1.35em;
-      margin-top:10px;
-      color:var(--hom-navy, #2d3b4f);
-      font-size:12px;
-      line-height:1.45;
-      letter-spacing:.01em;
-    }
-
-    .brevo-form-status[data-state="success"]{
-      color:#52633f;
-    }
-
-    .brevo-form-status[data-state="error"]{
-      color:#8a2d2d;
-    }
-
-    .brevo-form-status--modal{
-      margin-top:8px;
-      text-align:center;
-    }
-
-    .brevo-engine{
-      position:fixed!important;
-      left:-10000px!important;
-      top:0!important;
-      width:1px!important;
-      height:1px!important;
-      overflow:hidden!important;
-      opacity:0!important;
-      pointer-events:none!important;
-    }
-
-    .brevo-engine .sib-form-message-panel{
+    .brevo-form-shell .sib-form-message-panel{
       display:none;
+      max-width:none!important;
+      margin:10px 0 0!important;
+      padding:0!important;
+      border:0!important;
+      border-radius:0!important;
+      background:transparent!important;
+      box-shadow:none!important;
+      font-family:var(--font-body)!important;
+      font-size:12px!important;
+      line-height:1.45!important;
+      text-align:left!important;
     }
 
-    @media (max-width: 640px){
-      .brevo-form-status{
-        text-align:center;
+    .brevo-form-shell #success-message{
+      color:#52633f!important;
+    }
+
+    .brevo-form-shell #error-message{
+      color:#9b3333!important;
+    }
+
+    .brevo-form-shell .sib-form-message-panel__text,
+    .brevo-form-shell .sib-form-message-panel__text--center{
+      display:block!important;
+      padding:0!important;
+      text-align:inherit!important;
+    }
+
+    .brevo-form-shell .sib-notification__icon{
+      display:none!important;
+    }
+
+    #sib-form.hero-signup-form{
+      display:flex!important;
+      align-items:stretch!important;
+      gap:8px!important;
+      margin:0!important;
+      padding:0!important;
+      background:transparent!important;
+    }
+
+    #sib-form .brevo-email-block,
+    #sib-form .form__entry,
+    #sib-form .form__label-row,
+    #sib-form .entry__field{
+      flex:1 1 auto!important;
+      width:100%!important;
+      min-width:0!important;
+      margin:0!important;
+      padding:0!important;
+      border:0!important;
+      background:transparent!important;
+    }
+
+    #sib-form .entry__field{
+      border-radius:100px!important;
+      overflow:hidden!important;
+    }
+
+    #sib-form #EMAIL{
+      display:block!important;
+      width:100%!important;
+      min-width:0!important;
+      height:auto!important;
+      margin:0!important;
+      padding:12px 16px!important;
+      border:0!important;
+      border-radius:100px!important;
+      outline:none!important;
+      background:rgba(255,255,255,.95)!important;
+      color:var(--hom-navy)!important;
+      box-shadow:none!important;
+      font-family:var(--font-body)!important;
+      font-size:14px!important;
+      line-height:1.3!important;
+      text-align:left!important;
+    }
+
+    #sib-form #EMAIL::placeholder{
+      color:rgba(45,59,79,.55)!important;
+    }
+
+    #sib-form .entry__error{
+      display:block;
+      margin:7px 0 0!important;
+      padding:0!important;
+      border:0!important;
+      background:transparent!important;
+      color:#9b3333!important;
+      font-family:var(--font-body)!important;
+      font-size:11px!important;
+      line-height:1.35!important;
+      text-align:left!important;
+    }
+
+    #sib-form .sib-form-block__button{
+      flex:0 0 auto!important;
+      min-height:0!important;
+      margin:0!important;
+      padding:12px 20px!important;
+      border:0!important;
+      border-radius:100px!important;
+      background:var(--hom-navy-2)!important;
+      color:#fff!important;
+      box-shadow:none!important;
+      font-family:var(--font-body)!important;
+      font-size:13px!important;
+      font-weight:600!important;
+      line-height:1.3!important;
+      white-space:nowrap!important;
+      text-align:center!important;
+      cursor:pointer!important;
+      transition:background .2s ease, opacity .2s ease!important;
+    }
+
+    #sib-form .sib-form-block__button:hover{
+      background:var(--hom-navy)!important;
+    }
+
+    #sib-form .sib-form-block__button:disabled{
+      cursor:wait!important;
+      opacity:.72!important;
+    }
+
+    #sib-form .progress-indicator__icon{
+      width:14px!important;
+      height:14px!important;
+      margin-right:6px!important;
+      fill:currentColor!important;
+    }
+
+    #brevoFormModalMount .brevo-form-shell{
+      margin-top:2px;
+    }
+
+    #brevoFormModalMount .brevo-form-shell .sib-form-message-panel{
+      text-align:center!important;
+    }
+
+    #brevoFormModalMount #sib-form #EMAIL{
+      border:1px solid rgba(45,59,79,.2)!important;
+      background:#fff!important;
+    }
+
+    @media (max-width:560px){
+      #sib-form.hero-signup-form{
+        flex-direction:column!important;
+      }
+      #sib-form .sib-form-block__button{
+        width:100%!important;
+      }
+      .brevo-form-shell .sib-form-message-panel{
+        text-align:center!important;
       }
     }
   </style>
@@ -1487,30 +1595,62 @@
 
       <div class="hero-signup">
         <div class="hero-signup-label">Stay in the loop</div>
-        <form
-          class="hero-signup-form brevo-subscription-form"
-          id="heroBrevoForm"
-          novalidate
-          aria-describedby="heroBrevoStatus"
-        >
-          <label class="visually-hidden" for="heroBrevoEmail">Email address</label>
-          <input
-            type="email"
-            id="heroBrevoEmail"
-            name="EMAIL"
-            autocomplete="email"
-            inputmode="email"
-            placeholder="Enter your email"
-            required
-          >
-          <button type="submit" data-default-label="Stay Informed">Stay Informed</button>
-        </form>
-        <div
-          class="brevo-form-status"
-          id="heroBrevoStatus"
-          role="status"
-          aria-live="polite"
-        ></div>
+        <div id="brevoFormHome">
+          <div class="brevo-form-shell" id="brevoFormShell">
+            <form
+              id="sib-form"
+              class="hero-signup-form"
+              method="POST"
+              action="https://776ecc5e.sibforms.com/serve/MUIFABAvXY6HToQQCTes2qiNDpudFTwVldp027dB0l32rdaFMeBSyb3t22G8nI_ZiwkgNthFb6G0OoKA_RWaLmXX_Fl2QejcAK_SoSLXtYDcL6jlEKhk5nF0aaFHhHnbV6vMRqon53J5Hj0ktnqVzXrheQ-upxKglSLBBYrzW8EQOmIy1amVWby_-8CEFYp0j7BB0dZsnpXDwkB3GA=="
+              data-type="subscription"
+            >
+              <div class="sib-input sib-form-block brevo-email-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row">
+                    <label class="entry__label visually-hidden" for="EMAIL" data-required="*">Email address</label>
+                    <div class="entry__field">
+                      <input
+                        class="input"
+                        type="text"
+                        id="EMAIL"
+                        name="EMAIL"
+                        autocomplete="email"
+                        inputmode="email"
+                        value=""
+                        placeholder="Enter your email"
+                        data-required="true"
+                        required
+                      >
+                    </div>
+                  </div>
+                  <label class="entry__error entry__error--primary"></label>
+                </div>
+              </div>
+
+              <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+                <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" aria-hidden="true">
+                  <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
+                </svg>
+                Stay Informed
+              </button>
+
+              <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="locale" value="en">
+            </form>
+
+            <div id="error-message" class="sib-form-message-panel" role="alert" aria-live="assertive">
+              <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                <span class="sib-form-message-panel__inner-text">Your submission could not be saved. Please try again.</span>
+              </div>
+            </div>
+
+            <div id="success-message" class="sib-form-message-panel" role="status" aria-live="polite">
+              <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                <span class="sib-form-message-panel__inner-text">Thank you for joining the House of Manna community. Please check your email to confirm your subscription.</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="hero-content-2">
@@ -2338,205 +2478,10 @@
       </button>
       <h3 id="siteModalTitle">This page is under construction</h3>
       <p>We're still building this part of the site. Leave your email and we'll let you know as soon as there's more to see.</p>
-      <form
-        class="site-modal-form brevo-subscription-form"
-        id="modalBrevoForm"
-        novalidate
-        aria-describedby="modalBrevoStatus"
-      >
-        <label class="visually-hidden" for="modalBrevoEmail">Email address</label>
-        <input
-          type="email"
-          id="modalBrevoEmail"
-          name="EMAIL"
-          autocomplete="email"
-          inputmode="email"
-          placeholder="Enter your email"
-          required
-        >
-        <button type="submit" data-default-label="Stay Informed">Stay Informed</button>
-      </form>
-      <div
-        class="brevo-form-status brevo-form-status--modal"
-        id="modalBrevoStatus"
-        role="status"
-        aria-live="polite"
-      ></div>
+      <div id="brevoFormModalMount" aria-label="Stay informed signup form"></div>
       <div class="site-modal-note">No spam &mdash; just real updates on our progress.</div>
     </div>
   </div>
-
-
-
-  <!-- Official Brevo form engine. It stays off-screen while the two branded forms proxy submissions to it. -->
-  <div class="brevo-engine" aria-hidden="true">
-    <div id="error-message" class="sib-form-message-panel" role="alert">
-      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-        <span class="sib-form-message-panel__inner-text">Your submission could not be saved. Please try again.</span>
-      </div>
-    </div>
-
-    <div id="success-message" class="sib-form-message-panel" role="status">
-      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-        <span class="sib-form-message-panel__inner-text">Thank you for joining the House of Manna community. Please check your email to confirm your subscription.</span>
-      </div>
-    </div>
-
-    <form id="sib-form" method="POST" action="https://776ecc5e.sibforms.com/serve/MUIFABAvXY6HToQQCTes2qiNDpudFTwVldp027dB0l32rdaFMeBSyb3t22G8nI_ZiwkgNthFb6G0OoKA_RWaLmXX_Fl2QejcAK_SoSLXtYDcL6jlEKhk5nF0aaFHhHnbV6vMRqon53J5Hj0ktnqVzXrheQ-upxKglSLBBYrzW8EQOmIy1amVWby_-8CEFYp0j7BB0dZsnpXDwkB3GA==" data-type="subscription">
-      <div class="sib-input sib-form-block">
-        <div class="form__entry entry_block">
-          <div class="form__label-row">
-            <label class="entry__label" for="EMAIL" data-required="*">Email address</label>
-            <div class="entry__field">
-              <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" value="" data-required="true" required>
-            </div>
-          </div>
-          <label class="entry__error entry__error--primary"></label>
-        </div>
-      </div>
-      <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">Subscribe</button>
-      <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off">
-      <input type="hidden" name="locale" value="en">
-    </form>
-  </div>
-
-  <script>
-    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-    window.LOCALE = 'en';
-    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = 'The information provided is invalid. Please review the field format and try again.';
-    window.REQUIRED_ERROR_MESSAGE = 'This field cannot be left blank. ';
-    window.GENERIC_INVALID_MESSAGE = 'The information provided is invalid. Please review the field format and try again.';
-    window.INVALID_NUMBER = 'The information provided is invalid. Please review the field format and try again.';
-    window.INVALID_DATE = 'Please enter a valid date';
-    window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least 1 option';
-    window.translation = {
-      common: {
-        selectedList: '{quantity} list selected',
-        selectedLists: '{quantity} lists selected',
-        selectedOption: '{quantity} selected',
-        selectedOptions: '{quantity} selected'
-      }
-    };
-    var AUTOHIDE = Boolean(0);
-  </script>
-  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-
-  <script id="brevo-integration-script">
-    (function(){
-      function initialiseBrevoBridge(){
-        var uiForms = Array.prototype.slice.call(document.querySelectorAll('.brevo-subscription-form'));
-        var brevoForm = document.getElementById('sib-form');
-        var brevoEmail = document.getElementById('EMAIL');
-        var brevoButton = brevoForm ? brevoForm.querySelector('button[type="submit"]') : null;
-        var successPanel = document.getElementById('success-message');
-        var errorPanel = document.getElementById('error-message');
-        var activeForm = null;
-        var timeoutId = null;
-
-        if (!uiForms.length || !brevoForm || !brevoEmail || !brevoButton || !successPanel || !errorPanel) return;
-
-        function getStatus(form){
-          var statusId = form.getAttribute('aria-describedby');
-          return statusId ? document.getElementById(statusId) : null;
-        }
-
-        function setStatus(form, message, state){
-          var status = getStatus(form);
-          if (!status) return;
-          status.textContent = message || '';
-          if (state) status.setAttribute('data-state', state);
-          else status.removeAttribute('data-state');
-        }
-
-        function setSubmitting(form, isSubmitting){
-          var button = form.querySelector('button[type="submit"]');
-          if (!button) return;
-          var defaultLabel = button.getAttribute('data-default-label') || 'Stay Informed';
-          button.disabled = isSubmitting;
-          if (isSubmitting){
-            button.setAttribute('aria-busy', 'true');
-            button.textContent = 'Submitting…';
-          } else {
-            button.removeAttribute('aria-busy');
-            button.textContent = defaultLabel;
-          }
-        }
-
-        function panelIsVisible(panel){
-          return window.getComputedStyle(panel).display !== 'none';
-        }
-
-        function resetBrevoPanels(){
-          successPanel.style.display = 'none';
-          errorPanel.style.display = 'none';
-        }
-
-        function finish(state, fallbackMessage){
-          if (!activeForm) return;
-          window.clearTimeout(timeoutId);
-
-          var form = activeForm;
-          activeForm = null;
-          setSubmitting(form, false);
-
-          var sourcePanel = state === 'success' ? successPanel : errorPanel;
-          var messageNode = sourcePanel.querySelector('.sib-form-message-panel__inner-text');
-          var message = messageNode && messageNode.textContent.trim() ? messageNode.textContent.trim() : fallbackMessage;
-
-          if (state === 'success') form.reset();
-          setStatus(form, message, state);
-        }
-
-        function inspectBrevoResponse(){
-          if (!activeForm) return;
-          if (panelIsVisible(successPanel)){
-            finish('success', 'Thank you for joining the House of Manna community. Please check your email to confirm your subscription.');
-          } else if (panelIsVisible(errorPanel)){
-            finish('error', 'Your submission could not be saved. Please try again.');
-          }
-        }
-
-        var observer = new MutationObserver(function(){
-          window.setTimeout(inspectBrevoResponse, 20);
-        });
-        observer.observe(successPanel, { attributes: true, childList: true, subtree: true });
-        observer.observe(errorPanel, { attributes: true, childList: true, subtree: true });
-
-        uiForms.forEach(function(form){
-          form.addEventListener('submit', function(event){
-            event.preventDefault();
-
-            if (!form.checkValidity()){
-              form.reportValidity();
-              return;
-            }
-
-            if (activeForm) return;
-
-            var input = form.querySelector('input[type="email"]');
-            if (!input) return;
-
-            activeForm = form;
-            resetBrevoPanels();
-            setSubmitting(form, true);
-            setStatus(form, 'Submitting your email…', '');
-            brevoEmail.value = input.value.trim();
-
-            window.clearTimeout(timeoutId);
-            timeoutId = window.setTimeout(function(){
-              finish('error', 'The request timed out. Please check your connection and try again.');
-            }, 20000);
-
-            if (typeof brevoForm.requestSubmit === 'function') brevoForm.requestSubmit(brevoButton);
-            else brevoButton.click();
-          });
-        });
-      }
-
-      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialiseBrevoBridge);
-      else initialiseBrevoBridge();
-    })();
-  </script>
 
 
   <script>
@@ -2671,6 +2616,60 @@
     })();
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU_Q6oxn8gsoF0XEiFBxy97Cc4xz3IGyU&amp;callback=initBaltimoreMap&amp;loading=async&amp;v=weekly"></script>
+
+
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+    window.LOCALE = 'en';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = 'Please enter a valid email address.';
+    window.REQUIRED_ERROR_MESSAGE = 'Please enter your email address.';
+    window.GENERIC_INVALID_MESSAGE = 'The information provided is invalid. Please review it and try again.';
+    window.INVALID_NUMBER = 'The information provided is invalid. Please review it and try again.';
+    window.INVALID_DATE = 'Please enter a valid date';
+    window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least one option';
+    window.translation = {
+      common: {
+        selectedList: '{quantity} list selected',
+        selectedLists: '{quantity} lists selected',
+        selectedOption: '{quantity} selected',
+        selectedOptions: '{quantity} selected'
+      }
+    };
+    var AUTOHIDE = Boolean(0);
+  </script>
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+  <script id="brevo-single-form-mount-script">
+    (function(){
+      function initialiseBrevoMounts(){
+        var modal = document.getElementById('siteModal');
+        var shell = document.getElementById('brevoFormShell');
+        var homeMount = document.getElementById('brevoFormHome');
+        var modalMount = document.getElementById('brevoFormModalMount');
+        if (!modal || !shell || !homeMount || !modalMount) return;
+
+        function moveToModal(){
+          if (shell.parentElement !== modalMount) modalMount.appendChild(shell);
+        }
+
+        function moveHome(){
+          if (shell.parentElement !== homeMount) homeMount.appendChild(shell);
+        }
+
+        var observer = new MutationObserver(function(){
+          if (modal.classList.contains('is-visible')) moveToModal();
+          else moveHome();
+        });
+
+        observer.observe(modal, { attributes:true, attributeFilter:['class'] });
+        if (modal.classList.contains('is-visible')) moveToModal();
+        else moveHome();
+      }
+
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialiseBrevoMounts, { once:true });
+      else initialiseBrevoMounts();
+    })();
+  </script>
 
 </body>
 </html>
