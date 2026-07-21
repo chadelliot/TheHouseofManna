@@ -1433,6 +1433,21 @@
       text-align:center;
     }
 
+    .brevo-engine{
+      position:fixed!important;
+      left:-10000px!important;
+      top:0!important;
+      width:1px!important;
+      height:1px!important;
+      overflow:hidden!important;
+      opacity:0!important;
+      pointer-events:none!important;
+    }
+
+    .brevo-engine .sib-form-message-panel{
+      display:none;
+    }
+
     @media (max-width: 640px){
       .brevo-form-status{
         text-align:center;
@@ -1475,10 +1490,7 @@
         <form
           class="hero-signup-form brevo-subscription-form"
           id="heroBrevoForm"
-          method="POST"
-          action="https://776ecc5e.sibforms.com/serve/MUIFABAvXY6HToQQCTes2qiNDpudFTwVldp027dB0l32rdaFMeBSyb3t22G8nI_ZiwkgNthFb6G0OoKA_RWaLmXX_Fl2QejcAK_SoSLXtYDcL6jlEKhk5nF0aaFHhHnbV6vMRqon53J5Hj0ktnqVzXrheQ-upxKglSLBBYrzW8EQOmIy1amVWby_-8CEFYp0j7BB0dZsnpXDwkB3GA=="
-          data-type="subscription"
-          target="brevo-submit-frame"
+          novalidate
           aria-describedby="heroBrevoStatus"
         >
           <label class="visually-hidden" for="heroBrevoEmail">Email address</label>
@@ -1492,16 +1504,6 @@
             required
           >
           <button type="submit" data-default-label="Stay Informed">Stay Informed</button>
-          <input
-            class="brevo-honeypot"
-            type="text"
-            name="email_address_check"
-            value=""
-            tabindex="-1"
-            autocomplete="off"
-            aria-hidden="true"
-          >
-          <input type="hidden" name="locale" value="en">
         </form>
         <div
           class="brevo-form-status"
@@ -2339,10 +2341,7 @@
       <form
         class="site-modal-form brevo-subscription-form"
         id="modalBrevoForm"
-        method="POST"
-        action="https://776ecc5e.sibforms.com/serve/MUIFABAvXY6HToQQCTes2qiNDpudFTwVldp027dB0l32rdaFMeBSyb3t22G8nI_ZiwkgNthFb6G0OoKA_RWaLmXX_Fl2QejcAK_SoSLXtYDcL6jlEKhk5nF0aaFHhHnbV6vMRqon53J5Hj0ktnqVzXrheQ-upxKglSLBBYrzW8EQOmIy1amVWby_-8CEFYp0j7BB0dZsnpXDwkB3GA=="
-        data-type="subscription"
-        target="brevo-submit-frame"
+        novalidate
         aria-describedby="modalBrevoStatus"
       >
         <label class="visually-hidden" for="modalBrevoEmail">Email address</label>
@@ -2356,16 +2355,6 @@
           required
         >
         <button type="submit" data-default-label="Stay Informed">Stay Informed</button>
-        <input
-          class="brevo-honeypot"
-          type="text"
-          name="email_address_check"
-          value=""
-          tabindex="-1"
-          autocomplete="off"
-          aria-hidden="true"
-        >
-        <input type="hidden" name="locale" value="en">
       </form>
       <div
         class="brevo-form-status brevo-form-status--modal"
@@ -2379,125 +2368,173 @@
 
 
 
-  <!-- Brevo receives submissions in this hidden frame so visitors remain on the page. -->
-  <iframe
-    id="brevo-submit-frame"
-    name="brevo-submit-frame"
-    title="Newsletter subscription response"
-    hidden
-  ></iframe>
+  <!-- Official Brevo form engine. It stays off-screen while the two branded forms proxy submissions to it. -->
+  <div class="brevo-engine" aria-hidden="true">
+    <div id="error-message" class="sib-form-message-panel" role="alert">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <span class="sib-form-message-panel__inner-text">Your submission could not be saved. Please try again.</span>
+      </div>
+    </div>
+
+    <div id="success-message" class="sib-form-message-panel" role="status">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <span class="sib-form-message-panel__inner-text">Thank you for joining the House of Manna community. Please check your email to confirm your subscription.</span>
+      </div>
+    </div>
+
+    <form id="sib-form" method="POST" action="https://776ecc5e.sibforms.com/serve/MUIFABAvXY6HToQQCTes2qiNDpudFTwVldp027dB0l32rdaFMeBSyb3t22G8nI_ZiwkgNthFb6G0OoKA_RWaLmXX_Fl2QejcAK_SoSLXtYDcL6jlEKhk5nF0aaFHhHnbV6vMRqon53J5Hj0ktnqVzXrheQ-upxKglSLBBYrzW8EQOmIy1amVWby_-8CEFYp0j7BB0dZsnpXDwkB3GA==" data-type="subscription">
+      <div class="sib-input sib-form-block">
+        <div class="form__entry entry_block">
+          <div class="form__label-row">
+            <label class="entry__label" for="EMAIL" data-required="*">Email address</label>
+            <div class="entry__field">
+              <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" value="" data-required="true" required>
+            </div>
+          </div>
+          <label class="entry__error entry__error--primary"></label>
+        </div>
+      </div>
+      <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">Subscribe</button>
+      <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="locale" value="en">
+    </form>
+  </div>
+
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+    window.LOCALE = 'en';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = 'The information provided is invalid. Please review the field format and try again.';
+    window.REQUIRED_ERROR_MESSAGE = 'This field cannot be left blank. ';
+    window.GENERIC_INVALID_MESSAGE = 'The information provided is invalid. Please review the field format and try again.';
+    window.INVALID_NUMBER = 'The information provided is invalid. Please review the field format and try again.';
+    window.INVALID_DATE = 'Please enter a valid date';
+    window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least 1 option';
+    window.translation = {
+      common: {
+        selectedList: '{quantity} list selected',
+        selectedLists: '{quantity} lists selected',
+        selectedOption: '{quantity} selected',
+        selectedOptions: '{quantity} selected'
+      }
+    };
+    var AUTOHIDE = Boolean(0);
+  </script>
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
   <script id="brevo-integration-script">
     (function(){
-      var forms = Array.prototype.slice.call(
-        document.querySelectorAll('.brevo-subscription-form')
-      );
-      var responseFrame = document.getElementById('brevo-submit-frame');
-      var activeSubmission = null;
-      var responseTimer = null;
+      function initialiseBrevoBridge(){
+        var uiForms = Array.prototype.slice.call(document.querySelectorAll('.brevo-subscription-form'));
+        var brevoForm = document.getElementById('sib-form');
+        var brevoEmail = document.getElementById('EMAIL');
+        var brevoButton = brevoForm ? brevoForm.querySelector('button[type="submit"]') : null;
+        var successPanel = document.getElementById('success-message');
+        var errorPanel = document.getElementById('error-message');
+        var activeForm = null;
+        var timeoutId = null;
 
-      if (!forms.length || !responseFrame) return;
+        if (!uiForms.length || !brevoForm || !brevoEmail || !brevoButton || !successPanel || !errorPanel) return;
 
-      function setStatus(form, message, state){
-        var statusId = form.getAttribute('aria-describedby');
-        var status = statusId ? document.getElementById(statusId) : null;
-        if (!status) return;
-
-        status.textContent = message || '';
-        if (state) {
-          status.setAttribute('data-state', state);
-        } else {
-          status.removeAttribute('data-state');
+        function getStatus(form){
+          var statusId = form.getAttribute('aria-describedby');
+          return statusId ? document.getElementById(statusId) : null;
         }
-      }
 
-      function setSubmitting(form, isSubmitting){
-        var button = form.querySelector('button[type="submit"]');
-        if (!button) return;
-
-        var defaultLabel =
-          button.getAttribute('data-default-label') ||
-          button.textContent.trim() ||
-          'Stay Informed';
-
-        if (isSubmitting) {
-          button.disabled = true;
-          button.setAttribute('aria-busy', 'true');
-          button.textContent = 'Submitting…';
-        } else {
-          button.disabled = false;
-          button.removeAttribute('aria-busy');
-          button.textContent = defaultLabel;
+        function setStatus(form, message, state){
+          var status = getStatus(form);
+          if (!status) return;
+          status.textContent = message || '';
+          if (state) status.setAttribute('data-state', state);
+          else status.removeAttribute('data-state');
         }
-      }
 
-      function completeSubmission(){
-        if (!activeSubmission) return;
-
-        window.clearTimeout(responseTimer);
-
-        var form = activeSubmission;
-        activeSubmission = null;
-
-        setSubmitting(form, false);
-        form.reset();
-        setStatus(
-          form,
-          'Thank you for joining the House of Manna community. Please check your email to confirm your subscription.',
-          'success'
-        );
-      }
-
-      function failSubmission(form){
-        if (activeSubmission === form) activeSubmission = null;
-
-        setSubmitting(form, false);
-        setStatus(
-          form,
-          'Your submission could not be confirmed. Please check your connection and try again.',
-          'error'
-        );
-      }
-
-      forms.forEach(function(form){
-        form.addEventListener('submit', function(event){
-          if (!form.checkValidity()){
-            event.preventDefault();
-            form.reportValidity();
-            return;
+        function setSubmitting(form, isSubmitting){
+          var button = form.querySelector('button[type="submit"]');
+          if (!button) return;
+          var defaultLabel = button.getAttribute('data-default-label') || 'Stay Informed';
+          button.disabled = isSubmitting;
+          if (isSubmitting){
+            button.setAttribute('aria-busy', 'true');
+            button.textContent = 'Submitting…';
+          } else {
+            button.removeAttribute('aria-busy');
+            button.textContent = defaultLabel;
           }
+        }
 
-          if (activeSubmission){
-            event.preventDefault();
-            return;
+        function panelIsVisible(panel){
+          return window.getComputedStyle(panel).display !== 'none';
+        }
+
+        function resetBrevoPanels(){
+          successPanel.style.display = 'none';
+          errorPanel.style.display = 'none';
+        }
+
+        function finish(state, fallbackMessage){
+          if (!activeForm) return;
+          window.clearTimeout(timeoutId);
+
+          var form = activeForm;
+          activeForm = null;
+          setSubmitting(form, false);
+
+          var sourcePanel = state === 'success' ? successPanel : errorPanel;
+          var messageNode = sourcePanel.querySelector('.sib-form-message-panel__inner-text');
+          var message = messageNode && messageNode.textContent.trim() ? messageNode.textContent.trim() : fallbackMessage;
+
+          if (state === 'success') form.reset();
+          setStatus(form, message, state);
+        }
+
+        function inspectBrevoResponse(){
+          if (!activeForm) return;
+          if (panelIsVisible(successPanel)){
+            finish('success', 'Thank you for joining the House of Manna community. Please check your email to confirm your subscription.');
+          } else if (panelIsVisible(errorPanel)){
+            finish('error', 'Your submission could not be saved. Please try again.');
           }
+        }
 
-          activeSubmission = form;
-          setSubmitting(form, true);
-          setStatus(form, 'Submitting your email…', '');
-
-          window.clearTimeout(responseTimer);
-          responseTimer = window.setTimeout(function(){
-            failSubmission(form);
-          }, 15000);
-
-          /*
-           * Do not prevent the valid submission. The form posts directly to
-           * Brevo's hosted subscription endpoint and targets the hidden iframe.
-           * Brevo manages the contact list and confirmation email.
-           */
+        var observer = new MutationObserver(function(){
+          window.setTimeout(inspectBrevoResponse, 20);
         });
-      });
+        observer.observe(successPanel, { attributes: true, childList: true, subtree: true });
+        observer.observe(errorPanel, { attributes: true, childList: true, subtree: true });
 
-      responseFrame.addEventListener('load', function(){
-        /*
-         * The iframe also loads once when the page starts. Only treat a load as
-         * a completed Brevo response while a form submission is active.
-         */
-        if (activeSubmission){
-          window.setTimeout(completeSubmission, 120);
-        }
-      });
+        uiForms.forEach(function(form){
+          form.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            if (!form.checkValidity()){
+              form.reportValidity();
+              return;
+            }
+
+            if (activeForm) return;
+
+            var input = form.querySelector('input[type="email"]');
+            if (!input) return;
+
+            activeForm = form;
+            resetBrevoPanels();
+            setSubmitting(form, true);
+            setStatus(form, 'Submitting your email…', '');
+            brevoEmail.value = input.value.trim();
+
+            window.clearTimeout(timeoutId);
+            timeoutId = window.setTimeout(function(){
+              finish('error', 'The request timed out. Please check your connection and try again.');
+            }, 20000);
+
+            if (typeof brevoForm.requestSubmit === 'function') brevoForm.requestSubmit(brevoButton);
+            else brevoButton.click();
+          });
+        });
+      }
+
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialiseBrevoBridge);
+      else initialiseBrevoBridge();
     })();
   </script>
 
