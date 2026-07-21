@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="The House of Manna">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://houseofmannamd.com/">
-<meta property="og:title" content="The House of Manna — Supporting Your Freedom to Think. Grow. Live.">
+<meta property="og:title" content="The House of Manna — Think. Grow. Live.">
 <meta property="og:description" content="A Baltimore-based, faith-inspired nonprofit advancing food security, youth education, entrepreneurship, and community empowerment.">
 <meta property="og:image" content="https://houseofmannamd.com/house-of-manna-social-share.png">
 <meta property="og:image:secure_url" content="https://houseofmannamd.com/house-of-manna-social-share.png">
@@ -1383,6 +1383,63 @@
     }
   }
 </style>
+
+  <style id="brevo-integration-styles">
+    .visually-hidden{
+      position:absolute!important;
+      width:1px!important;
+      height:1px!important;
+      padding:0!important;
+      margin:-1px!important;
+      overflow:hidden!important;
+      clip:rect(0,0,0,0)!important;
+      white-space:nowrap!important;
+      border:0!important;
+    }
+
+    .brevo-honeypot{
+      position:absolute!important;
+      left:-10000px!important;
+      width:1px!important;
+      height:1px!important;
+      opacity:0!important;
+      pointer-events:none!important;
+    }
+
+    .brevo-subscription-form button[disabled]{
+      cursor:wait;
+      opacity:.72;
+    }
+
+    .brevo-form-status{
+      min-height:1.35em;
+      margin-top:10px;
+      color:var(--hom-navy, #2d3b4f);
+      font-size:12px;
+      line-height:1.45;
+      letter-spacing:.01em;
+    }
+
+    .brevo-form-status[data-state="success"]{
+      color:#52633f;
+    }
+
+    .brevo-form-status[data-state="error"]{
+      color:#8a2d2d;
+    }
+
+    .brevo-form-status--modal{
+      margin-top:8px;
+      text-align:center;
+    }
+
+    @media (max-width: 640px){
+      .brevo-form-status{
+        text-align:center;
+      }
+    }
+  </style>
+
 </head>
 <body>
 
@@ -1415,10 +1472,43 @@
 
       <div class="hero-signup">
         <div class="hero-signup-label">Stay in the loop</div>
-        <form class="hero-signup-form" onsubmit="return false;">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Stay Informed</button>
+        <form
+          class="hero-signup-form brevo-subscription-form"
+          id="heroBrevoForm"
+          method="POST"
+          action="https://776ecc5e.sibforms.com/serve/MUIFABAvXY6HToQQCTes2qiNDpudFTwVldp027dB0l32rdaFMeBSyb3t22G8nI_ZiwkgNthFb6G0OoKA_RWaLmXX_Fl2QejcAK_SoSLXtYDcL6jlEKhk5nF0aaFHhHnbV6vMRqon53J5Hj0ktnqVzXrheQ-upxKglSLBBYrzW8EQOmIy1amVWby_-8CEFYp0j7BB0dZsnpXDwkB3GA=="
+          data-type="subscription"
+          target="brevo-submit-frame"
+          aria-describedby="heroBrevoStatus"
+        >
+          <label class="visually-hidden" for="heroBrevoEmail">Email address</label>
+          <input
+            type="email"
+            id="heroBrevoEmail"
+            name="EMAIL"
+            autocomplete="email"
+            inputmode="email"
+            placeholder="Enter your email"
+            required
+          >
+          <button type="submit" data-default-label="Stay Informed">Stay Informed</button>
+          <input
+            class="brevo-honeypot"
+            type="text"
+            name="email_address_check"
+            value=""
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          >
+          <input type="hidden" name="locale" value="en">
         </form>
+        <div
+          class="brevo-form-status"
+          id="heroBrevoStatus"
+          role="status"
+          aria-live="polite"
+        ></div>
       </div>
 
       <div class="hero-content-2">
@@ -2246,13 +2336,170 @@
       </button>
       <h3 id="siteModalTitle">This page is under construction</h3>
       <p>We're still building this part of the site. Leave your email and we'll let you know as soon as there's more to see.</p>
-      <form class="site-modal-form" onsubmit="return false;">
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Stay Informed</button>
+      <form
+        class="site-modal-form brevo-subscription-form"
+        id="modalBrevoForm"
+        method="POST"
+        action="https://776ecc5e.sibforms.com/serve/MUIFABAvXY6HToQQCTes2qiNDpudFTwVldp027dB0l32rdaFMeBSyb3t22G8nI_ZiwkgNthFb6G0OoKA_RWaLmXX_Fl2QejcAK_SoSLXtYDcL6jlEKhk5nF0aaFHhHnbV6vMRqon53J5Hj0ktnqVzXrheQ-upxKglSLBBYrzW8EQOmIy1amVWby_-8CEFYp0j7BB0dZsnpXDwkB3GA=="
+        data-type="subscription"
+        target="brevo-submit-frame"
+        aria-describedby="modalBrevoStatus"
+      >
+        <label class="visually-hidden" for="modalBrevoEmail">Email address</label>
+        <input
+          type="email"
+          id="modalBrevoEmail"
+          name="EMAIL"
+          autocomplete="email"
+          inputmode="email"
+          placeholder="Enter your email"
+          required
+        >
+        <button type="submit" data-default-label="Stay Informed">Stay Informed</button>
+        <input
+          class="brevo-honeypot"
+          type="text"
+          name="email_address_check"
+          value=""
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+        >
+        <input type="hidden" name="locale" value="en">
       </form>
+      <div
+        class="brevo-form-status brevo-form-status--modal"
+        id="modalBrevoStatus"
+        role="status"
+        aria-live="polite"
+      ></div>
       <div class="site-modal-note">No spam &mdash; just real updates on our progress.</div>
     </div>
   </div>
+
+
+
+  <!-- Brevo receives submissions in this hidden frame so visitors remain on the page. -->
+  <iframe
+    id="brevo-submit-frame"
+    name="brevo-submit-frame"
+    title="Newsletter subscription response"
+    hidden
+  ></iframe>
+
+  <script id="brevo-integration-script">
+    (function(){
+      var forms = Array.prototype.slice.call(
+        document.querySelectorAll('.brevo-subscription-form')
+      );
+      var responseFrame = document.getElementById('brevo-submit-frame');
+      var activeSubmission = null;
+      var responseTimer = null;
+
+      if (!forms.length || !responseFrame) return;
+
+      function setStatus(form, message, state){
+        var statusId = form.getAttribute('aria-describedby');
+        var status = statusId ? document.getElementById(statusId) : null;
+        if (!status) return;
+
+        status.textContent = message || '';
+        if (state) {
+          status.setAttribute('data-state', state);
+        } else {
+          status.removeAttribute('data-state');
+        }
+      }
+
+      function setSubmitting(form, isSubmitting){
+        var button = form.querySelector('button[type="submit"]');
+        if (!button) return;
+
+        var defaultLabel =
+          button.getAttribute('data-default-label') ||
+          button.textContent.trim() ||
+          'Stay Informed';
+
+        if (isSubmitting) {
+          button.disabled = true;
+          button.setAttribute('aria-busy', 'true');
+          button.textContent = 'Submitting…';
+        } else {
+          button.disabled = false;
+          button.removeAttribute('aria-busy');
+          button.textContent = defaultLabel;
+        }
+      }
+
+      function completeSubmission(){
+        if (!activeSubmission) return;
+
+        window.clearTimeout(responseTimer);
+
+        var form = activeSubmission;
+        activeSubmission = null;
+
+        setSubmitting(form, false);
+        form.reset();
+        setStatus(
+          form,
+          'Thank you for joining the House of Manna community. Please check your email to confirm your subscription.',
+          'success'
+        );
+      }
+
+      function failSubmission(form){
+        if (activeSubmission === form) activeSubmission = null;
+
+        setSubmitting(form, false);
+        setStatus(
+          form,
+          'Your submission could not be confirmed. Please check your connection and try again.',
+          'error'
+        );
+      }
+
+      forms.forEach(function(form){
+        form.addEventListener('submit', function(event){
+          if (!form.checkValidity()){
+            event.preventDefault();
+            form.reportValidity();
+            return;
+          }
+
+          if (activeSubmission){
+            event.preventDefault();
+            return;
+          }
+
+          activeSubmission = form;
+          setSubmitting(form, true);
+          setStatus(form, 'Submitting your email…', '');
+
+          window.clearTimeout(responseTimer);
+          responseTimer = window.setTimeout(function(){
+            failSubmission(form);
+          }, 15000);
+
+          /*
+           * Do not prevent the valid submission. The form posts directly to
+           * Brevo's hosted subscription endpoint and targets the hidden iframe.
+           * Brevo manages the contact list and confirmation email.
+           */
+        });
+      });
+
+      responseFrame.addEventListener('load', function(){
+        /*
+         * The iframe also loads once when the page starts. Only treat a load as
+         * a completed Brevo response while a form submission is active.
+         */
+        if (activeSubmission){
+          window.setTimeout(completeSubmission, 120);
+        }
+      });
+    })();
+  </script>
 
 
   <script>
