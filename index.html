@@ -681,22 +681,6 @@
     .pillars-sticky{ padding-left:24px; }
     .pillar{ width:min(78vw, 420px); padding:38px 30px 34px; }
     .pillar::before{ left:30px; }
-
-    /* on touch/mobile widths, hand horizontal movement over to a
-       native swipe instead of the JS-driven pin animation — the two
-       fight each other otherwise, since the JS overwrites transform
-       on every scroll frame and blocks manual swiping entirely */
-    .pillars-section{ height:auto !important; }
-    .pillars-sticky{
-      position:relative !important;
-      height:auto !important;
-      overflow-x:auto !important;
-      -webkit-overflow-scrolling:touch;
-      scroll-snap-type:x proximity;
-      padding-bottom:24px !important;
-    }
-    .pillars-track{ transform:none !important; }
-    .pillar{ scroll-snap-align:start; }
   }
 
 
@@ -706,10 +690,11 @@
      ============================================================ */
   .impact-section{
     background:#ffffff;
-    padding:110px 40px 120px;
+    padding:110px 40px 130px;
+    overflow:hidden;
   }
   .impact-inner{
-    max-width:820px;
+    max-width:980px;
     margin:0 auto;
   }
   .impact-inner h2{
@@ -727,37 +712,79 @@
     color:var(--ink-text); opacity:.85;
     text-align:center;
     max-width:620px;
-    margin:0 auto 56px;
+    margin:0 auto 88px;
   }
-  .impact-list{
-    list-style:none;
+
+  .goal-row{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    align-items:center;
+    gap:clamp(24px, 5vw, 64px);
+    padding:44px 0;
+    border-top:1px solid rgba(45,59,79,.14);
+    opacity:0;
+    transform:translateY(28px);
+    transition:opacity .7s ease, transform .7s ease;
   }
-  .impact-list li{
-    display:flex;
-    align-items:baseline;
-    gap:20px;
-    padding:22px 0;
-    border-top:1px solid rgba(45,59,79,.15);
+  .goal-row.is-visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+  .goal-row:last-child{
+    border-bottom:1px solid rgba(45,59,79,.14);
+  }
+  .goal-number{
+    font-family:var(--font-display);
+    font-weight:400;
+    font-size:clamp(72px, 11vw, 148px);
+    line-height:.85;
+    color:var(--hom-navy);
+    white-space:nowrap;
+    font-variant-numeric:tabular-nums;
+  }
+  .goal-number .goal-suffix{
+    font-size:.42em;
+    margin-left:2px;
+    color:var(--hom-gold);
+  }
+  .goal-body{ max-width:520px; }
+  .goal-eyebrow{
+    display:block;
     font-family:var(--font-body);
-    font-size:16.5px;
-    line-height:1.5;
-    color:var(--ink-text);
+    font-size:12px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    font-weight:700;
+    color:var(--hom-gold);
+    margin-bottom:10px;
   }
-  .impact-list li:last-child{
-    border-bottom:1px solid rgba(45,59,79,.15);
+  .goal-statement{
+    font-family:var(--font-display);
+    font-weight:400;
+    font-size:clamp(20px, 2.4vw, 27px);
+    line-height:1.18;
+    color:var(--hom-navy);
+    margin-bottom:10px;
   }
-  .impact-list li::before{
-    content:'';
-    flex:0 0 8px;
-    width:8px; height:8px;
-    border-radius:50%;
-    background:var(--hom-sage);
-    margin-top:6px;
+  .goal-source{
+    font-family:var(--font-body);
+    font-size:13.5px; line-height:1.55;
+    color:var(--ink-text); opacity:.62;
+  }
+
+  @media (max-width:700px){
+    .goal-row{
+      grid-template-columns:1fr;
+      gap:14px;
+      padding:34px 0;
+      text-align:left;
+    }
+    .goal-number{ font-size:clamp(58px, 22vw, 92px); }
   }
 
   @media (max-width:640px){
     .impact-section{ padding:80px 24px 90px; }
-    .impact-lead{ margin-bottom:40px; }
+    .impact-lead{ margin-bottom:56px; }
   }
 
   /* ============================================================
@@ -1938,14 +1965,52 @@
   <section class="impact-section" id="impact" data-theme="light">
     <div class="impact-inner">
       <h2>Measured by transformation.</h2>
-      <p class="impact-lead">Success will not be measured solely by dollars raised or food distributed. Success will be measured by transformation.</p>
-      <ul class="impact-list">
-        <li>A family receiving support during a difficult season.</li>
-        <li>A student discovering a future career.</li>
-        <li>A volunteer finding purpose through service.</li>
-        <li>A sponsor investing in community change.</li>
-        <li>A neighborhood strengthened because House of Manna was present.</li>
-      </ul>
+      <p class="impact-lead">Success will not be measured solely by dollars raised or food distributed. Success will be measured by transformation &mdash; and here's what that looks like as real, working goals.</p>
+
+      <div class="goal-row" data-count-to="3000">
+        <div class="goal-number"><span class="goal-count">0</span><span class="goal-suffix">+</span></div>
+        <div class="goal-body">
+          <span class="goal-eyebrow">Families Fed, Every Year</span>
+          <p class="goal-statement">A family receiving support during a difficult season.</p>
+          <p class="goal-source">Target: 250+ families served every month at full Pantry capacity (Phase 3, Years 2&ndash;3).</p>
+        </div>
+      </div>
+
+      <div class="goal-row" data-count-to="50">
+        <div class="goal-number"><span class="goal-count">0</span></div>
+        <div class="goal-body">
+          <span class="goal-eyebrow">Real Opportunities Evaluated</span>
+          <p class="goal-statement">A student discovering a future career.</p>
+          <p class="goal-source">Every Entrepreneurship Scholarship participant completes 50 real-world opportunity evaluations &mdash; not theory, practice.</p>
+        </div>
+      </div>
+
+      <div class="goal-row" data-count-to="5">
+        <div class="goal-number"><span class="goal-count">0</span></div>
+        <div class="goal-body">
+          <span class="goal-eyebrow">Community Pipelines, One Mission</span>
+          <p class="goal-statement">A volunteer finding purpose through service.</p>
+          <p class="goal-source">Churches, schools, community organizations, corporate volunteer programs, and the Community Platform &mdash; five channels, one shared shift.</p>
+        </div>
+      </div>
+
+      <div class="goal-row" data-count-to="3">
+        <div class="goal-number"><span class="goal-count">0</span></div>
+        <div class="goal-body">
+          <span class="goal-eyebrow">Founding Funding Partners</span>
+          <p class="goal-statement">A sponsor investing in community change.</p>
+          <p class="goal-source">Hidden Gems, Bloom Studio &amp; Wellness, and Audaption &mdash; businesses reinvesting up to 50% of net profit back into Baltimore.</p>
+        </div>
+      </div>
+
+      <div class="goal-row" data-count-to="5">
+        <div class="goal-number"><span class="goal-count">0</span></div>
+        <div class="goal-body">
+          <span class="goal-eyebrow">Priority Neighborhoods, First</span>
+          <p class="goal-statement">A neighborhood strengthened because House of Manna was present.</p>
+          <p class="goal-source">West, North, East, South, and Southeast Baltimore &mdash; the five communities targeted first, before anywhere else.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2124,15 +2189,13 @@
         if (!pillarsScroll || !pillarsSticky || !pillarsTrack) return;
 
         var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var isTouchWidth = document.documentElement.clientWidth <= 820;
         var shift = 0;
         var viewportHeight = window.innerHeight;
         var lastViewportWidth = document.documentElement.clientWidth;
         var ticking = false;
 
         function computeShift(){
-          isTouchWidth = document.documentElement.clientWidth <= 820;
-          if (reduceMotion || isTouchWidth){
+          if (reduceMotion){
             pillarsScroll.classList.remove('is-scroll-enhanced');
             pillarsScroll.style.height = '';
             pillarsTrack.style.transform = '';
@@ -2161,7 +2224,7 @@
         }
 
         function updatePillars(){
-          if (reduceMotion || isTouchWidth){
+          if (reduceMotion){
             ticking = false;
             return;
           }
@@ -2203,6 +2266,53 @@
         window.addEventListener('scroll', onScroll, { passive:true });
         window.addEventListener('resize', onResize, { passive:true });
         window.addEventListener('orientationchange', computeShift);
+
+        /*
+          Touch users can also swipe the cards directly left/right.
+          Rather than giving the track its own independent scroll
+          state (which would fight the scroll-driven transform above),
+          a horizontal swipe is converted into an equivalent vertical
+          page scroll — the existing scroll listener then does the
+          rest exactly as if the visitor had scrolled normally. A
+          vertical swipe is left completely untouched and scrolls the
+          page natively.
+        */
+        var touchStartX = null, touchStartY = null, touchIntent = null;
+
+        pillarsTrack.addEventListener('touchstart', function(e){
+          if (reduceMotion || e.touches.length !== 1) return;
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+          touchIntent = null;
+        }, { passive:true });
+
+        pillarsTrack.addEventListener('touchmove', function(e){
+          if (touchStartX === null) return;
+          var x = e.touches[0].clientX;
+          var y = e.touches[0].clientY;
+          var dx = x - touchStartX;
+          var dy = y - touchStartY;
+
+          if (touchIntent === null && (Math.abs(dx) > 6 || Math.abs(dy) > 6)){
+            touchIntent = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+          }
+
+          if (touchIntent === 'x'){
+            e.preventDefault();
+            window.scrollBy(0, -dx);
+            touchStartX = x;
+            touchStartY = y;
+          }
+          // vertical intent: do nothing and let the page scroll natively
+        }, { passive:false });
+
+        function endTouch(){
+          touchStartX = null;
+          touchStartY = null;
+          touchIntent = null;
+        }
+        pillarsTrack.addEventListener('touchend', endTouch, { passive:true });
+        pillarsTrack.addEventListener('touchcancel', endTouch, { passive:true });
 
         if (document.fonts && document.fonts.ready){
           document.fonts.ready.then(computeShift);
@@ -2306,11 +2416,64 @@
         });
       }
 
+      function initImpactGoals(){
+        var rows = document.querySelectorAll('.goal-row');
+        if (!rows.length) return;
+
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        function countUp(row){
+          var target = parseInt(row.getAttribute('data-count-to'), 10) || 0;
+          var el = row.querySelector('.goal-count');
+          if (!el) return;
+
+          if (reduceMotion){
+            el.textContent = target.toLocaleString();
+            return;
+          }
+
+          var duration = 1400;
+          var start = null;
+
+          function step(timestamp){
+            if (start === null) start = timestamp;
+            var progress = Math.min((timestamp - start) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            el.textContent = Math.round(eased * target).toLocaleString();
+            if (progress < 1){
+              window.requestAnimationFrame(step);
+            }
+          }
+          window.requestAnimationFrame(step);
+        }
+
+        if (!('IntersectionObserver' in window)){
+          rows.forEach(function(row){
+            row.classList.add('is-visible');
+            countUp(row);
+          });
+          return;
+        }
+
+        var observer = new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){
+            if (entry.isIntersecting){
+              entry.target.classList.add('is-visible');
+              countUp(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.35 });
+
+        rows.forEach(function(row){ observer.observe(row); });
+      }
+
       function initPage(){
         initHeroScroll();
         initPillarsScroll();
         initPhases();
         initSiteModal();
+        initImpactGoals();
       }
 
       if (document.readyState === 'loading'){
