@@ -105,6 +105,7 @@
     --hom-gold: #C8941F;
     --hom-sage: #8E9C85;
     --hom-cream: #F7F4EC;
+    --hom-tan: #D9C8A0;
 
     --ink: #ffffff;
     --ink-text: var(--hom-navy);
@@ -270,6 +271,93 @@
     opacity: clamp(0, 1 - var(--p) * 2, 1);
     transform: translateY(calc(var(--p) * -50px));
   }
+
+  /* ============================================================
+     MAP MARKER — gold pulsing dot placed on the edge of the USA
+     map (Baltimore, MD area), with the caption shown as a white
+     tooltip on hover/focus. Percentages are set against .hero-pin,
+     so the dot tracks the same map point as the window is resized;
+     nudge --md-left / --md-top if the map art itself ever changes.
+     z-index is set above .hero-content (5) so hover/focus actually
+     reaches the dot instead of being intercepted by the hero copy.
+     ============================================================ */
+  .hero-map-marker{
+    --md-left: 77%;
+    --md-top: 44%;
+    position:absolute;
+    left:var(--md-left); top:var(--md-top);
+    z-index:7;
+    width:14px; height:14px;
+    opacity: clamp(0, 1 - var(--p) * 2, 1);
+    cursor:pointer;
+  }
+  .hero-map-marker::before{
+    /* larger invisible hit area so the tooltip is easy to trigger */
+    content:'';
+    position:absolute;
+    inset:-16px;
+    border-radius:50%;
+  }
+  .hero-map-dot{
+    position:absolute; inset:0; margin:auto;
+    width:11px; height:11px;
+    border-radius:50%;
+    background:var(--hom-gold);
+    box-shadow:0 0 0 3px rgba(23,35,52,.25);
+  }
+  .hero-map-ring{
+    position:absolute; inset:-5px;
+    border-radius:50%;
+    border:2px solid var(--hom-gold);
+    animation:heroMapPulse 2.4s cubic-bezier(0,0,.2,1) infinite;
+  }
+  .hero-map-ring.ring-2{ animation-delay:1.2s; }
+  @keyframes heroMapPulse{
+    0%{ transform:scale(1); opacity:.65; }
+    100%{ transform:scale(3.4); opacity:0; }
+  }
+  .hero-map-tooltip{
+    position:absolute;
+    left:18px; top:50%;
+    transform-origin:left center;
+    transform:translateY(-50%) scale(.75);
+    z-index:8;
+    width:210px;
+    background:#ffffff;
+    color:var(--hom-navy-2);
+    font-family:var(--font-body);
+    font-size:13px; line-height:1.5;
+    padding:14px 16px;
+    border-radius:10px;
+    box-shadow:0 14px 34px rgba(0,0,0,.3);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:opacity .2s ease, transform .28s cubic-bezier(.34,1.56,.64,1), visibility .2s;
+  }
+  .hero-map-tooltip::after{
+    content:'';
+    position:absolute;
+    left:-6px; top:50%;
+    transform:translateY(-50%);
+    width:0; height:0;
+    border-top:6px solid transparent;
+    border-bottom:6px solid transparent;
+    border-right:6px solid #ffffff;
+  }
+  .hero-map-tooltip strong{ color:var(--hom-navy-2); font-weight:700; }
+  .hero-map-marker:hover .hero-map-tooltip,
+  .hero-map-marker:focus .hero-map-tooltip,
+  .hero-map-marker:focus-within .hero-map-tooltip{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(-50%) scale(1);
+  }
+
+  @media (max-width:1100px){
+    .hero-map-marker{ display:none; }
+  }
+
 
   .eyebrow{
     font-size:12px; letter-spacing:.18em; text-transform:uppercase;
@@ -843,6 +931,60 @@
     aspect-ratio:1400/787;
     display:flex; align-items:center; justify-content:center;
   }
+
+  /* ============================================================
+     DECK MAXIMIZE — button on the pitch-deck viewer that opens
+     it in a large centered popup (80% of the viewport).
+     ============================================================ */
+  .deck-maximize{
+    position:absolute; top:12px; right:12px; z-index:5;
+    width:34px; height:34px;
+    border-radius:50%;
+    border:none;
+    background:rgba(23,35,52,.55);
+    color:#ffffff;
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+    transition:background .2s ease;
+  }
+  .deck-maximize:hover{ background:rgba(23,35,52,.8); }
+  .deck-maximize svg{ width:16px; height:16px; }
+
+  .deck-modal-overlay{
+    display:none;
+    position:fixed; inset:0; z-index:200;
+    background:rgba(15,21,31,.85);
+    align-items:center; justify-content:center;
+    padding:24px;
+  }
+  .deck-modal-overlay.is-open{ display:flex; }
+  .deck-modal-inner{
+    position:relative;
+    width:min(80vw, calc(80vh * 1400 / 787));
+  }
+  .deck-modal-inner .deck-frame{
+    width:100%;
+    box-shadow:0 30px 80px rgba(0,0,0,.45);
+  }
+  .deck-modal-close{
+    position:absolute; top:-46px; right:0;
+    width:36px; height:36px;
+    border-radius:50%;
+    border:none;
+    background:rgba(255,255,255,.14);
+    color:#ffffff;
+    font-size:22px; line-height:1;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:background .2s ease;
+  }
+  .deck-modal-close:hover{ background:rgba(255,255,255,.28); }
+
+  @media (max-width:640px){
+    .deck-modal-inner{ width:min(92vw, calc(80vh * 1400 / 787)); }
+    .deck-modal-close{ top:-40px; width:32px; height:32px; font-size:19px; }
+  }
+
   .deck-page{
     width:100%; height:100%;
     object-fit:contain;
@@ -1292,6 +1434,17 @@
     color:var(--hom-cream); opacity:.85;
     margin-top:4px;
   }
+  .phase-timeframe{
+    flex:0 0 auto;
+    font-family:var(--font-display);
+    font-weight:400;
+    font-size:clamp(17px, 2vw, 22px);
+    letter-spacing:.01em;
+    color:var(--hom-tan);
+    text-transform:uppercase;
+    white-space:nowrap;
+    text-align:right;
+  }
   .phase-chevron{
     flex:0 0 auto;
     width:32px; height:32px;
@@ -1367,6 +1520,7 @@
     .phase-panel-inner{ grid-template-columns:1fr; padding-left:0; }
     .phase-toggle{ gap:14px; }
     .phase-num{ width:36px; height:36px; font-size:16px; }
+    .phase-timeframe{ font-size:14px; }
   }
 
   /* ============================================================
@@ -1684,6 +1838,15 @@
     <div class="hero-pin" id="heroPin">
       <div class="hero-bg"></div>
 
+      <div class="hero-map-marker" tabindex="0" aria-label="Baltimore, Maryland — hover for more">
+        <span class="hero-map-ring"></span>
+        <span class="hero-map-ring ring-2"></span>
+        <span class="hero-map-dot"></span>
+        <div class="hero-map-tooltip">
+          <strong>Baltimore, MD</strong> is just the beginning of something great. Scroll to learn more about our multi-state vision.
+        </div>
+      </div>
+
       <div class="hero-content">
         <p class="eyebrow">Supporting your freedom to</p>
         <h1>THINK . GROW . LIVE<span class="sr-only"> — The House of Manna, a Baltimore food security, youth education, and community empowerment nonprofit</span></h1>
@@ -1927,8 +2090,9 @@
             <span class="phase-num">01</span>
             <span class="phase-title-wrap">
               <span class="phase-title">Pantry Pilot</span>
-              <span class="phase-tagline">Months 1&ndash;6 &middot; Establishing awareness and consistency</span>
+              <span class="phase-tagline">Establishing awareness and consistency</span>
             </span>
+            <span class="phase-timeframe">Months 1&ndash;6</span>
             <span class="phase-chevron">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
             </span>
@@ -1947,8 +2111,9 @@
             <span class="phase-num">02</span>
             <span class="phase-title-wrap">
               <span class="phase-title">Community Growth</span>
-              <span class="phase-tagline">Months 6&ndash;18 &middot; Expanding capacity and partnerships</span>
+              <span class="phase-tagline">Expanding capacity and partnerships</span>
             </span>
+            <span class="phase-timeframe">Months 6&ndash;18</span>
             <span class="phase-chevron">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
             </span>
@@ -1967,8 +2132,9 @@
             <span class="phase-num">03</span>
             <span class="phase-title-wrap">
               <span class="phase-title">Community Impact</span>
-              <span class="phase-tagline">Years 2&ndash;3 &middot; Becoming a recognized community resource</span>
+              <span class="phase-tagline">Becoming a recognized community resource</span>
             </span>
+            <span class="phase-timeframe">Years 2&ndash;3</span>
             <span class="phase-chevron">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
             </span>
@@ -1990,8 +2156,9 @@
             <span class="phase-num">04</span>
             <span class="phase-title-wrap">
               <span class="phase-title">Mobile Deployment</span>
-              <span class="phase-tagline">Years 3&ndash;4 &middot; Taking hope directly into the community</span>
+              <span class="phase-tagline">Taking hope directly into the community</span>
             </span>
+            <span class="phase-timeframe">Years 3&ndash;4</span>
             <span class="phase-chevron">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
             </span>
@@ -2010,8 +2177,9 @@
             <span class="phase-num">05</span>
             <span class="phase-title-wrap">
               <span class="phase-title">Suburban Expansion</span>
-              <span class="phase-tagline">Years 4&ndash;5 &middot; Beyond Baltimore's city limits</span>
+              <span class="phase-tagline">Beyond Baltimore's city limits</span>
             </span>
+            <span class="phase-timeframe">Years 4&ndash;5</span>
             <span class="phase-chevron">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
             </span>
@@ -2030,8 +2198,9 @@
             <span class="phase-num">06</span>
             <span class="phase-title-wrap">
               <span class="phase-title">Multi-State Expansion</span>
-              <span class="phase-tagline">Years 5&ndash;10 &middot; Replicating a proven model</span>
+              <span class="phase-tagline">Replicating a proven model</span>
             </span>
+            <span class="phase-timeframe">Years 5&ndash;10</span>
             <span class="phase-chevron">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
             </span>
@@ -2162,6 +2331,9 @@
       <div class="deck-layout">
       <div class="deck-viewer" id="deckViewer">
         <div class="deck-frame">
+          <button class="deck-maximize" id="deckMaximize" type="button" aria-label="Maximize pitch deck viewer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+          </button>
           <button class="deck-nav deck-prev" id="deckPrev" type="button" aria-label="Previous page">&#8249;</button>
           <img class="deck-page" id="deckPage" src="deck-pages/page-01.jpg" alt="House of Manna pitch deck, page 1 of 57" width="1400" height="787">
           <button class="deck-nav deck-next" id="deckNext" type="button" aria-label="Next page">&#8250;</button>
@@ -3079,8 +3251,46 @@
         pre.src = 'deck-pages/page-' + pad(n) + '.jpg';
       }
       preload(2);
+
+      // maximize / restore — moves the actual .deck-frame node into a
+      // full-screen popup (80% of the viewport) and back again, so all
+      // paging state and listeners stay intact.
+      var maximizeBtn = document.getElementById('deckMaximize');
+      var modalOverlay = document.getElementById('deckModalOverlay');
+      var modalInner = document.getElementById('deckModalInner');
+      var modalClose = document.getElementById('deckModalClose');
+      var deckFrame = frame;
+      var frameHome = deckFrame.parentNode;
+      var frameHomeNext = deckFrame.nextSibling;
+
+      function openDeckModal(){
+        modalInner.appendChild(deckFrame);
+        modalOverlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeDeckModal(){
+        if (frameHomeNext) frameHome.insertBefore(deckFrame, frameHomeNext);
+        else frameHome.appendChild(deckFrame);
+        modalOverlay.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+      if (maximizeBtn) maximizeBtn.addEventListener('click', openDeckModal);
+      if (modalClose) modalClose.addEventListener('click', closeDeckModal);
+      if (modalOverlay) {
+        modalOverlay.addEventListener('click', function(e){
+          if (e.target === modalOverlay) closeDeckModal();
+        });
+      }
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape' && modalOverlay.classList.contains('is-open')) closeDeckModal();
+      });
     })();
   </script>
+  <div class="deck-modal-overlay" id="deckModalOverlay">
+    <div class="deck-modal-inner" id="deckModalInner">
+      <button class="deck-modal-close" id="deckModalClose" type="button" aria-label="Close pitch deck viewer">&times;</button>
+    </div>
+  </div>
 
 </body>
 </html>
