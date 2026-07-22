@@ -722,10 +722,87 @@
      and touch swipe. A quick fade+slide stands in for a literal
      page-turn animation.
      ============================================================ */
-  .deck-viewer{
-    max-width:640px;
+  .deck-layout{
+    display:flex;
+    align-items:flex-start;
+    gap:28px;
+    max-width:900px;
     margin:0 auto 64px;
   }
+  .deck-viewer{
+    flex:1 1 auto;
+    min-width:0;
+    max-width:640px;
+  }
+  .deck-sidebar{
+    flex:0 0 220px;
+    width:220px;
+    padding-top:4px;
+  }
+  .deck-sidebar-group{
+    margin-bottom:22px;
+  }
+  .deck-sidebar-group:last-child{ margin-bottom:0; }
+  .deck-sidebar-label{
+    display:block;
+    font-family:var(--font-body);
+    font-size:11px;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    font-weight:700;
+    color:var(--hom-navy);
+    opacity:.6;
+    margin-bottom:8px;
+  }
+  .deck-select{
+    width:100%;
+    font-family:var(--font-body);
+    font-size:13.5px;
+    color:var(--hom-navy);
+    background:#ffffff;
+    border:1px solid rgba(45,59,79,.22);
+    border-radius:8px;
+    padding:10px 12px;
+    cursor:pointer;
+  }
+  .deck-page-jump{
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .deck-page-input{
+    width:56px;
+    font-family:var(--font-body);
+    font-size:13.5px;
+    color:var(--hom-navy);
+    background:#ffffff;
+    border:1px solid rgba(45,59,79,.22);
+    border-radius:8px;
+    padding:10px 10px;
+    text-align:center;
+  }
+  .deck-page-total{
+    font-family:var(--font-body);
+    font-size:12.5px;
+    color:var(--hom-navy);
+    opacity:.55;
+    white-space:nowrap;
+  }
+  .deck-page-go{
+    flex:0 0 auto;
+    font-family:var(--font-body);
+    font-size:12.5px;
+    font-weight:600;
+    color:#ffffff;
+    background:var(--hom-navy);
+    border:none;
+    border-radius:8px;
+    padding:10px 14px;
+    cursor:pointer;
+    transition:background .2s ease;
+  }
+  .deck-page-go:hover{ background:var(--hom-navy-2); }
+
   .deck-frame{
     position:relative;
     background:#ffffff;
@@ -782,8 +859,14 @@
     cursor:pointer;
   }
 
+  @media (max-width:760px){
+    .deck-layout{ flex-direction:column; gap:20px; }
+    .deck-sidebar{ width:100%; flex-basis:auto; }
+    .deck-sidebar-group{ margin-bottom:16px; }
+  }
+
   @media (max-width:640px){
-    .deck-viewer{ margin-bottom:48px; }
+    .deck-layout{ margin-bottom:48px; }
     .deck-nav{ width:32px; height:32px; font-size:15px; }
   }
 
@@ -2042,6 +2125,7 @@
       <h2>Measured by transformation.</h2>
       <p class="impact-lead">Success will not be measured solely by dollars raised or food distributed. Success will be measured by transformation &mdash; and here's what that looks like as real, working goals.</p>
 
+      <div class="deck-layout">
       <div class="deck-viewer" id="deckViewer">
         <div class="deck-frame">
           <button class="deck-nav deck-prev" id="deckPrev" type="button" aria-label="Previous page">&#8249;</button>
@@ -2052,6 +2136,31 @@
           <span class="deck-counter">Page <strong id="deckCurrent">1</strong> / 57</span>
           <input type="range" class="deck-slider" id="deckSlider" min="1" max="57" value="1" aria-label="Jump to page">
         </div>
+      </div>
+
+      <div class="deck-sidebar">
+        <div class="deck-sidebar-group">
+          <label class="deck-sidebar-label" for="deckChapterSelect">Jump to Chapter</label>
+          <select id="deckChapterSelect" class="deck-select">
+            <option value="">Select a chapter&hellip;</option>
+            <option value="3">Ch. 1 &mdash; Executive Vision &amp; Positioning</option>
+            <option value="9">Ch. 2 &mdash; Core Organization Pillars</option>
+            <option value="18">Ch. 3 &mdash; The Academy</option>
+            <option value="27">Ch. 4 &mdash; The Pantry</option>
+            <option value="33">Ch. 5 &mdash; Mobile</option>
+            <option value="39">Ch. 6 &mdash; The Commerce Engine</option>
+            <option value="49">Ch. 7 &mdash; Community Platform</option>
+          </select>
+        </div>
+        <div class="deck-sidebar-group">
+          <label class="deck-sidebar-label" for="deckPageInput">Go to Page</label>
+          <div class="deck-page-jump">
+            <input type="number" id="deckPageInput" class="deck-page-input" min="1" max="57" value="1" inputmode="numeric">
+            <span class="deck-page-total">/ 57</span>
+            <button type="button" id="deckPageGo" class="deck-page-go">Go</button>
+          </div>
+        </div>
+      </div>
       </div>
 
       <div class="goals-grid">
@@ -2848,6 +2957,9 @@
       var nextBtn = document.getElementById('deckNext');
       var counter = document.getElementById('deckCurrent');
       var slider = document.getElementById('deckSlider');
+      var chapterSelect = document.getElementById('deckChapterSelect');
+      var pageInput = document.getElementById('deckPageInput');
+      var pageGoBtn = document.getElementById('deckPageGo');
       var current = 1;
 
       function pad(n){ return n < 10 ? '0' + n : '' + n; }
@@ -2866,6 +2978,8 @@
           img.alt = 'House of Manna pitch deck, page ' + current + ' of ' + TOTAL;
           counter.textContent = current;
           slider.value = current;
+          pageInput.value = current;
+          chapterSelect.value = chapterSelect.querySelector('option[value="' + current + '"]') ? current : '';
           prevBtn.disabled = current === 1;
           nextBtn.disabled = current === TOTAL;
 
@@ -2882,6 +2996,21 @@
       nextBtn.addEventListener('click', function(){ goTo(current + 1, 1); });
       slider.addEventListener('input', function(){
         goTo(parseInt(slider.value, 10));
+      });
+
+      chapterSelect.addEventListener('change', function(){
+        if (!chapterSelect.value) return;
+        goTo(parseInt(chapterSelect.value, 10));
+      });
+
+      function jumpFromInput(){
+        var n = parseInt(pageInput.value, 10);
+        if (isNaN(n)) { pageInput.value = current; return; }
+        goTo(n);
+      }
+      pageGoBtn.addEventListener('click', jumpFromInput);
+      pageInput.addEventListener('keydown', function(e){
+        if (e.key === 'Enter') jumpFromInput();
       });
 
       // keyboard arrows, only when the viewer is in view / focused area
