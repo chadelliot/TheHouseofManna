@@ -2,7 +2,7 @@
   "meta": {
     "title": "House of Manna Funding Pipeline",
     "lastUpdated": "2026-09-18",
-    "note": "Internal management view. Pending funding is not treated as committed until formally awarded."
+    "note": "Internal management view. Pending funding is not treated as committed until formally awarded. Additional food-access prospects researched and added Sept. 18, 2026."
   },
   "grants": [
     {
@@ -25,7 +25,10 @@
       "notes": "Submission confirmed by email on Sept. 18. Truist advised that status communication should arrive approximately 3–4 months after the grant-cycle deadline.",
       "portalUrl": "https://truist.versaic.com/",
       "funderUrl": "https://www.truist.com/purpose/truist-foundation/grant-application",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0
     },
     {
       "id": "sparkplug-loi-2026",
@@ -47,7 +50,10 @@
       "notes": "LOI submission confirmed by email Sept. 18. If invited, full application is expected during the Fall 2026 cycle.",
       "portalUrl": "https://www.sparkplugfoundation.org/apply/",
       "funderUrl": "https://www.sparkplugfoundation.org/information/",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0
     },
     {
       "id": "bcf-baltimore-city-2026",
@@ -69,7 +75,10 @@
       "notes": "BCF submission confirmation received Aug. 19. No decision email found as of Sept. 18.",
       "portalUrl": null,
       "funderUrl": "https://bcf.org/",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0
     },
     {
       "id": "bcf-stronger-neighborhoods-2026",
@@ -91,7 +100,10 @@
       "notes": "BCF submission confirmation received Sept. 11. No decision email found as of Sept. 18.",
       "portalUrl": null,
       "funderUrl": "https://bcf.org/",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0
     },
     {
       "id": "abell-regular-2026",
@@ -113,7 +125,10 @@
       "notes": "Abell responded Sept. 15 that the LOI was not a good fit with the foundation's scope and areas of interest.",
       "portalUrl": null,
       "funderUrl": "https://abell.org/apply/",
-      "lastUpdated": "2026-09-15"
+      "lastUpdated": "2026-09-15",
+      "supportType": "Grant",
+      "fit": "Medium",
+      "awardedAmount": 0
     },
     {
       "id": "abell-small-2026",
@@ -134,7 +149,10 @@
       "notes": "Separate from the declined $25,000 regular-grant LOI. Small Grant submission was confirmed Sept. 14; no separate denial email was found as of Sept. 18.",
       "portalUrl": null,
       "funderUrl": "https://abell.org/grants/small-grants-process/",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0
     },
     {
       "id": "goldseker-2026",
@@ -156,7 +174,10 @@
       "notes": "Goldseker responded Sept. 14 that the project was not a fit for current grantmaking.",
       "portalUrl": null,
       "funderUrl": "https://goldsekerfoundation.org/",
-      "lastUpdated": "2026-09-14"
+      "lastUpdated": "2026-09-14",
+      "supportType": "Grant",
+      "fit": "Medium",
+      "awardedAmount": 0
     },
     {
       "id": "mt-community-food-2026",
@@ -177,7 +198,10 @@
       "notes": "Versaic account activated Sept. 12. No M&T submission-confirmation email was found as of Sept. 18.",
       "portalUrl": "https://mtb.versaic.com/",
       "funderUrl": "https://www.mtb.com/about-us/getting-involved/giving-back/charitable-foundation",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0
     },
     {
       "id": "whole-foods-store-giving-2026",
@@ -198,7 +222,10 @@
       "notes": "Whole Foods Versaic account is active. Benevity approved House of Manna on Sept. 18 and EFT was also approved.",
       "portalUrl": "https://wholefoods.versaic.com/",
       "funderUrl": "https://www.wholefoodsmarket.com/company-info/newsroom/community-giving/store-giving",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0
     },
     {
       "id": "dwf-2026",
@@ -220,7 +247,10 @@
       "notes": "International applicants must receive approval before applying. Eligibility inquiry emailed Sept. 18; no reply found yet.",
       "portalUrl": null,
       "funderUrl": null,
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "Medium",
+      "awardedAmount": 0
     },
     {
       "id": "france-merrick-2026",
@@ -242,7 +272,10 @@
       "notes": "Concept includes cold storage, refrigeration, learning technology and eligible program infrastructure. No sent or received France-Merrick email was found.",
       "portalUrl": null,
       "funderUrl": "https://www.france-merrickfdn.org/",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "Medium",
+      "awardedAmount": 0
     },
     {
       "id": "walmart-spark-good-2026",
@@ -264,7 +297,10 @@
       "notes": "Account verification activity was found, but no grant-submission confirmation was found.",
       "portalUrl": "https://www.walmart.com/nonprofits",
       "funderUrl": "https://walmart.org/how-we-give/local-community-grants",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "Medium",
+      "awardedAmount": 0
     },
     {
       "id": "food-lion-feeds-2026",
@@ -285,7 +321,10 @@
       "notes": "Maryland Food Bank New Partner Interest Form was submitted Sept. 9. No partner-approval email was found.",
       "portalUrl": null,
       "funderUrl": "https://newsroom.foodlion.com/",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "Medium",
+      "awardedAmount": 0
     },
     {
       "id": "carefirst-2026",
@@ -307,7 +346,10 @@
       "notes": "Working concept: $20,000 request against a $30,000 pilot budget. No CareFirst application activity was found in email.",
       "portalUrl": null,
       "funderUrl": null,
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "Medium",
+      "awardedAmount": 0
     },
     {
       "id": "umms-2026",
@@ -328,7 +370,10 @@
       "notes": "The funding tier reviewed required collaboration with another eligible 501(c)(3). House of Manna chose not to pursue at this time.",
       "portalUrl": null,
       "funderUrl": null,
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "Medium",
+      "awardedAmount": 0
     },
     {
       "id": "dreyfus-2027",
@@ -349,7 +394,10 @@
       "notes": "Foundation requires a completed 990-series filing and does not accept substitute financial statements for new organizations.",
       "portalUrl": null,
       "funderUrl": "https://www.mvdreyfusfoundation.org/",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "Medium",
+      "awardedAmount": 0
     },
     {
       "id": "kars4kids-2026",
@@ -370,6 +418,522 @@
       "notes": "Reviewed and intentionally passed on Sept. 18.",
       "portalUrl": null,
       "funderUrl": "https://www.kars4kidsgrants.org/",
+      "lastUpdated": "2026-09-18",
+      "supportType": "Grant",
+      "fit": "Medium",
+      "awardedAmount": 0
+    },
+    {
+      "id": "aldi-community-gift-card-2026",
+      "funder": "ALDI",
+      "opportunity": "ALDI Community Gift Card Program",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ],
+      "supportType": "Gift Card / Food Purchasing",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Apply",
+      "stage": "Open Application",
+      "submittedDate": null,
+      "nextDate": "2026-10-31",
+      "nextAction": "Apply before Oct. 31, 2026 for gift-card support that can be used to purchase pantry products.",
+      "notes": "Direct fit for a new food pantry. ALDI's 2026 program offers $100–$1,000 gifts to qualified nonprofits, including food banks and pantries seeking to purchase essential products. 501(c)(3) documentation is required.",
+      "portalUrl": "https://corporate.aldi.us/corporate-sustainability/community/aldi-community-gift-card-program",
+      "funderUrl": "https://corporate.aldi.us/corporate-sustainability/community/aldi-community-support-programs",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "costco-charitable-contributions-2026",
+      "funder": "Costco Wholesale",
+      "opportunity": "Local Warehouse Charitable Contribution",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development"
+      ],
+      "supportType": "Corporate Donation / Grant",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Apply",
+      "stage": "Rolling Application",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Submit a local-warehouse request focused on food access / health and human services.",
+      "notes": "Costco accepts requests from 501(c)(3) organizations year-round and specifically supports children, education, and health and human services. Local warehouse giving is intended for local organizations and causes.",
+      "portalUrl": "https://www.costco.com/charitable-giving.html",
+      "funderUrl": "https://www.costco.com/f/-/communities-giving",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "harris-teeter-donation-2026",
+      "funder": "Harris Teeter",
+      "opportunity": "Corporate Contribution Request",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ],
+      "supportType": "Cash / Product / Gift Card",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Apply",
+      "stage": "Rolling Request",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Submit a contribution request for pantry food, gift cards, or project support; allow at least six weeks.",
+      "notes": "Harris Teeter lists local food banks as a primary charitable priority and accepts requests from registered 501(c)(3) organizations. Requests may be for cash, product, or gift cards. Proposals above $5,000 are reviewed annually and should reach Harris Teeter by Aug. 1.",
+      "portalUrl": "https://donations.harristeeter.com/request-a-donation",
+      "funderUrl": "https://www.harristeeter.com/i/request-a-donation",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "weis-markets-donation-2026",
+      "funder": "Weis Markets",
+      "opportunity": "Community Donation Request",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ],
+      "supportType": "Gift Card / In-Kind",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Apply",
+      "stage": "Rolling Request",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Submit an online request tied to pantry distributions or a defined community food-access event.",
+      "notes": "Weis Markets specifically supports food banks and emergency food providers. Most donations are made as Weis Markets gift cards; requests should be submitted at least two weeks before the need or event.",
+      "portalUrl": "https://www.weismarkets.com/donation-policy",
+      "funderUrl": "https://www.weismarkets.com/charitable-giving",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "wegmans-community-giving-2026",
+      "funder": "Wegmans",
+      "opportunity": "Donation & Sponsorship Request",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development"
+      ],
+      "supportType": "Donation / Sponsorship",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Apply",
+      "stage": "Rolling Request",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Submit a donation request framed around feeding families and community food access.",
+      "notes": "Wegmans lists feeding the hungry among its core giving priorities and accepts online donation requests. It explicitly states that faith-based agencies may be considered for humanitarian aid such as food for people in need.",
+      "portalUrl": "https://www.wegmans.com/values-in-action/community-giving",
+      "funderUrl": "https://www.wegmans.com/values-in-action/community-giving",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "panera-dough-nation-2026",
+      "funder": "Panera Bread",
+      "opportunity": "Day-End Dough-Nation Program",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ],
+      "supportType": "Recurring In-Kind Food",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Apply",
+      "stage": "Open / Rolling",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Apply for weekly recurring pickup of unsold bread, bagels, and baked goods from a nearby Panera.",
+      "notes": "Panera is always accepting applications. Eligible organizations include registered 501(c)(3)s and religious organizations that distribute donated products to people in need. Participating organizations must commit to weekly, continuous pickup and distribution.",
+      "portalUrl": "https://www.panerabread.com/en-us/food-values/community/day-end-dough-nation.html",
+      "funderUrl": "https://www.panerabread.com/en-us/food-values/community.html",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "trader-joes-neighborhood-shares-2026",
+      "funder": "Trader Joe's",
+      "opportunity": "Neighborhood Shares Food Donation Partnership",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ],
+      "supportType": "Recurring In-Kind Food",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Relationship Prospect",
+      "stage": "Local Store Partnership",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Contact nearby Trader Joe's stores and ask to be considered as a Neighborhood Shares nonprofit partner.",
+      "notes": "Every Trader Joe's store manages its own Neighborhood Shares program and donates unsold but usable food to local nonprofit partners. The program supported more than 2,100 partners nationwide in 2025.",
+      "portalUrl": "https://www.traderjoes.com/home/neighborhood-shares.html",
+      "funderUrl": "https://www.traderjoes.com/home/neighborhood-shares.html",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "sprouts-local-donation-2026",
+      "funder": "Sprouts Farmers Market",
+      "opportunity": "Local Donation & Sponsorship Request",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Health & Wellness"
+      ],
+      "supportType": "Gift Card / In-Kind / Sponsorship",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Apply",
+      "stage": "Rolling Request",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Submit an online donation request and also introduce House of Manna to the Baltimore or Towson store manager.",
+      "notes": "Sprouts accepts donation requests from 501(c)(3) nonprofits and supports local organizations through in-kind donations, gift cards, and sponsorships. Maryland has multiple Sprouts locations, including Baltimore and Towson. Requests should be submitted two months before the month support is needed.",
+      "portalUrl": "https://about.sprouts.com/donation-and-sponsorship-application/",
+      "funderUrl": "https://about.sprouts.com/culture-and-community/",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "sprouts-healthy-communities-2027",
+      "funder": "Sprouts Healthy Communities Foundation",
+      "opportunity": "Nutrition Access / Healthy Communities Grant",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Health & Wellness",
+        "Youth Development"
+      ],
+      "supportType": "Foundation Grant",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Future Cycle / Monitor",
+      "stage": "Future Grant Cycle",
+      "submittedDate": null,
+      "nextDate": "2027-04-01",
+      "nextAction": "Monitor the 2027 grant cycle and cultivate the Baltimore-area Sprouts relationship in advance.",
+      "notes": "Sprouts grants support nutrition access, nutrition education, and wellness. Recent grants have ranged from $5,000 to $10,000. House of Manna is geographically eligible because Sprouts operates multiple Maryland stores. Some larger Healthy Communities / Impact grants are invitation-only.",
+      "portalUrl": "https://about.sprouts.com/culture-and-community/",
+      "funderUrl": "https://about.sprouts.com/culture-and-community/",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "target-community-engagement-2027",
+      "funder": "Target",
+      "opportunity": "Community Engagement Funds — Thriving Families",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development",
+        "Youth Development"
+      ],
+      "supportType": "Corporate Grant",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Future Cycle / Monitor",
+      "stage": "Next Application Cycle",
+      "submittedDate": null,
+      "nextDate": "2027-04-01",
+      "nextAction": "Prepare for the next Target Community Engagement Funds cycle expected to reopen in spring 2027.",
+      "notes": "Target's Community Engagement Funds provide $1,000–$15,000 grants to eligible 501(c)(3) public charities. Thriving Families includes basic needs and youth development. The 2026 Cycle 2 window closed Sept. 4; Target directs applicants to return in April 2027.",
+      "portalUrl": "https://corporate.target.com/about/purpose-history/communities/grants-corporate-giving/community-engagement-funds",
+      "funderUrl": "https://corporate.target.com/about/purpose-history/communities/grants-corporate-giving/community-engagement-funds",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "bank-of-america-basic-needs-2027",
+      "funder": "Bank of America Charitable Foundation",
+      "opportunity": "Basic Needs & Income Creation RFP",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development"
+      ],
+      "supportType": "Foundation Grant",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Future Cycle / Monitor",
+      "stage": "Next RFP Cycle",
+      "submittedDate": null,
+      "nextDate": "2027-01-15",
+      "nextAction": "Complete NPO Hub readiness and monitor for 2027 Basic Needs application dates.",
+      "notes": "Bank of America explicitly funds hunger and basic-needs organizations and accepts applications during posted RFP cycles. Organizations must register with NPO Hub and accept ACH payments. The 2026 Basic Needs cycle ran Feb. 2–Mar. 2.",
+      "portalUrl": "https://about.bankofamerica.com/en/making-an-impact/charitable-foundation-grant-faq",
+      "funderUrl": "https://about.bankofamerica.com/en/making-an-impact/charitable-foundation-grant-faq",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "trowe-price-foundation-inquiry-2026",
+      "funder": "T. Rowe Price Foundation",
+      "opportunity": "Baltimore Nonprofit Grant Inquiry",
+      "program": "Community Development",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development"
+      ],
+      "supportType": "Foundation Grant / Inquiry",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Inquire",
+      "stage": "Pre-Application Inquiry",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Submit an unsolicited inquiry focused on Baltimore food access, nonprofit capacity, and family stability.",
+      "notes": "T. Rowe Price Foundation primarily supports nonprofits in Baltimore and provides unrestricted general-operating grants. Most grants are invitation-only, but the Foundation states that it reviews unsolicited proposals submitted by inquiry form or email.",
+      "portalUrl": "https://www.troweprice.com/en/is/about-us/corporate-responsibility/trp-foundation",
+      "funderUrl": "https://www.troweprice.com/en/is/about-us/corporate-responsibility/trp-foundation",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "mccormick-charitable-donations-2026",
+      "funder": "McCormick & Company",
+      "opportunity": "Corporate Charitable Donations Committee Request",
+      "program": "Health & Wellness",
+      "programs": [
+        "Food Access & Pantry",
+        "Health & Wellness",
+        "Community Development"
+      ],
+      "supportType": "Corporate Grant / Donation",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Apply",
+      "stage": "Direct Corporate Request",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Prepare a one-page request emphasizing Baltimore food access, nutrition, and community health; submit to McCormick's CDC.",
+      "notes": "McCormick accepts first-time charitable requests from qualifying nonprofits and prioritizes communities where its employees live and work. Health and Wellness is a stated focus area, and McCormick has a longstanding Maryland Food Bank relationship.",
+      "portalUrl": "https://www.mccormickcorporation.com/responsibility/charitable-donations",
+      "funderUrl": "https://www.mccormickcorporation.com/responsibility/charitable-donations",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "bge-exelon-community-grants-2026",
+      "funder": "BGE / Exelon",
+      "opportunity": "Operating Company Community Grant Inquiry",
+      "program": "Community Development",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development",
+        "Facility & Infrastructure"
+      ],
+      "supportType": "Corporate Grant",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Inquire",
+      "stage": "Eligibility / Inquiry",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Submit a BGE operating-company inquiry under local vitality / family resilience and describe the food-access project.",
+      "notes": "Exelon invites new organizations to review operating-company programs and use an inquiry form. Its local-vitality giving supports families, resilience, and stronger communities. BGE serves central Maryland, including Baltimore.",
+      "portalUrl": "https://www.exeloncorp.com/community/grants",
+      "funderUrl": "https://www.exeloncorp.com/community/grants",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "united-way-central-md-resiliency-2027",
+      "funder": "United Way of Central Maryland",
+      "opportunity": "United for Good Nonprofit Resiliency Grant",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development"
+      ],
+      "supportType": "Local Foundation Grant",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Future Cycle / Monitor",
+      "stage": "Current Cycle Closed",
+      "submittedDate": null,
+      "nextDate": "2027-01-15",
+      "nextAction": "Monitor for the next resiliency/basic-needs funding opportunity and prepare a food-access sustainability case.",
+      "notes": "The 2026 program awarded $2,500–$25,000 to Central Maryland 501(c)(3)s supporting basic needs. Baltimore Hunger Project and other community-based organizations were among 2026 recipients. The current cycle is closed.",
+      "portalUrl": "https://uwcm.org/grants-funding-opportunities/",
+      "funderUrl": "https://uwcm.org/grants-funding-opportunities/",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "ravens-play60-2027",
+      "funder": "Baltimore Ravens Foundation",
+      "opportunity": "PLAY 60 Grant — Nutrition Education",
+      "program": "Youth Development",
+      "programs": [
+        "Food Access & Pantry",
+        "Youth Development",
+        "Health & Wellness"
+      ],
+      "supportType": "Local Foundation Grant",
+      "fit": "Medium",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Future Cycle / Monitor",
+      "stage": "Future Application Cycle",
+      "submittedDate": null,
+      "nextDate": "2027-04-01",
+      "nextAction": "Develop a youth nutrition / food-literacy component connected to the pantry and monitor for the next PLAY 60 cycle.",
+      "notes": "PLAY 60 provides up to $10,000 to Maryland 501(c)(3)s for youth ages 5–18 programs focused on physical fitness and/or nutrition education. It is not a direct food-purchasing grant, so the best House of Manna angle is youth nutrition education tied to food access.",
+      "portalUrl": "https://www.baltimoreravens.com/play60grant",
+      "funderUrl": "https://www.baltimoreravens.com/news/press-release-ravens-foundation-accepting-application-for-play-60-grant",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "chickfila-true-inspiration-2028",
+      "funder": "Chick-fil-A",
+      "opportunity": "True Inspiration Awards — Caring Through Food",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Youth Development",
+        "Community Development"
+      ],
+      "supportType": "National Corporate Grant",
+      "fit": "Medium",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Future Cycle / Monitor",
+      "stage": "Next Award Cycle",
+      "submittedDate": null,
+      "nextDate": "2027-02-01",
+      "nextAction": "Build outcomes and a local Chick-fil-A operator relationship before the next application cycle opens.",
+      "notes": "True Inspiration Awards grants range from $30,000 to $350,000. The Caring Through Food category supports programs addressing hunger and food insecurity among children and families. The 2027 application cycle is closed, so this is a future-cycle target.",
+      "portalUrl": "https://www.chick-fil-a.com/true-inspiration-awards/learn-more",
+      "funderUrl": "https://www.chick-fil-a.com/true-inspiration-awards",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "conagra-community-impact-2026",
+      "funder": "Conagra Brands Foundation",
+      "opportunity": "Community Impact Grant — Food Insecurity",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development",
+        "Education & Workforce"
+      ],
+      "supportType": "Foundation Grant",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Apply",
+      "stage": "Rolling LOI",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Submit a rolling LOI focused on food access and, secondarily, entrepreneurship / farm-to-fork skills.",
+      "notes": "Conagra accepts one online LOI from eligible U.S. 501(c)(3) public charities on a rolling basis. Its core focus areas include food insecurity, food access, nutrition education, cooking skills, and entrepreneurial skills connected to the farm-to-fork economy.",
+      "portalUrl": "https://www.conagrabrands.com/our-company/conagra-brands-foundation/community-impact-grants",
+      "funderUrl": "https://www.conagrabrands.com/our-company/conagra-brands-foundation",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "bjs-hunger-relief-2026",
+      "funder": "BJ's Charitable Foundation",
+      "opportunity": "Hunger Relief / Feeding Communities Partnership",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution",
+        "Youth Development"
+      ],
+      "supportType": "Foundation / Relationship Grant",
+      "fit": "Medium",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Relationship Prospect",
+      "stage": "Relationship Development",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Approach local BJ's community leadership and explore whether House of Manna can enter the foundation's hunger-relief pipeline as capacity grows.",
+      "notes": "BJ's Charitable Foundation lists Hunger Relief as a core giving pillar and has funded school pantries, food banks, equipment, and direct-access food programs, including a $50,000 grant to the Maryland Food Bank. Public materials do not show a simple open application path, so relationship-building is the first step.",
+      "portalUrl": "https://careers.bjs.com/purpose/",
+      "funderUrl": "https://newsroom.bjs.com/press-releases/news-details/2020/BJs-Charitable-Foundation-Donates-50000-to-Support-the-Maryland-Food-Banks-School-Pantry-Program/default.aspx",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "pepsico-community-impact-2027",
+      "funder": "PepsiCo Foundation",
+      "opportunity": "Community Impact Awards / Food for Good Partnership",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development",
+        "Education & Workforce"
+      ],
+      "supportType": "Employee-Nominated Grant / Partnership",
+      "fit": "Medium",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Relationship Prospect",
+      "stage": "Employee / Partner Relationship",
+      "submittedDate": null,
+      "nextDate": "2027-01-15",
+      "nextAction": "Identify a PepsiCo employee advocate or explore Food for Good partnership outreach rather than submitting an unsolicited funding proposal.",
+      "notes": "PepsiCo's 2026 Community Impact Awards provided $5,000 employee-nominated grants to 100 local nonprofits, including organizations expanding food access. Food for Good invites partnership conversations, but PepsiCo states that it does not accept unsolicited proposals for funding.",
+      "portalUrl": "https://www.pepsico.com/en/about/pepsico-foundation",
+      "funderUrl": "https://www.pepsico.com/en/about/pepsico-foundation",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "safeway-eastern-hunger-2026",
+      "funder": "Safeway Foundation — Eastern",
+      "opportunity": "Hunger Priority / Local Store Gift Card Support",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ],
+      "supportType": "Gift Card / Invitation-Only Grant",
+      "fit": "Medium",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready to Pursue Local Support",
+      "stage": "Store-Level / Relationship",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Request local-store gift-card support now and build toward an invitation to a larger hunger-focused RFP.",
+      "notes": "Safeway Foundation's Eastern region includes Maryland and lists Hunger as a priority. Larger foundation grants are invitation-only through RFPs, but local store directors may consider written gift-card requests of $50 or less from eligible nonprofits.",
+      "portalUrl": "https://safewayfoundation.org/get-funded/grant-funding-guidelines-eastern-dc-va-md-de/",
+      "funderUrl": "https://safewayfoundation.org/get-funded/grant-funding-guidelines-eastern-dc-va-md-de/",
       "lastUpdated": "2026-09-18"
     }
   ]
