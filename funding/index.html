@@ -57,13 +57,13 @@
       border-radius:10px;
       font-size:13px;
     }
-    .kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:18px 0 22px}
+    .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:18px 0 22px}
     .kpi{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 17px;box-shadow:var(--shadow)}
     .kpi .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}
     .kpi .value{font-size:27px;font-weight:700;color:var(--navy);margin-top:5px}
     .toolbar{
       background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;
-      display:grid;grid-template-columns:minmax(230px,2fr) repeat(3,minmax(150px,1fr)) auto;gap:10px;
+      display:grid;grid-template-columns:minmax(230px,2fr) repeat(4,minmax(145px,1fr)) auto;gap:10px;
       box-shadow:var(--shadow);margin-bottom:14px
     }
     input,select,button{font:inherit}
@@ -167,6 +167,7 @@
       <div class="kpi"><div class="label">Known Active Ask</div><div class="value" id="kpiAsk">$0</div></div>
       <div class="kpi"><div class="label">Needs Action</div><div class="value" id="kpiAction">0</div></div>
       <div class="kpi"><div class="label">Declined</div><div class="value" id="kpiDeclined">0</div></div>
+      <div class="kpi"><div class="label">Funding Acquired</div><div class="value" id="kpiAcquired">$0</div></div>
     </section>
 
     <section class="toolbar">
@@ -174,6 +175,7 @@
       <select id="statusFilter" class="control"><option value="">All statuses</option></select>
       <select id="programFilter" class="control"><option value="">All program types</option></select>
       <select id="stageFilter" class="control"><option value="">All stages</option></select>
+      <select id="supportTypeFilter" class="control"><option value="">All support types</option></select>
       <button id="exportCsv" class="btn">Export CSV</button>
     </section>
 
@@ -182,6 +184,7 @@
       <button class="chip" data-view="active">Active</button>
       <button class="chip" data-view="pending">Pending</button>
       <button class="chip" data-view="action">Needs Action</button>
+      <button class="chip" data-view="foodbank">Food Bank Opportunities</button>
       <button class="chip" data-view="declined">Declined</button>
       <button class="chip" data-view="closed">Closed / Not Pursuing</button>
     </div>
@@ -193,6 +196,7 @@
             <tr>
               <th>Funder / Opportunity</th>
               <th>Program Type</th>
+              <th>Support Type</th>
               <th>Ask</th>
               <th>Status</th>
               <th>Submitted</th>
@@ -219,7 +223,7 @@ let quickView = 'all';
 
 const closedStatuses = ['Declined','Not Eligible Yet','Not Pursuing','Passed / Not Pursuing'];
 const pendingStatuses = ['Submitted / Pending','LOI Submitted / Pending','Eligibility Inquiry Pending'];
-const actionStatuses = ['Application In Progress','Ready to Apply','Drafting','Setup In Progress','Prospect / Not Started'];
+const actionStatuses = ['Application In Progress','Ready to Apply','Ready to Inquire','Ready to Pursue Local Support','Drafting','Setup In Progress','Prospect / Not Started','Relationship Prospect'];
 
 const fmtMoney = (amount, currency='USD') => {
   if (amount === null || amount === undefined || amount === '') return '—';
@@ -249,9 +253,11 @@ function populateFilters(){
   const statuses=[...new Set(DATA.map(g=>g.status))].sort();
   const programs=[...new Set(DATA.flatMap(g=>g.programs||[g.program]))].sort();
   const stages=[...new Set(DATA.map(g=>g.stage).filter(Boolean))].sort();
+  const supportTypes=[...new Set(DATA.map(g=>g.supportType||'Grant'))].sort();
   fillSelect('statusFilter',statuses);
   fillSelect('programFilter',programs);
   fillSelect('stageFilter',stages);
+  fillSelect('supportTypeFilter',supportTypes);
 }
 function fillSelect(id,values){
   const s=document.getElementById(id);
@@ -264,18 +270,23 @@ function updateKpis(){
   document.getElementById('kpiAsk').textContent=fmtMoney(knownAsk);
   document.getElementById('kpiAction').textContent=DATA.filter(g=>isActive(g)&&needsAction(g)).length;
   document.getElementById('kpiDeclined').textContent=DATA.filter(g=>g.status==='Declined').length;
+  const acquired=DATA.reduce((a,g)=>a+(Number(g.awardedAmount)||0),0);
+  document.getElementById('kpiAcquired').textContent=fmtMoney(acquired);
 }
 function filteredData(){
   const q=document.getElementById('search').value.trim().toLowerCase();
   const status=document.getElementById('statusFilter').value;
   const program=document.getElementById('programFilter').value;
   const stage=document.getElementById('stageFilter').value;
+  const supportType=document.getElementById('supportTypeFilter').value;
   return DATA.filter(g=>{
     const hay=[g.funder,g.opportunity,g.program,g.status,g.stage,g.notes,g.nextAction,...(g.programs||[])].join(' ').toLowerCase();
     if(q && !hay.includes(q)) return false;
     if(status && g.status!==status) return false;
     if(program && !(g.programs||[g.program]).includes(program)) return false;
     if(stage && g.stage!==stage) return false;
+    if(supportType && (g.supportType||'Grant')!==supportType) return false;
+    if(quickView==='foodbank' && !(g.programs||[g.program]).includes('Food Access & Pantry')) return false;
     if(quickView==='active' && !isActive(g)) return false;
     if(quickView==='pending' && !isPending(g)) return false;
     if(quickView==='action' && !(isActive(g)&&needsAction(g))) return false;
@@ -300,6 +311,7 @@ function render(){
     tr.innerHTML=
       '<td><div class="funder">'+escapeHtml(g.funder)+'</div><div class="opportunity">'+escapeHtml(g.opportunity)+'</div></td>'+
       '<td><span class="program-pill">'+escapeHtml(g.program)+'</span></td>'+
+      '<td><span class="program-pill">'+escapeHtml(g.supportType||'Grant')+'</span></td>'+
       '<td class="amount">'+escapeHtml(fmtMoney(g.askAmount,g.currency))+'</td>'+
       '<td><span class="status-pill '+statusClass(g.status)+'">'+escapeHtml(g.status)+'</span><div class="opportunity" style="margin-top:5px">'+escapeHtml(g.stage||'')+'</div></td>'+
       '<td class="date">'+escapeHtml(fmtDate(g.submittedDate))+'</td>'+
@@ -309,19 +321,19 @@ function render(){
     const detail=document.createElement('tr');
     detail.className='detail-row';
     detail.id='detail-'+g.id;
-    detail.innerHTML='<td colspan="8"><div class="detail-panel">'+
+    detail.innerHTML='<td colspan="9"><div class="detail-panel">'+
       '<div><div class="detail-title">Notes</div>'+escapeHtml(g.notes||'No notes.')+'</div>'+
       '<div><div class="detail-title">Applicable Programs</div>'+(g.programs||[]).map(x=>'<span class="tag">'+escapeHtml(x)+'</span>').join('')+'</div>'+
-      '<div><div class="detail-title">Record</div><div><strong>Last updated:</strong> '+escapeHtml(fmtDate(g.lastUpdated))+'</div><div><strong>ID:</strong> '+escapeHtml(g.id)+'</div></div>'+
+      '<div><div class="detail-title">Record</div><div><strong>House of Manna fit:</strong> '+escapeHtml(g.fit||'—')+'</div><div><strong>Support type:</strong> '+escapeHtml(g.supportType||'Grant')+'</div><div><strong>Last updated:</strong> '+escapeHtml(fmtDate(g.lastUpdated))+'</div><div><strong>ID:</strong> '+escapeHtml(g.id)+'</div></div>'+
       '</div></td>';
     tr.addEventListener('click',e=>{if(e.target.closest('a')) return; detail.classList.toggle('open');});
     rows.appendChild(tr);rows.appendChild(detail);
   });
 }
 function exportCsv(){
-  const cols=['Funder','Opportunity','Program','Ask Amount','Currency','Status','Stage','Submitted Date','Next Date','Next Action','Notes'];
+  const cols=['Funder','Opportunity','Program','Support Type','House of Manna Fit','Ask Amount','Awarded Amount','Currency','Status','Stage','Submitted Date','Next Date','Next Action','Notes'];
   const lines=[cols];
-  filteredData().forEach(g=>lines.push([g.funder,g.opportunity,g.program,g.askAmount??'',g.currency,g.status,g.stage,g.submittedDate||'',g.nextDate||'',g.nextAction,g.notes]));
+  filteredData().forEach(g=>lines.push([g.funder,g.opportunity,g.program,g.supportType||'Grant',g.fit||'',g.askAmount??'',g.awardedAmount??0,g.currency,g.status,g.stage,g.submittedDate||'',g.nextDate||'',g.nextAction,g.notes]));
   const csv=lines.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\n');
   const blob=new Blob([csv],{type:'text/csv'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='house-of-manna-funding-pipeline.csv';a.click();URL.revokeObjectURL(a.href);
@@ -334,10 +346,10 @@ fetch('./grants.json',{cache:'no-store'})
     populateFilters();updateKpis();render();
   })
   .catch(err=>{
-    document.getElementById('rows').innerHTML='<tr><td colspan="8" class="empty">Unable to load funding data. '+escapeHtml(err.message)+'</td></tr>';
+    document.getElementById('rows').innerHTML='<tr><td colspan="9" class="empty">Unable to load funding data. '+escapeHtml(err.message)+'</td></tr>';
   });
 
-['search','statusFilter','programFilter','stageFilter'].forEach(id=>document.getElementById(id).addEventListener('input',render));
+['search','statusFilter','programFilter','stageFilter','supportTypeFilter'].forEach(id=>document.getElementById(id).addEventListener('input',render));
 document.getElementById('exportCsv').addEventListener('click',exportCsv);
 document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',()=>{
   document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active'));
