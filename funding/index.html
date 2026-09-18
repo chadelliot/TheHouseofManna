@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Funding Pipeline | The House of Manna</title>
+  <style>
+    :root{
+      --navy:#172334;
+      --navy-2:#223149;
+      --gold:#C8941F;
+      --cream:#F7F4EC;
+      --sage:#8E9C85;
+      --ink:#243041;
+      --muted:#687385;
+      --line:#DCE1E7;
+      --white:#FFFFFF;
+      --green:#2E7D5B;
+      --amber:#B7791F;
+      --red:#A94442;
+      --blue:#2F6E9E;
+      --purple:#7253A3;
+      --gray:#737B86;
+      --shadow:0 12px 30px rgba(23,35,52,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--cream);
+      color:var(--ink);
+      font-family:Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a{color:inherit}
+    .topbar{
+      background:var(--navy);
+      color:#fff;
+      padding:18px 0;
+      border-bottom:4px solid var(--gold);
+    }
+    .wrap{width:min(1480px,94vw);margin:0 auto}
+    .brand{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand h1{font-family:Georgia,serif;font-size:24px;margin:0;font-weight:500;letter-spacing:.02em}
+    .brand .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D9C28E;margin-bottom:4px}
+    .back-link{font-size:13px;text-decoration:none;border:1px solid rgba(255,255,255,.2);padding:9px 12px;border-radius:10px}
+    .hero{padding:38px 0 18px}
+    .hero-grid{display:grid;grid-template-columns:1.5fr .5fr;gap:28px;align-items:end}
+    .hero h2{font-family:Georgia,serif;font-size:42px;line-height:1.06;margin:0 0 10px;color:var(--navy)}
+    .hero p{margin:0;color:var(--muted);max-width:850px;line-height:1.55}
+    .updated{text-align:right;font-size:12px;color:var(--muted)}
+    .notice{
+      margin:14px 0 22px;
+      background:#FFF9E9;
+      border:1px solid #E9D7A3;
+      color:#69521F;
+      padding:12px 14px;
+      border-radius:10px;
+      font-size:13px;
+    }
+    .kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:18px 0 22px}
+    .kpi{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 17px;box-shadow:var(--shadow)}
+    .kpi .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}
+    .kpi .value{font-size:27px;font-weight:700;color:var(--navy);margin-top:5px}
+    .toolbar{
+      background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;
+      display:grid;grid-template-columns:minmax(230px,2fr) repeat(3,minmax(150px,1fr)) auto;gap:10px;
+      box-shadow:var(--shadow);margin-bottom:14px
+    }
+    input,select,button{font:inherit}
+    .control{
+      width:100%;border:1px solid var(--line);background:#fff;color:var(--ink);
+      border-radius:9px;padding:11px 12px;outline:none
+    }
+    .control:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,148,31,.12)}
+    .btn{
+      border:0;border-radius:9px;padding:11px 14px;font-weight:700;cursor:pointer;background:var(--navy);color:#fff
+    }
+    .btn.secondary{background:#EEF1F4;color:var(--navy)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+    .chip{
+      border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:8px 11px;font-size:12px;cursor:pointer
+    }
+    .chip.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+    .table-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:50px}
+    .table-scroll{overflow:auto}
+    table{border-collapse:collapse;width:100%;min-width:1180px}
+    thead th{
+      background:#F1F3F5;color:#596474;text-transform:uppercase;letter-spacing:.06em;font-size:10px;
+      text-align:left;padding:12px;border-bottom:1px solid var(--line);white-space:nowrap
+    }
+    tbody td{padding:13px 12px;border-bottom:1px solid #EDF0F2;vertical-align:top;font-size:13px}
+    tbody tr.main-row{cursor:pointer}
+    tbody tr.main-row:hover{background:#FBFCFD}
+    .funder{font-weight:800;color:var(--navy);margin-bottom:3px}
+    .opportunity{color:var(--muted);line-height:1.35}
+    .program-pill,.status-pill{
+      display:inline-block;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:700;white-space:nowrap
+    }
+    .program-pill{background:#EEF1EC;color:#52604C}
+    .status-pill{border:1px solid transparent}
+    .status-pending{background:#FFF4D8;color:#805B00;border-color:#F0D48B}
+    .status-progress{background:#EAF2FB;color:#285D8A;border-color:#BCD1E4}
+    .status-declined{background:#FBE8E7;color:#8B3432;border-color:#E8B7B4}
+    .status-ready{background:#E8F5EE;color:#286247;border-color:#B8DCC8}
+    .status-ineligible{background:#F0F1F3;color:#616872;border-color:#D6D9DD}
+    .status-passed{background:#F3EEF8;color:#67478C;border-color:#D9C9E8}
+    .amount{font-weight:800;color:var(--navy);white-space:nowrap}
+    .date{white-space:nowrap;color:#586273}
+    .action{max-width:280px;line-height:1.4}
+    .link-btn{
+      display:inline-block;text-decoration:none;background:var(--navy);color:#fff;border-radius:7px;padding:7px 9px;font-size:11px;font-weight:700;margin:2px 3px 2px 0
+    }
+    .link-btn.alt{background:#EFF2F5;color:var(--navy)}
+    .detail-row{display:none}
+    .detail-row.open{display:table-row}
+    .detail-panel{
+      padding:16px 18px;background:#FAFBFC;border-bottom:1px solid var(--line);
+      display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:20px;line-height:1.5
+    }
+    .detail-title{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800;margin-bottom:5px}
+    .tag{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 8px;margin:2px;font-size:11px}
+    .empty{padding:48px;text-align:center;color:var(--muted)}
+    .footer{padding:0 0 35px;color:var(--muted);font-size:12px}
+    .footer strong{color:var(--navy)}
+    @media(max-width:980px){
+      .hero-grid{grid-template-columns:1fr}.updated{text-align:left}
+      .kpis{grid-template-columns:repeat(2,1fr)}
+      .toolbar{grid-template-columns:1fr 1fr}.toolbar .search{grid-column:1/-1}
+    }
+    @media(max-width:620px){
+      .hero h2{font-size:32px}.kpis{grid-template-columns:1fr 1fr}
+      .toolbar{grid-template-columns:1fr}
+      .toolbar .search{grid-column:auto}
+      .brand{align-items:flex-start;flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap brand">
+      <div>
+        <div class="eyebrow">The House of Manna</div>
+        <h1>Funding Management</h1>
+      </div>
+      <a class="back-link" href="../">Return to HouseofMannaMD.com</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h2>Grant & Funding Pipeline</h2>
+          <p>Track opportunities from research through award, filter them by House of Manna program area, and keep the next action visible without digging through email or grant portals.</p>
+        </div>
+        <div class="updated">Last updated: <strong id="lastUpdated">—</strong></div>
+      </div>
+    </section>
+
+    <div class="notice">
+      This page is intentionally marked <strong>noindex</strong> and is not linked from the public site navigation. GitHub Pages is still public hosting, so do not store passwords, banking information, private documents, EIN documentation, or confidential portal links here.
+    </div>
+
+    <section class="kpis">
+      <div class="kpi"><div class="label">Active Pipeline</div><div class="value" id="kpiActive">0</div></div>
+      <div class="kpi"><div class="label">Submitted / Pending</div><div class="value" id="kpiPending">0</div></div>
+      <div class="kpi"><div class="label">Known Active Ask</div><div class="value" id="kpiAsk">$0</div></div>
+      <div class="kpi"><div class="label">Needs Action</div><div class="value" id="kpiAction">0</div></div>
+      <div class="kpi"><div class="label">Declined</div><div class="value" id="kpiDeclined">0</div></div>
+    </section>
+
+    <section class="toolbar">
+      <input id="search" class="control search" type="search" placeholder="Search funder, opportunity, notes, next action..." />
+      <select id="statusFilter" class="control"><option value="">All statuses</option></select>
+      <select id="programFilter" class="control"><option value="">All program types</option></select>
+      <select id="stageFilter" class="control"><option value="">All stages</option></select>
+      <button id="exportCsv" class="btn">Export CSV</button>
+    </section>
+
+    <div class="chips">
+      <button class="chip active" data-view="all">All</button>
+      <button class="chip" data-view="active">Active</button>
+      <button class="chip" data-view="pending">Pending</button>
+      <button class="chip" data-view="action">Needs Action</button>
+      <button class="chip" data-view="declined">Declined</button>
+      <button class="chip" data-view="closed">Closed / Not Pursuing</button>
+    </div>
+
+    <section class="table-card">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Funder / Opportunity</th>
+              <th>Program Type</th>
+              <th>Ask</th>
+              <th>Status</th>
+              <th>Submitted</th>
+              <th>Next Date</th>
+              <th>Next Action</th>
+              <th>Links</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <div id="empty" class="empty" hidden>No grants match the current filters.</div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <strong>Management note:</strong> Pending applications are not committed revenue. Update <code>funding/grants.json</code> as applications move through the pipeline.
+  </footer>
+
+<script>
+let DATA = [];
+let META = {};
+let quickView = 'all';
+
+const closedStatuses = ['Declined','Not Eligible Yet','Not Pursuing','Passed / Not Pursuing'];
+const pendingStatuses = ['Submitted / Pending','LOI Submitted / Pending','Eligibility Inquiry Pending'];
+const actionStatuses = ['Application In Progress','Ready to Apply','Drafting','Setup In Progress','Prospect / Not Started'];
+
+const fmtMoney = (amount, currency='USD') => {
+  if (amount === null || amount === undefined || amount === '') return '—';
+  try { return new Intl.NumberFormat('en-US',{style:'currency',currency,maximumFractionDigits:0}).format(amount); }
+  catch(e){ return currency + ' ' + Number(amount).toLocaleString(); }
+};
+const fmtDate = value => {
+  if (!value) return '—';
+  const d = new Date(value + 'T12:00:00');
+  return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+};
+const escapeHtml = str => String(str ?? '').replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[s]));
+const statusClass = status => {
+  if (status.includes('Declined')) return 'status-declined';
+  if (status.includes('Pending')) return 'status-pending';
+  if (status.includes('Ready')) return 'status-ready';
+  if (status.includes('In Progress') || status.includes('Drafting') || status.includes('Setup') || status.includes('Prospect')) return 'status-progress';
+  if (status.includes('Not Eligible') || status.includes('Not Pursuing')) return 'status-ineligible';
+  if (status.includes('Passed')) return 'status-passed';
+  return 'status-progress';
+};
+const isActive = g => !closedStatuses.includes(g.status);
+const needsAction = g => actionStatuses.includes(g.status);
+const isPending = g => pendingStatuses.includes(g.status);
+
+function populateFilters(){
+  const statuses=[...new Set(DATA.map(g=>g.status))].sort();
+  const programs=[...new Set(DATA.flatMap(g=>g.programs||[g.program]))].sort();
+  const stages=[...new Set(DATA.map(g=>g.stage).filter(Boolean))].sort();
+  fillSelect('statusFilter',statuses);
+  fillSelect('programFilter',programs);
+  fillSelect('stageFilter',stages);
+}
+function fillSelect(id,values){
+  const s=document.getElementById(id);
+  values.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;s.appendChild(o);});
+}
+function updateKpis(){
+  document.getElementById('kpiActive').textContent=DATA.filter(isActive).length;
+  document.getElementById('kpiPending').textContent=DATA.filter(isPending).length;
+  const knownAsk=DATA.filter(isActive).filter(g=>g.currency==='USD').reduce((a,g)=>a+(Number(g.askAmount)||0),0);
+  document.getElementById('kpiAsk').textContent=fmtMoney(knownAsk);
+  document.getElementById('kpiAction').textContent=DATA.filter(g=>isActive(g)&&needsAction(g)).length;
+  document.getElementById('kpiDeclined').textContent=DATA.filter(g=>g.status==='Declined').length;
+}
+function filteredData(){
+  const q=document.getElementById('search').value.trim().toLowerCase();
+  const status=document.getElementById('statusFilter').value;
+  const program=document.getElementById('programFilter').value;
+  const stage=document.getElementById('stageFilter').value;
+  return DATA.filter(g=>{
+    const hay=[g.funder,g.opportunity,g.program,g.status,g.stage,g.notes,g.nextAction,...(g.programs||[])].join(' ').toLowerCase();
+    if(q && !hay.includes(q)) return false;
+    if(status && g.status!==status) return false;
+    if(program && !(g.programs||[g.program]).includes(program)) return false;
+    if(stage && g.stage!==stage) return false;
+    if(quickView==='active' && !isActive(g)) return false;
+    if(quickView==='pending' && !isPending(g)) return false;
+    if(quickView==='action' && !(isActive(g)&&needsAction(g))) return false;
+    if(quickView==='declined' && g.status!=='Declined') return false;
+    if(quickView==='closed' && !closedStatuses.includes(g.status)) return false;
+    return true;
+  });
+}
+function render(){
+  const rows=document.getElementById('rows');
+  rows.innerHTML='';
+  const list=filteredData();
+  document.getElementById('empty').hidden=list.length>0;
+  list.forEach(g=>{
+    const tr=document.createElement('tr');
+    tr.className='main-row';
+    tr.dataset.id=g.id;
+    const links=[
+      g.portalUrl ? '<a class="link-btn" href="'+escapeHtml(g.portalUrl)+'" target="_blank" rel="noopener">Portal</a>' : '',
+      g.funderUrl ? '<a class="link-btn alt" href="'+escapeHtml(g.funderUrl)+'" target="_blank" rel="noopener">Funder</a>' : ''
+    ].join('');
+    tr.innerHTML=
+      '<td><div class="funder">'+escapeHtml(g.funder)+'</div><div class="opportunity">'+escapeHtml(g.opportunity)+'</div></td>'+
+      '<td><span class="program-pill">'+escapeHtml(g.program)+'</span></td>'+
+      '<td class="amount">'+escapeHtml(fmtMoney(g.askAmount,g.currency))+'</td>'+
+      '<td><span class="status-pill '+statusClass(g.status)+'">'+escapeHtml(g.status)+'</span><div class="opportunity" style="margin-top:5px">'+escapeHtml(g.stage||'')+'</div></td>'+
+      '<td class="date">'+escapeHtml(fmtDate(g.submittedDate))+'</td>'+
+      '<td class="date">'+escapeHtml(fmtDate(g.nextDate))+'</td>'+
+      '<td class="action">'+escapeHtml(g.nextAction||'—')+'</td>'+
+      '<td>'+links+'</td>';
+    const detail=document.createElement('tr');
+    detail.className='detail-row';
+    detail.id='detail-'+g.id;
+    detail.innerHTML='<td colspan="8"><div class="detail-panel">'+
+      '<div><div class="detail-title">Notes</div>'+escapeHtml(g.notes||'No notes.')+'</div>'+
+      '<div><div class="detail-title">Applicable Programs</div>'+(g.programs||[]).map(x=>'<span class="tag">'+escapeHtml(x)+'</span>').join('')+'</div>'+
+      '<div><div class="detail-title">Record</div><div><strong>Last updated:</strong> '+escapeHtml(fmtDate(g.lastUpdated))+'</div><div><strong>ID:</strong> '+escapeHtml(g.id)+'</div></div>'+
+      '</div></td>';
+    tr.addEventListener('click',e=>{if(e.target.closest('a')) return; detail.classList.toggle('open');});
+    rows.appendChild(tr);rows.appendChild(detail);
+  });
+}
+function exportCsv(){
+  const cols=['Funder','Opportunity','Program','Ask Amount','Currency','Status','Stage','Submitted Date','Next Date','Next Action','Notes'];
+  const lines=[cols];
+  filteredData().forEach(g=>lines.push([g.funder,g.opportunity,g.program,g.askAmount??'',g.currency,g.status,g.stage,g.submittedDate||'',g.nextDate||'',g.nextAction,g.notes]));
+  const csv=lines.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\n');
+  const blob=new Blob([csv],{type:'text/csv'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='house-of-manna-funding-pipeline.csv';a.click();URL.revokeObjectURL(a.href);
+}
+fetch('./grants.json',{cache:'no-store'})
+  .then(r=>r.json())
+  .then(payload=>{
+    META=payload.meta||{};DATA=payload.grants||[];
+    document.getElementById('lastUpdated').textContent=fmtDate(META.lastUpdated);
+    populateFilters();updateKpis();render();
+  })
+  .catch(err=>{
+    document.getElementById('rows').innerHTML='<tr><td colspan="8" class="empty">Unable to load funding data. '+escapeHtml(err.message)+'</td></tr>';
+  });
+
+['search','statusFilter','programFilter','stageFilter'].forEach(id=>document.getElementById(id).addEventListener('input',render));
+document.getElementById('exportCsv').addEventListener('click',exportCsv);
+document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');quickView=btn.dataset.view;render();
+}));
+</script>
+</body>
+</html>
