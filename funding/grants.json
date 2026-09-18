@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "title": "House of Manna Funding Pipeline",
+    "lastUpdated": "2026-09-18",
+    "note": "Internal management view. Pending funding is not treated as committed until formally awarded."
+  },
+  "grants": [
+    {
+      "id": "truist-ai-ready-2026",
+      "funder": "Truist Foundation",
+      "opportunity": "AI-Ready Career Pathways Pilot",
+      "program": "Education & Workforce",
+      "programs": [
+        "Education & Workforce",
+        "AI-Ready Education",
+        "Career Pathways"
+      ],
+      "askAmount": 15000,
+      "currency": "USD",
+      "status": "Submitted / Pending",
+      "stage": "Full Application Submitted",
+      "submittedDate": "2026-09-18",
+      "nextDate": "2027-03-31",
+      "nextAction": "Await Truist status communication; keep supporting materials ready.",
+      "notes": "Submission confirmed by email on Sept. 18. Truist advised that status communication should arrive approximately 3–4 months after the grant-cycle deadline.",
+      "portalUrl": "https://truist.versaic.com/",
+      "funderUrl": "https://www.truist.com/purpose/truist-foundation/grant-application",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "sparkplug-loi-2026",
+      "funder": "Sparkplug Foundation",
+      "opportunity": "Youth Business, AI & Community Innovation Lab",
+      "program": "Youth Development",
+      "programs": [
+        "Youth Development",
+        "Education & Workforce",
+        "AI-Ready Education"
+      ],
+      "askAmount": 15000,
+      "currency": "USD",
+      "status": "LOI Submitted / Pending",
+      "stage": "LOI Review",
+      "submittedDate": "2026-09-18",
+      "nextDate": "2026-11-16",
+      "nextAction": "Await LOI review and invitation to submit a full application.",
+      "notes": "LOI submission confirmed by email Sept. 18. If invited, full application is expected during the Fall 2026 cycle.",
+      "portalUrl": "https://www.sparkplugfoundation.org/apply/",
+      "funderUrl": "https://www.sparkplugfoundation.org/information/",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "bcf-baltimore-city-2026",
+      "funder": "Baltimore Community Foundation",
+      "opportunity": "Baltimore City Community Grants",
+      "program": "Community Development",
+      "programs": [
+        "Community Development",
+        "Food Access & Pantry",
+        "Youth Development"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Submitted / Pending",
+      "stage": "Full Application Submitted",
+      "submittedDate": "2026-08-19",
+      "nextDate": null,
+      "nextAction": "Await BCF decision.",
+      "notes": "BCF submission confirmation received Aug. 19. No decision email found as of Sept. 18.",
+      "portalUrl": null,
+      "funderUrl": "https://bcf.org/",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "bcf-stronger-neighborhoods-2026",
+      "funder": "Baltimore Community Foundation",
+      "opportunity": "Stronger Schools - Stronger Neighborhoods",
+      "program": "Community Development",
+      "programs": [
+        "Community Development",
+        "Youth Development",
+        "Education & Workforce"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Submitted / Pending",
+      "stage": "Full Application Submitted",
+      "submittedDate": "2026-09-11",
+      "nextDate": null,
+      "nextAction": "Await BCF decision.",
+      "notes": "BCF submission confirmation received Sept. 11. No decision email found as of Sept. 18.",
+      "portalUrl": null,
+      "funderUrl": "https://bcf.org/",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "abell-regular-2026",
+      "funder": "Abell Foundation",
+      "opportunity": "Community Opportunity Initiative — Regular Grant LOI",
+      "program": "Community Development",
+      "programs": [
+        "Community Development",
+        "Food Access & Pantry",
+        "Youth Development"
+      ],
+      "askAmount": 25000,
+      "currency": "USD",
+      "status": "Declined",
+      "stage": "LOI Declined",
+      "submittedDate": "2026-09-11",
+      "nextDate": null,
+      "nextAction": "Closed. Revisit with a materially different project or stronger operating history.",
+      "notes": "Abell responded Sept. 15 that the LOI was not a good fit with the foundation's scope and areas of interest.",
+      "portalUrl": null,
+      "funderUrl": "https://abell.org/apply/",
+      "lastUpdated": "2026-09-15"
+    },
+    {
+      "id": "abell-small-2026",
+      "funder": "Abell Foundation",
+      "opportunity": "Baltimore Neighborhood Food Access Pilot — Small Grant",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development"
+      ],
+      "askAmount": 10000,
+      "currency": "USD",
+      "status": "Submitted / Pending",
+      "stage": "Small Grant Submitted",
+      "submittedDate": "2026-09-14",
+      "nextDate": null,
+      "nextAction": "Confirm portal status and await decision.",
+      "notes": "Separate from the declined $25,000 regular-grant LOI. Small Grant submission was confirmed Sept. 14; no separate denial email was found as of Sept. 18.",
+      "portalUrl": null,
+      "funderUrl": "https://abell.org/grants/small-grants-process/",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "goldseker-2026",
+      "funder": "Goldseker Foundation",
+      "opportunity": "Baltimore Youth & Community Opportunity Initiative",
+      "program": "Youth Development",
+      "programs": [
+        "Youth Development",
+        "Community Development",
+        "Education & Workforce"
+      ],
+      "askAmount": 25000,
+      "currency": "USD",
+      "status": "Declined",
+      "stage": "LOI Declined",
+      "submittedDate": "2026-09-11",
+      "nextDate": null,
+      "nextAction": "Closed for current concept.",
+      "notes": "Goldseker responded Sept. 14 that the project was not a fit for current grantmaking.",
+      "portalUrl": null,
+      "funderUrl": "https://goldsekerfoundation.org/",
+      "lastUpdated": "2026-09-14"
+    },
+    {
+      "id": "mt-community-food-2026",
+      "funder": "M&T Charitable Foundation",
+      "opportunity": "Community Food Access Program",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Community Development"
+      ],
+      "askAmount": 9500,
+      "currency": "USD",
+      "status": "Application In Progress",
+      "stage": "Draft / Attachments",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Return to the M&T portal and confirm whether the application is still a draft or has been submitted.",
+      "notes": "Versaic account activated Sept. 12. No M&T submission-confirmation email was found as of Sept. 18.",
+      "portalUrl": "https://mtb.versaic.com/",
+      "funderUrl": "https://www.mtb.com/about-us/getting-involved/giving-back/charitable-foundation",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "whole-foods-store-giving-2026",
+      "funder": "Whole Foods Market",
+      "opportunity": "Store Giving / Community Engagement",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Ready to Apply",
+      "stage": "Eligibility / Platform Setup Complete",
+      "submittedDate": null,
+      "nextDate": "2026-10-11",
+      "nextAction": "Return to Whole Foods Versaic and complete the financial-support application.",
+      "notes": "Whole Foods Versaic account is active. Benevity approved House of Manna on Sept. 18 and EFT was also approved.",
+      "portalUrl": "https://wholefoods.versaic.com/",
+      "funderUrl": "https://www.wholefoodsmarket.com/company-info/newsroom/community-giving/store-giving",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "dwf-2026",
+      "funder": "DWF Foundation",
+      "opportunity": "Education & Employability Project",
+      "program": "Education & Workforce",
+      "programs": [
+        "Education & Workforce",
+        "Youth Development",
+        "AI-Ready Education"
+      ],
+      "askAmount": null,
+      "currency": "GBP",
+      "status": "Eligibility Inquiry Pending",
+      "stage": "Pre-Application",
+      "submittedDate": "2026-09-18",
+      "nextDate": "2026-09-30",
+      "nextAction": "Await Clare Beavan's response before submitting an application.",
+      "notes": "International applicants must receive approval before applying. Eligibility inquiry emailed Sept. 18; no reply found yet.",
+      "portalUrl": null,
+      "funderUrl": null,
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "france-merrick-2026",
+      "funder": "France-Merrick Foundation",
+      "opportunity": "Community Facility, Food Access & Learning Infrastructure",
+      "program": "Facility & Infrastructure",
+      "programs": [
+        "Facility & Infrastructure",
+        "Food Access & Pantry",
+        "Education & Workforce"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Drafting",
+      "stage": "LOI Draft",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Finalize LOI and clearly disclose that House of Manna operates from a shared-use church facility.",
+      "notes": "Concept includes cold storage, refrigeration, learning technology and eligible program infrastructure. No sent or received France-Merrick email was found.",
+      "portalUrl": null,
+      "funderUrl": "https://www.france-merrickfdn.org/",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "walmart-spark-good-2026",
+      "funder": "Walmart",
+      "opportunity": "Spark Good Local Grants",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution",
+        "Community Development"
+      ],
+      "askAmount": 5000,
+      "currency": "USD",
+      "status": "Setup In Progress",
+      "stage": "Verification / Pre-Application",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Complete Spark Good / third-party verification and apply to relevant local facilities.",
+      "notes": "Account verification activity was found, but no grant-submission confirmation was found.",
+      "portalUrl": "https://www.walmart.com/nonprofits",
+      "funderUrl": "https://walmart.org/how-we-give/local-community-grants",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "food-lion-feeds-2026",
+      "funder": "Food Lion Feeds",
+      "opportunity": "Food Lion Feeds Grant / Food Access Support",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not Eligible Yet",
+      "stage": "Dependency",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Complete Maryland Food Bank partnership / Feeding America affiliation before revisiting.",
+      "notes": "Maryland Food Bank New Partner Interest Form was submitted Sept. 9. No partner-approval email was found.",
+      "portalUrl": null,
+      "funderUrl": "https://newsroom.foodlion.com/",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "carefirst-2026",
+      "funder": "CareFirst",
+      "opportunity": "Baltimore Healthy Food Access & Family Wellness Pilot",
+      "program": "Health & Wellness",
+      "programs": [
+        "Health & Wellness",
+        "Food Access & Pantry",
+        "Community Development"
+      ],
+      "askAmount": 20000,
+      "currency": "USD",
+      "status": "Prospect / Not Started",
+      "stage": "Qualified Concept",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Begin application and frame food insecurity as a social driver of health.",
+      "notes": "Working concept: $20,000 request against a $30,000 pilot budget. No CareFirst application activity was found in email.",
+      "portalUrl": null,
+      "funderUrl": null,
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "umms-2026",
+      "funder": "University of Maryland Medical System",
+      "opportunity": "Community Impact Grant",
+      "program": "Health & Wellness",
+      "programs": [
+        "Health & Wellness",
+        "Community Development"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not Pursuing",
+      "stage": "Eligibility Constraint",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Revisit only if an eligible nonprofit collaboration is established.",
+      "notes": "The funding tier reviewed required collaboration with another eligible 501(c)(3). House of Manna chose not to pursue at this time.",
+      "portalUrl": null,
+      "funderUrl": null,
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "dreyfus-2027",
+      "funder": "Max & Victoria Dreyfus Foundation",
+      "opportunity": "Education / Skills Training Grant",
+      "program": "Education & Workforce",
+      "programs": [
+        "Education & Workforce",
+        "Youth Development"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not Eligible Yet",
+      "stage": "Future Prospect",
+      "submittedDate": null,
+      "nextDate": "2027-05-10",
+      "nextAction": "Revisit after House of Manna files its first applicable 990-series return.",
+      "notes": "Foundation requires a completed 990-series filing and does not accept substitute financial statements for new organizations.",
+      "portalUrl": null,
+      "funderUrl": "https://www.mvdreyfusfoundation.org/",
+      "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "kars4kids-2026",
+      "funder": "Kars4Kids",
+      "opportunity": "Small Grant Program",
+      "program": "Youth Development",
+      "programs": [
+        "Youth Development",
+        "Education & Workforce"
+      ],
+      "askAmount": 5000,
+      "currency": "USD",
+      "status": "Passed / Not Pursuing",
+      "stage": "Closed by Choice",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "No action.",
+      "notes": "Reviewed and intentionally passed on Sept. 18.",
+      "portalUrl": null,
+      "funderUrl": "https://www.kars4kidsgrants.org/",
+      "lastUpdated": "2026-09-18"
+    }
+  ]
+}
