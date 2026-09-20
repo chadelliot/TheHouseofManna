@@ -88,6 +88,11 @@
       background:#F1F3F5;color:#596474;text-transform:uppercase;letter-spacing:.06em;font-size:10px;
       text-align:left;padding:12px;border-bottom:1px solid var(--line);white-space:nowrap
     }
+    thead th.sortable{cursor:pointer;user-select:none}
+    thead th.sortable:hover{background:#E7EAEE;color:var(--navy)}
+    thead th.sortable::after{content:' ↕';font-size:10px;color:#9AA3AF}
+    thead th.sortable[data-dir="asc"]::after{content:' ↑';color:var(--navy)}
+    thead th.sortable[data-dir="desc"]::after{content:' ↓';color:var(--navy)}
     tbody td{padding:13px 12px;border-bottom:1px solid #EDF0F2;vertical-align:top;font-size:13px}
     tbody tr.main-row{cursor:pointer}
     tbody tr.main-row:hover{background:#FBFCFD}
@@ -194,15 +199,16 @@
         <table>
           <thead>
             <tr>
-              <th>Funder / Opportunity</th>
-              <th>Program Type</th>
-              <th>Support Type</th>
-              <th>Ask</th>
-              <th>Status</th>
-              <th>Submitted</th>
-              <th>Next Date</th>
-              <th>Next Action</th>
-              <th>Links</th>
+              <th class="sortable" data-sort="funder">Funder / Opportunity</th>
+              <th class="sortable" data-sort="program">Program Type</th>
+              <th class="sortable" data-sort="supportType">Support Type</th>
+              <th class="sortable" data-sort="askAmount">Ask</th>
+              <th class="sortable" data-sort="status">Status</th>
+              <th class="sortable" data-sort="addedDate">Date Added</th>
+              <th class="sortable" data-sort="submittedDate">Submitted</th>
+              <th class="sortable" data-sort="nextDate">Next Date</th>
+              <th class="sortable" data-sort="nextAction">Next Action</th>
+              <th class="sortable" data-sort="links">Links</th>
             </tr>
           </thead>
           <tbody id="rows"></tbody>
@@ -220,6 +226,8 @@
 let DATA = [];
 let META = {};
 let quickView = 'all';
+let sortKey = 'addedDate';
+let sortDir = 'desc';
 
 const closedStatuses = ['Declined','Not Eligible Yet','Not Pursuing','Passed / Not Pursuing'];
 const pendingStatuses = ['Submitted / Pending','LOI Submitted / Pending','Eligibility Inquiry Pending'];
@@ -295,10 +303,43 @@ function filteredData(){
     return true;
   });
 }
+function sortValue(g,key){
+  switch(key){
+    case 'funder': return (g.funder||'') + ' ' + (g.opportunity||'');
+    case 'program': return g.program||'';
+    case 'supportType': return g.supportType||'Grant';
+    case 'askAmount': return Number(g.askAmount)||0;
+    case 'status': return (g.status||'') + ' ' + (g.stage||'');
+    case 'addedDate': return g.addedDate||'';
+    case 'submittedDate': return g.submittedDate||'';
+    case 'nextDate': return g.nextDate||'';
+    case 'nextAction': return g.nextAction||'';
+    case 'links': return Number(Boolean(g.portalUrl)) + Number(Boolean(g.funderUrl));
+    default: return '';
+  }
+}
+function sortedData(list){
+  return [...list].sort((a,b)=>{
+    const av=sortValue(a,sortKey), bv=sortValue(b,sortKey);
+    let cmp=0;
+    if(typeof av==='number' && typeof bv==='number') cmp=av-bv;
+    else cmp=String(av).localeCompare(String(bv),undefined,{numeric:true,sensitivity:'base'});
+    if(cmp===0) cmp=String(a.funder||'').localeCompare(String(b.funder||''),undefined,{sensitivity:'base'});
+    return sortDir==='asc' ? cmp : -cmp;
+  });
+}
+function updateSortHeaders(){
+  document.querySelectorAll('th.sortable').forEach(th=>{
+    const active=th.dataset.sort===sortKey;
+    th.dataset.dir=active ? sortDir : '';
+    th.setAttribute('aria-sort', active ? (sortDir==='asc'?'ascending':'descending') : 'none');
+  });
+}
 function render(){
   const rows=document.getElementById('rows');
   rows.innerHTML='';
-  const list=filteredData();
+  const list=sortedData(filteredData());
+  updateSortHeaders();
   document.getElementById('empty').hidden=list.length>0;
   list.forEach(g=>{
     const tr=document.createElement('tr');
@@ -314,6 +355,7 @@ function render(){
       '<td><span class="program-pill">'+escapeHtml(g.supportType||'Grant')+'</span></td>'+
       '<td class="amount">'+escapeHtml(fmtMoney(g.askAmount,g.currency))+'</td>'+
       '<td><span class="status-pill '+statusClass(g.status)+'">'+escapeHtml(g.status)+'</span><div class="opportunity" style="margin-top:5px">'+escapeHtml(g.stage||'')+'</div></td>'+
+      '<td class="date">'+escapeHtml(fmtDate(g.addedDate))+'</td>'+
       '<td class="date">'+escapeHtml(fmtDate(g.submittedDate))+'</td>'+
       '<td class="date">'+escapeHtml(fmtDate(g.nextDate))+'</td>'+
       '<td class="action">'+escapeHtml(g.nextAction||'—')+'</td>'+
@@ -321,19 +363,19 @@ function render(){
     const detail=document.createElement('tr');
     detail.className='detail-row';
     detail.id='detail-'+g.id;
-    detail.innerHTML='<td colspan="9"><div class="detail-panel">'+
+    detail.innerHTML='<td colspan="10"><div class="detail-panel">'+
       '<div><div class="detail-title">Notes</div>'+escapeHtml(g.notes||'No notes.')+'</div>'+
       '<div><div class="detail-title">Applicable Programs</div>'+(g.programs||[]).map(x=>'<span class="tag">'+escapeHtml(x)+'</span>').join('')+'</div>'+
-      '<div><div class="detail-title">Record</div><div><strong>House of Manna fit:</strong> '+escapeHtml(g.fit||'—')+'</div><div><strong>Support type:</strong> '+escapeHtml(g.supportType||'Grant')+'</div><div><strong>Last updated:</strong> '+escapeHtml(fmtDate(g.lastUpdated))+'</div><div><strong>ID:</strong> '+escapeHtml(g.id)+'</div></div>'+
+      '<div><div class="detail-title">Record</div><div><strong>House of Manna fit:</strong> '+escapeHtml(g.fit||'—')+'</div><div><strong>Support type:</strong> '+escapeHtml(g.supportType||'Grant')+'</div><div><strong>Date added:</strong> '+escapeHtml(fmtDate(g.addedDate))+'</div><div><strong>Last updated:</strong> '+escapeHtml(fmtDate(g.lastUpdated))+'</div><div><strong>ID:</strong> '+escapeHtml(g.id)+'</div></div>'+
       '</div></td>';
     tr.addEventListener('click',e=>{if(e.target.closest('a')) return; detail.classList.toggle('open');});
     rows.appendChild(tr);rows.appendChild(detail);
   });
 }
 function exportCsv(){
-  const cols=['Funder','Opportunity','Program','Support Type','House of Manna Fit','Ask Amount','Awarded Amount','Currency','Status','Stage','Submitted Date','Next Date','Next Action','Notes'];
+  const cols=['Funder','Opportunity','Program','Support Type','House of Manna Fit','Ask Amount','Awarded Amount','Currency','Status','Stage','Date Added','Submitted Date','Next Date','Next Action','Notes'];
   const lines=[cols];
-  filteredData().forEach(g=>lines.push([g.funder,g.opportunity,g.program,g.supportType||'Grant',g.fit||'',g.askAmount??'',g.awardedAmount??0,g.currency,g.status,g.stage,g.submittedDate||'',g.nextDate||'',g.nextAction,g.notes]));
+  sortedData(filteredData()).forEach(g=>lines.push([g.funder,g.opportunity,g.program,g.supportType||'Grant',g.fit||'',g.askAmount??'',g.awardedAmount??0,g.currency,g.status,g.stage,g.addedDate||'',g.submittedDate||'',g.nextDate||'',g.nextAction,g.notes]));
   const csv=lines.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\n');
   const blob=new Blob([csv],{type:'text/csv'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='house-of-manna-funding-pipeline.csv';a.click();URL.revokeObjectURL(a.href);
@@ -346,11 +388,20 @@ fetch('./grants.json',{cache:'no-store'})
     populateFilters();updateKpis();render();
   })
   .catch(err=>{
-    document.getElementById('rows').innerHTML='<tr><td colspan="9" class="empty">Unable to load funding data. '+escapeHtml(err.message)+'</td></tr>';
+    document.getElementById('rows').innerHTML='<tr><td colspan="10" class="empty">Unable to load funding data. '+escapeHtml(err.message)+'</td></tr>';
   });
 
 ['search','statusFilter','programFilter','stageFilter','supportTypeFilter'].forEach(id=>document.getElementById(id).addEventListener('input',render));
 document.getElementById('exportCsv').addEventListener('click',exportCsv);
+document.querySelectorAll('th.sortable').forEach(th=>th.addEventListener('click',()=>{
+  const key=th.dataset.sort;
+  if(sortKey===key) sortDir=sortDir==='asc'?'desc':'asc';
+  else {
+    sortKey=key;
+    sortDir=['addedDate','submittedDate','nextDate','askAmount','links'].includes(key)?'desc':'asc';
+  }
+  render();
+}));
 document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',()=>{
   document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');quickView=btn.dataset.view;render();
