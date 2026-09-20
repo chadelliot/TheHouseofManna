@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "House of Manna Funding Pipeline",
-    "lastUpdated": "2026-09-18",
-    "note": "Internal management view. Pending funding is not treated as committed until formally awarded. Additional food-access prospects researched and added Sept. 18, 2026."
+    "lastUpdated": "2026-09-20",
+    "note": "Internal management view. Pending funding and in-kind support are not treated as committed until formally awarded or confirmed. Updated Sept. 20, 2026 with current submitted applications and So What Else Baltimore partnership inquiry."
   },
   "grants": [
     {
@@ -190,15 +190,15 @@
       ],
       "askAmount": 9500,
       "currency": "USD",
-      "status": "Application In Progress",
-      "stage": "Draft / Attachments",
-      "submittedDate": null,
+      "status": "Submitted / Pending",
+      "stage": "Full Application Submitted",
+      "submittedDate": "2026-09-12",
       "nextDate": null,
-      "nextAction": "Return to the M&T portal and confirm whether the application is still a draft or has been submitted.",
-      "notes": "Versaic account activated Sept. 12. No M&T submission-confirmation email was found as of Sept. 18.",
+      "nextAction": "Await M&T Charitable Foundation review and decision.",
+      "notes": "House of Manna Community Food Access Program submitted Sept. 12, 2026. Proposal ID 234994.",
       "portalUrl": "https://mtb.versaic.com/",
       "funderUrl": "https://www.mtb.com/about-us/getting-involved/giving-back/charitable-foundation",
-      "lastUpdated": "2026-09-18",
+      "lastUpdated": "2026-09-20",
       "supportType": "Grant",
       "fit": "High",
       "awardedAmount": 0
@@ -214,15 +214,15 @@
       ],
       "askAmount": null,
       "currency": "USD",
-      "status": "Ready to Apply",
-      "stage": "Eligibility / Platform Setup Complete",
-      "submittedDate": null,
+      "status": "Submitted / Pending",
+      "stage": "Full Application Submitted",
+      "submittedDate": "2026-09-19",
       "nextDate": "2026-10-11",
-      "nextAction": "Return to Whole Foods Versaic and complete the financial-support application.",
-      "notes": "Whole Foods Versaic account is active. Benevity approved House of Manna on Sept. 18 and EFT was also approved.",
+      "nextAction": "Await Whole Foods Market Store Giving review and decision.",
+      "notes": "Whole Foods Store Giving application submitted Sept. 19, 2026. Benevity approval and EFT setup were completed before submission.",
       "portalUrl": "https://wholefoods.versaic.com/",
       "funderUrl": "https://www.wholefoodsmarket.com/company-info/newsroom/community-giving/store-giving",
-      "lastUpdated": "2026-09-18",
+      "lastUpdated": "2026-09-20",
       "supportType": "Grant",
       "fit": "High",
       "awardedAmount": 0
@@ -461,15 +461,15 @@
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Ready to Apply",
-      "stage": "Rolling Application",
-      "submittedDate": null,
+      "status": "Submitted / Pending",
+      "stage": "Local Warehouse Request Submitted",
+      "submittedDate": "2026-09-20",
       "nextDate": null,
-      "nextAction": "Submit a local-warehouse request focused on food access / health and human services.",
-      "notes": "Costco accepts requests from 501(c)(3) organizations year-round and specifically supports children, education, and health and human services. Local warehouse giving is intended for local organizations and causes.",
+      "nextAction": "Await local warehouse review; retain the completed warehouse request packet for follow-up and additional local warehouse outreach.",
+      "notes": "Local Warehouse Charitable Contribution request submitted Sept. 20, 2026. This is a local-warehouse giving request supporting House of Manna's food-access work.",
       "portalUrl": "https://www.costco.com/charitable-giving.html",
       "funderUrl": "https://www.costco.com/f/-/communities-giving",
-      "lastUpdated": "2026-09-18"
+      "lastUpdated": "2026-09-20"
     },
     {
       "id": "harris-teeter-donation-2026",
@@ -935,6 +935,31 @@
       "portalUrl": "https://safewayfoundation.org/get-funded/grant-funding-guidelines-eastern-dc-va-md-de/",
       "funderUrl": "https://safewayfoundation.org/get-funded/grant-funding-guidelines-eastern-dc-va-md-de/",
       "lastUpdated": "2026-09-18"
+    },
+    {
+      "id": "so-what-else-baltimore-2026",
+      "funder": "So What Else Baltimore",
+      "opportunity": "Food Rescue Bank Partnership / Recurring Food Distribution",
+      "program": "Food Access & Pantry",
+      "programs": [
+        "Food Access & Pantry",
+        "Mobile Distribution",
+        "Community Development"
+      ],
+      "supportType": "Recurring In-Kind Food Partnership",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Partnership Inquiry Submitted / Pending",
+      "stage": "Waitlist / Partnership Review",
+      "submittedDate": "2026-09-20",
+      "nextDate": "2026-10-11",
+      "nextAction": "Await Baltimore team follow-up; if no response within 3 weeks, follow up with Baltimore@sowhatelse.org.",
+      "notes": "New Partnership Inquiry submitted Sept. 20, 2026 for a brand-new House of Manna food distribution and recurring perishable/non-perishable food support. Submission confirmation states the Baltimore team expects to be in touch within 3 weeks; the form also notes a long partner waitlist and no guarantee of service.",
+      "portalUrl": null,
+      "funderUrl": "https://sowhatelse.org/food-rescue-bank/baltimore-food-giveaways/",
+      "lastUpdated": "2026-09-20"
     }
   ]
 }
