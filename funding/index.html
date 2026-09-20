@@ -314,7 +314,7 @@ function sortValue(g,key){
     case 'submittedDate': return g.submittedDate||'';
     case 'nextDate': return g.nextDate||'';
     case 'nextAction': return g.nextAction||'';
-    case 'links': return Number(Boolean(g.portalUrl)) + Number(Boolean(g.funderUrl));
+    case 'links': return Number(Boolean(g.applicationUrl)) + Number(Boolean(g.funderUrl));
     default: return '';
   }
 }
@@ -346,8 +346,8 @@ function render(){
     tr.className='main-row';
     tr.dataset.id=g.id;
     const links=[
-      g.portalUrl ? '<a class="link-btn" href="'+escapeHtml(g.portalUrl)+'" target="_blank" rel="noopener">Portal</a>' : '',
-      g.funderUrl ? '<a class="link-btn alt" href="'+escapeHtml(g.funderUrl)+'" target="_blank" rel="noopener">Funder</a>' : ''
+      g.applicationUrl ? '<a class="link-btn" href="'+escapeHtml(g.applicationUrl)+'" target="_blank" rel="noopener">'+escapeHtml(g.applicationLinkLabel||'Apply')+'</a>' : '',
+      g.funderUrl && g.funderUrl!==g.applicationUrl ? '<a class="link-btn alt" href="'+escapeHtml(g.funderUrl)+'" target="_blank" rel="noopener">Program</a>' : ''
     ].join('');
     tr.innerHTML=
       '<td><div class="funder">'+escapeHtml(g.funder)+'</div><div class="opportunity">'+escapeHtml(g.opportunity)+'</div></td>'+
@@ -366,16 +366,16 @@ function render(){
     detail.innerHTML='<td colspan="10"><div class="detail-panel">'+
       '<div><div class="detail-title">Notes</div>'+escapeHtml(g.notes||'No notes.')+'</div>'+
       '<div><div class="detail-title">Applicable Programs</div>'+(g.programs||[]).map(x=>'<span class="tag">'+escapeHtml(x)+'</span>').join('')+'</div>'+
-      '<div><div class="detail-title">Record</div><div><strong>House of Manna fit:</strong> '+escapeHtml(g.fit||'—')+'</div><div><strong>Support type:</strong> '+escapeHtml(g.supportType||'Grant')+'</div><div><strong>Date added:</strong> '+escapeHtml(fmtDate(g.addedDate))+'</div><div><strong>Last updated:</strong> '+escapeHtml(fmtDate(g.lastUpdated))+'</div><div><strong>ID:</strong> '+escapeHtml(g.id)+'</div></div>'+
+      '<div><div class="detail-title">Record</div><div><strong>House of Manna fit:</strong> '+escapeHtml(g.fit||'—')+'</div><div><strong>Support type:</strong> '+escapeHtml(g.supportType||'Grant')+'</div><div><strong>Application link:</strong> '+(g.applicationUrl?'<a href="'+escapeHtml(g.applicationUrl)+'" target="_blank" rel="noopener">'+escapeHtml(g.applicationLinkLabel||'Open')+'</a>':'—')+'</div><div><strong>Date added:</strong> '+escapeHtml(fmtDate(g.addedDate))+'</div><div><strong>Last updated:</strong> '+escapeHtml(fmtDate(g.lastUpdated))+'</div><div><strong>ID:</strong> '+escapeHtml(g.id)+'</div></div>'+
       '</div></td>';
     tr.addEventListener('click',e=>{if(e.target.closest('a')) return; detail.classList.toggle('open');});
     rows.appendChild(tr);rows.appendChild(detail);
   });
 }
 function exportCsv(){
-  const cols=['Funder','Opportunity','Program','Support Type','House of Manna Fit','Ask Amount','Awarded Amount','Currency','Status','Stage','Date Added','Submitted Date','Next Date','Next Action','Notes'];
+  const cols=['Funder','Opportunity','Program','Support Type','House of Manna Fit','Ask Amount','Awarded Amount','Currency','Status','Stage','Date Added','Submitted Date','Next Date','Next Action','Application Link','Notes'];
   const lines=[cols];
-  sortedData(filteredData()).forEach(g=>lines.push([g.funder,g.opportunity,g.program,g.supportType||'Grant',g.fit||'',g.askAmount??'',g.awardedAmount??0,g.currency,g.status,g.stage,g.addedDate||'',g.submittedDate||'',g.nextDate||'',g.nextAction,g.notes]));
+  sortedData(filteredData()).forEach(g=>lines.push([g.funder,g.opportunity,g.program,g.supportType||'Grant',g.fit||'',g.askAmount??'',g.awardedAmount??0,g.currency,g.status,g.stage,g.addedDate||'',g.submittedDate||'',g.nextDate||'',g.nextAction,g.applicationUrl||'',g.notes]));
   const csv=lines.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\n');
   const blob=new Blob([csv],{type:'text/csv'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='house-of-manna-funding-pipeline.csv';a.click();URL.revokeObjectURL(a.href);
