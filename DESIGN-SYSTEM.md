@@ -14,19 +14,28 @@ Chapter map:
 - Ch. 1 — Executive Vision → used on `about.html`
 - Ch. 2 — Ecosystem Overview → used on `about.html`
 - Ch. 3 — Academy → used on `academy.html`
-- Ch. 4 — Pantry / Mobile → Pantry content still needs its own page
-  (`pantry.html`); Mobile content is on `mobile.html`
-- Letter From the Founder → used on `about.html`
-- Five Organizational Pillars → used on `about.html`
+- Ch. 4 — Pantry / Mobile → Pantry content is on `pantry.html`; Mobile
+  content is on `mobile.html`; the cross-program "how it all connects"
+  narrative is on `programs.html`
 
 ## Site structure
 
-Single-page homepage (`House-of-Manna-brevo-no-freeze` file) plus standalone
-pages: `about.html`, `academy.html`, `mobile.html` (built),
-`pantry.html`, `get-involved.html` (not yet built). Every page shares the
-exact same `<nav>` and `<footer>` markup, copied verbatim from the homepage
-(includes the brand logo as an inline base64 `<img>`, so don't try to
-"clean up" or re-encode it — copy it as-is between files).
+Single-page homepage (`index.html`) plus standalone pages: `about.html`,
+`academy.html`, `pantry.html`, `mobile.html`, `programs.html` (all built),
+`get-involved.html` (not yet built — footer "Get Involved" sub-links and
+CTA-strip secondary buttons point at `index.html#get-involved` instead
+until it exists). Every page shares the exact same `<nav>` and `<footer>`
+markup, copied verbatim from the homepage (includes the brand logo as an
+inline base64 `<img>`, so don't try to "clean up" or re-encode it — copy
+it as-is between files).
+
+**Primary nav (all pages, verbatim):** About → `about.html` · Programs →
+`programs.html` · Impact → `index.html#impact` · Get Involved →
+`index.html#get-involved`. `programs.html` is the flagship overview/gateway
+into the three programs; individual program pages (`academy.html`,
+`pantry.html`, `mobile.html`) are intentionally *not* in the primary nav —
+they're reachable from `programs.html`, the footer's "Programs" column, and
+each program page's own "Explore The Ecosystem" cross-nav (see below).
 
 ## Brand tokens (CSS custom properties, defined once in `:root`)
 
@@ -97,6 +106,23 @@ copying the exact `<img class="{section}-swirl" src="data:image/png;base64,...">
 tag between files — the data URL is identical everywhere, just the wrapping
 class/position changes.
 
+**Explore The Ecosystem** — cross-nav component (`.ecosystem-links` /
+`.ecosystem-link-card` / `.is-current`) reused verbatim on every individual
+program page (`academy.html`, `pantry.html`, `mobile.html`), placed right
+before the closing `.cta-strip`. Three cards link to the other two programs;
+the current page's own card gets `.is-current` (a non-link `<div>`, sage
+tint, "You Are Here" tag) instead of an `<a>`. Not used on `programs.html`
+itself since that page already features all three programs directly.
+
+**Program feature / flow / connect components** (`programs.html` only) —
+`.program-feature` (`.on-light`/`.on-dark`, `.is-reverse`) is the editorial
+media+copy layout used for the Pantry/Academy/Mobile features; `.flow-path`
+/`.flow-stage` is the Today→Tomorrow→Beyond ecosystem diagram; `.connect-*`
+classes build the "How It All Connects" diagram in semantic HTML/CSS (no
+text-in-image); `.find-place-grid`/`.find-place-card` is the closing
+5-path CTA grid. All page-specific to `programs.html`; not shared elsewhere
+yet, but written generically enough to lift into another page if needed.
+
 **Dark-break pull quote** — `.dark-break` / `.outline-heading` /
 `.quote-attribution`. Centered, large outlined-text quote on a navy-2
 background. Used once per page for a signature quote from the prospectus.
@@ -133,6 +159,9 @@ assets as base64 unless matching an existing reused asset (like the swirl).
 
 ## What's built vs. outstanding
 
-Built: homepage, `about.html`, `academy.html`, `mobile.html`.
-Outstanding: `pantry.html` (Ch. 4 Pantry content is written in the
-prospectus but not yet turned into a page), `get-involved.html`.
+Built: homepage, `about.html`, `academy.html`, `mobile.html`, `pantry.html`,
+`programs.html`.
+Outstanding: `get-involved.html` — until it exists, every "Get Involved"
+sub-link (Donate/Volunteer/Partner/Sponsorship in the footer, and the
+`.cta-strip`'s secondary button) points at `index.html#get-involved`
+(the homepage footer) rather than a dead link.
