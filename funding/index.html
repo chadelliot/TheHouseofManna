@@ -282,7 +282,7 @@
       This page is intentionally marked <strong>noindex</strong> and is not linked from the public site navigation. GitHub Pages is still public hosting, so do not store passwords, banking information, private documents, EIN documentation, or confidential portal links here.
     </div>
 
-    <p class="updated" style="text-align:left">Portfolio totals across all opportunities. Active = Ready, In progress and Awaiting response. Needs action = dated, outstanding tasks due today or overdue. Amounts are recorded USD cash requests and confirmed awards; unknown asks and in-kind support are not valued as cash.</p>
+    <p class="updated" style="text-align:left">Portfolio totals across all opportunities. Active = Ready, In progress, Awaiting response and Submitted / Pending. Needs action = dated, outstanding tasks due today or overdue. Amounts are recorded USD cash requests and confirmed awards; unknown asks and in-kind support are not valued as cash.</p>
     <section class="kpis">
       <div class="kpi"><div class="label">Active Pipeline</div><div class="value" id="kpiActive">0</div></div>
       <div class="kpi"><div class="label">Awaiting Response</div><div class="value" id="kpiPending">0</div></div>
@@ -345,8 +345,8 @@ let sortKey = 'addedDate';
 let sortDir = 'desc';
 
 const closedStatuses = ['Awarded','Declined','Not pursuing'];
-const pendingStatuses = ['Awaiting response'];
-const activeStatuses = ['Ready','In progress','Awaiting response'];
+const pendingStatuses = ['Awaiting response','Submitted / Pending'];
+const activeStatuses = ['Ready','In progress','Awaiting response','Submitted / Pending'];
 const today = () => new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const fmtMoney = (amount, currency='USD') => {
   if (amount === null || amount === undefined || amount === '') return '—';
@@ -361,7 +361,7 @@ const fmtDate = value => {
 const escapeHtml = str => String(str ?? '').replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[s]));
 const statusClass = status => {
   if (status.includes('Declined')) return 'status-declined';
-  if (status==='Awaiting response') return 'status-pending';
+  if (status==='Awaiting response' || status.includes('Submitted') || status.includes('Pending')) return 'status-pending';
   if (status.includes('Ready')) return 'status-ready';
   if (status.includes('In Progress') || status.includes('Drafting') || status.includes('Setup') || status.includes('Prospect')) return 'status-progress';
   if (status==='On hold' || status==='Not pursuing') return 'status-ineligible';
