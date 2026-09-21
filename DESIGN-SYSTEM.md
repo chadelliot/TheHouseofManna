@@ -21,21 +21,38 @@ Chapter map:
 ## Site structure
 
 Single-page homepage (`index.html`) plus standalone pages: `about.html`,
-`academy.html`, `pantry.html`, `mobile.html`, `programs.html` (all built),
-`get-involved.html` (not yet built — footer "Get Involved" sub-links and
-CTA-strip secondary buttons point at `index.html#get-involved` instead
-until it exists). Every page shares the exact same `<nav>` and `<footer>`
-markup, copied verbatim from the homepage (includes the brand logo as an
-inline base64 `<img>`, so don't try to "clean up" or re-encode it — copy
-it as-is between files).
+`academy.html`, `pantry.html`, `mobile.html`, `programs.html`, `projects.html`,
+`project-facility.html`, `project-innovation-lab.html`,
+`project-food-access.html` (all built), `get-involved.html` (not yet built —
+footer "Get Involved" sub-links and CTA-strip secondary buttons point at
+`/#get-involved` instead until it exists). Every page shares the exact same
+`<nav>` and `<footer>` markup, copied verbatim from the homepage (includes
+the brand logo as an inline base64 `<img>`, so don't try to "clean up" or
+re-encode it — copy it as-is between files).
 
-**Primary nav (all pages, verbatim):** About → `about.html` · Programs →
-`programs.html` · Impact → `index.html#impact` · Get Involved →
-`index.html#get-involved`. `programs.html` is the flagship overview/gateway
-into the three programs; individual program pages (`academy.html`,
-`pantry.html`, `mobile.html`) are intentionally *not* in the primary nav —
-they're reachable from `programs.html`, the footer's "Programs" column, and
-each program page's own "Explore The Ecosystem" cross-nav (see below).
+**Link convention — no `.html` in hrefs.** GitHub Pages serves this repo's
+`.html` files at their extensionless path too (confirmed: `/about` serves
+`about.html`), so every internal `href` sitewide is written without the
+`.html` suffix (`href="about"`, not `href="about.html"`) and the homepage is
+always linked as root — `href="/"` or `href="/#impact"`, never `href="index"`
+or `href="index.html"`. The physical files themselves keep their `.html`
+names on disk (don't rename them) — only the *links pointing at them* drop
+the extension. `<link rel="canonical">` and `og:url`/`twitter:url` follow the
+same rule (`https://houseofmannamd.com/about`, not `/about.html`). When
+adding a new page, write every internal link to it (nav, footer, cross-nav,
+CTAs) without `.html` from the start.
+
+**Primary nav (all pages, verbatim):** About → `about` · Programs →
+`programs` · Projects → `projects` · Impact → `/#impact` · Get Involved →
+`/#get-involved`. `programs.html` is the flagship overview/gateway into the
+three ongoing programs; `projects.html` is the equivalent overview for the
+funding/capital projects. Individual program pages (`academy.html`,
+`pantry.html`, `mobile.html`) and individual project pages
+(`project-facility.html`, `project-innovation-lab.html`,
+`project-food-access.html`) are intentionally *not* in the primary nav —
+they're reachable from their respective overview page, the footer, and
+their own "Explore The Ecosystem" / "Explore The Other Projects" cross-nav
+(see below).
 
 ## Brand tokens (CSS custom properties, defined once in `:root`)
 
@@ -160,8 +177,9 @@ assets as base64 unless matching an existing reused asset (like the swirl).
 ## What's built vs. outstanding
 
 Built: homepage, `about.html`, `academy.html`, `mobile.html`, `pantry.html`,
-`programs.html`.
+`programs.html`, `projects.html`, `project-facility.html`,
+`project-innovation-lab.html`, `project-food-access.html`.
 Outstanding: `get-involved.html` — until it exists, every "Get Involved"
 sub-link (Donate/Volunteer/Partner/Sponsorship in the footer, and the
-`.cta-strip`'s secondary button) points at `index.html#get-involved`
-(the homepage footer) rather than a dead link.
+`.cta-strip`'s secondary button) points at `/#get-involved` (the homepage
+footer) rather than a dead link.
