@@ -151,6 +151,29 @@ background. Used once per page for a signature quote from the prospectus.
 2px-stroke line icons drawn by hand in the site's style — not an icon
 library).
 
+## Donate CTA routing — not all "Donate Now" buttons go to the same place
+
+`.donate-btn` is one visual style, but it points at different destinations
+depending on *where* it sits, and this is intentional — don't "fix" it back
+to one URL:
+
+- **`.nav-donate`** (the nav's top-right "Donate Now", verbatim on every
+  page) → `href="projects"`. It's a router: send people to the projects hub
+  so they can pick what to fund, not straight to a single campaign.
+- **Hero / CTA-strip / give-section `.donate-btn` on `project-facility.html`,
+  `project-innovation-lab.html`, `project-food-access.html`** → that
+  project's own Givebutter campaign, `target="_blank"`:
+  - Facility: `https://givebutter.com/house-of-manna-pantry`
+  - Innovation Lab: `https://givebutter.com/youth-business-ai-community-innovation-lab-omm61p`
+  - Food Access: `https://givebutter.com/baltimore-neighborhood-food-access-family-wellness-4xbodr`
+- **Every other `.donate-btn`** (about/academy/pantry/mobile/programs/index
+  hero + cta-strip, and `projects.html`'s own general give-section) → stays
+  on the general fund, `https://givebutter.com/house-of-manna-pantry`,
+  `target="_blank"`.
+
+When adding a 4th project page, give it its own Givebutter campaign link on
+every `.donate-btn` except `.nav-donate` (leave that pointing at `projects`).
+
 ## Video sourcing convention
 
 All hero videos are hotlinked directly from Pexels (`videos.pexels.com`,
