@@ -192,10 +192,28 @@ new clips:
 
 ## Local assets
 
-Only one local image exists: `images/cp-headshot.jpg` (founder photo, used
-on about.html). Any new local images/video should go in `images/` next to
-each HTML file, referenced with a relative path — don't inline new large
-assets as base64 unless matching an existing reused asset (like the swirl).
+`images/cp-headshot.jpg` is the founder photo (about.html). `images/community/`
+holds real House of Manna photos/video (not stock) — sourced from the org's
+own media library, resized to ≤2000px / JPEG q82 via `sips`, video
+transcoded to muted H.264 via `ffmpeg` (`-crf 26 -an -movflags +faststart`)
+with a matching `-poster.jpg` frame. Used today: `founder-community-event.mp4`
+(get-involved.html hero), plus one `.photo-break` real-photo section each on
+project-facility.html, pantry.html, and mobile.html. Several more curated
+photos sit in `images/community/` unused — good candidates for future pages
+(`facility-exterior-event.jpg`, `founder-with-kids.jpg`, `kids-picnic-table.jpg`,
+`pantry-distribution-2.jpg`). This is the one deliberate exception to the
+"hotlink from Pexels/Unsplash" convention below — these are the org's own
+footage, not stock, so they're committed to the repo instead of hotlinked.
+
+Any other new local images/video should go in `images/` next to each HTML
+file, referenced with a relative path — don't inline new large assets as
+base64 unless matching an existing reused asset (like the swirl).
+
+**`.photo-break`** — full-bleed real-photo section with a bottom-anchored
+caption (`.photo-break-caption` / `strong` + `p`), dark gradient overlay for
+text legibility. Defined in get-involved.html, project-facility.html,
+pantry.html, and mobile.html's own page-specific `<style>` block — not yet
+in the shared base CSS, so copy the block if you add it to another page.
 
 ## What's built vs. outstanding
 
