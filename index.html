@@ -227,11 +227,15 @@
 
   .nav-hamburger{
     display:none;
+    position:absolute;
+    left:0; top:50%;
+    transform:translateY(-50%);
     align-items:center; justify-content:center;
     width:36px; height:36px;
     background:none; border:none; padding:0;
     color:var(--chrome-color);
     cursor:pointer;
+    z-index:5;
   }
   .nav-hamburger svg{ width:22px; height:22px; display:block; }
 
@@ -270,7 +274,7 @@
   @media (max-width:820px){
     .nav-left{ display:none; }
     .nav-hamburger{ display:flex; }
-    .nav-right{ width:100%; justify-content:space-between; }
+    .nav-right{ width:100%; justify-content:space-between; padding-left:46px; }
     .nav-donate{ font-size:12px; padding:8px 16px; }
     .site-nav{ padding:20px 24px; }
   }
