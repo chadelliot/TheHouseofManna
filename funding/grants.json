@@ -2,22 +2,30 @@
   "meta": {
     "title": "House of Manna Funding Pipeline",
     "lastUpdated": "2026-09-21",
-    "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Statuses reviewed Sept. 21, 2026 using current House of Manna records and available submission confirmations."
+    "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Statuses reviewed Sept. 21, 2026 using current House of Manna records and available submission confirmations.",
+    "statusDefinitions": {
+      "Researching": "Fit or eligibility needs checking",
+      "Ready": "Ready to inquire or apply",
+      "In progress": "Preparation underway",
+      "Awaiting response": "Inquiry, LOI or application submitted",
+      "On hold": "Temporary eligibility or future cycle",
+      "Awarded": "Confirmed support",
+      "Declined": "Funder rejected the request",
+      "Not pursuing": "Closed by House of Manna"
+    }
   },
   "grants": [
     {
       "id": "truist-ai-ready-2026",
       "funder": "Truist Foundation",
       "opportunity": "AI-Ready Career Pathways Pilot",
-      "program": "Education & Workforce",
+      "program": "Education & Economic Opportunity",
       "programs": [
-        "Education & Workforce",
-        "AI-Ready Education",
-        "Career Pathways"
+        "Education & Economic Opportunity"
       ],
       "askAmount": 15000,
       "currency": "USD",
-      "status": "Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "Full Application Submitted",
       "submittedDate": "2026-09-18",
       "nextDate": "2027-03-31",
@@ -31,21 +39,26 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://truist.versaic.com/",
-      "applicationLinkLabel": "Apply / Portal"
+      "applicationLinkLabel": "Apply / Portal",
+      "previousStatus": "Submitted / Pending",
+      "originalPrograms": [
+        "Education & Workforce",
+        "AI-Ready Education",
+        "Career Pathways"
+      ]
     },
     {
       "id": "sparkplug-loi-2026",
       "funder": "Sparkplug Foundation",
       "opportunity": "Youth Business, AI & Community Innovation Lab",
-      "program": "Youth Development",
+      "program": "Youth & Family Development",
       "programs": [
-        "Youth Development",
-        "Education & Workforce",
-        "AI-Ready Education"
+        "Youth & Family Development",
+        "Education & Economic Opportunity"
       ],
       "askAmount": 15000,
       "currency": "USD",
-      "status": "LOI Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "LOI Review",
       "submittedDate": "2026-09-18",
       "nextDate": "2026-10-02",
@@ -59,21 +72,26 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.sparkplugfoundation.org/apply/",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "LOI Submitted / Pending",
+      "originalPrograms": [
+        "Youth Development",
+        "Education & Workforce",
+        "AI-Ready Education"
+      ]
     },
     {
       "id": "bcf-baltimore-city-2026",
       "funder": "Baltimore Community Foundation",
       "opportunity": "Baltimore City Community Grants",
-      "program": "Community Development",
+      "program": "Youth & Family Development",
       "programs": [
-        "Community Development",
-        "Food Access & Pantry",
-        "Youth Development"
+        "Youth & Family Development",
+        "Food Security & Basic Needs"
       ],
       "askAmount": null,
       "currency": "USD",
-      "status": "Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "Full Application Submitted",
       "submittedDate": "2026-08-19",
       "nextDate": null,
@@ -87,21 +105,26 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.bcf.org/apply-for-grant/bccg/",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Submitted / Pending",
+      "originalPrograms": [
+        "Community Development",
+        "Food Access & Pantry",
+        "Youth Development"
+      ]
     },
     {
       "id": "bcf-stronger-neighborhoods-2026",
       "funder": "Baltimore Community Foundation",
       "opportunity": "Stronger Schools - Stronger Neighborhoods",
-      "program": "Community Development",
+      "program": "Youth & Family Development",
       "programs": [
-        "Community Development",
-        "Youth Development",
-        "Education & Workforce"
+        "Youth & Family Development",
+        "Education & Economic Opportunity"
       ],
       "askAmount": null,
       "currency": "USD",
-      "status": "Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "Full Application Submitted",
       "submittedDate": "2026-09-11",
       "nextDate": null,
@@ -115,17 +138,22 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.bcf.org/apply-for-grant/",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Submitted / Pending",
+      "originalPrograms": [
+        "Community Development",
+        "Youth Development",
+        "Education & Workforce"
+      ]
     },
     {
       "id": "abell-regular-2026",
       "funder": "Abell Foundation",
       "opportunity": "Community Opportunity Initiative — Regular Grant LOI",
-      "program": "Community Development",
+      "program": "Youth & Family Development",
       "programs": [
-        "Community Development",
-        "Food Access & Pantry",
-        "Youth Development"
+        "Youth & Family Development",
+        "Food Security & Basic Needs"
       ],
       "askAmount": 25000,
       "currency": "USD",
@@ -143,20 +171,26 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://abell.org/apply/",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Declined",
+      "originalPrograms": [
+        "Community Development",
+        "Food Access & Pantry",
+        "Youth Development"
+      ]
     },
     {
       "id": "abell-small-2026",
       "funder": "Abell Foundation",
       "opportunity": "Baltimore Neighborhood Food Access Pilot — Small Grant",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "askAmount": 10000,
       "currency": "USD",
-      "status": "Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "Small Grant Submitted",
       "submittedDate": "2026-09-14",
       "nextDate": null,
@@ -170,17 +204,21 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://abell.org/apply/",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Submitted / Pending",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development"
+      ]
     },
     {
       "id": "goldseker-2026",
       "funder": "Goldseker Foundation",
       "opportunity": "Baltimore Youth & Community Opportunity Initiative",
-      "program": "Youth Development",
+      "program": "Youth & Family Development",
       "programs": [
-        "Youth Development",
-        "Community Development",
-        "Education & Workforce"
+        "Youth & Family Development",
+        "Education & Economic Opportunity"
       ],
       "askAmount": 25000,
       "currency": "USD",
@@ -198,20 +236,26 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://goldsekerfoundation.org/grantmaking/how-to-apply/",
-      "applicationLinkLabel": "How to Apply"
+      "applicationLinkLabel": "How to Apply",
+      "previousStatus": "Declined",
+      "originalPrograms": [
+        "Youth Development",
+        "Community Development",
+        "Education & Workforce"
+      ]
     },
     {
       "id": "mt-community-food-2026",
       "funder": "M&T Charitable Foundation",
       "opportunity": "Community Food Access Program",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "askAmount": 9500,
       "currency": "USD",
-      "status": "Application In Progress",
+      "status": "In progress",
       "stage": "Submission Not Confirmed",
       "submittedDate": null,
       "nextDate": null,
@@ -225,20 +269,24 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://mtb.versaic.com/",
-      "applicationLinkLabel": "Apply / Portal"
+      "applicationLinkLabel": "Apply / Portal",
+      "previousStatus": "Application In Progress",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development"
+      ]
     },
     {
       "id": "whole-foods-store-giving-2026",
       "funder": "Whole Foods Market",
       "opportunity": "Store Giving / Community Engagement",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution"
+        "Food Security & Basic Needs"
       ],
       "askAmount": null,
       "currency": "USD",
-      "status": "Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "Full Application Submitted",
       "submittedDate": "2026-09-18",
       "nextDate": "2026-10-11",
@@ -252,21 +300,25 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://wholefoods.versaic.com/",
-      "applicationLinkLabel": "Apply / Portal"
+      "applicationLinkLabel": "Apply / Portal",
+      "previousStatus": "Submitted / Pending",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ]
     },
     {
       "id": "dwf-2026",
       "funder": "DWF Foundation",
       "opportunity": "Education & Employability Project",
-      "program": "Education & Workforce",
+      "program": "Education & Economic Opportunity",
       "programs": [
-        "Education & Workforce",
-        "Youth Development",
-        "AI-Ready Education"
+        "Education & Economic Opportunity",
+        "Youth & Family Development"
       ],
       "askAmount": null,
       "currency": "GBP",
-      "status": "Eligibility Inquiry Pending",
+      "status": "Awaiting response",
       "stage": "Pre-Application",
       "submittedDate": "2026-09-18",
       "nextDate": "2026-09-30",
@@ -280,21 +332,27 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://dwfgroup.com/en/about-us/dwf-foundation/foundation-application-form",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Eligibility Inquiry Pending",
+      "originalPrograms": [
+        "Education & Workforce",
+        "Youth Development",
+        "AI-Ready Education"
+      ]
     },
     {
       "id": "france-merrick-2026",
       "funder": "France-Merrick Foundation",
       "opportunity": "Community Facility, Food Access & Learning Infrastructure",
-      "program": "Facility & Infrastructure",
+      "program": "Community Facilities & Capacity",
       "programs": [
-        "Facility & Infrastructure",
-        "Food Access & Pantry",
-        "Education & Workforce"
+        "Community Facilities & Capacity",
+        "Food Security & Basic Needs",
+        "Education & Economic Opportunity"
       ],
       "askAmount": null,
       "currency": "USD",
-      "status": "LOI Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "LOI Review",
       "submittedDate": "2026-09-18",
       "nextDate": null,
@@ -308,21 +366,26 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.france-merrickfdn.org/apply-for-a-grant/",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "LOI Submitted / Pending",
+      "originalPrograms": [
+        "Facility & Infrastructure",
+        "Food Access & Pantry",
+        "Education & Workforce"
+      ]
     },
     {
       "id": "walmart-spark-good-2026",
       "funder": "Walmart",
       "opportunity": "Spark Good Local Grants",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "askAmount": 5000,
       "currency": "USD",
-      "status": "Setup In Progress",
+      "status": "In progress",
       "stage": "Verification / Pre-Application",
       "submittedDate": null,
       "nextDate": null,
@@ -336,20 +399,25 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.walmart.com/nonprofits",
-      "applicationLinkLabel": "Apply / Portal"
+      "applicationLinkLabel": "Apply / Portal",
+      "previousStatus": "Setup In Progress",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution",
+        "Community Development"
+      ]
     },
     {
       "id": "food-lion-feeds-2026",
       "funder": "Food Lion Feeds",
       "opportunity": "Food Lion Feeds Grant / Food Access Support",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution"
+        "Food Security & Basic Needs"
       ],
       "askAmount": null,
       "currency": "USD",
-      "status": "Not Eligible Yet",
+      "status": "On hold",
       "stage": "Dependency",
       "submittedDate": null,
       "nextDate": null,
@@ -363,21 +431,25 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.foodlion.com/pages/food-lion-feeds",
-      "applicationLinkLabel": "Grant Info"
+      "applicationLinkLabel": "Grant Info",
+      "previousStatus": "Not Eligible Yet",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ]
     },
     {
       "id": "carefirst-2026",
       "funder": "CareFirst",
       "opportunity": "Baltimore Healthy Food Access & Family Wellness Pilot",
-      "program": "Health & Wellness",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Health & Wellness",
-        "Food Access & Pantry",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "askAmount": 20000,
       "currency": "USD",
-      "status": "Prospect / Not Started",
+      "status": "Researching",
       "stage": "Qualified Concept",
       "submittedDate": null,
       "nextDate": null,
@@ -391,20 +463,26 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://carefirst.com/cfc/html/",
-      "applicationLinkLabel": "Apply / Portal"
+      "applicationLinkLabel": "Apply / Portal",
+      "previousStatus": "Prospect / Not Started",
+      "originalPrograms": [
+        "Health & Wellness",
+        "Food Access & Pantry",
+        "Community Development"
+      ]
     },
     {
       "id": "umms-2026",
       "funder": "University of Maryland Medical System",
       "opportunity": "Community Impact Grant",
-      "program": "Health & Wellness",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Health & Wellness",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "askAmount": null,
       "currency": "USD",
-      "status": "Not Pursuing",
+      "status": "Not pursuing",
       "stage": "Eligibility Constraint",
       "submittedDate": null,
       "nextDate": null,
@@ -418,20 +496,25 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.umms.org/community/grants",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Not Pursuing",
+      "originalPrograms": [
+        "Health & Wellness",
+        "Community Development"
+      ]
     },
     {
       "id": "dreyfus-2027",
       "funder": "Max & Victoria Dreyfus Foundation",
       "opportunity": "Education / Skills Training Grant",
-      "program": "Education & Workforce",
+      "program": "Education & Economic Opportunity",
       "programs": [
-        "Education & Workforce",
-        "Youth Development"
+        "Education & Economic Opportunity",
+        "Youth & Family Development"
       ],
       "askAmount": null,
       "currency": "USD",
-      "status": "Not Eligible Yet",
+      "status": "On hold",
       "stage": "Future Prospect",
       "submittedDate": null,
       "nextDate": "2027-05-10",
@@ -445,20 +528,25 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.mvdreyfusfoundation.org/application-guidelines",
-      "applicationLinkLabel": "How to Apply"
+      "applicationLinkLabel": "How to Apply",
+      "previousStatus": "Not Eligible Yet",
+      "originalPrograms": [
+        "Education & Workforce",
+        "Youth Development"
+      ]
     },
     {
       "id": "kars4kids-2026",
       "funder": "Kars4Kids",
       "opportunity": "Small Grant Program",
-      "program": "Youth Development",
+      "program": "Youth & Family Development",
       "programs": [
-        "Youth Development",
-        "Education & Workforce"
+        "Youth & Family Development",
+        "Education & Economic Opportunity"
       ],
       "askAmount": 5000,
       "currency": "USD",
-      "status": "Passed / Not Pursuing",
+      "status": "Not pursuing",
       "stage": "Closed by Choice",
       "submittedDate": null,
       "nextDate": null,
@@ -472,23 +560,27 @@
       "awardedAmount": 0,
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.kars4kidsgrants.org/",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Passed / Not Pursuing",
+      "originalPrograms": [
+        "Youth Development",
+        "Education & Workforce"
+      ]
     },
     {
       "id": "aldi-community-gift-card-2026",
       "funder": "ALDI",
       "opportunity": "ALDI Community Gift Card Program",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution"
+        "Food Security & Basic Needs"
       ],
       "supportType": "Gift Card / Food Purchasing",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Ready to Apply",
+      "status": "Ready",
       "stage": "Open Application",
       "submittedDate": null,
       "nextDate": "2026-10-31",
@@ -499,23 +591,28 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://corporate.aldi.us/corporate-sustainability/community/aldi-community-gift-card-program",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Ready to Apply",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ]
     },
     {
       "id": "costco-charitable-contributions-2026",
       "funder": "Costco Wholesale",
       "opportunity": "Local Warehouse Charitable Contribution",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Corporate Donation / Grant",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "Grant Application Under Review",
       "submittedDate": "2026-09-19",
       "nextDate": "2026-10-17",
@@ -526,23 +623,27 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.costco.com/charitable-giving.html",
-      "applicationLinkLabel": "Apply / Instructions"
+      "applicationLinkLabel": "Apply / Instructions",
+      "previousStatus": "Submitted / Pending",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development"
+      ]
     },
     {
       "id": "harris-teeter-donation-2026",
       "funder": "Harris Teeter",
       "opportunity": "Corporate Contribution Request",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution"
+        "Food Security & Basic Needs"
       ],
       "supportType": "Cash / Product / Gift Card",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Ready to Apply",
+      "status": "Ready",
       "stage": "Rolling Request",
       "submittedDate": null,
       "nextDate": null,
@@ -553,23 +654,27 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://donations.harristeeter.com/request-a-donation",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Ready to Apply",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ]
     },
     {
       "id": "weis-markets-donation-2026",
       "funder": "Weis Markets",
       "opportunity": "Community Donation Request",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution"
+        "Food Security & Basic Needs"
       ],
       "supportType": "Gift Card / In-Kind",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "Charitable Request Under Review",
       "submittedDate": "2026-09-20",
       "nextDate": "2026-10-18",
@@ -580,23 +685,28 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.weismarkets.com/donation-policy",
-      "applicationLinkLabel": "Apply / Instructions"
+      "applicationLinkLabel": "Apply / Instructions",
+      "previousStatus": "Submitted / Pending",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ]
     },
     {
       "id": "wegmans-community-giving-2026",
       "funder": "Wegmans",
       "opportunity": "Donation & Sponsorship Request",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Donation / Sponsorship",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Application In Progress",
+      "status": "In progress",
       "stage": "Donation Request In Progress",
       "submittedDate": null,
       "nextDate": null,
@@ -607,23 +717,27 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.wegmans.com/values-in-action/community-giving",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Application In Progress",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development"
+      ]
     },
     {
       "id": "panera-dough-nation-2026",
       "funder": "Panera Bread",
       "opportunity": "Day-End Dough-Nation Program",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution"
+        "Food Security & Basic Needs"
       ],
       "supportType": "Recurring In-Kind Food",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Ready to Apply",
+      "status": "Ready",
       "stage": "Open / Rolling",
       "submittedDate": null,
       "nextDate": null,
@@ -634,23 +748,27 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.panerabread.com/en-us/food-values/community/day-end-dough-nation.html",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Ready to Apply",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ]
     },
     {
       "id": "trader-joes-neighborhood-shares-2026",
       "funder": "Trader Joe's",
       "opportunity": "Neighborhood Shares Food Donation Partnership",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution"
+        "Food Security & Basic Needs"
       ],
       "supportType": "Recurring In-Kind Food",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Outreach Materials Ready",
+      "status": "Ready",
       "stage": "Local Store Partnership Outreach",
       "submittedDate": null,
       "nextDate": null,
@@ -661,23 +779,27 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.traderjoes.com/home/neighborhood-shares.html",
-      "applicationLinkLabel": "How to Partner"
+      "applicationLinkLabel": "How to Partner",
+      "previousStatus": "Outreach Materials Ready",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ]
     },
     {
       "id": "sprouts-local-donation-2026",
       "funder": "Sprouts Farmers Market",
       "opportunity": "Local Donation & Sponsorship Request",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Health & Wellness"
+        "Food Security & Basic Needs"
       ],
       "supportType": "Gift Card / In-Kind / Sponsorship",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Ready to Apply",
+      "status": "Ready",
       "stage": "Rolling Request",
       "submittedDate": null,
       "nextDate": null,
@@ -688,24 +810,28 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://about.sprouts.com/donation-and-sponsorship-application/",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Ready to Apply",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Health & Wellness"
+      ]
     },
     {
       "id": "sprouts-healthy-communities-2027",
       "funder": "Sprouts Healthy Communities Foundation",
       "opportunity": "Nutrition Access / Healthy Communities Grant",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Health & Wellness",
-        "Youth Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Foundation Grant",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Future Cycle / Monitor",
+      "status": "On hold",
       "stage": "Future Grant Cycle",
       "submittedDate": null,
       "nextDate": "2027-04-01",
@@ -716,24 +842,29 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.sprouts.com/about/sprouts-foundation/",
-      "applicationLinkLabel": "Grant Info"
+      "applicationLinkLabel": "Grant Info",
+      "previousStatus": "Future Cycle / Monitor",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Health & Wellness",
+        "Youth Development"
+      ]
     },
     {
       "id": "target-community-engagement-2027",
       "funder": "Target",
       "opportunity": "Community Engagement Funds — Thriving Families",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development",
-        "Youth Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Corporate Grant",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Cycle Closed / Preparing",
+      "status": "On hold",
       "stage": "Prepare for April 2027 Cycle 1",
       "submittedDate": null,
       "nextDate": "2027-04-01",
@@ -744,23 +875,29 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://corporate.target.com/about/purpose-history/communities/grants-corporate-giving/community-engagement-funds",
-      "applicationLinkLabel": "Apply / Cycle Info"
+      "applicationLinkLabel": "Apply / Cycle Info",
+      "previousStatus": "Cycle Closed / Preparing",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development",
+        "Youth Development"
+      ]
     },
     {
       "id": "bank-of-america-basic-needs-2027",
       "funder": "Bank of America Charitable Foundation",
       "opportunity": "Basic Needs & Income Creation RFP",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Foundation Grant",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Future Cycle / Monitor",
+      "status": "On hold",
       "stage": "Next RFP Cycle",
       "submittedDate": null,
       "nextDate": "2027-01-15",
@@ -771,23 +908,28 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://about.bankofamerica.com/en/making-an-impact/grant-funding-for-nonprofits-sponsorship-programs",
-      "applicationLinkLabel": "Apply / Cycle Info"
+      "applicationLinkLabel": "Apply / Cycle Info",
+      "previousStatus": "Future Cycle / Monitor",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development"
+      ]
     },
     {
       "id": "trowe-price-foundation-inquiry-2026",
       "funder": "T. Rowe Price Foundation",
       "opportunity": "Baltimore Nonprofit Grant Inquiry",
-      "program": "Community Development",
+      "program": "Youth & Family Development",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Foundation Grant / Inquiry",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Ready to Inquire",
+      "status": "Ready",
       "stage": "Pre-Application Inquiry",
       "submittedDate": null,
       "nextDate": null,
@@ -798,24 +940,28 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.troweprice.com/en/is/about-us/corporate-responsibility/trp-foundation",
-      "applicationLinkLabel": "Program Info"
+      "applicationLinkLabel": "Program Info",
+      "previousStatus": "Ready to Inquire",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development"
+      ]
     },
     {
       "id": "mccormick-charitable-donations-2026",
       "funder": "McCormick & Company",
       "opportunity": "Corporate Charitable Donations Committee Request",
-      "program": "Health & Wellness",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Health & Wellness",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Corporate Grant / Donation",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Ready to Apply",
+      "status": "Ready",
       "stage": "Direct Corporate Request",
       "submittedDate": null,
       "nextDate": null,
@@ -826,24 +972,30 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.mccormickcorporation.com/responsibility/charitable-donations",
-      "applicationLinkLabel": "How to Apply"
+      "applicationLinkLabel": "How to Apply",
+      "previousStatus": "Ready to Apply",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Health & Wellness",
+        "Community Development"
+      ]
     },
     {
       "id": "bge-exelon-community-grants-2026",
       "funder": "BGE / Exelon",
       "opportunity": "Operating Company Community Grant Inquiry",
-      "program": "Community Development",
+      "program": "Youth & Family Development",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development",
-        "Facility & Infrastructure"
+        "Food Security & Basic Needs",
+        "Youth & Family Development",
+        "Community Facilities & Capacity"
       ],
       "supportType": "Corporate Grant",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Ready to Inquire",
+      "status": "Ready",
       "stage": "Eligibility / Inquiry",
       "submittedDate": null,
       "nextDate": null,
@@ -854,23 +1006,29 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.exeloncorp.com/community/grants",
-      "applicationLinkLabel": "Apply / Inquiry"
+      "applicationLinkLabel": "Apply / Inquiry",
+      "previousStatus": "Ready to Inquire",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development",
+        "Facility & Infrastructure"
+      ]
     },
     {
       "id": "united-way-central-md-resiliency-2027",
       "funder": "United Way of Central Maryland",
       "opportunity": "United for Good Nonprofit Resiliency Grant",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Local Foundation Grant",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Future Cycle / Monitor",
+      "status": "On hold",
       "stage": "Current Cycle Closed",
       "submittedDate": null,
       "nextDate": "2027-01-15",
@@ -881,24 +1039,28 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://uwcm.org/grants-funding-opportunities/",
-      "applicationLinkLabel": "Apply / Cycle Info"
+      "applicationLinkLabel": "Apply / Cycle Info",
+      "previousStatus": "Future Cycle / Monitor",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development"
+      ]
     },
     {
       "id": "ravens-play60-2027",
       "funder": "Baltimore Ravens Foundation",
       "opportunity": "PLAY 60 Grant — Nutrition Education",
-      "program": "Youth Development",
+      "program": "Youth & Family Development",
       "programs": [
-        "Food Access & Pantry",
-        "Youth Development",
-        "Health & Wellness"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Local Foundation Grant",
       "fit": "Medium",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Future Cycle / Monitor",
+      "status": "On hold",
       "stage": "Future Application Cycle",
       "submittedDate": null,
       "nextDate": "2027-04-01",
@@ -909,24 +1071,29 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.baltimoreravens.com/community/play-60-grant/app",
-      "applicationLinkLabel": "Apply / Cycle Info"
+      "applicationLinkLabel": "Apply / Cycle Info",
+      "previousStatus": "Future Cycle / Monitor",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Youth Development",
+        "Health & Wellness"
+      ]
     },
     {
       "id": "chickfila-true-inspiration-2028",
       "funder": "Chick-fil-A",
       "opportunity": "True Inspiration Awards — Caring Through Food",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Youth Development",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "National Corporate Grant",
       "fit": "Medium",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Future Cycle / Monitor",
+      "status": "On hold",
       "stage": "Next Award Cycle",
       "submittedDate": null,
       "nextDate": "2027-02-01",
@@ -937,24 +1104,30 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.chick-fil-a.com/true-inspiration-awards/learn-more",
-      "applicationLinkLabel": "Apply / Cycle Info"
+      "applicationLinkLabel": "Apply / Cycle Info",
+      "previousStatus": "Future Cycle / Monitor",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Youth Development",
+        "Community Development"
+      ]
     },
     {
       "id": "conagra-community-impact-2026",
       "funder": "Conagra Brands Foundation",
       "opportunity": "Community Impact Grant — Food Insecurity",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development",
-        "Education & Workforce"
+        "Food Security & Basic Needs",
+        "Youth & Family Development",
+        "Education & Economic Opportunity"
       ],
       "supportType": "Foundation Grant",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Ready to Apply",
+      "status": "Ready",
       "stage": "Rolling LOI",
       "submittedDate": null,
       "nextDate": null,
@@ -965,24 +1138,29 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.conagrabrands.com/our-company/conagra-brands-foundation/community-impact-grants",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Ready to Apply",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development",
+        "Education & Workforce"
+      ]
     },
     {
       "id": "bjs-hunger-relief-2026",
       "funder": "BJ's Charitable Foundation",
       "opportunity": "Hunger Relief / Feeding Communities Partnership",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution",
-        "Youth Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Foundation / Relationship Grant",
       "fit": "Medium",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Relationship Prospect",
+      "status": "Researching",
       "stage": "Relationship Development",
       "submittedDate": null,
       "nextDate": null,
@@ -993,24 +1171,30 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://careers.bjs.com/purpose/",
-      "applicationLinkLabel": "Program Info"
+      "applicationLinkLabel": "Program Info",
+      "previousStatus": "Relationship Prospect",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution",
+        "Youth Development"
+      ]
     },
     {
       "id": "pepsico-community-impact-2027",
       "funder": "PepsiCo Foundation",
       "opportunity": "Community Impact Awards / Food for Good Partnership",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Community Development",
-        "Education & Workforce"
+        "Food Security & Basic Needs",
+        "Youth & Family Development",
+        "Education & Economic Opportunity"
       ],
       "supportType": "Employee-Nominated Grant / Partnership",
       "fit": "Medium",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Relationship Prospect",
+      "status": "Researching",
       "stage": "Employee / Partner Relationship",
       "submittedDate": null,
       "nextDate": "2027-01-15",
@@ -1021,23 +1205,28 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.pepsico.com/en/about/pepsico-foundation",
-      "applicationLinkLabel": "Partner Info"
+      "applicationLinkLabel": "Partner Info",
+      "previousStatus": "Relationship Prospect",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Community Development",
+        "Education & Workforce"
+      ]
     },
     {
       "id": "safeway-eastern-hunger-2026",
       "funder": "Safeway Foundation — Eastern",
       "opportunity": "Hunger Priority / Local Store Gift Card Support",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution"
+        "Food Security & Basic Needs"
       ],
       "supportType": "Gift Card / Invitation-Only Grant",
       "fit": "Medium",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Ready to Pursue Local Support",
+      "status": "Ready",
       "stage": "Store-Level / Relationship",
       "submittedDate": null,
       "nextDate": null,
@@ -1048,24 +1237,28 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://safewayfoundation.org/get-funded/grant-application-process-eastern/",
-      "applicationLinkLabel": "How to Apply"
+      "applicationLinkLabel": "How to Apply",
+      "previousStatus": "Ready to Pursue Local Support",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ]
     },
     {
       "id": "so-what-else-baltimore-2026",
       "funder": "So What Else Baltimore",
       "opportunity": "Food Rescue Bank Partnership / Recurring Food Distribution",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Recurring In-Kind Food Partnership",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Partnership Inquiry Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "Waitlist / Partnership Review",
       "submittedDate": "2026-09-20",
       "nextDate": "2026-10-11",
@@ -1076,24 +1269,29 @@
       "lastUpdated": "2026-09-21",
       "addedDate": "2026-09-20",
       "applicationUrl": "https://docs.google.com/forms/d/1KdZkWZYwpQ68Nq9olZGPcuu3w6KjGP_yWds5Ci4mo-U/viewform",
-      "applicationLinkLabel": "Application Form"
+      "applicationLinkLabel": "Application Form",
+      "previousStatus": "Partnership Inquiry Submitted / Pending",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution",
+        "Community Development"
+      ]
     },
     {
       "id": "maryland-food-bank-partner-2026",
       "funder": "Maryland Food Bank",
       "opportunity": "New Partner Interest / Food Pantry Partnership",
-      "program": "Food Access & Pantry",
+      "program": "Food Security & Basic Needs",
       "programs": [
-        "Food Access & Pantry",
-        "Mobile Distribution",
-        "Community Development"
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
       "supportType": "Food Bank Partnership",
       "fit": "High",
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Partner Interest Submitted / Pending",
+      "status": "Awaiting response",
       "stage": "New Partner Review",
       "submittedDate": "2026-09-09",
       "nextDate": null,
@@ -1104,7 +1302,13 @@
       "applicationUrl": "https://mdfoodbank.org/",
       "applicationLinkLabel": "Partner Info",
       "addedDate": "2026-09-21",
-      "lastUpdated": "2026-09-21"
+      "lastUpdated": "2026-09-21",
+      "previousStatus": "Partner Interest Submitted / Pending",
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution",
+        "Community Development"
+      ]
     }
   ]
 }
