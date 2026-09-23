@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "House of Manna Funding Pipeline",
-    "lastUpdated": "2026-09-21",
-    "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Statuses reviewed Sept. 21, 2026 using current House of Manna records and available submission confirmations.",
+    "lastUpdated": "2026-09-23",
+    "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded.",
     "statusDefinitions": {
       "Researching": "Fit or eligibility needs checking",
       "Ready": "Ready to inquire or apply",
@@ -609,18 +609,18 @@
       ],
       "supportType": "Corporate Donation / Grant",
       "fit": "High",
-      "askAmount": null,
+      "askAmount": 10000,
       "currency": "USD",
       "awardedAmount": 0,
       "status": "Awaiting response",
-      "stage": "Grant Application Under Review",
+      "stage": "Regional Review",
       "submittedDate": "2026-09-19",
-      "nextDate": "2026-10-17",
-      "nextAction": "Await Costco review. Costco's confirmation says it will contact House of Manna by email or letter in 4–6 weeks.",
-      "notes": "Costco received the House of Manna Community Food Access & Learning Infrastructure Project request on Sept. 19, 2026. Reference #2026090470. Costco advised a 4–6 week review window.",
+      "nextDate": "2026-10-31",
+      "nextAction": "Monitor Costco/Benevity for a decision or information request. Application is in Regional Review; Costco indicated a 4–6 week review window.",
+      "notes": "Costco portal shows Regional Review for the House of Manna Community Food Access & Learning Infrastructure Project. Submitted Sept. 19, 2026. Requested amount: $10,000. Regional Review indicates the application remains under consideration; no award has been made.",
       "portalUrl": "https://www.costco.com/charitable-giving.html",
       "funderUrl": "https://www.costco.com/f/-/communities-giving",
-      "lastUpdated": "2026-09-21",
+      "lastUpdated": "2026-09-23",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.costco.com/charitable-giving.html",
       "applicationLinkLabel": "Apply / Instructions",
@@ -1312,6 +1312,367 @@
         "Mobile Distribution",
         "Community Development"
       ]
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "first-fruits-farm-food-partner-2026",
+      "funder": "First Fruits Farm",
+      "opportunity": "Food Distribution Partner Network",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Free Produce / Pantry Stock",
+      "fit": "High",
+      "status": "Ready",
+      "stage": "Open Partner Application",
+      "nextAction": "Complete the First Fruits Farm Partner Application to receive donated fresh produce for House of Manna pantry distributions.",
+      "notes": "Strong pantry-stock fit. First Fruits Farm states that 100% of the food it grows is donated and never sold, and it partners with churches, pantries, shelters, schools, and other nonprofits throughout Maryland and the Mid-Atlantic.",
+      "applicationUrl": "https://www.firstfruitsfarm.org/food-distribution",
+      "applicationLinkLabel": "Apply / Partner Info",
+      "funderUrl": "https://www.firstfruitsfarm.org/food-distribution",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "society-st-andrew-food-agency-2026",
+      "funder": "Society of St. Andrew",
+      "opportunity": "Agency Food Recipient / Gleaning Network",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Free Produce / Pantry Stock",
+      "fit": "High",
+      "status": "Ready",
+      "stage": "Open Food Recipient Form",
+      "nextAction": "Submit the Agencies Requesting Food form and indicate that House of Manna distributes boxes/bags to families and can arrange volunteer pickup.",
+      "notes": "Strong pantry-stock fit. Society of St. Andrew provides gleaned produce at no cost to recipient agencies as long as the food is shared with people in need. The application specifically accepts food pantries and asks about pickup and unloading capacity.",
+      "applicationUrl": "https://endhunger.org/get-involved/agencies-requesting-food/",
+      "applicationLinkLabel": "Request Food",
+      "funderUrl": "https://endhunger.org/get-involved/agencies-requesting-food/",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "ampleharvest-pantry-registration-2026",
+      "funder": "AmpleHarvest.org",
+      "opportunity": "Food Pantry Registration",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Free Garden Produce / Pantry Stock",
+      "fit": "High",
+      "status": "Ready",
+      "stage": "Open Pantry Registration",
+      "nextAction": "Register House of Manna as a food pantry so nearby gardeners can bring surplus fruit, vegetables, herbs, and nuts directly to the pantry.",
+      "notes": "Excellent new-pantry fit. Registration is free, participating pantries must distribute food at no charge, and House of Manna can publish the days/times when it accepts produce donations.",
+      "applicationUrl": "https://ampleharvest.org/register-a-pantry/?action=register",
+      "applicationLinkLabel": "Register Pantry",
+      "funderUrl": "https://ampleharvest.org/register-a-pantry/",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "foodrecovery-org-recipient-2026",
+      "funder": "FoodRecovery.org",
+      "opportunity": "Nonprofit Food Recipient Network",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Free Surplus Food / Pantry Stock",
+      "fit": "High",
+      "status": "Ready",
+      "stage": "Recipient Registration",
+      "nextAction": "Register House of Manna as a nonprofit recipient, set pantry-specific food preferences and capacity, and claim only donations with sufficient shelf life/storage compatibility for scheduled pantry days.",
+      "notes": "Good pantry-stock channel. Small-batch sourcing is free; nonprofits submit 501(c)(3) status, set preferences, and claim local surplus donations. Avoid high-volume freight until House of Manna has commercial cold/dry storage and pallet-handling equipment.",
+      "applicationUrl": "https://foodrecovery.org/findfood",
+      "applicationLinkLabel": "Register / Find Food",
+      "funderUrl": "https://foodrecovery.org/findfood",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "moms-organic-food-bank-recipient-2026",
+      "funder": "MOM's Organic Market",
+      "opportunity": "Food Bank Donation Recipient Program",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Recurring Grocery Rescue / Pantry Stock",
+      "fit": "High",
+      "status": "Ready",
+      "stage": "Food Bank Recipient Application",
+      "nextAction": "Complete MOM's Food Bank Donation Form and request recurring unsold grocery/produce donations from a practical Baltimore-area store.",
+      "notes": "Strong fit. MOM's states that its stores donate unsold edible food to more than 60 local food banks, soup kitchens, and churches and maintains a specific Food Bank Donation Recipient application.",
+      "applicationUrl": "https://momsorganicmarket.com/foodbankdonation/",
+      "applicationLinkLabel": "Apply for Food Donations",
+      "funderUrl": "https://momsorganicmarket.com/food-waste/",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "baltimore-orchard-harvest-partner-2026",
+      "funder": "Baltimore Orchard Project",
+      "opportunity": "Harvest & Distribution Partner",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Local Fruit & Nut Donations",
+      "fit": "High",
+      "status": "Ready",
+      "stage": "Partner Outreach",
+      "nextAction": "Email Baltimore Orchard Project to request House of Manna be added as a harvest/distribution partner for surplus Baltimore-grown fruit and nuts.",
+      "notes": "Seasonal pantry-stock fit. Baltimore Orchard Project works with community groups to distribute surplus community-grown produce and lists existing harvest/distribution partners across Baltimore.",
+      "applicationUrl": "mailto:info@baltimoreorchard.org",
+      "applicationLinkLabel": "Email Partner Request",
+      "funderUrl": "https://www.baltimoreorchardproject.org/harvesting",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "hungry-harvest-donation-partner-2026",
+      "funder": "Hungry Harvest",
+      "opportunity": "Produce Donation Request",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Fresh Produce Donation / Pantry Stock",
+      "fit": "High",
+      "status": "Ready",
+      "stage": "Donation Request",
+      "nextAction": "Submit Hungry Harvest's donation request for fresh produce that can be held and distributed through scheduled House of Manna pantry days.",
+      "notes": "Good pantry-stock fit for fresh produce. Hungry Harvest maintains a donation request form for organizations seeking produce for individuals in need; capacity is limited and approval is not guaranteed.",
+      "applicationUrl": "https://hungryharvest.net/donationrequest",
+      "applicationLinkLabel": "Request Produce",
+      "funderUrl": "https://hungryharvest.net/donationrequest",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "food-donation-connection-recipient-2026",
+      "funder": "Food Donation Connection",
+      "opportunity": "Harvest Recipient Partner",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Frozen / Surplus Food Recipient",
+      "fit": "Medium-High",
+      "status": "On hold",
+      "stage": "Cold-Storage Readiness",
+      "nextAction": "Register once House of Manna confirms adequate freezer/refrigeration capacity and pickup procedures. Request donor matches whose products can be safely stored for pantry distribution rather than same-day meal service.",
+      "notes": "Potential pantry-stock source, but storage discipline matters. FDC matches charities with restaurants, grocery stores and foodservice donors; its handling standards may include chilling/freezing, shelf-life and storage requirements. Best activated after House of Manna's cold-storage capacity is operational.",
+      "applicationUrl": "https://www.harvestelog.com/prod/register/regas",
+      "applicationLinkLabel": "Become a Recipient",
+      "funderUrl": "https://www.foodtodonate.com/recipients",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "hs-bakery-product-donation-2026",
+      "funder": "H&S Bakery",
+      "opportunity": "Baltimore Product Donation / Bakery Surplus Outreach",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Bread / Bakery Product Donation",
+      "fit": "Medium-High",
+      "status": "Researching",
+      "stage": "Direct Corporate Outreach",
+      "nextAction": "Contact H&S Bakery and ask whether House of Manna can receive recurring or periodic bread/roll overstock or day-old product for pantry inventory.",
+      "notes": "Local Baltimore prospect. H&S publicly supports numerous Baltimore charities and hunger-related organizations, but no dedicated pantry-recipient application was identified. Pursue as a direct product-donation relationship rather than assuming a standing program.",
+      "applicationUrl": "https://www.hsbakery.com/pages/contact-us",
+      "applicationLinkLabel": "Contact H&S",
+      "funderUrl": "https://www.hsbakery.com/pages/in-the-community/",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "saval-foodservice-pantry-donation-2026",
+      "funder": "Saval Foodservice",
+      "opportunity": "Surplus / Overstock Food Donation Partnership",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Distributor Product Donation",
+      "fit": "Medium-High",
+      "status": "Researching",
+      "stage": "Direct Partner Outreach",
+      "nextAction": "Email Saval Foodservice to request House of Manna be considered for safe overstock, short-dated, or charitable case donations that can be stored for pantry distribution.",
+      "notes": "Local Elkridge distributor with documented nonprofit and food-access partnerships. No public pantry-recipient application was identified, so this should be treated as a direct relationship request rather than an assumed recurring donation program.",
+      "applicationUrl": "mailto:info@savalfoods.com",
+      "applicationLinkLabel": "Email Saval",
+      "funderUrl": "https://www.savalfoods.com/about/community-partners",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "cloverland-dairy-food-rescue-2026",
+      "funder": "Cloverland Dairy",
+      "opportunity": "Surplus Dairy / Beverage Pantry Partnership",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Health & Wellness",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Dairy / Beverage Product Donation",
+      "fit": "High",
+      "status": "On hold",
+      "stage": "Refrigeration Required",
+      "nextAction": "Contact Cloverland after House of Manna's reliable cold-storage capacity is confirmed; ask about recurring unsold or short-dated milk, juice, and beverage donations for pantry inventory.",
+      "notes": "Strong local precedent: another Baltimore pantry publicly identifies Cloverland as its first donor of unsold milk. This is a good pantry-stock source once House of Manna can maintain the cold chain from pickup through distribution.",
+      "applicationUrl": "https://cloverlanddairy.com/contact/",
+      "applicationLinkLabel": "Contact Cloverland",
+      "funderUrl": "https://cloverlanddairy.com/about/",
+      "lastUpdated": "2026-09-23"
+    },
+    {
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "addedDate": "2026-09-23",
+      "submittedDate": null,
+      "nextDate": null,
+      "actionCompleted": false,
+      "id": "food-access-coalition-distribution-partner-2026",
+      "funder": "Food Access Coalition — Baltimore",
+      "opportunity": "Warehouse Distribution Point Partnership",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Development"
+      ],
+      "originalPrograms": [
+        "Food Access & Pantry"
+      ],
+      "supportType": "Warehouse Food Pickup / Pantry Stock",
+      "fit": "High",
+      "status": "Researching",
+      "stage": "Confirm Partner Cost",
+      "nextAction": "Ask Food Access Coalition whether House of Manna can become a scheduled warehouse pickup partner and confirm that there is no required food or logistics charge before enrolling.",
+      "notes": "Operationally fits pantry stocking: partners can collect food from the warehouse on a schedule, and the network handles shelf-stable, refrigerated, frozen, produce and other food. Kept in Researching rather than Ready because its site notes that moving pallets has a cost; confirm any partner fee first.",
+      "applicationUrl": "https://feedbaltimore.com/get-involved",
+      "applicationLinkLabel": "Apply to Distribute",
+      "funderUrl": "https://feedbaltimore.com/",
+      "lastUpdated": "2026-09-23"
     }
   ]
 }
