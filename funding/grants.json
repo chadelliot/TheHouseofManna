@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "House of Manna Funding Pipeline",
-    "lastUpdated": "2026-09-23",
+    "lastUpdated": "2026-09-29",
     "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded.",
     "statusDefinitions": {
       "Researching": "Fit or eligibility needs checking",
@@ -674,19 +674,19 @@
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Awaiting response",
-      "stage": "Charitable Request Under Review",
+      "status": "Awarded",
+      "stage": "Donation Awarded",
       "submittedDate": "2026-09-20",
-      "nextDate": "2026-10-18",
-      "nextAction": "Monitor the Weis Markets proposal account. Weis requests no follow-up calls or emails and will post status through the account.",
-      "notes": "Weis Markets confirmed receipt of the House of Manna Community Food Access Program charitable request on Sept. 20, 2026. The request is under Community Relations review.",
+      "nextDate": null,
+      "nextAction": "Coordinate receipt and use of Weis Markets gift cards for House of Manna food-access/community hunger initiatives.",
+      "notes": "Weis Markets confirmed a gift card donation to House of Manna on Sept. 29, 2026. The gift cards will support House of Manna's food-access work serving families in East Baltimore. Award value has not yet been recorded in the tracker.",
       "portalUrl": "https://www.weismarkets.com/donation-policy",
       "funderUrl": "https://www.weismarkets.com/charitable-giving",
-      "lastUpdated": "2026-09-21",
+      "lastUpdated": "2026-09-29",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.weismarkets.com/donation-policy",
       "applicationLinkLabel": "Apply / Instructions",
-      "previousStatus": "Submitted / Pending",
+      "previousStatus": "Awaiting response",
       "originalPrograms": [
         "Food Access & Pantry",
         "Mobile Distribution"
