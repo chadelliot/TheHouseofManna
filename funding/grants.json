@@ -1673,6 +1673,266 @@
       "applicationLinkLabel": "Apply to Distribute",
       "funderUrl": "https://feedbaltimore.com/",
       "lastUpdated": "2026-09-23"
+    },
+    {
+      "id": "pollination-project-daily-grant-2026",
+      "funder": "The Pollination Project",
+      "opportunity": "Daily Grant — Grassroots Seed Funding",
+      "program": "Education & Economic Opportunity",
+      "programs": [
+        "Education & Economic Opportunity",
+        "Youth & Family Development"
+      ],
+      "supportType": "Seed Grant",
+      "fit": "Medium",
+      "askAmount": 500,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Researching",
+      "stage": "Open / Eligibility Check",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Confirm House of Manna remains under the $50,000 annual-budget threshold and has no paid staff, then apply for a volunteer-led, secular youth education or community project under $10,000.",
+      "notes": "Rolling seed-grant program for early-stage grassroots work. Requests are up to $500. Organizational eligibility includes annual budget under $50,000, no paid staff, and total project cost under $10,000. Projects may not proselytize or require faith participation.",
+      "portalUrl": "https://thepollinationproject.smapply.us/",
+      "funderUrl": "https://thepollinationproject.org/apply/",
+      "lastUpdated": "2026-09-29",
+      "addedDate": "2026-09-29",
+      "applicationUrl": "https://thepollinationproject.smapply.us/",
+      "applicationLinkLabel": "Apply",
+      "previousStatus": null,
+      "originalPrograms": [
+        "AI-Ready Education",
+        "Youth Development",
+        "Community Development"
+      ]
+    },
+    {
+      "id": "chesapeake-bay-trust-community-mini-2026",
+      "funder": "Chesapeake Bay Trust",
+      "opportunity": "Community Engagement & Restoration Mini Grant",
+      "program": "Community Facilities & Capacity",
+      "programs": [
+        "Community Facilities & Capacity",
+        "Youth & Family Development"
+      ],
+      "supportType": "Grant",
+      "fit": "High",
+      "askAmount": 5000,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready",
+      "stage": "Open / Rolling",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Develop a small community greening, youth stewardship, cleanup, tree-planting, rain-garden, or outdoor learning project and submit while FY27 funds remain available.",
+      "notes": "Open on a rolling basis while funds remain. Awards up to $5,000; match is encouraged but not required. Maryland nonprofits are eligible, and the Trust specifically seeks new applicants and groups traditionally under-engaged in environmental work. A mentorship option is available for new applicants.",
+      "portalUrl": "https://cbtrust.org/login/",
+      "funderUrl": "https://cbtrust.org/community-engagement/",
+      "lastUpdated": "2026-09-29",
+      "addedDate": "2026-09-29",
+      "applicationUrl": "https://cbtrust.org/login/",
+      "applicationLinkLabel": "Apply / Portal",
+      "previousStatus": null,
+      "originalPrograms": [
+        "Community Development",
+        "Youth Development",
+        "Facility & Infrastructure"
+      ]
+    },
+    {
+      "id": "keep-maryland-beautiful-community-stewardship-2026",
+      "funder": "Chesapeake Bay Trust / Keep Maryland Beautiful",
+      "opportunity": "Keep Maryland Beautiful — Community Stewardship",
+      "program": "Community Facilities & Capacity",
+      "programs": [
+        "Community Facilities & Capacity",
+        "Youth & Family Development"
+      ],
+      "supportType": "Grant",
+      "fit": "Medium",
+      "askAmount": 5000,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready",
+      "stage": "Open Application",
+      "submittedDate": null,
+      "nextDate": "2026-12-01",
+      "nextAction": "Submit a community stewardship proposal by Dec. 1, 2026; strongest House of Manna concept is a youth/community greening project tied to the facility or surrounding neighborhood.",
+      "notes": "FY27 Track 1 Community Stewardship is open statewide to nonprofits and other community-based groups. Requests may be up to $5,000. Match is encouraged but not required. Eligible concepts include community green-space improvements, youth environmental education, cleanups, planting, and hands-on stewardship.",
+      "portalUrl": "https://cbtrust.org/login/",
+      "funderUrl": "https://cbtrust.org/grants/keep-maryland-beautiful/",
+      "lastUpdated": "2026-09-29",
+      "addedDate": "2026-09-29",
+      "applicationUrl": "https://cbtrust.org/login/",
+      "applicationLinkLabel": "Apply / Portal",
+      "previousStatus": null,
+      "originalPrograms": [
+        "Community Development",
+        "Youth Development",
+        "Facility & Infrastructure"
+      ]
+    },
+    {
+      "id": "target-giftcard-community-giving-2026",
+      "funder": "Target",
+      "opportunity": "Target Community Giving — GiftCard Request",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
+      ],
+      "supportType": "Gift Card / Local Donation",
+      "fit": "High",
+      "askAmount": 500,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready",
+      "stage": "Open / Local Store Request",
+      "submittedDate": null,
+      "nextDate": "2026-12-31",
+      "nextAction": "Complete the Target GiftCard request form and take it with House of Manna's IRS determination letter to a local Target store before the end of December.",
+      "notes": "Available February through December as store funding permits. Average gifts are $25–$50, with a maximum of $500 per agency per year. Eligible 501(c)(3)s submit the completed form in person at a local Target store.",
+      "portalUrl": "https://corporate.target.com/getmedia/a4a8f1ab-ded9-4882-a76c-d3a480f02b17/TargetGiftCard-Reqest-Form.pdf",
+      "funderUrl": "https://corporate.target.com/about/purpose-history/communities/grants-corporate-giving",
+      "lastUpdated": "2026-09-29",
+      "addedDate": "2026-09-29",
+      "applicationUrl": "https://corporate.target.com/getmedia/a4a8f1ab-ded9-4882-a76c-d3a480f02b17/TargetGiftCard-Reqest-Form.pdf",
+      "applicationLinkLabel": "Application Form",
+      "previousStatus": null,
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Youth Development"
+      ]
+    },
+    {
+      "id": "larry-fitzgerald-youth-education-2026",
+      "funder": "The Larry Fitzgerald Foundation",
+      "opportunity": "Youth Education Grant",
+      "program": "Education & Economic Opportunity",
+      "programs": [
+        "Education & Economic Opportunity",
+        "Youth & Family Development"
+      ],
+      "supportType": "Grant",
+      "fit": "High",
+      "askAmount": 5000,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready",
+      "stage": "Open Application",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Apply for the youth-education track using the AI-Ready Education / after-school technology concept and request up to $5,000.",
+      "notes": "Open to U.S. 501(c)(3) organizations. Youth Education grants support K–12 reading proficiency, after-school programs, youth camps, and technology. Published award amounts are $1,000, $2,000, $3,000, $4,000, or $5,000.",
+      "portalUrl": "https://www.thelarryfitzgeraldfoundation.org/pages/grants",
+      "funderUrl": "https://www.thelarryfitzgeraldfoundation.org/pages/grants",
+      "lastUpdated": "2026-09-29",
+      "addedDate": "2026-09-29",
+      "applicationUrl": "https://www.thelarryfitzgeraldfoundation.org/pages/grants",
+      "applicationLinkLabel": "Apply",
+      "previousStatus": null,
+      "originalPrograms": [
+        "AI-Ready Education",
+        "Youth Development",
+        "Education & Workforce"
+      ]
+    },
+    {
+      "id": "cracker-barrel-hunger-2026",
+      "funder": "Cracker Barrel Foundation",
+      "opportunity": "Fighting Hunger Financial Grant",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "supportType": "Grant / Community Support",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready",
+      "stage": "Open / Rolling Request",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Submit a financial grant request through Cracker Barrel's online giving system centered on House of Manna's community food-access program.",
+      "notes": "Cracker Barrel and its Foundation accept online financial-grant requests from nonprofit organizations whose work supports their philanthropic focus of fighting hunger in America.",
+      "portalUrl": "https://crackerbarrel.versaic.com/",
+      "funderUrl": "https://www.crackerbarrel.com/about/giving",
+      "lastUpdated": "2026-09-29",
+      "addedDate": "2026-09-29",
+      "applicationUrl": "https://crackerbarrel.versaic.com/",
+      "applicationLinkLabel": "Apply / Portal",
+      "previousStatus": null,
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ]
+    },
+    {
+      "id": "giant-company-community-giving-2026",
+      "funder": "The GIANT Company",
+      "opportunity": "Community Donation / Sponsorship — Eliminating Hunger",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
+      ],
+      "supportType": "Donation / Sponsorship",
+      "fit": "High",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready",
+      "stage": "Open Application",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Submit one 2026 community-support request through The GIANT Company online application, emphasizing eliminating hunger and family wellbeing.",
+      "notes": "The GIANT Company accepts online requests from 501(c)(3) organizations in Maryland and prioritizes Eliminating Hunger, Supporting Kids' Health, and Promoting Wellbeing. Organizations are limited to one sponsorship or donation request per calendar year and should apply at least eight weeks before funds are needed.",
+      "portalUrl": "https://go.giantfoodstores.com/donations/",
+      "funderUrl": "https://go.giantfoodstores.com/donations/",
+      "lastUpdated": "2026-09-29",
+      "addedDate": "2026-09-29",
+      "applicationUrl": "https://go.giantfoodstores.com/donations/",
+      "applicationLinkLabel": "Apply",
+      "previousStatus": null,
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Youth Development",
+        "Health & Wellness"
+      ]
+    },
+    {
+      "id": "wawa-foundation-financial-grant-2026",
+      "funder": "The Wawa Foundation",
+      "opportunity": "Financial Grant — Hunger",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
+      ],
+      "supportType": "Corporate Grant",
+      "fit": "High",
+      "askAmount": 2500,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Ready",
+      "stage": "Open / Rolling",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Use the Wawa Foundation 'Apply for Support' flow and select Financial Support, framing the request around pantry hunger relief in Wawa's Maryland operating area.",
+      "notes": "Current Maryland grant guidance lists Wawa Foundation Financial Grants as rolling for 501(c)(3) nonprofits in Wawa operating areas, including Maryland, with Hunger as one of the Foundation's focus areas. Grants under $2,500 may be awarded at any time; larger requests follow additional review.",
+      "portalUrl": "https://www.thewawafoundation.org/",
+      "funderUrl": "https://www.thewawafoundation.org/",
+      "lastUpdated": "2026-09-29",
+      "addedDate": "2026-09-29",
+      "applicationUrl": "https://www.thewawafoundation.org/",
+      "applicationLinkLabel": "Apply for Support",
+      "previousStatus": null,
+      "originalPrograms": [
+        "Food Access & Pantry",
+        "Mobile Distribution"
+      ]
     }
   ]
 }
