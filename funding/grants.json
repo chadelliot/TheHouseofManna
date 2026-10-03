@@ -2404,14 +2404,14 @@
         "Education & Economic Opportunity",
         "Food Security & Basic Needs"
       ],
-      "askAmount": null,
+      "askAmount": 5000,
       "currency": "USD",
-      "status": "Ready",
-      "stage": "Monetary Requests Open",
-      "submittedDate": null,
-      "nextDate": "2026-10-31",
-      "nextAction": "Submit a monetary request by Oct. 31, choosing the strongest single program narrative or clearly linking youth technology and healthy-food access.",
-      "notes": "Strong overlap across the foundation's giving areas of Empowerment, Education, Wellness, Hunger and Hope. It supports youth technology and healthy food for children, and the application allows a direct monetary request.",
+      "status": "Awaiting response",
+      "stage": "Full Application Submitted",
+      "submittedDate": "2026-10-03",
+      "nextDate": null,
+      "nextAction": "Await The Dale Jr. Foundation review and decision.",
+      "notes": "House of Manna submitted a $5,000 grant application on Oct. 3, 2026 for the Baltimore Youth Innovation & Entrepreneurship Lab, aligned to the foundation's Education and Empowerment priorities.",
       "portalUrl": null,
       "funderUrl": "https://www.thedalejrfoundation.org/",
       "lastUpdated": "2026-10-03",
@@ -2420,7 +2420,8 @@
       "awardedAmount": 0,
       "addedDate": "2026-10-03",
       "applicationUrl": "https://www.thedalejrfoundation.org/wp-content/uploads/sites/66/2025/01/22/TDJF-Donation-Application.pdf",
-      "applicationLinkLabel": "Application"
+      "applicationLinkLabel": "Application",
+      "previousStatus": "Ready"
     },
     {
       "id": "seedmoney-challenge-pantry-garden-2026",
