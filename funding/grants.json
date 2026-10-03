@@ -2424,33 +2424,6 @@
       "previousStatus": "Ready"
     },
     {
-      "id": "seedmoney-challenge-pantry-garden-2026",
-      "funder": "SeedMoney",
-      "opportunity": "SeedMoney Challenge — Food Pantry Garden",
-      "program": "Food Security & Basic Needs",
-      "programs": [
-        "Food Security & Basic Needs",
-        "Youth & Family Development"
-      ],
-      "askAmount": null,
-      "currency": "USD",
-      "status": "Ready",
-      "stage": "Open Challenge",
-      "submittedDate": null,
-      "nextDate": "2026-11-12",
-      "nextAction": "Decide whether to add a small pantry garden/produce-growing component; if yes, register for the challenge by Nov. 12.",
-      "notes": "Conditional opportunity specifically suited to food-bank and food-pantry gardens. Challenge grant awards are $100–$1,000 in cash plus all crowdfunding proceeds raised by the participating organization.",
-      "portalUrl": null,
-      "funderUrl": "https://seedmoney.org/community-garden-grants/",
-      "lastUpdated": "2026-10-03",
-      "supportType": "Grant",
-      "fit": "Medium",
-      "awardedAmount": 0,
-      "addedDate": "2026-10-03",
-      "applicationUrl": "https://seedmoney.org/community-garden-grants/",
-      "applicationLinkLabel": "Challenge Details / Apply"
-    },
-    {
       "id": "macfarlane-foundation-category-one-2026",
       "funder": "Roger I. & Ruth B. MacFarlane Foundation",
       "opportunity": "Category One LOI — Education",
