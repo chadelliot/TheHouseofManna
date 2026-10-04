@@ -2296,12 +2296,12 @@
       ],
       "askAmount": null,
       "currency": "USD",
-      "status": "Ready",
-      "stage": "Application Open",
-      "submittedDate": null,
+      "status": "Awaiting response",
+      "stage": "Application Submitted",
+      "submittedDate": "2026-10-03",
       "nextDate": null,
-      "nextAction": "Apply for a small seed grant supporting a new or existing child-focused pantry/food-access project.",
-      "notes": "Accessible for new organizations and projects. The application explicitly accommodates new or existing projects, and the funder has supported pantry and startup community food initiatives nationwide, including Maryland.",
+      "nextAction": "Await No Child Goes Hungry review and response.",
+      "notes": "House of Manna submitted an application on Oct. 3, 2026 for a child-focused Baltimore food-access initiative supporting families experiencing food insecurity, with emphasis on nutritious food, pantry distributions, and reliable access during weekends, holidays, and school breaks.",
       "portalUrl": null,
       "funderUrl": "https://nochildgoeshungry.net/apply-for-support/",
       "lastUpdated": "2026-10-03",
@@ -2310,7 +2310,8 @@
       "awardedAmount": 0,
       "addedDate": "2026-10-03",
       "applicationUrl": "https://nochildgoeshungry.net/apply-for-support/",
-      "applicationLinkLabel": "Apply"
+      "applicationLinkLabel": "Apply",
+      "previousStatus": "Ready"
     },
     {
       "id": "sc-johnson-community-grant-2026",
