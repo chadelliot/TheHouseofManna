@@ -2434,12 +2434,12 @@
       ],
       "askAmount": 25000,
       "currency": "USD",
-      "status": "Researching",
-      "stage": "Stretch LOI — Unsolicited",
-      "submittedDate": null,
+      "status": "Awaiting response",
+      "stage": "LOI Submitted",
+      "submittedDate": "2026-10-03",
       "nextDate": null,
-      "nextAction": "Prepare and email a concise 2–3 page Category One LOI requesting $25,000 for the Youth Innovation Lab. Keep staff time limited because the Foundation reports funding fewer than 1% of unsolicited LOIs.",
-      "notes": "Category One grants range from $25,000–$75,000 and may support education and other social issues. House of Manna's strongest fit is the Youth Innovation Lab / education work. The Foundation generally identifies grantees through its Executive Director or Trustees; it receives about 1,000 unsolicited LOIs annually and funds fewer than 1%. Treat as a low-priority stretch prospect.",
+      "nextAction": "Await MacFarlane Foundation review and response to the submitted Category One Letter of Inquiry.",
+      "notes": "House of Manna submitted a $25,000 Category One Letter of Inquiry on Oct. 3, 2026 for the Youth Business, AI & Community Innovation Lab. The request emphasizes tangible student-facing investments including laptops, 3pMercury access, AI/software credits, project materials, student seed funds, and college/worksite exposure.",
       "portalUrl": null,
       "funderUrl": "https://www.macfarlanefoundation.org/grantmaking",
       "lastUpdated": "2026-10-03",
@@ -2449,7 +2449,7 @@
       "addedDate": "2026-10-03",
       "applicationUrl": "https://www.macfarlanefoundation.org/grantmaking",
       "applicationLinkLabel": "LOI Instructions",
-      "previousStatus": "Ready"
+      "previousStatus": "Researching"
     }
   ]
 }
