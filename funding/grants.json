@@ -2481,6 +2481,60 @@
       "fit": "High",
       "awardedAmount": 0,
       "addedDate": "2026-10-04"
+    },
+    {
+      "program": "Youth & Family Development",
+      "programs": [
+        "Youth & Family Development",
+        "Education & Economic Opportunity"
+      ],
+      "currency": "USD",
+      "nextDate": null,
+      "awardedAmount": 0,
+      "addedDate": "2026-10-04",
+      "lastUpdated": "2026-10-04",
+      "fit": "High",
+      "supportType": "Grant",
+      "id": "danpaul-lab-inquiry-2026",
+      "funder": "DanPaul Foundation",
+      "opportunity": "Youth Innovation Lab — Grant Inquiry",
+      "askAmount": 8000,
+      "status": "Awaiting response",
+      "stage": "Pre-Application Inquiry",
+      "submittedDate": "2026-10-04",
+      "nextAction": "Await eligibility review and full application instructions.",
+      "notes": "Contact form confirmed Thank you! Oct. 4, 2026. Inquiry proposes $8,000 equipment budget for planned Youth Innovation Lab. This is an inquiry, not a full application or award.",
+      "portalUrl": "https://www.danpaulfoundation.org/contact",
+      "funderUrl": "https://www.danpaulfoundation.org/grant-funding-guidelines",
+      "applicationUrl": "https://www.danpaulfoundation.org/contact",
+      "applicationLinkLabel": "Grant Inquiry"
+    },
+    {
+      "program": "Youth & Family Development",
+      "programs": [
+        "Youth & Family Development",
+        "Education & Economic Opportunity"
+      ],
+      "currency": "USD",
+      "nextDate": null,
+      "awardedAmount": 0,
+      "addedDate": "2026-10-04",
+      "lastUpdated": "2026-10-04",
+      "fit": "High",
+      "supportType": "Grant",
+      "id": "argenta-tech-lab-2026",
+      "funder": "Argenta Foundation",
+      "opportunity": "Technology Grant — Startup Systems and Youth Devices",
+      "askAmount": 1000,
+      "status": "In progress",
+      "stage": "Application In Progress",
+      "submittedDate": null,
+      "nextAction": "Complete digital signature and submit the prepared application.",
+      "notes": "Draft requests up to $1,000 toward two laptops plus up to $5,000 in Argenta software/setup/training. Cash ask records the $1,000 technology purchase portion only; software/services are in kind. New-organization budget exception requested. Not submitted.",
+      "portalUrl": "https://argentafoundation.org/apply",
+      "funderUrl": "https://argentafoundation.org/techgrant",
+      "applicationUrl": "https://argentafoundation.org/apply",
+      "applicationLinkLabel": "Technology Grant"
     }
   ]
 }
