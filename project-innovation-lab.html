@@ -1375,29 +1375,98 @@
     line-height:1.08;
     color:var(--hom-cream);
   }
+  .project-supports-header > p:last-child{
+    font-family:var(--font-body);
+    font-size:15px; line-height:1.7;
+    color:var(--hom-cream); opacity:.78;
+    margin-top:16px;
+    max-width:760px;
+  }
   .supports-grid{
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     gap:18px;
   }
   .supports-item{
-    display:flex; gap:12px;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    min-height:132px;
     background:rgba(247,244,236,.06);
     border:1px solid rgba(247,244,236,.16);
     border-radius:12px;
-    padding:18px 20px;
+    padding:20px 22px;
+    cursor:help;
+    outline:none;
+    transition:background .2s ease, border-color .2s ease, transform .2s ease;
   }
-  .supports-item svg{
-    flex:0 0 18px; width:18px; height:18px; margin-top:2px;
-    color:var(--hom-tan);
+  .supports-item:hover,
+  .supports-item:focus{
+    background:rgba(247,244,236,.11);
+    border-color:rgba(200,148,31,.55);
+    transform:translateY(-2px);
+    z-index:8;
   }
-  .supports-item span{
+  .supports-item-top{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:14px;
+  }
+  .supports-item strong{
     font-family:var(--font-body);
-    font-size:13.5px; line-height:1.5;
-    color:var(--hom-cream); opacity:.9;
+    font-size:13.5px; line-height:1.45;
+    color:var(--hom-cream);
+  }
+  .supports-amount{
+    flex:0 0 auto;
+    font-family:var(--font-display);
+    font-size:18px;
+    color:var(--hom-tan);
+    white-space:nowrap;
+  }
+  .supports-hint{
+    font-family:var(--font-body);
+    font-size:11px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--hom-tan);
+    opacity:.8;
+  }
+  .supports-item::after{
+    content:attr(data-tooltip);
+    position:absolute;
+    left:14px; right:14px;
+    bottom:calc(100% + 10px);
+    padding:13px 15px;
+    border-radius:10px;
+    background:#ffffff;
+    color:var(--hom-navy);
+    font-family:var(--font-body);
+    font-size:12.5px;
+    line-height:1.55;
+    box-shadow:0 12px 30px rgba(0,0,0,.24);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(6px);
+    transition:opacity .18s ease, transform .18s ease, visibility .18s ease;
+    pointer-events:none;
+    z-index:20;
+  }
+  .supports-item:hover::after,
+  .supports-item:focus::after{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
   }
   @media (max-width:900px){ .supports-grid{ grid-template-columns:1fr 1fr; } }
-  @media (max-width:600px){ .supports-grid{ grid-template-columns:1fr; } }
+  @media (max-width:600px){
+    .supports-grid{ grid-template-columns:1fr; }
+    .supports-item::after{
+      bottom:auto;
+      top:calc(100% + 8px);
+    }
+  }
 
   .project-give-section{
     background:var(--hom-cream);
@@ -1709,6 +1778,8 @@
 
       <p>The initiative is designed to expand exposure to business, technology, education, entrepreneurship, and employment pathways while strengthening critical thinking, communication, financial capability, and problem-solving skills.</p>
 
+      <p>The $25,000 project budget is intentionally centered on durable, student-facing investments: laptops, professional and AI software, hands-on project materials, student seed funds, and college and worksite exposure that students can directly use, build with, and learn from.</p>
+
       <div class="project-eligibility-note">
         This Innovation Lab is a Benevity-listed extension of the House of Manna Academy&rsquo;s existing Future-Ready Skills track &mdash; see <a href="academy" style="color:var(--hom-navy); text-decoration:underline;">the Academy</a> for the full five-track curriculum this project helps build out.
       </div>
@@ -1720,17 +1791,45 @@
       <div class="project-supports-header">
         <p class="eyebrow">What Your Donation Supports</p>
         <h2>Where The Funding Goes</h2>
+        <p>Every category below maps directly to the Youth Innovation Lab funding plan. Hover or tap into a category for a brief explanation of what the investment puts in students' hands.</p>
       </div>
       <div class="supports-grid">
-        <div class="supports-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Curriculum development</span></div>
-        <div class="supports-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Educational materials &amp; supplies</span></div>
-        <div class="supports-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Facilitators</span></div>
-        <div class="supports-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Learning technology</span></div>
-        <div class="supports-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Student project materials</span></div>
-        <div class="supports-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Workshops &amp; guest speakers</span></div>
-        <div class="supports-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Experiential learning opportunities</span></div>
-        <div class="supports-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Participant engagement</span></div>
-        <div class="supports-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Program evaluation</span></div>
+        <div class="supports-item" tabindex="0" role="note" data-tooltip="Purchase approximately 10 laptops so students can research markets, build financial models, create presentations, use AI responsibly, and complete hands-on projects.">
+          <div class="supports-item-top"><strong>Student Laptop Lab</strong><span class="supports-amount">$8,000</span></div>
+          <span class="supports-hint">Approx. 10 laptops · details</span>
+        </div>
+        <div class="supports-item" tabindex="0" role="note" data-tooltip="Fund one year of 3pMercury at approximately $399 per month, giving students supervised exposure to an AI-powered lead-generation and supply-chain platform used to explore sourcing, market development, customer discovery, and commercial decision-making.">
+          <div class="supports-item-top"><strong>3pMercury AI Lead-Gen &amp; Supply Chain Platform</strong><span class="supports-amount">$4,800</span></div>
+          <span class="supports-hint">12-month platform access · details</span>
+        </div>
+        <div class="supports-item" tabindex="0" role="note" data-tooltip="Organization-managed subscriptions, API and token credits, and software access for AI, research, design, productivity, coding, and digital learning.">
+          <div class="supports-item-top"><strong>AI &amp; Digital Learning Credits</strong><span class="supports-amount">$2,700</span></div>
+          <span class="supports-hint">AI tokens + learning software · details</span>
+        </div>
+        <div class="supports-item" tabindex="0" role="note" data-tooltip="Headsets, chargers, cases, mice, adapters, and connectivity support so the lab can operate reliably during classes, workshops, and project days.">
+          <div class="supports-item-top"><strong>Technology Accessories &amp; Connectivity</strong><span class="supports-amount">$1,500</span></div>
+          <span class="supports-hint">Lab-ready equipment · details</span>
+        </div>
+        <div class="supports-item" tabindex="0" role="note" data-tooltip="Materials for student prototypes, business concepts, product experiments, presentations, and hands-on innovation challenges.">
+          <div class="supports-item-top"><strong>Innovation &amp; Prototyping Kits</strong><span class="supports-amount">$2,500</span></div>
+          <span class="supports-hint">Build, test, present · details</span>
+        </div>
+        <div class="supports-item" tabindex="0" role="note" data-tooltip="Small, controlled project budgets that let student teams test ideas, purchase materials, validate assumptions, and learn basic unit economics through real decisions.">
+          <div class="supports-item-top"><strong>Student Project Seed Funds</strong><span class="supports-amount">$2,000</span></div>
+          <span class="supports-hint">Turn ideas into experiments · details</span>
+        </div>
+        <div class="supports-item" tabindex="0" role="note" data-tooltip="Transportation and direct costs for college visits and employer or worksite tours that expose students to education, technology, business, supply-chain, and career pathways.">
+          <div class="supports-item-top"><strong>Career Exposure: College &amp; Worksite Tours</strong><span class="supports-amount">$1,500</span></div>
+          <span class="supports-hint">College + employer visits · details</span>
+        </div>
+        <div class="supports-item" tabindex="0" role="note" data-tooltip="Targeted curriculum, guest experts, and applied workshops that turn the technology into structured learning in entrepreneurship, financial capability, AI, and business problem-solving.">
+          <div class="supports-item-top"><strong>Curriculum, Guest Experts &amp; Applied Workshops</strong><span class="supports-amount">$1,000</span></div>
+          <span class="supports-hint">Instruction tied to the tools · details</span>
+        </div>
+        <div class="supports-item" tabindex="0" role="note" data-tooltip="Digital portfolios, assessments, certificates, and outcome tracking so students can document what they built and House of Manna can measure and improve the program.">
+          <div class="supports-item-top"><strong>Student Portfolios &amp; Outcomes</strong><span class="supports-amount">$1,000</span></div>
+          <span class="supports-hint">Document skills + results · details</span>
+        </div>
       </div>
     </div>
   </section>
@@ -1769,7 +1868,7 @@
         <div class="give-main">
           <p class="eyebrow">Give To This Project</p>
           <h2>Help Fund The Lab</h2>
-          <p>This project is newly launched with a $25,000 goal &mdash; every gift is part of the very first funding this initiative receives.</p>
+          <p>This project is newly launched with a $25,000 goal. The funding plan is built around tangible student-facing investments - including a 10-seat laptop lab, 12 months of 3pMercury, AI and digital-learning access, hands-on project materials, and college and worksite exposure.</p>
           <a class="donate-btn" href="https://givebutter.com/youth-business-ai-community-innovation-lab-omm61p" target="_blank" rel="noopener noreferrer">Donate Now</a>
           <div class="give-benevity-note">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v5M12 16h.01"/><circle cx="12" cy="12" r="9"/></svg>
