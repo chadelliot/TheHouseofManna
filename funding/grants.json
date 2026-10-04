@@ -3601,6 +3601,78 @@
       "addedDate": "2026-10-04",
       "applicationUrl": "https://marylandpublicschools.org/about/Pages/OFPOS/GAC/MDRoboticsFY27/index.aspx",
       "applicationLinkLabel": "Grant Details"
+    },
+    {
+      "id": "ieca-foundation-2027",
+      "funder": "IECA Foundation",
+      "opportunity": "2027 project grant — Youth Innovation Lab educational pathways",
+      "askAmount": 5000,
+      "nextDate": "2026-11-20",
+      "funderUrl": "https://www.iecafoundation.org/apply-for-a-grant",
+      "applicationUrl": "https://apply.mykaleidoscope.com/program/IECAFoundationGrant2027",
+      "nextAction": "Review authenticated application requirements; prepare educational-choice/career-exploration project and implementation plan. Confirm open access without required religious participation before submission.",
+      "notes": "Verified Oct. 4: open deadline Nov. 20, 2026 11:59 PM ET; average grant $5,000; annual budget <=$1M; explicitly welcomes newer organizations. Not submitted or fully submission-ready. Proposed ask, not a posted maximum. Planned Lab fit remains conditional on educational-pathways activities.",
+      "program": "Education & Economic Opportunity",
+      "programs": [
+        "Education & Economic Opportunity"
+      ],
+      "currency": "USD",
+      "status": "Researching",
+      "stage": "Open application path; readiness incomplete",
+      "submittedDate": null,
+      "lastUpdated": "2026-10-04",
+      "addedDate": "2026-10-04",
+      "supportType": "Grant",
+      "fit": "Conditional",
+      "awardedAmount": 0
+    },
+    {
+      "id": "edaren-foundation-2026",
+      "funder": "Edaren Foundation",
+      "opportunity": "Education project grant — proposed Youth Innovation Lab",
+      "askAmount": 10000,
+      "nextDate": null,
+      "funderUrl": "https://www.edarenfoundation.org/edaren-apply/",
+      "applicationUrl": "https://www.edarenfoundation.org/edaren-apply/",
+      "nextAction": "Prepare five separate PDF attachments: board request letter, project budget, one-page history, directors list, and 3–5-year strategic-goals summary. Reconcile proposed $10,000 program budget with existing $8,000 technology plan.",
+      "notes": "Verified Oct. 4: registered 501(c)(3), education/arts/environment; target $10,000–$100,000. Complete application by email to edarenfoundation@bankofamerica.com; rolling board review. No minimum operating age posted in public checklist. Packet not prepared/submitted. Proposed $10,000 ask is not committed funding.",
+      "program": "Education & Economic Opportunity",
+      "programs": [
+        "Education & Economic Opportunity"
+      ],
+      "currency": "USD",
+      "status": "Researching",
+      "stage": "Open application path; readiness incomplete",
+      "submittedDate": null,
+      "lastUpdated": "2026-10-04",
+      "addedDate": "2026-10-04",
+      "supportType": "Grant",
+      "fit": "Conditional",
+      "awardedAmount": 0
+    },
+    {
+      "id": "labcorp-foundation-2026",
+      "funder": "Labcorp Charitable Foundation",
+      "opportunity": "Program support — pantry launch food purchases",
+      "askAmount": 5000,
+      "nextDate": null,
+      "funderUrl": "https://www.labcorp.com/about/our-impact/charitable-foundation",
+      "applicationUrl": "https://apply.yourcausegrants.com/apply/programs/84fe6f21-f3af-437f-b9de-b3ba1ff79361",
+      "nextAction": "Complete required Blackbaud Verified Network nonprofit verification, inspect additional portal guidelines, and prepare a specific pantry project budget/implementation plan.",
+      "notes": "Verified Oct. 4: public application portal, 501(c)(3)s eligible nationwide, food insecurity and STEM priorities. General operating support excluded. Full exclusions are in portal; verification required before applying. $5,000 is a proposed request, not a published limit. Not submission-ready/submitted.",
+      "program": "Education & Economic Opportunity",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "status": "Researching",
+      "stage": "Open application path; readiness incomplete",
+      "submittedDate": null,
+      "lastUpdated": "2026-10-04",
+      "addedDate": "2026-10-04",
+      "supportType": "Grant",
+      "fit": "Conditional",
+      "awardedAmount": 0
     }
   ]
 }
