@@ -1942,14 +1942,14 @@
       "programs": [
         "Food Security & Basic Needs"
       ],
-      "askAmount": null,
+      "askAmount": 5000,
       "currency": "USD",
-      "status": "Ready",
-      "stage": "Open / Rolling",
-      "submittedDate": null,
+      "status": "Awaiting response",
+      "stage": "Application Submitted",
+      "submittedDate": "2026-10-03",
       "nextDate": null,
-      "nextAction": "Apply through Giant Food's Versaic portal with the pantry / hunger-relief request.",
-      "notes": "Distinct from The GIANT Company already in the tracker. Giant Food's community giving includes hunger as an explicit pillar; the application portal is open on a rolling basis.",
+      "nextAction": "Await Giant Food review and response.",
+      "notes": "House of Manna submitted a Giant Food hunger-relief application on Oct. 3, 2026 requesting $5,000 in gift cards plus grocery product support for the Neighborhood Food Access program and pantry launch serving Baltimore families.",
       "portalUrl": "https://giantfood.versaic.com/",
       "funderUrl": "https://giantfood.versaic.com/",
       "lastUpdated": "2026-10-03",
@@ -1958,7 +1958,8 @@
       "awardedAmount": 0,
       "addedDate": "2026-10-03",
       "applicationUrl": "https://giantfood.versaic.com/",
-      "applicationLinkLabel": "Apply / Portal"
+      "applicationLinkLabel": "Apply / Portal",
+      "previousStatus": "Ready"
     },
     {
       "id": "kroger-zero-hunger-zero-waste-2026",
