@@ -2027,11 +2027,11 @@
       "askAmount": null,
       "currency": "USD",
       "status": "In progress",
-      "stage": "Portal Sign-in Required",
+      "stage": "Account Creation Required",
       "submittedDate": null,
       "nextDate": null,
-      "nextAction": "Sign in securely or create a portal account, then complete the application.",
-      "notes": "WM Versaic portal opened Oct. 4, 2026 and requires sign-in. Application not submitted; request amount not yet entered.",
+      "nextAction": "Complete WM Versaic registration, then prepare contribution application.",
+      "notes": "WM registration page opened Oct. 4, 2026. Email registration and account setup required before application. No application submitted or request amount entered.",
       "portalUrl": "https://wm.versaic.com/",
       "funderUrl": "https://wm.versaic.com/",
       "lastUpdated": "2026-10-04",
@@ -2535,6 +2535,32 @@
       "funderUrl": "https://argentafoundation.org/techgrant",
       "applicationUrl": "https://argentafoundation.org/apply",
       "applicationLinkLabel": "Technology Grant"
+    },
+    {
+      "id": "seedmoney-garden-challenge-2026",
+      "funder": "SeedMoney",
+      "opportunity": "Food Garden Challenge Grants",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "On hold",
+      "stage": "Garden Project Required",
+      "submittedDate": null,
+      "nextDate": "2026-11-12",
+      "nextAction": "Confirm a public food garden site, permission and feasible project plan before applying.",
+      "notes": "Official SeedMoney guide reviewed Oct. 4: food garden projects use crowdfunding plus challenge grants of $100-$1,000. Applications close Nov. 12. House of Manna garden site/project is not verified; no application submitted.",
+      "portalUrl": null,
+      "funderUrl": "https://seedmoney.org/community-garden-grants/",
+      "applicationUrl": "https://seedmoney.org/",
+      "applicationLinkLabel": "Grant Details",
+      "lastUpdated": "2026-10-04",
+      "supportType": "Grant",
+      "fit": "Conditional",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-04"
     }
   ]
 }
