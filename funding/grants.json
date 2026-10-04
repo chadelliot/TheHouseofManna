@@ -2049,14 +2049,14 @@
         "Education & Economic Opportunity",
         "Youth & Family Development"
       ],
-      "askAmount": null,
+      "askAmount": 25000,
       "currency": "USD",
-      "status": "Ready",
-      "stage": "Application Portal Active",
-      "submittedDate": null,
+      "status": "Awaiting response",
+      "stage": "LOI Submitted",
+      "submittedDate": "2026-10-03",
       "nextDate": null,
-      "nextAction": "Develop a Youth Innovation Lab request emphasizing STEM education, AI literacy and community-based youth learning.",
-      "notes": "Regeneron accepts charitable-funding applications from STEM education and community-based organizations, with science education as a major philanthropic focus.",
+      "nextAction": "Await Regeneron review of the submitted LOI and invitation code for a full proposal, if selected.",
+      "notes": "House of Manna submitted a $25,000 Letter of Inquiry on Oct. 3, 2026 for the Youth Business, AI & Community Innovation Lab. Regeneron's Non-Healthcare Charitable Contributions are invitation-only for full proposals; the LOI is the required first step. The request emphasizes STEM-oriented technology access, laptops, 3pMercury, AI/software credits, prototyping, student project funds, and college/worksite exposure.",
       "portalUrl": null,
       "funderUrl": "https://www.regeneron.com/about/grants",
       "lastUpdated": "2026-10-03",
@@ -2065,7 +2065,8 @@
       "awardedAmount": 0,
       "addedDate": "2026-10-03",
       "applicationUrl": "https://www.regeneron.com/about/grants",
-      "applicationLinkLabel": "Apply / Learn More"
+      "applicationLinkLabel": "Apply / Learn More",
+      "previousStatus": "Ready"
     },
     {
       "id": "motorola-solutions-foundation-2027",
