@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "House of Manna Funding Pipeline",
-    "lastUpdated": "2026-10-03",
+    "lastUpdated": "2026-10-04",
     "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications.",
     "statusDefinitions": {
       "Researching": "Fit or eligibility needs checking",
@@ -2454,6 +2454,33 @@
       "applicationUrl": "https://www.macfarlanefoundation.org/grantmaking",
       "applicationLinkLabel": "LOI Instructions",
       "previousStatus": "Researching"
+    },
+    {
+      "id": "archer-innovation-lab-2026",
+      "funder": "James B. and Lois R. Archer Charitable Foundation",
+      "opportunity": "Small Grant — AI-Ready Youth Innovation Lab",
+      "program": "Youth & Family Development",
+      "programs": [
+        "Youth & Family Development",
+        "Education & Economic Opportunity"
+      ],
+      "askAmount": 8000,
+      "currency": "USD",
+      "status": "Awaiting response",
+      "stage": "Application submitted",
+      "submittedDate": "2026-10-04",
+      "nextDate": null,
+      "nextAction": "Await review and respond to any request for additional information.",
+      "notes": "Submission verified Oct. 4, 2026 by the foundation website confirmation. Request: $8,000 for 12 shared laptops, secure charging/storage, peripherals, device protection and setup/supplies. Proposed cost estimates; no award or committed project funding.",
+      "portalUrl": "https://thearcherfoundation.org/small-application/",
+      "funderUrl": "https://thearcherfoundation.org/",
+      "applicationUrl": "https://thearcherfoundation.org/small-application/",
+      "applicationLinkLabel": "Small Grant Application",
+      "lastUpdated": "2026-10-04",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-04"
     }
   ]
 }
