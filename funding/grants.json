@@ -15,13 +15,24 @@
     },
     "giftCardRequestPreference": {
       "requestFunderMaximum": true,
-      "preferredCardDenominations": [
-        100,
-        50
+      "individualCardValueMinimum": 50,
+      "preferredIndividualCardValue": 100,
+      "preferredTotalIfAllowed": 5000,
+      "examples": [
+        {
+          "total": 1000,
+          "count": 20,
+          "valueEach": 50
+        },
+        {
+          "total": 5000,
+          "count": 50,
+          "valueEach": 100
+        }
       ],
       "currency": "USD",
       "confirmedDate": "2026-10-05",
-      "note": "Request each funder's published maximum total gift-card donation, preferably in $100 or $50 denominations when permitted. Do not skip because the cap is below $5,000 or requires fewer than 50 cards. This supersedes prior minimum 50-card preference. Respect funder limits, permitted uses and denominations; no duplicate pending submissions."
+      "note": "Request the funder's maximum allowable total, not a $50/$100 total. Individual cards should be at least $50, preferably $100, subject to actual funder rules and denominations. If awards exceed $5,000, determine reasonable quantity/individual value to share across more recipients. Do not skip because a cap is below $5,000. $1,000 example: 20 x $50; $5,000 example: 50 x $100. No duplicate pending submissions. Do not assert recipient distribution is allowed until verified."
     }
   },
   "grants": [
