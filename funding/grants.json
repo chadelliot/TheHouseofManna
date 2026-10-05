@@ -1612,14 +1612,14 @@
       ],
       "supportType": "Distributor Product Donation",
       "fit": "Medium-High",
-      "status": "Researching",
-      "stage": "Direct Partner Outreach",
-      "nextAction": "Email Saval Foodservice to request House of Manna be considered for safe overstock, short-dated, or charitable case donations that can be stored for pantry distribution.",
-      "notes": "Local Elkridge distributor with documented nonprofit and food-access partnerships. No public pantry-recipient application was identified, so this should be treated as a direct relationship request rather than an assumed recurring donation program.",
+      "status": "On hold",
+      "stage": "Prepared inquiry — Send approval required",
+      "nextAction": "Approve sending the prepared prelaunch pantry food-donation inquiry to info@savalfoods.com from chad@houseofmannamd.com.",
+      "notes": "Local Elkridge distributor with documented nonprofit and food-access partnerships. No public pantry-recipient application was identified, so this should be treated as a direct relationship request rather than an assumed recurring donation program. Oct. 5: confirmed official Saval contact info@savalfoods.com and searched House of Manna email for prior correspondence; none found. Prepared honest prelaunch product-donation recipient inquiry. Gmail send rejected by automatic approval review because specific payload/destination authorization was not established. No email sent; no application or award. Request quantity/value unspecified, askAmount remains null.",
       "applicationUrl": "mailto:info@savalfoods.com",
       "applicationLinkLabel": "Email Saval",
       "funderUrl": "https://www.savalfoods.com/about/community-partners",
-      "lastUpdated": "2026-09-23"
+      "lastUpdated": "2026-10-05"
     },
     {
       "askAmount": null,
