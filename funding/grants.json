@@ -12,6 +12,14 @@
       "Awarded": "Confirmed support",
       "Declined": "Funder rejected the request",
       "Not pursuing": "Closed by House of Manna"
+    },
+    "giftCardRequestPreference": {
+      "minimumCardCount": 50,
+      "preferredValuePerCard": 100,
+      "targetTotal": 5000,
+      "currency": "USD",
+      "confirmedDate": "2026-10-05",
+      "note": "User directs future gift-card requests to seek at least 50 cards, ideally $100 each, subject to funder limits and a credible distribution budget. Do not duplicate pending submissions."
     }
   },
   "grants": [
