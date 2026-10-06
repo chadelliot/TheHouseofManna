@@ -3897,12 +3897,12 @@
       "askAmount": 5000,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "On hold",
-      "stage": "Proposal draft saved — required eligibility/documents unresolved",
+      "status": "Awaiting response",
+      "stage": "First-year eligibility question sent; full proposal prepared, not submitted",
       "submittedDate": null,
-      "nextDate": null,
-      "nextAction": "Verify Candid Charity Check listing; provide most recent fiscal-year budget, directors' outside affiliations, complete corporate/foundation support history and government-funding percentage; then attach original IRS letter and submit.",
-      "notes": "October 6 pantry operating-support review: Explicit general operating support; nationwide. Draft preparation; not submitted. Candid Charity Check listing unverified; complete donor/board-affiliation data and original IRS letter required. No 990/audit requested. Assemble complete letterhead proposal; rolling review may take 18 months. Listed $5000 is proposed for an unsent operating request or the unchanged existing request; not a new submitted full application. Source: https://sidneysternmemorialtrust.org/guidelines\nOfficial proposal checklist reviewed; general operating support permitted and no 990/audit requested. Charity Check listing, original IRS letter, donor actuals/government percentage and board affiliations need verification. Not submitted; grant review may take 18 months. October 6 continuation: Saved $5,000 general operating proposal with cover letter, current 2027 hub budget, support schedule and current board roles. Original IRS letter located. No proposal or eligibility email sent. Candid listing remains unverified; current 2027 planning estimates cannot substitute silently for the required most recent fiscal-year budget. Outside board affiliations and complete support/government percentages remain unconfirmed. Review may extend to 18 months; draft avoids promising award before 2027 launch. Saved draft: House_of_Manna_Sidney_Stern_5000_Proposal_Draft.md.",
+      "nextDate": "2026-10-20",
+      "nextAction": "Await Trust clarification about first-year budgets and Candid listing; verify Charity Check eligibility and directors' outside affiliations before emailing the full $5,000 proposal.",
+      "notes": "October 6 pantry operating-support review: Explicit general operating support; nationwide. Draft preparation; not submitted. Candid Charity Check listing unverified; complete donor/board-affiliation data and original IRS letter required. No 990/audit requested. Assemble complete letterhead proposal; rolling review may take 18 months. Listed $5000 is proposed for an unsent operating request or the unchanged existing request; not a new submitted full application. Source: https://sidneysternmemorialtrust.org/guidelines\nOfficial proposal checklist reviewed; general operating support permitted and no 990/audit requested. Charity Check listing, original IRS letter, donor actuals/government percentage and board affiliations need verification. Not submitted; grant review may take 18 months. October 6 continuation: Saved $5,000 general operating proposal with cover letter, current 2027 hub budget, support schedule and current board roles. Original IRS letter located. No proposal or eligibility email sent. Candid listing remains unverified; current 2027 planning estimates cannot substitute silently for the required most recent fiscal-year budget. Outside board affiliations and complete support/government percentages remain unconfirmed. Review may extend to 18 months; draft avoids promising award before 2027 launch. Saved draft: House_of_Manna_Sidney_Stern_5000_Proposal_Draft.md. October 6 follow-through: FY2026 $55,000 management launch budget recovered and verified from McCormick PDF; original IRS letter downloaded and visually verified (Aug. 17, 2026; exemption effective July 12, 2026; fiscal year ends Dec. 31). Full six-page $5,000 proposal packet saved. Pre-application requirements email sent to info@sidneysternmemorialtrust.org, Gmail SENT 1a1125c3cfd4d8f0. This is not a full grant submission. Candid/GuideStar browser access blocked, so listing remains unverified. Outside board affiliations not provided. Chad reports Safeway $5,000 grocery grant and Weis $150 gift card, both private; no government support reported. Payment receipt for Safeway remains unverified.",
       "funderUrl": "https://sidneysternmemorialtrust.org/guidelines",
       "portalUrl": "https://sidneysternmemorialtrust.org/guidelines",
       "applicationUrl": "https://sidneysternmemorialtrust.org/guidelines",
@@ -4039,6 +4039,174 @@
       "applicationLinkLabel": "Official guidance",
       "addedDate": "2026-10-06",
       "lastUpdated": "2026-10-06"
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": "2026-10-06",
+      "nextDate": "2026-10-20",
+      "id": "teazey-foundation-pantry-2027",
+      "funder": "Teazey Foundation",
+      "opportunity": "Medium grant — board nomination for pantry operations",
+      "supportType": "Grant / Nomination",
+      "fit": "Conditional",
+      "askAmount": 7500,
+      "status": "Awaiting response",
+      "stage": "Board-nomination introduction sent; not a full invited application",
+      "nextAction": "Await nomination/geographic eligibility response. Do not duplicate nomination or treat it as a full invited application.",
+      "notes": "October 6: Official website welcomes nominations; medium category is $7,500. Sent nomination to teazeyfoundation@gmail.com with proposed $6,000 transport and $1,500 packing/safety allocation, startup disclosure, public operating plan and social links. Gmail SENT receipt 1a1125ed3ad4cd83 verified. No operating history, lease or partner commitment invented. March/September reviews; board member nomination required.",
+      "url": "https://www.teazeyfoundation.org/available-grants"
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "id": "rnp-foundation-pantry-2027",
+      "funder": "Ravi & Naina Patel Foundation",
+      "opportunity": "Pantry logistics operating-support inquiry",
+      "supportType": "Grant / Eligibility Inquiry",
+      "fit": "Conditional",
+      "askAmount": 5000,
+      "status": "In progress",
+      "stage": "Gmail inquiry draft saved — send approval required",
+      "nextAction": "Chad approves exact inquiry to amar@rnpfoundation.org; then send saved draft r2632284591502728171. Ask acceptance of new-organization documents instead of filed Form 990; do not count as full grant application.",
+      "notes": "October 6: Nutrition pillar fits proposed Baltimore food access. Official application route requires Form 990. First fiscal year ends Dec. 31, 2026; no filed 990 exists. $5,000 inquiry includes public $46,860 operating estimate, $4,000 transport/$1,000 packing allocation, organizational contact and social links. Send rejected by automatic approval review: broad authorization did not clearly authorize exact financial/contact payload and recipient. No email sent. Gmail DRAFT id r2632284591502728171 / message 1a1125b41f076688.",
+      "url": "https://rnpfoundation.org/grants/"
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "id": "greenpoint-foundation-pantry-prospect",
+      "funder": "GreenPoint Foundation",
+      "opportunity": "Pantry community project — eligibility review",
+      "supportType": "Grant / Conditional Prospect",
+      "fit": "Conditional",
+      "askAmount": 5000,
+      "status": "On hold",
+      "stage": "Audit and local-community fit unresolved",
+      "nextAction": "Confirm audit alternative and eligible geographic relationship before starting portal. Faith-based general budget excluded; only a qualifying community project may fit.",
+      "notes": "October 6 official review: rolling applications and general operating support exist, but latest financial audit required. Faith-based organizations' general budgets excluded; community enhancement programs considered case by case. GreenPoint location/employee relationship unverified. $5,000 is a prospective amount only; no application, account, or email sent.",
+      "url": "https://greenpointfoundation.org/"
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "id": "mefp-fy27-28-screened",
+      "funder": "Maryland DHS — Maryland Emergency Food Program",
+      "opportunity": "FY2027–FY2028 food grants",
+      "stage": "Three-year operating-history requirement not met",
+      "notes": "Official September 21–October 21, 2026 cycle is open; minimum three years' operation required. House formed July 2026. New applicants capped $5,000, but no request made because startup is ineligible.",
+      "url": "https://dhs.maryland.gov/office-community-grants/maryland-emergency-food-program-mefp/",
+      "supportType": "Grant / Screened Prospect",
+      "fit": "Not eligible for current route",
+      "askAmount": 0,
+      "status": "Not pursuing",
+      "nextAction": "No application submitted; revisit only if eligibility or scope materially changes."
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "id": "henry-niles-first-time-screened",
+      "funder": "Henry E. Niles Foundation",
+      "opportunity": "First-time grant application",
+      "stage": "First-time applications paused",
+      "notes": "Official home page currently excludes organizations with no previous application/grant history. No House application or inquiry sent.",
+      "url": "https://www.henryniles.org/",
+      "supportType": "Grant / Screened Prospect",
+      "fit": "Not eligible for current route",
+      "askAmount": 0,
+      "status": "Not pursuing",
+      "nextAction": "No application submitted; revisit only if eligibility or scope materially changes."
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "id": "popeyes-food-love-screened",
+      "funder": "Popeyes Foundation",
+      "opportunity": "Food Love Grants",
+      "stage": "Religious-affiliation exclusion",
+      "notes": "Official Food Love guidelines exclude organizations with specific religious affiliation. House is faith-inspired and tied to church initiatives. No consideration form/application sent.",
+      "url": "https://www.popeyesfoundation.org/programs/food-love-grants",
+      "supportType": "Grant / Screened Prospect",
+      "fit": "Not eligible for current route",
+      "askAmount": 0,
+      "status": "Not pursuing",
+      "nextAction": "No application submitted; revisit only if eligibility or scope materially changes."
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "id": "clif-general-operations-screened",
+      "funder": "Clif Family Foundation",
+      "opportunity": "Open Call general operating support",
+      "stage": "Faith-based organization exclusion",
+      "notes": "Official Open Call guidelines explicitly exclude faith-based or religious organizations. No application sent.",
+      "url": "https://cliffamilyfoundation.org/grants-program",
+      "supportType": "Grant / Screened Prospect",
+      "fit": "Not eligible for current route",
+      "askAmount": 0,
+      "status": "Not pursuing",
+      "nextAction": "No application submitted; revisit only if eligibility or scope materially changes."
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "id": "manning-family-local-screened",
+      "funder": "Manning Family Foundation",
+      "opportunity": "Local community grants",
+      "stage": "Charlottesville geography mismatch",
+      "notes": "Official local grants focus on Charlottesville-area service. House's Baltimore programs do not match. No application sent.",
+      "url": "https://themanningfamilyfoundation.org/community/",
+      "supportType": "Grant / Screened Prospect",
+      "fit": "Not eligible for current route",
+      "askAmount": 0,
+      "status": "Not pursuing",
+      "nextAction": "No application submitted; revisit only if eligibility or scope materially changes."
     }
   ]
 }
