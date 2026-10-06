@@ -2695,17 +2695,17 @@
       "programs": [
         "Education & Economic Opportunity"
       ],
-      "askAmount": null,
+      "askAmount": 5000,
       "currency": "USD",
       "status": "On Hold",
-      "stage": "Account and adopted policy required",
+      "stage": "Registration prepared — required social URL and policy confirmation outstanding",
       "submittedDate": null,
       "nextDate": null,
-      "nextAction": "Confirm board-adopted nondiscrimination policy, adoption date and public availability; complete manual Fluxx registration before November 15, 6 p.m. ET, for November 30 application deadline.",
-      "notes": "50-prospect review (Oct. 4, 2026). Published funding guidance: First request recommended: $3,000–$5,000. Timing: Registration and applications accepted year-round; board deadlines apply. Program fit: Children / literacy / youth learning. No application submitted in this research.",
+      "nextAction": "Provide verified active social-media URL or obtain registration staff guidance, submit registration, allow manual review 1–2 weeks; confirm board-adopted publicly available nondiscrimination policy and adoption date before full $5,000 food-access operating request.",
+      "notes": "50-prospect review (Oct. 4, 2026). Published funding guidance: First request recommended: $3,000–$5,000. Timing: Registration and applications accepted year-round; board deadlines apply. Program fit: Children / literacy / youth learning. No application submitted in this research.\nOctober 6 general-operations review: official FAQ permits operating costs supporting programming; first-time local ask recommended $3,000–$5,000. Prepared proposed $5,000 food-access operating ask. Fluxx registration populated with confirmed legal organization name, business address/email/phone, EIN and contact. Submit Request validation failed because Primary Social Media URL is required; no verified House social URL found. No registration or grant submission confirmed. Preserve prepared form; do not invent URL or policy adoption date. Application requires board-adopted nondiscrimination policy, adoption date and public availability. Funder manually processes registration 1–2 weeks.",
       "portalUrl": null,
       "funderUrl": "https://www.norarobertsfoundation.org/applicants.html",
-      "lastUpdated": "2026-10-04",
+      "lastUpdated": "2026-10-06",
       "supportType": "Grant",
       "fit": "Medium",
       "awardedAmount": 0,
@@ -3814,6 +3814,54 @@
       "addedDate": "2026-10-05",
       "supportType": "Grant",
       "fit": "Conditional"
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "lastUpdated": "2026-10-06",
+      "addedDate": "2026-10-06",
+      "supportType": "Grant",
+      "fit": "Conditional",
+      "id": "towercares-food-hub-2027",
+      "funder": "TowerCares Foundation",
+      "opportunity": "2027 food hub — operating logistics",
+      "askAmount": 5000,
+      "status": "Awaiting response",
+      "stage": "Required Foundation Ambassador meeting requested",
+      "submittedDate": "2026-10-06",
+      "nextDate": "2026-10-20",
+      "nextAction": "Await Ambassador meeting and startup/children-in-need/operating-cost eligibility guidance; full application only after meeting. New-organization deadline December 31 for February review.",
+      "notes": "October 6: official page requires first-time organizations to meet a Foundation Ambassador before applying. Emailed info@towercaresfoundation.org from chad@houseofmannamd.com; Gmail SENT 1a111f302d7bceae. Proposed $5,000 for food pickup/delivery and packing/safety supplies. Linked public general-operations page and disclosed proposed hub, no secured lease or expanded sites. Asked whether broad family food access and these operating costs qualify. This is a meeting/eligibility inquiry, not a submitted full grant application; $5,000 proposed, no published cap verified. September 30 new-organization cutoff passed; next December 31.",
+      "funderUrl": "https://www.towercaresfoundation.org/apply-for-a-grant/",
+      "applicationUrl": "https://www.towercaresfoundation.org/apply-for-a-grant/"
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "lastUpdated": "2026-10-06",
+      "addedDate": "2026-10-06",
+      "supportType": "Grant",
+      "fit": "Conditional",
+      "id": "stulman-food-hub-2027",
+      "funder": "Leonard & Helen R. Stulman Foundation",
+      "opportunity": "2027 food hub — operating support / health access",
+      "askAmount": 25000,
+      "status": "Awaiting response",
+      "stage": "Eligibility and first-year documentation inquiry sent",
+      "submittedDate": "2026-10-06",
+      "nextDate": "2026-10-20",
+      "nextAction": "Await health-priority fit, founder/board-chair LOI signatures and first-year audit alternative guidance. Then prepare signed two-page LOI through official form; CAPTCHA confirmation needed at action time.",
+      "notes": "October 6: rolling LOIs reviewed monthly; full proposals by invitation. Sent public-plan eligibility inquiry to official Cathy Brill address cbrill@stulmanfoundation.org; Gmail SENT 1a111f31b7047ce8. Proposed $25,000 = rent $15,000 + insurance $2,400 + incremental occupancy $1,800 + pickup/delivery $5,800. Asked whether food access as social determinant fits health focus; no clinical/disease-management program claimed. Asked about required Executive Director and Board President signatures and first-year audited-financial-statement alternative. Live LOI form contains custom CAPTCHA; no LOI uploaded or submitted. Full detailed management hub plan $76,060; annual operations $46,860; public campaign displays $75,000. Proposed planning budget, no lease/expanded sites secured.",
+      "funderUrl": "https://stulmanfoundation.org/what-we-fund/",
+      "applicationUrl": "https://stulmanfoundation.org/what-we-fund/how-to-apply/submit-a-letter-of-inquiry-loi/"
     }
   ]
 }
