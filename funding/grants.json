@@ -54,6 +54,13 @@
       "linkedin": "https://www.linkedin.com/company/the-house-of-manna/",
       "source": "User-provided Oct. 4, 2026; confirmed instruction Oct. 6, 2026",
       "instruction": "Provide these House of Manna social profiles whenever applications or funders ask for social media. Do not use similarly named organizations' profiles."
+    },
+    "latestApplicationContinuation": {
+      "date": "2026-10-06",
+      "newPreLOIContactsSent": 1,
+      "newFullApplicationsSubmitted": 0,
+      "preparedInquiryAwaitingCaptcha": 1,
+      "note": "Richman $8,000 pre-LOI contact SENT. Lafitte $8,000 inquiry filled but not sent. Patel $5,000 draft remains blocked by automatic approval review; no resend or bypass. Added screened routes and recovered prior Abell decline to prevent duplicates."
     }
   },
   "grants": [
@@ -4207,6 +4214,153 @@
       "askAmount": 0,
       "status": "Not pursuing",
       "nextAction": "No application submitted; revisit only if eligibility or scope materially changes."
+    },
+    {
+      "program": "Youth Innovation Lab",
+      "programs": [
+        "Youth Innovation Lab"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": "2026-10-06",
+      "nextDate": "2026-10-20",
+      "supportType": "Grant / Screened Prospect",
+      "id": "richman-youth-lab-2027",
+      "funder": "The Richman Foundation",
+      "opportunity": "Education — pre-LOI contact",
+      "fit": "Conditional — early-stage education fit under review",
+      "askAmount": 8000,
+      "status": "Awaiting response",
+      "stage": "Required pre-LOI introduction sent; not full application",
+      "nextAction": "Await staff guidance before creating or submitting LOI.",
+      "url": "https://richmanfdn.org/what-we-fund/",
+      "notes": "Sent to Executive Director kkinkopf@richmanfdn.org; verified Gmail SENT message 1a112774e98d6104. Proposed $8,000 shared technology package; disclosed July 2026 formation and no Lab cohorts started. Socials included. Foundation requires contact before LOI. Inquiry text: <p>Dear Ms. Kinkopf,</p><p>I am contacting you before submitting a Letter of Inquiry, as requested in the Richman Foundation’s guidance. Would a new Baltimore City nonprofit preparing a youth technology and career-readiness program be appropriate for an initial conversation?</p><p>The House of Manna, Inc. is a 501(c)(3) formed in July 2026. Our proposed AI-Ready Youth Innovation Lab would provide shared computers for instructor-guided AI literacy, coding, digital creation, entrepreneurship, and career exploration for Baltimore youth. The lab has not begun serving cohorts; we are seeking the equipment and delivery capacity needed to launch responsibly.</p><p>We would like to discuss a proposed $8,000 technology package: 12 laptops ($6,000), secure charging and storage ($700), peripherals ($480), warranty/support ($600), and setup and instructional supplies ($220). These are planning estimates, not incurred expenses or committed matching funds. We would track attendance, completed projects, and participants’ skill development once instruction begins.</p><p>Your emphasis on college and career preparation appears relevant. Before proceeding, could you advise whether this early-stage program and equipment request fit your current priorities, and whether you would welcome an LOI? We can provide our IRS determination letter and a more detailed implementation plan if useful.</p><p>Thank you,<br>Chad Parker<br>Founder and President, The House of Manna, Inc.<br>chad@houseofmannamd.com | 312-885-1072<br><a href=\"https://houseofmannamd.com\">Website</a> | <a href=\"https://www.facebook.com/share/1ChjmYfmLi/?mibextid=wwXIfr\">Facebook</a> | <a href=\"https://www.instagram.com/thehouse_of_manna/\">Instagram</a> | <a href=\"https://www.linkedin.com/company/the-house-of-manna/\">LinkedIn</a></p>"
+    },
+    {
+      "program": "Youth Innovation Lab",
+      "programs": [
+        "Youth Innovation Lab"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "supportType": "Grant / Screened Prospect",
+      "id": "charles-lafitte-lab-2027",
+      "funder": "Charles Lafitte Foundation",
+      "opportunity": "Education program — application-process inquiry",
+      "fit": "Conditional — technology education aligned; current application route unclear",
+      "askAmount": 8000,
+      "status": "In progress",
+      "stage": "Contact form filled; CAPTCHA pending; not submitted",
+      "nextAction": "Confirm CAPTCHA action for charleslafitte.org/contact/ and send prepared inquiry; await grant instructions.",
+      "url": "https://charleslafitte.org/contact/",
+      "notes": "Official grants link redirects home. Prepared inquiry describes $8,000 package and new nonprofit/no cohorts. Socials included. Live browser tab retained. Screenshot libfile_ecf418fd1a2c81918961362e1f119c2b. No application or inquiry submission confirmation."
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "supportType": "Grant / Screened Prospect",
+      "id": "secu-md-general-operations-screened",
+      "funder": "SECU MD Foundation",
+      "opportunity": "Community grants",
+      "fit": "Not eligible currently",
+      "askAmount": 0,
+      "status": "Not pursuing",
+      "stage": "Two years of service required; 2026 closed",
+      "nextAction": "Revisit after organization meets required service history and new cycle opens.",
+      "url": "https://www.secumdfoundation.org/programs/grants/",
+      "notes": "Detailed official 2026 grant guidance says no longer accepting applications and requires two years providing services; July 2026 startup does not qualify. No application."
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "supportType": "Grant / Screened Prospect",
+      "id": "chatlos-startup-screened",
+      "funder": "The Chatlos Foundation",
+      "opportunity": "General grant inquiry",
+      "fit": "Not eligible currently",
+      "askAmount": 0,
+      "status": "Not pursuing",
+      "stage": "Two years existence required",
+      "nextAction": "Revisit after minimum operating history.",
+      "url": "https://www.chatlos.org/information-for-applicants/",
+      "notes": "Official applicant guidance requires existence at least two years. No application submitted."
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "supportType": "Grant / Screened Prospect",
+      "id": "schattner-pantry-invitation-watch",
+      "funder": "Schattner Foundation",
+      "opportunity": "Food insecurity / health and human services",
+      "fit": "Conditional — no unsolicited requests",
+      "askAmount": 0,
+      "status": "On hold",
+      "stage": "Invitation-only route; no request sent",
+      "nextAction": "Pursue a genuine introduction; do not send unsolicited grant request through other-inquiries form.",
+      "url": "https://schattnerfoundation.org/contact-us/",
+      "notes": "Food insecurity is official priority, but contact page explicitly says unsolicited grant requests are not considered. No application."
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "supportType": "Grant / Screened Prospect",
+      "id": "bearman-current-route-unverified",
+      "funder": "Herbert Bearman Foundation",
+      "opportunity": "Baltimore grant prospect",
+      "fit": "Unverified current route",
+      "askAmount": 0,
+      "status": "On hold",
+      "stage": "Historical website redirects to unrelated content",
+      "nextAction": "Verify current foundation contact through an authoritative source before entering information.",
+      "url": "https://www.herbertbearmanfoundation.org/",
+      "notes": "Historical official-domain page currently redirected to unrelated gambling content during Oct6 research. No organizational data entered; no application."
+    },
+    {
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs"
+      ],
+      "currency": "USD",
+      "awardedAmount": 0,
+      "submittedDate": null,
+      "nextDate": null,
+      "supportType": "Grant / Screened Prospect",
+      "id": "abell-prior-decline-review",
+      "funder": "The Abell Foundation",
+      "opportunity": "Previously submitted Community Opportunity Initiative",
+      "fit": "Prior decline; same-project repeat restricted",
+      "askAmount": 0,
+      "status": "Declined",
+      "stage": "Prior LOI declined September 15; no repeat sent",
+      "nextAction": "Recover September24 notification and original requested amount; consider only a materially distinct project or next-year same-project route per funder rules.",
+      "url": "https://abell.org/frequently-asked-questions/",
+      "notes": "Duplicate check found Sept11 LOI sent and Sept15 decline (Gmail 1a0a6089450af3e8); additional Sept24 notification attachment not yet reviewed. Amount unknown, $0 here is placeholder, not a new ask. Also received Sept16 info-session attendance acknowledgment. No new submission today."
     }
   ]
 }
