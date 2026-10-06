@@ -62,6 +62,12 @@
       "preparedInquiryAwaitingCaptcha": 0,
       "note": "Richman $8,000 pre-LOI contact sent; Lafitte $8,000 application-process inquiry confirmed received Oct6. No full new applications submitted. Patel $5,000 draft still unsent after automatic approval review rejected combined Yes as ambiguous.",
       "newInquiryFormsSubmitted": 1
+    },
+    "latestClaudeResearchBatch": {
+      "date": "2026-10-06",
+      "added": 10,
+      "statusMeaning": "Ready = Claude can pick up for fulfillment/application prep; Researching = Claude should resolve the listed eligibility or route question before applying.",
+      "note": "ChatGPT researched and qualified these opportunities; no applications were submitted in this batch."
     }
   },
   "grants": [
@@ -4362,6 +4368,327 @@
       "nextAction": "Recover September24 notification and original requested amount; consider only a materially distinct project or next-year same-project route per funder rules.",
       "url": "https://abell.org/frequently-asked-questions/",
       "notes": "Duplicate check found Sept11 LOI sent and Sept15 decline (Gmail 1a0a6089450af3e8); additional Sept24 notification attachment not yet reviewed. Amount unknown, $0 here is placeholder, not a new ask. Also received Sept16 info-session attendance acknowledgment. No new submission today."
+    },
+    {
+      "id": "harry-chapin-community-education-2026",
+      "funder": "Harry Chapin Foundation",
+      "opportunity": "Community Education Grant — Youth Innovation Lab",
+      "program": "Education & Economic Opportunity",
+      "programs": [
+        "Education & Economic Opportunity",
+        "Youth & Family Development"
+      ],
+      "askAmount": 2500,
+      "currency": "USD",
+      "status": "Ready",
+      "stage": "Claude Queue — brief proposal ready for fulfillment review",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Claude: review fit and, if proceeding, prepare the brief PDF proposal and application package using the House of Manna canonical grant-document design. Recommended initial request: $2,500 for Youth Innovation Lab community education/technology programming.",
+      "notes": "New Oct. 6 research. National 501(c)(3) opportunity; Community Education is an eligible area. Grants range from a few hundred dollars to a general maximum of $10,000; 2025 average award was $2,450. Foundation emphasizes grassroots organizations and notes most grantees have annual operating budgets of $750,000 or less. Applications are accepted via a brief PDF proposal uploaded through the official site; board meets three times annually as needed. Do not invent prior cohorts or outcomes; use launch projections where needed.",
+      "portalUrl": "https://harrychapinfoundation.org/apply/",
+      "funderUrl": "https://harrychapinfoundation.org/apply/",
+      "applicationUrl": "https://harrychapinfoundation.org/apply/",
+      "applicationLinkLabel": "Apply / Guidelines",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06",
+      "originalPrograms": [
+        "Youth Innovation Lab",
+        "Community Education",
+        "Technology Education"
+      ]
+    },
+    {
+      "id": "mark-wahlberg-youth-foundation-2026",
+      "funder": "Mark Wahlberg Youth Foundation",
+      "opportunity": "Youth Service & Enrichment Grant Pre-Application",
+      "program": "Youth & Family Development",
+      "programs": [
+        "Youth & Family Development",
+        "Education & Economic Opportunity"
+      ],
+      "askAmount": 5000,
+      "currency": "USD",
+      "status": "Ready",
+      "stage": "Claude Queue — grant pre-application ready for fulfillment review",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Claude: complete the one-page grant pre-application for the AI-Ready Youth Innovation Lab, then prepare any supporting branded material needed. Recommended initial request: $5,000, subject to final project budget review.",
+      "notes": "New Oct. 6 research. Official site provides a current Grant Pre-Application for 501(c)(3) organizations. The form asks for mission, project/program name, request amount, a four-sentence project description, target population/geography, board/staff counts, organizational and project budgets, grant period, prior support and referral source. Current Maryland county grant research also lists the program as rolling and focused on inner-city youth service/enrichment. Do not state participant counts that have not yet occurred.",
+      "portalUrl": "https://www.markwahlbergyouthfoundation.org/grant-app",
+      "funderUrl": "https://www.markwahlbergyouthfoundation.org/",
+      "applicationUrl": "https://www.markwahlbergyouthfoundation.org/grant-app",
+      "applicationLinkLabel": "Pre-Application",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06",
+      "originalPrograms": [
+        "Youth Innovation Lab",
+        "Youth Enrichment",
+        "Career & Technology Exposure"
+      ]
+    },
+    {
+      "id": "cfg-bank-community-giving-2026",
+      "funder": "CFG Bank",
+      "opportunity": "Community & Corporate Giving Program",
+      "program": "Community Facilities & Capacity",
+      "programs": [
+        "Community Facilities & Capacity",
+        "Education & Economic Opportunity",
+        "Food Security & Basic Needs"
+      ],
+      "askAmount": 5000,
+      "currency": "USD",
+      "status": "Ready",
+      "stage": "Claude Queue — local Baltimore giving request ready for fulfillment review",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Claude: review whether the strongest first request is general capacity, Community Pantry support or Youth Innovation Lab support, then prepare the CFG request form and concise on-brand supporting document. Recommended relationship-building request: $5,000 unless the form/guidance supports a different amount.",
+      "notes": "New Oct. 6 research. Baltimore-based CFG Bank states that it provides monetary contributions and/or in-kind gifts to support nonprofit missions and offers a downloadable community request form. This is a locally relevant relationship opportunity rather than a narrowly prescribed grant cycle. Keep the ask tied to a specific social-impact use rather than generic reserves.",
+      "portalUrl": "https://www.cfg.bank/about/community-involvement/",
+      "funderUrl": "https://www.cfg.bank/about/community-involvement/",
+      "applicationUrl": "https://www.cfg.bank/about/community-involvement/",
+      "applicationLinkLabel": "Request Form",
+      "supportType": "Grant / Corporate Giving",
+      "fit": "High",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06",
+      "originalPrograms": [
+        "General Operations",
+        "Community Pantry",
+        "Youth Innovation Lab"
+      ]
+    },
+    {
+      "id": "vulcan-foundation-baltimore-education-2026",
+      "funder": "Vulcan Materials Company Foundation",
+      "opportunity": "Baltimore Education / STEM Community Grant",
+      "program": "Education & Economic Opportunity",
+      "programs": [
+        "Education & Economic Opportunity",
+        "Youth & Family Development"
+      ],
+      "askAmount": 5000,
+      "currency": "USD",
+      "status": "Ready",
+      "stage": "Claude Queue — regional proposal letter ready for fulfillment review",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Claude: prepare the proposal letter and attachment set for a Baltimore-region education/STEM request, then use the foundation contact route to identify the regional Charitable Contributions Officer. Recommended initial request: $5,000 for Youth Innovation Lab STEM/technology learning.",
+      "notes": "New Oct. 6 research. Vulcan Foundation considers requests throughout the year, supports education including K-12 learning, STEM curiosity and workplace applications, and generally funds communities where Vulcan has operations/offices/employees. Vulcan has multiple Baltimore facilities, including Westport Rail Yard and Grantley locations. Proposal requires organization/use/timeline/success-measure narrative plus IRS determination letter, current budget, latest financial statements and board/executive list. For a new nonprofit, clearly label startup financials and projections.",
+      "portalUrl": "https://www.vulcanmaterials.com/our-company/vulcan-foundation",
+      "funderUrl": "https://www.vulcanmaterials.com/our-company/vulcan-foundation",
+      "applicationUrl": "https://www.vulcanmaterials.com/our-company/vulcan-foundation",
+      "applicationLinkLabel": "Proposal Guidelines",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06",
+      "originalPrograms": [
+        "Youth Innovation Lab",
+        "STEM",
+        "Career Exposure"
+      ]
+    },
+    {
+      "id": "fortune-family-foundation-youth-steam-2026",
+      "funder": "Brooks and Joan Fortune Family Foundation",
+      "opportunity": "Education & STEAM Program Grant",
+      "program": "Education & Economic Opportunity",
+      "programs": [
+        "Education & Economic Opportunity",
+        "Youth & Family Development"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Ready",
+      "stage": "Claude Queue — online application ready for fulfillment review",
+      "submittedDate": null,
+      "nextDate": "2026-12-31",
+      "nextAction": "Claude: review the Youth Innovation Lab as an Education & STEAM request, select a specific project and defensible ask amount, and prepare the online application and supporting branded materials before Dec. 31.",
+      "notes": "New Oct. 6 research. Applications are accepted April 1-Dec. 31 through the foundation's Online Grants Manager. 501(c)(3) organizations nationwide may be considered. The foundation supports education/STEAM and community development and prefers specific activities with defined outcomes rather than general operating or fundraising requests. No public award cap was identified in the official guidance, so the ask should be built from a specific project budget rather than guessed.",
+      "portalUrl": "https://www.fortunefamilyfoundation.org/grants",
+      "funderUrl": "https://www.fortunefamilyfoundation.org/grants",
+      "applicationUrl": "https://www.fortunefamilyfoundation.org/grants",
+      "applicationLinkLabel": "Apply",
+      "supportType": "Grant",
+      "fit": "High",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06",
+      "originalPrograms": [
+        "Youth Innovation Lab",
+        "Education",
+        "STEAM"
+      ]
+    },
+    {
+      "id": "sony-corporate-giving-youth-tech-2026",
+      "funder": "Sony Corporation of America",
+      "opportunity": "Corporate Giving — Technology & Education",
+      "program": "Education & Economic Opportunity",
+      "programs": [
+        "Education & Economic Opportunity",
+        "Youth & Family Development"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Ready",
+      "stage": "Claude Queue — year-round GrantsConnect request ready for fulfillment review",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Claude: position the AI-Ready Youth Innovation Lab around technology education and workforce skills, determine a project-based ask amount from the approved budget, and prepare the GrantsConnect request plus branded support materials.",
+      "notes": "New Oct. 6 research. Sony welcomes U.S. requests throughout the year and focuses much of its charitable giving on art, culture, technology and the environment, with particular emphasis on education and skills needed for tomorrow's workforce. Requests require an organization description, proof of 501(c)(3), requested amount if applicable, and purpose. Multi-year requests are not considered. Do not frame House of Manna's faith inspiration as a sacramental/theological program; the proposed Youth Innovation Lab is secular community education.",
+      "portalUrl": "https://www.sony.com/content/sony/en/en_us/SCA/social-responsibility/giving-guidelines.html",
+      "funderUrl": "https://www.sony.com/content/sony/en/en_us/SCA/social-responsibility/giving-guidelines.html",
+      "applicationUrl": "https://www.sony.com/content/sony/en/en_us/SCA/social-responsibility/giving-guidelines.html",
+      "applicationLinkLabel": "Giving Guidelines / Apply",
+      "supportType": "Grant / Corporate Giving",
+      "fit": "High",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06",
+      "originalPrograms": [
+        "Youth Innovation Lab",
+        "Technology Education",
+        "Future Workforce"
+      ]
+    },
+    {
+      "id": "cisco-technology-grant-house-of-manna-2026",
+      "funder": "Cisco",
+      "opportunity": "Technology Grant Program",
+      "program": "Community Facilities & Capacity",
+      "programs": [
+        "Community Facilities & Capacity",
+        "Education & Economic Opportunity"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Ready",
+      "stage": "Claude Queue — technology grant pathway ready for fulfillment review",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Claude: determine whether the Cisco-managed or TechSoup pathway best fits House of Manna, then prepare a technology-needs case focused on secure networking/connectivity for the Youth Innovation Lab and community hub.",
+      "notes": "New Oct. 6 research. Cisco's Technology Grant Program provides qualifying nonprofits with Cisco hardware, software and services and aligns with Education, Economic Opportunity, Crisis Response and Climate Resilience. Two open application pathways exist: customized requests managed by Cisco and smaller/routine donations through TechSoup. Treat this as in-kind technology infrastructure rather than unrestricted cash.",
+      "portalUrl": "https://www.cisco.com/site/us/en/about/purpose/community-resilience/investments/technology-grant-program.html",
+      "funderUrl": "https://www.cisco.com/site/us/en/about/purpose/community-resilience/investments/technology-grant-program.html",
+      "applicationUrl": "https://www.cisco.com/site/us/en/about/purpose/community-resilience/investments/technology-grant-program.html",
+      "applicationLinkLabel": "Technology Grant Program",
+      "supportType": "Technology Grant / In-Kind",
+      "fit": "High — infrastructure fit",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06",
+      "originalPrograms": [
+        "Youth Innovation Lab",
+        "Technology Infrastructure",
+        "General Operations"
+      ]
+    },
+    {
+      "id": "microsoft-nonprofit-azure-grant-2026",
+      "funder": "Microsoft for Nonprofits",
+      "opportunity": "Azure $2,000 Annual Nonprofit Grant",
+      "program": "Community Facilities & Capacity",
+      "programs": [
+        "Community Facilities & Capacity",
+        "Education & Economic Opportunity"
+      ],
+      "askAmount": 2000,
+      "currency": "USD",
+      "status": "Ready",
+      "stage": "Claude Queue — nonprofit technology grant ready for eligibility/activation",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Claude: verify/complete Microsoft nonprofit validation and claim the $2,000 annual Azure grant if House of Manna is not already enrolled. Document how cloud credits will support nonprofit operations, data, website/automation or AI-enabled infrastructure rather than program-participant licenses.",
+      "notes": "New Oct. 6 research. Microsoft for Nonprofits offers eligible organizations a recurring $2,000 annual Azure credit plus additional software grants/discounts. The Azure credit is renewed annually while the nonprofit remains eligible; unused credits do not roll over. This is a direct operating-capacity savings opportunity, not a cash award.",
+      "portalUrl": "https://www.microsoft.com/nonprofits/",
+      "funderUrl": "https://www.microsoft.com/nonprofits/",
+      "applicationUrl": "https://www.microsoft.com/nonprofits/",
+      "applicationLinkLabel": "Nonprofit Hub",
+      "supportType": "Technology Grant / Cloud Credit",
+      "fit": "High — operating capacity",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06",
+      "originalPrograms": [
+        "General Operations",
+        "Technology Infrastructure"
+      ]
+    },
+    {
+      "id": "brightstar-after-school-advantage-2026",
+      "funder": "Brightstar Lottery",
+      "opportunity": "After School Advantage Digital Learning Center",
+      "program": "Education & Economic Opportunity",
+      "programs": [
+        "Education & Economic Opportunity",
+        "Youth & Family Development"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Researching",
+      "stage": "Claude Queue — confirm program eligibility before proposal",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Claude: review the current After School Advantage proposal guidelines against the planned Youth Innovation Lab operating model. If eligible, prepare a concise proposal for an in-kind digital learning center; if a prerequisite depends on existing program operations or participant data, flag it rather than inventing it.",
+      "notes": "New Oct. 6 research. Brightstar accepts After School Advantage proposals on a rolling basis and provides nonprofit community agencies with digital learning centers supporting STEAM opportunities. The program is potentially an excellent equipment pathway for the Youth Innovation Lab, but Claude should confirm every current eligibility/detail requirement before submitting because House of Manna is newly formed and the Lab is in launch-stage planning.",
+      "portalUrl": "https://brightstarlottery.com/global-sustainability/corporate-driven-programs",
+      "funderUrl": "https://brightstarlottery.com/global-sustainability/corporate-driven-programs",
+      "applicationUrl": "https://brightstarlottery.com/global-sustainability/corporate-driven-programs",
+      "applicationLinkLabel": "ASA Proposal",
+      "supportType": "In-Kind Technology Grant",
+      "fit": "Conditional — strong program fit, startup eligibility to confirm",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06",
+      "originalPrograms": [
+        "Youth Innovation Lab",
+        "STEAM",
+        "Laptop / Digital Learning Center"
+      ]
+    },
+    {
+      "id": "state-farm-community-grants-prospect-2026",
+      "funder": "State Farm",
+      "opportunity": "Community Grants — Food Insecurity / Financial Literacy / Education",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Education & Economic Opportunity",
+        "Youth & Family Development"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Researching",
+      "stage": "Claude Queue — pre-screen questionnaire / invitation route",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Claude: choose the strongest House of Manna lane—Community Pantry food insecurity or Youth Innovation Lab financial literacy/STEM—then complete the State Farm support-request questionnaire to seek consideration for an invitation. Do not treat the questionnaire as a full grant application.",
+      "notes": "New Oct. 6 research. State Farm's current community funding priorities include food insecurity and financial literacy under Community Development, plus K-12 education/STEM. Annual charitable grants are invitation-only, but organizations that were not invited may submit the official support-request questionnaire for programs meeting the focus areas. This is a qualified relationship-building prospect, not yet a direct open full application.",
+      "portalUrl": "https://www.statefarm.com/about-us/corporate-responsibility/community-grants",
+      "funderUrl": "https://www.statefarm.com/about-us/corporate-responsibility/community-grants",
+      "applicationUrl": "https://www.statefarm.com/about-us/corporate-responsibility/community-grants",
+      "applicationLinkLabel": "Grant Guidelines / Questionnaire",
+      "supportType": "Grant / Invitation Prospect",
+      "fit": "Conditional — strong issue alignment, invitation required",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06",
+      "originalPrograms": [
+        "Community Pantry",
+        "Financial Literacy",
+        "Youth Innovation Lab"
+      ]
     }
   ]
 }
