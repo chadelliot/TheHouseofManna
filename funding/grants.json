@@ -59,8 +59,9 @@
       "date": "2026-10-06",
       "newPreLOIContactsSent": 1,
       "newFullApplicationsSubmitted": 0,
-      "preparedInquiryAwaitingCaptcha": 1,
-      "note": "Richman $8,000 pre-LOI contact SENT. Lafitte $8,000 inquiry filled but not sent. Patel $5,000 draft remains blocked by automatic approval review; no resend or bypass. Added screened routes and recovered prior Abell decline to prevent duplicates."
+      "preparedInquiryAwaitingCaptcha": 0,
+      "note": "Richman $8,000 pre-LOI contact sent; Lafitte $8,000 application-process inquiry confirmed received Oct6. No full new applications submitted. Patel $5,000 draft still unsent after automatic approval review rejected combined Yes as ambiguous.",
+      "newInquiryFormsSubmitted": 1
     }
   },
   "grants": [
@@ -4085,8 +4086,8 @@
       "askAmount": 5000,
       "status": "In progress",
       "stage": "Gmail inquiry draft saved — send approval required",
-      "nextAction": "Chad approves exact inquiry to amar@rnpfoundation.org; then send saved draft r2632284591502728171. Ask acceptance of new-organization documents instead of filed Form 990; do not count as full grant application.",
-      "notes": "October 6: Nutrition pillar fits proposed Baltimore food access. Official application route requires Form 990. First fiscal year ends Dec. 31, 2026; no filed 990 exists. $5,000 inquiry includes public $46,860 operating estimate, $4,000 transport/$1,000 packing allocation, organizational contact and social links. Send rejected by automatic approval review: broad authorization did not clearly authorize exact financial/contact payload and recipient. No email sent. Gmail DRAFT id r2632284591502728171 / message 1a1125b41f076688.",
+      "nextAction": "Obtain unambiguous approval specifically to send saved $5,000 eligibility inquiry to amar@rnpfoundation.org with budget, nonprofit status, contact and social details.",
+      "notes": "October 6: Nutrition pillar fits proposed Baltimore food access. Official application route requires Form 990. First fiscal year ends Dec. 31, 2026; no filed 990 exists. $5,000 inquiry includes public $46,860 operating estimate, $4,000 transport/$1,000 packing allocation, organizational contact and social links. Send rejected by automatic approval review: broad authorization did not clearly authorize exact financial/contact payload and recipient. No email sent. Gmail DRAFT id r2632284591502728171 / message 1a1125b41f076688. Oct6 subsequent combined 'Yes' followed by send attempt: automatic approval review again rejected as ambiguous approval of exact Patel recipient/payload. Draft remains unsent; no workaround attempted.",
       "url": "https://rnpfoundation.org/grants/"
     },
     {
@@ -4243,19 +4244,19 @@
       ],
       "currency": "USD",
       "awardedAmount": 0,
-      "submittedDate": null,
-      "nextDate": null,
+      "submittedDate": "2026-10-06",
+      "nextDate": "2026-10-20",
       "supportType": "Grant / Screened Prospect",
       "id": "charles-lafitte-lab-2027",
       "funder": "Charles Lafitte Foundation",
       "opportunity": "Education program — application-process inquiry",
       "fit": "Conditional — technology education aligned; current application route unclear",
       "askAmount": 8000,
-      "status": "In progress",
-      "stage": "Contact form filled; CAPTCHA pending; not submitted",
-      "nextAction": "Confirm CAPTCHA action for charleslafitte.org/contact/ and send prepared inquiry; await grant instructions.",
+      "status": "Awaiting response",
+      "stage": "Application-process inquiry submitted; not full grant application",
+      "nextAction": "Await response with current Education grant instructions and new-organization eligibility.",
       "url": "https://charleslafitte.org/contact/",
-      "notes": "Official grants link redirects home. Prepared inquiry describes $8,000 package and new nonprofit/no cohorts. Socials included. Live browser tab retained. Screenshot libfile_ecf418fd1a2c81918961362e1f119c2b. No application or inquiry submission confirmation."
+      "notes": "Official grants link redirects home. Prepared inquiry describes $8,000 package and new nonprofit/no cohorts. Socials included. Live browser tab retained. Screenshot libfile_ecf418fd1a2c81918961362e1f119c2b. No application or inquiry submission confirmation. Oct6: user approved CAPTCHA and send; CAPTCHA completed, contact form submitted, visible receipt: 'Thanks for contacting us! We will get in touch with you shortly.' Proposed amount remains $8,000. Confirmation screenshot libfile_85d88331e27c8191940f6634df6ad84a."
     },
     {
       "program": "Food Security & Basic Needs",
