@@ -73,6 +73,10 @@
       "instruction": "Use the user's House of Manna grant document visual template for all grant PDFs: logo header, sage script title, navy Anton headlines, Helvetica-style body, navy request badge, supplied margins and spacing.",
       "referenceLibraryFile": "libfile_e07bf40488e881919ef0d9106b98105a",
       "confirmedDate": "2026-10-06"
+    },
+    "applicationFundingPriority": {
+      "confirmedDate": "2026-10-06",
+      "instruction": "Prioritize general operations and Community Pantry funding. Slow down Youth Innovation Lab grants per user direction; retain existing submitted lab requests without duplicating them."
     }
   },
   "grants": [
@@ -4450,12 +4454,12 @@
       ],
       "askAmount": 5000,
       "currency": "USD",
-      "status": "Ready",
-      "stage": "Claude Queue — local Baltimore giving request ready for fulfillment review",
-      "submittedDate": null,
-      "nextDate": null,
-      "nextAction": "Claude: review whether the strongest first request is general capacity, Community Pantry support or Youth Innovation Lab support, then prepare the CFG request form and concise on-brand supporting document. Recommended relationship-building request: $5,000 unless the form/guidance supports a different amount.",
-      "notes": "New Oct. 6 research. Baltimore-based CFG Bank states that it provides monetary contributions and/or in-kind gifts to support nonprofit missions and offers a downloadable community request form. This is a locally relevant relationship opportunity rather than a narrowly prescribed grant cycle. Keep the ask tied to a specific social-impact use rather than generic reserves.",
+      "status": "Awaiting response",
+      "stage": "Pantry operating-support inquiry confirmed received",
+      "submittedDate": "2026-10-06",
+      "nextDate": "2026-10-20",
+      "nextAction": "Await CFG community giving team response and instructions for full request materials. Follow up after Oct. 20 if no response.",
+      "notes": "New Oct. 6 research. Baltimore-based CFG Bank states that it provides monetary contributions and/or in-kind gifts to support nonprofit missions and offers a downloadable community request form. This is a locally relevant relationship opportunity rather than a narrowly prescribed grant cycle. Keep the ask tied to a specific social-impact use rather than generic reserves.\nOct. 6: Official community-involvement contact form confirmed 'Thanks for contacting us! We will get in touch with you shortly.' Proposed $5,000 pantry operating request: $4,000 food transport and $1,000 packing/safety supplies. Explained launch-stage status, conditional 2027 implementation and $46,860 hub operating planning estimate. Included general-operations page, contact details and all three social profiles. This is an inquiry, not a full grant application or award.",
       "portalUrl": "https://www.cfg.bank/about/community-involvement/",
       "funderUrl": "https://www.cfg.bank/about/community-involvement/",
       "applicationUrl": "https://www.cfg.bank/about/community-involvement/",
