@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "House of Manna Funding Pipeline",
-    "lastUpdated": "2026-10-06",
+    "lastUpdated": "2026-10-07",
     "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications.",
     "statusDefinitions": {
       "Researching": "Fit or eligibility needs checking",
@@ -56,12 +56,10 @@
       "instruction": "Provide these House of Manna social profiles whenever applications or funders ask for social media. Do not use similarly named organizations' profiles."
     },
     "latestApplicationContinuation": {
-      "date": "2026-10-06",
-      "newPreLOIContactsSent": 1,
-      "newFullApplicationsSubmitted": 0,
-      "preparedInquiryAwaitingCaptcha": 0,
-      "note": "Richman $8,000 pre-LOI contact sent; Lafitte $8,000 application-process inquiry confirmed received; Patel $5,000 first-year eligibility inquiry sent with approved branded PDF and SENT verified. No full new applications submitted.",
-      "newInquiryFormsSubmitted": 1
+      "date": "2026-10-07",
+      "newFullApplicationsSubmitted": 1,
+      "newIntakeEmailsSent": 1,
+      "note": "Brightstar $25,000 Community Giving operating application confirmed submitted with approved cover letter and IRS letter. Vulcan $25,000 regional operating inquiry confirmed SENT; not a full application. Both requests retain $15,000 rent / $10,000 coordination."
     },
     "latestClaudeResearchBatch": {
       "date": "2026-10-06",
@@ -318,9 +316,10 @@
       "reviewed": 9,
       "confirmedPreApplicationsSubmitted": 1,
       "submittedRequestedAmount": 25000,
-      "preparedAwaitingSpecificApproval": 2,
+      "preparedAwaitingSpecificApproval": 0,
       "removedFromActiveList": 6,
-      "note": "No Claude fulfillment labels remain on the active reviewed entries. Six archived records retain complete prior prospect information and current removal reasons; no funder denial is invented."
+      "note": "No Claude fulfillment labels remain on the active reviewed entries. Six archived records retain complete prior prospect information and current removal reasons; no funder denial is invented.",
+      "completedApprovedFollowupsDate": "2026-10-07"
     }
   },
   "grants": [
@@ -4699,12 +4698,12 @@
       ],
       "askAmount": 25000,
       "currency": "USD",
-      "status": "In progress",
-      "stage": "Regional giving inquiry drafted — explicit send approval required",
-      "submittedDate": null,
-      "nextDate": null,
-      "nextAction": "Approve sending prepared Gmail draft r8505497277586835392 to giving@vmcmail.com: $25,000 operating request, $15,000 rent / $10,000 coordination, new nonprofit and first-year documentation inquiry. No attachments in draft.",
-      "notes": "New Oct. 6 research. Vulcan Foundation considers requests throughout the year, supports education including K-12 learning, STEM curiosity and workplace applications, and generally funds communities where Vulcan has operations/offices/employees. Vulcan has multiple Baltimore facilities, including Westport Rail Yard and Grantley locations. Proposal requires organization/use/timeline/success-measure narrative plus IRS determination letter, current budget, latest financial statements and board/executive list. For a new nonprofit, clearly label startup financials and projections.\nOct. 6 ChatGPT review: Official giving priorities include equitable basic-needs access and essential local services. Official source identifies giving@vmcmail.com for regional contact information. Prepared operating-support inquiry under user's current priority. Automatic approval review rejected send for lack of explicit approval of exact recipient and financial payload. Inquiry is saved as an unsent Gmail draft, not submitted. No full proposal routed yet. Original unsent Lab concept superseded.",
+      "status": "Awaiting response",
+      "stage": "Regional operating-support inquiry sent — awaiting routing/eligibility guidance",
+      "submittedDate": "2026-10-07",
+      "nextDate": "2026-10-21",
+      "nextAction": "Await regional giving contact and guidance on first-year nonprofit eligibility/documentation before sending a full grant proposal.",
+      "notes": "New Oct. 6 research. Vulcan Foundation considers requests throughout the year, supports education including K-12 learning, STEM curiosity and workplace applications, and generally funds communities where Vulcan has operations/offices/employees. Vulcan has multiple Baltimore facilities, including Westport Rail Yard and Grantley locations. Proposal requires organization/use/timeline/success-measure narrative plus IRS determination letter, current budget, latest financial statements and board/executive list. For a new nonprofit, clearly label startup financials and projections.\nOct. 6 ChatGPT review: Official giving priorities include equitable basic-needs access and essential local services. Official source identifies giving@vmcmail.com for regional contact information. Prepared operating-support inquiry under user's current priority. Automatic approval review rejected send for lack of explicit approval of exact recipient and financial payload. Inquiry is saved as an unsent Gmail draft, not submitted. No full proposal routed yet. Original unsent Lab concept superseded.\nOct. 7: Chad explicitly approved sending the prepared $25,000 operating inquiry to giving@vmcmail.com. Gmail confirmed SENT (message 1a11548151c53493). No attachments. Request retains $15,000 annual rent / $10,000 part-time coordination within the $46,860 planning estimate. This is an inquiry, not a full grant application.",
       "portalUrl": "https://www.vulcanmaterials.com/our-company/vulcan-foundation",
       "funderUrl": "https://www.vulcanmaterials.com/our-company/vulcan-foundation",
       "applicationUrl": "https://www.vulcanmaterials.com/our-company/vulcan-foundation",
@@ -4713,7 +4712,7 @@
       "fit": "High",
       "awardedAmount": 0,
       "addedDate": "2026-10-06",
-      "lastUpdated": "2026-10-06",
+      "lastUpdated": "2026-10-07",
       "originalPrograms": [
         "Youth Innovation Lab",
         "STEM",
@@ -4731,21 +4730,21 @@
       ],
       "askAmount": 25000,
       "currency": "USD",
-      "status": "In progress",
-      "stage": "Operating request prepared — required document sharing approval blocked",
-      "submittedDate": null,
-      "nextDate": null,
-      "nextAction": "Approve sharing the branded Brightstar $25,000 operating cover letter and original IRS determination letter with Brightstar, then upload and submit prepared Smartsheet form. Form has no saved-draft function; browser preserved.",
-      "notes": "New Oct. 6 research. Brightstar accepts After School Advantage proposals on a rolling basis and provides nonprofit community agencies with digital learning centers supporting STEAM opportunities. The program is potentially an excellent equipment pathway for the Youth Innovation Lab, but Claude should confirm every current eligibility/detail requirement before submitting because House of Manna is newly formed and the Lab is in launch-stage planning.\nOct. 6 ChatGPT review: Switched the unsent ASA technology-lab concept to Brightstar's separate public Community Requests cash-giving route; official criteria support registered charities and aligned SDGs. Prepared $25,000 general operating request with same $15,000 rent / $10,000 coordination allocation as Wahlberg. Branded 2-page letter Library libfile_616ac2729f0c8191aed22697cad4c93c; proposed $46,860 annual hub budget and $75,000 campaign clearly distinguished; startup/site readiness disclosed. Selected SDG 3 Good Health & Well-Being, no public-official request, no employee affiliation. No event funding request. Automatic approval review rejected upload of letter and IRS determination for lack of explicit sharing approval for those documents with Brightstar. No files uploaded and no request submitted. Prepared-form screenshot Library libfile_482dfbf7de4081919281ea24f432549d.",
+      "status": "Awaiting response",
+      "stage": "Community Giving operating application submitted — confirmation received",
+      "submittedDate": "2026-10-07",
+      "nextDate": "2027-01-05",
+      "nextAction": "Await Brightstar review; monitor chad@houseofmannamd.com for response and requests for additional information. No duplicate submission.",
+      "notes": "New Oct. 6 research. Brightstar accepts After School Advantage proposals on a rolling basis and provides nonprofit community agencies with digital learning centers supporting STEAM opportunities. The program is potentially an excellent equipment pathway for the Youth Innovation Lab, but Claude should confirm every current eligibility/detail requirement before submitting because House of Manna is newly formed and the Lab is in launch-stage planning.\nOct. 6 ChatGPT review: Switched the unsent ASA technology-lab concept to Brightstar's separate public Community Requests cash-giving route; official criteria support registered charities and aligned SDGs. Prepared $25,000 general operating request with same $15,000 rent / $10,000 coordination allocation as Wahlberg. Branded 2-page letter Library libfile_616ac2729f0c8191aed22697cad4c93c; proposed $46,860 annual hub budget and $75,000 campaign clearly distinguished; startup/site readiness disclosed. Selected SDG 3 Good Health & Well-Being, no public-official request, no employee affiliation. No event funding request. Automatic approval review rejected upload of letter and IRS determination for lack of explicit sharing approval for those documents with Brightstar. No files uploaded and no request submitted. Prepared-form screenshot Library libfile_482dfbf7de4081919281ea24f432549d.\nOct. 7: Chad explicitly approved sharing the branded cover letter and original IRS determination letter with Brightstar and submitting the $25,000 operating request. Both documents attached and Smartsheet confirmed: Success! We've captured your response. Email copy requested for chad@houseofmannamd.com. Allocation remains $15,000 rent / $10,000 coordination; annual hub estimate $46,860. Proof saved as Brightstar_Operating_Submission_Confirmation.jpg.",
       "portalUrl": "https://app.smartsheet.com/b/form/9f975193ef564b9a916110f0046c7040",
       "funderUrl": "https://brightstarlottery.com/global-sustainability/corporate-driven-programs",
       "applicationUrl": "https://app.smartsheet.com/b/form/9f975193ef564b9a916110f0046c7040",
-      "applicationLinkLabel": "ASA Proposal",
+      "applicationLinkLabel": "Community Giving Request",
       "supportType": "Corporate Donation / Cash Grant",
       "fit": "Conditional — SDG wellbeing alignment; funder review required",
       "awardedAmount": 0,
       "addedDate": "2026-10-06",
-      "lastUpdated": "2026-10-06",
+      "lastUpdated": "2026-10-07",
       "originalPrograms": [
         "Youth Innovation Lab",
         "STEAM",
