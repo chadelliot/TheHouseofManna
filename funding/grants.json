@@ -4698,6 +4698,32 @@
         "Financial Literacy",
         "Youth Innovation Lab"
       ]
+    },
+    {
+      "id": "fulton-bank-pantry-operations-2027",
+      "funder": "Fulton Bank",
+      "opportunity": "General Donation / Contribution — Pantry Operating Support",
+      "program": "Food Security & Basic Needs",
+      "programs": [
+        "Food Security & Basic Needs",
+        "Community Facilities & Capacity"
+      ],
+      "askAmount": 5000,
+      "currency": "USD",
+      "status": "In progress",
+      "stage": "Form prepared — required document upload approval blocked",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Approve sharing signed W-9, IRS determination letter and prepared branded pantry PDF with Fulton Bank, then upload, review and submit preserved Kadince form.",
+      "notes": "Oct. 6: Official general donation route verified; Maryland nonprofits eligible. Prepared $5,000 for $4,000 food transport and $1,000 packing/safety supplies toward conditional 2027 pantry plan. Page 1 organization and contact completed; page 2 request details prepared. Manual EIN lookup failed, but form allowed continuation. Signed W-9 and original IRS letter downloaded; branded 2-page mission/project PDF prepared and visually checked (Library libfile_ed8d919d3830819190586a55aacc5d2d). Portal does not offer saved drafts; browser form preserved but no submission confirmed. Automated approval review blocked upload due to insufficiently explicit permission to share these specific organizational documents with Fulton. No attachments uploaded. Not the $20,000+ Foundation Impact Grant; selected General Donation/Contribution and Not Aligned pillar without inventing economic-empowerment programming. LMI 100% is intended restricted allocation, not historical beneficiary data.",
+      "portalUrl": "https://fultonbank.kadince.com/external/forms/972a052bb6b7865618c5488d1e299a18",
+      "funderUrl": "https://www.fultonbank.com/About-Fulton-Bank/Fulton-Forward/Instructions-for-Requesting-Funds",
+      "applicationUrl": "https://fultonbank.kadince.com/external/forms/972a052bb6b7865618c5488d1e299a18",
+      "supportType": "Corporate Donation",
+      "fit": "High — pantry operating request",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-06",
+      "lastUpdated": "2026-10-06"
     }
   ]
 }
