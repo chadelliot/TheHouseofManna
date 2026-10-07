@@ -60,7 +60,7 @@
       "newPreLOIContactsSent": 1,
       "newFullApplicationsSubmitted": 0,
       "preparedInquiryAwaitingCaptcha": 0,
-      "note": "Richman $8,000 pre-LOI contact sent; Lafitte $8,000 application-process inquiry confirmed received Oct6. No full new applications submitted. Patel $5,000 draft still unsent after automatic approval review rejected combined Yes as ambiguous.",
+      "note": "Richman $8,000 pre-LOI contact sent; Lafitte $8,000 application-process inquiry confirmed received; Patel $5,000 first-year eligibility inquiry sent with approved branded PDF and SENT verified. No full new applications submitted.",
       "newInquiryFormsSubmitted": 1
     },
     "latestClaudeResearchBatch": {
@@ -4087,18 +4087,18 @@
       ],
       "currency": "USD",
       "awardedAmount": 0,
-      "submittedDate": null,
-      "nextDate": null,
+      "submittedDate": "2026-10-06",
+      "nextDate": "2026-10-14",
       "id": "rnp-foundation-pantry-2027",
       "funder": "Ravi & Naina Patel Foundation",
       "opportunity": "Pantry logistics operating-support inquiry",
       "supportType": "Grant / Eligibility Inquiry",
       "fit": "Conditional",
       "askAmount": 5000,
-      "status": "In progress",
-      "stage": "Gmail inquiry draft saved — send approval required",
-      "nextAction": "Obtain unambiguous approval specifically to send saved $5,000 eligibility inquiry to amar@rnpfoundation.org with budget, nonprofit status, contact and social details.",
-      "notes": "October 6: Nutrition pillar fits proposed Baltimore food access. Official application route requires Form 990. First fiscal year ends Dec. 31, 2026; no filed 990 exists. $5,000 inquiry includes public $46,860 operating estimate, $4,000 transport/$1,000 packing allocation, organizational contact and social links. Send rejected by automatic approval review: broad authorization did not clearly authorize exact financial/contact payload and recipient. No email sent. Gmail DRAFT id r2632284591502728171 / message 1a1125b41f076688. Oct6 subsequent combined 'Yes' followed by send attempt: automatic approval review again rejected as ambiguous approval of exact Patel recipient/payload. Draft remains unsent; no workaround attempted. October6: Patel eligibility inquiry formatted as a two-page PDF using user-supplied Abell LOI brand reference; saved House_of_Manna_Patel_Inquiry.pdf, libfile_5dd9a229ff5081919fa6530836399961. No email or application sent during document formatting.",
+      "status": "Awaiting response",
+      "stage": "First-year eligibility inquiry sent with branded PDF; not full application",
+      "nextAction": "Await confirmation of Baltimore geography and first-year financial-document eligibility before completing a full grant application.",
+      "notes": "October 6: Nutrition pillar fits proposed Baltimore food access. Official application route requires Form 990. First fiscal year ends Dec. 31, 2026; no filed 990 exists. $5,000 inquiry includes public $46,860 operating estimate, $4,000 transport/$1,000 packing allocation, organizational contact and social links. Send rejected by automatic approval review: broad authorization did not clearly authorize exact financial/contact payload and recipient. No email sent. Gmail DRAFT id r2632284591502728171 / message 1a1125b41f076688. Oct6 subsequent combined 'Yes' followed by send attempt: automatic approval review again rejected as ambiguous approval of exact Patel recipient/payload. Draft remains unsent; no workaround attempted. October6: Patel eligibility inquiry formatted as a two-page PDF using user-supplied Abell LOI brand reference; saved House_of_Manna_Patel_Inquiry.pdf, libfile_5dd9a229ff5081919fa6530836399961. No email or application sent during document formatting. October6 8:14pm ET: User approved branded inquiry for sending. Saved Gmail draft sent to amar@rnpfoundation.org with House_of_Manna_Patel_Inquiry.pdf attached (204476 bytes). Verified recipient, attachment and SENT label on message 1a113b6c0a635094. Earlier approval blockers resolved by user's document approval. This is a $5,000 eligibility inquiry, not a full grant submission.",
       "url": "https://rnpfoundation.org/grants/"
     },
     {
