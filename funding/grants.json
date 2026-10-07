@@ -76,7 +76,7 @@
     },
     "applicationFundingPriority": {
       "confirmedDate": "2026-10-06",
-      "instruction": "Prioritize general operations and Community Pantry funding. Slow down Youth Innovation Lab grants per user direction; retain existing submitted lab requests without duplicating them."
+      "instruction": "Prioritize general operations funding now. Request larger justified amounts where allowed; no blanket $5,000 cap. Same amount and same purpose must keep the same allocation across applications."
     },
     "pantryBudgetStandard": {
       "confirmedDate": "2026-10-06",
@@ -85,7 +85,7 @@
       "groceries": 4500,
       "packingSupplies": 300,
       "foodPreparationInformation": 200,
-      "instruction": "Keep the established pantry budget and funding purpose consistent. Do not change allocations or invent new reasons to fit funders. Any proposed change requires Chad's direction. Existing submissions retain their actual historical content; never silently rewrite sent amounts. Additional awards must fund additional activity, with separate expense accounting."
+      "instruction": "For the same pantry request amount and purpose, retain the same allocation: the $5,000 model is $4,500 groceries / $300 packing / $200 food preparation information. This is not a maximum request. Chad authorizes larger defensible requests based on actual planned costs. General operations is the current priority. Historical sent requests must remain accurately recorded; no duplicate expense charges."
     }
   },
   "grants": [
@@ -4422,20 +4422,21 @@
     {
       "id": "mark-wahlberg-youth-foundation-2026",
       "funder": "Mark Wahlberg Youth Foundation",
-      "opportunity": "Youth Service & Enrichment Grant Pre-Application",
-      "program": "Youth & Family Development",
+      "opportunity": "General Operating Support — Food Access & Family Wellness Hub Pre-Application",
+      "program": "Community Facilities & Capacity",
       "programs": [
-        "Youth & Family Development",
-        "Education & Economic Opportunity"
+        "Community Facilities & Capacity",
+        "Food Security & Basic Needs",
+        "Youth & Family Development"
       ],
-      "askAmount": 5000,
+      "askAmount": 25000,
       "currency": "USD",
-      "status": "Ready",
-      "stage": "Claude Queue — grant pre-application ready for fulfillment review",
-      "submittedDate": null,
-      "nextDate": null,
-      "nextAction": "Claude: complete the one-page grant pre-application for the AI-Ready Youth Innovation Lab, then prepare any supporting branded material needed. Recommended initial request: $5,000, subject to final project budget review.",
-      "notes": "New Oct. 6 research. Official site provides a current Grant Pre-Application for 501(c)(3) organizations. The form asks for mission, project/program name, request amount, a four-sentence project description, target population/geography, board/staff counts, organizational and project budgets, grant period, prior support and referral source. Current Maryland county grant research also lists the program as rolling and focused on inner-city youth service/enrichment. Do not state participant counts that have not yet occurred.",
+      "status": "Awaiting response",
+      "stage": "General operating pre-application confirmed received",
+      "submittedDate": "2026-10-06",
+      "nextDate": "2026-12-05",
+      "nextAction": "Allow 60 days for review; portal says no contact within 90 days indicates not selected for Board vote. Do not duplicate pending pre-application.",
+      "notes": "New Oct. 6 research. Official site provides a current Grant Pre-Application for 501(c)(3) organizations. The form asks for mission, project/program name, request amount, a four-sentence project description, target population/geography, board/staff counts, organizational and project budgets, grant period, prior support and referral source. Current Maryland county grant research also lists the program as rolling and focused on inner-city youth service/enrichment. Do not state participant counts that have not yet occurred.\nOct. 6: Replaced unsent Claude Lab concept with user-priority general operating support. Official form explicitly permits general operations. Submitted $25,000: $15,000 annual hub rent and $10,000 toward the existing $12,000 part-time coordination line, within $46,860 2027 annual hub estimate. $55,000 FY2026 organizational planning budget disclosed separately from actual revenue. Four directors, zero current full/part-time staff; proposed paid coordination is future capacity. Confirmed on-screen: foundation received pre-application and it is in review. New nonprofit / no prior regular distributions / implementation conditional on funding and approvals disclosed.",
       "portalUrl": "https://www.markwahlbergyouthfoundation.org/grant-app",
       "funderUrl": "https://www.markwahlbergyouthfoundation.org/",
       "applicationUrl": "https://www.markwahlbergyouthfoundation.org/grant-app",
