@@ -68,6 +68,11 @@
       "added": 10,
       "statusMeaning": "Ready = Claude can pick up for fulfillment/application prep; Researching = Claude should resolve the listed eligibility or route question before applying.",
       "note": "ChatGPT researched and qualified these opportunities; no applications were submitted in this batch."
+    },
+    "documentBrandReference": {
+      "instruction": "Use the user's House of Manna grant document visual template for all grant PDFs: logo header, sage script title, navy Anton headlines, Helvetica-style body, navy request badge, supplied margins and spacing.",
+      "referenceLibraryFile": "libfile_e07bf40488e881919ef0d9106b98105a",
+      "confirmedDate": "2026-10-06"
     }
   },
   "grants": [
@@ -4093,7 +4098,7 @@
       "status": "In progress",
       "stage": "Gmail inquiry draft saved — send approval required",
       "nextAction": "Obtain unambiguous approval specifically to send saved $5,000 eligibility inquiry to amar@rnpfoundation.org with budget, nonprofit status, contact and social details.",
-      "notes": "October 6: Nutrition pillar fits proposed Baltimore food access. Official application route requires Form 990. First fiscal year ends Dec. 31, 2026; no filed 990 exists. $5,000 inquiry includes public $46,860 operating estimate, $4,000 transport/$1,000 packing allocation, organizational contact and social links. Send rejected by automatic approval review: broad authorization did not clearly authorize exact financial/contact payload and recipient. No email sent. Gmail DRAFT id r2632284591502728171 / message 1a1125b41f076688. Oct6 subsequent combined 'Yes' followed by send attempt: automatic approval review again rejected as ambiguous approval of exact Patel recipient/payload. Draft remains unsent; no workaround attempted.",
+      "notes": "October 6: Nutrition pillar fits proposed Baltimore food access. Official application route requires Form 990. First fiscal year ends Dec. 31, 2026; no filed 990 exists. $5,000 inquiry includes public $46,860 operating estimate, $4,000 transport/$1,000 packing allocation, organizational contact and social links. Send rejected by automatic approval review: broad authorization did not clearly authorize exact financial/contact payload and recipient. No email sent. Gmail DRAFT id r2632284591502728171 / message 1a1125b41f076688. Oct6 subsequent combined 'Yes' followed by send attempt: automatic approval review again rejected as ambiguous approval of exact Patel recipient/payload. Draft remains unsent; no workaround attempted. October6: Patel eligibility inquiry formatted as a two-page PDF using user-supplied Abell LOI brand reference; saved House_of_Manna_Patel_Inquiry.pdf, libfile_5dd9a229ff5081919fa6530836399961. No email or application sent during document formatting.",
       "url": "https://rnpfoundation.org/grants/"
     },
     {
