@@ -5663,14 +5663,14 @@
         "General Operations",
         "Pantry"
       ],
-      "askAmount": 10000,
+      "askAmount": null,
       "currency": "USD",
-      "status": "On hold",
-      "stage": "Eligibility inquiry prepared — sending approval required",
-      "submittedDate": null,
+      "status": "Awaiting response",
+      "stage": "First-year eligibility inquiry sent — no grant amount requested",
+      "submittedDate": "2026-10-07",
       "nextDate": null,
-      "nextAction": "Approve eligibility inquiry to info@leidyfoundation.org regarding first-year financial documentation and pantry operating support. No email or application sent.",
-      "notes": "Baltimore-area social welfare funder; grant listings explicitly include operating support. Official site fetch failed; current procedures remain to confirm.\n\nResearch prospect only. No application, inquiry or award created in this research batch. Proposed amount is a planning target, not a funder cap or submitted request. Current operating/pantry eligibility and access must be confirmed. Use the single authoritative master budget; preserve existing allocations for the same purpose/amount. Do not invent prior distributions, partnerships, secured premises or outcomes. Award accounting must prevent duplicate reimbursement of expenses. Unrestricted awards may support future approved activity/reserves subject to terms; restricted awards remain tied to their approved uses.\n\nOctober 7: Verified official application procedure and published recipient; no prior sent Leidy request found. Prepared first-year eligibility inquiry. Automatic approval review rejected sending organizational background and contact information without recipient-specific approval. Nothing transmitted; proposed $10,000 ask remains unsubmitted.",
+      "nextAction": "Await Leidy Foundation response about first-year operating-support eligibility and acceptable financial documentation before submitting a full grant request.",
+      "notes": "Baltimore-area social welfare funder; grant listings explicitly include operating support. Official site fetch failed; current procedures remain to confirm.\n\nResearch prospect only. No application, inquiry or award created in this research batch. Proposed amount is a planning target, not a funder cap or submitted request. Current operating/pantry eligibility and access must be confirmed. Use the single authoritative master budget; preserve existing allocations for the same purpose/amount. Do not invent prior distributions, partnerships, secured premises or outcomes. Award accounting must prevent duplicate reimbursement of expenses. Unrestricted awards may support future approved activity/reserves subject to terms; restricted awards remain tied to their approved uses.\n\nOctober 7: Verified official application procedure and published recipient; no prior sent Leidy request found. Prepared first-year eligibility inquiry. Automatic approval review rejected sending organizational background and contact information without recipient-specific approval. Nothing transmitted; proposed $10,000 ask remains unsubmitted.\n\nOctober 7: Chad approved the recipient-specific inquiry. Eligibility email sent from chad@houseofmannamd.com to info@leidyfoundation.org; Gmail confirmed SENT (message 1a1190a120a58091). Asked about first-year operating support and current financial statements/planning budget in lieu of prior-year financials. No full application or dollar request submitted. The prior $10,000 planning target is preserved as plannedAskAmount and excluded from pending dollar requests.",
       "portalUrl": "https://www.leidyfoundation.org/application-procedure.html",
       "funderUrl": "https://www.leidyfoundation.org/application-procedure.html",
       "applicationUrl": "https://www.leidyfoundation.org/application-procedure.html",
@@ -5685,7 +5685,8 @@
       "subcategories": [
         "Community Facilities & Capacity",
         "Food Security & Basic Needs"
-      ]
+      ],
+      "plannedAskAmount": 10000
     },
     {
       "id": "w-k-kellogg-foundation-operating-prospect-20261007",
