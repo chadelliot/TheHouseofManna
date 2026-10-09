@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "House of Manna Funding Pipeline",
-    "lastUpdated": "2026-10-08",
+    "lastUpdated": "2026-10-09",
     "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications.",
     "statusDefinitions": {
       "Researching": "Fit, route or eligibility still needs research",
@@ -655,6 +655,14 @@
       "emailSendTime": "07:00",
       "emailSendTimezone": "America/New_York",
       "instruction": "Use direct online application if available and no LOI required. Send letters only where required by funder process. Emails should warmly introduce House of Manna, why the work matters and how funder support would help the community."
+    },
+    "latestImmediateOperationsReview": {
+      "date": "2026-10-09",
+      "newFullApplicationsSubmitted": 0,
+      "registrationFormsPopulated": 1,
+      "registrationRequestsSubmitted": 0,
+      "newProspectsRecorded": 3,
+      "note": "User requested five immediate operating applications; none submitted. Pending requests not duplicated; portal and required-document barriers recorded. Authoritative master budget is $75,000 unallocated 2027 annual operating plan; historical request models are not a newly approved detailed allocation."
     }
   },
   "grants": [
@@ -1105,15 +1113,15 @@
       ],
       "askAmount": 5000,
       "currency": "USD",
-      "status": "Ready",
-      "stage": "Verification pending — page interaction timed out",
+      "status": "On hold",
+      "stage": "On hold — signed-out portal access unresolved",
       "submittedDate": null,
       "nextDate": null,
       "nextAction": "Complete Spark Good / third-party verification and submit to relevant local facilities.",
-      "notes": "Account verification activity was found, but no grant-submission confirmation was found.\n50-prospect review (Oct. 4, 2026): $250–$5,000. Current cycle ends Nov. 30, 2026. Local facility service area, IRS listing and Deed verification required. Tracker already has an application in progress.\nOctober 5 retry: Spark Good nonprofit page opened but browser interaction and page-state capture timed out. No verification completion, grant application or submission confirmed.",
+      "notes": "Account verification activity was found, but no grant-submission confirmation was found.\n50-prospect review (Oct. 4, 2026): $250–$5,000. Current cycle ends Nov. 30, 2026. Local facility service area, IRS listing and Deed verification required. Tracker already has an application in progress.\nOctober 5 retry: Spark Good nonprofit page opened but browser interaction and page-state capture timed out. No verification completion, grant application or submission confirmed.\n\nOctober 9: signed-out nonprofit page retried; sign-in did not transition and page interactions timed out. No verification completion or grant submission confirmed.",
       "portalUrl": "https://www.walmart.com/nonprofits",
       "funderUrl": "https://walmart.org/how-we-give/local-community-grants",
-      "lastUpdated": "2026-10-05",
+      "lastUpdated": "2026-10-09",
       "supportType": "Grant",
       "fit": "Medium",
       "awardedAmount": 0,
@@ -5718,11 +5726,11 @@
       "askAmount": 25000,
       "currency": "USD",
       "status": "Researching",
-      "stage": "Geographic screen passed — portal registration required",
+      "stage": "Registration populated — manual account completion needed",
       "submittedDate": null,
       "nextDate": null,
-      "nextAction": "Complete individual Fluxx portal registration using name-specific chad@houseofmannamd.com. Foundation sends password-setup link after registration processing. Then prepare food-access/program or operating LOI; capital investment excluded. No LOI submitted.",
-      "notes": "Official national food/family priorities and always-open Fluxx LOI route; outside core geographies is competitive. Broad unrestricted operating eligibility is not guaranteed.\n\nResearch prospect only. No application, inquiry or award created in this research batch. Proposed amount is a planning target, not a funder cap or submitted request. Current operating/pantry eligibility and access must be confirmed. Use the single authoritative master budget; preserve existing allocations for the same purpose/amount. Do not invent prior distributions, partnerships, secured premises or outcomes. Award accounting must prevent duplicate reimbursement of expenses. Unrestricted awards may support future approved activity/reserves subject to terms; restricted awards remain tied to their approved uses.\n\nOctober 7: Official grantseekers page and Fluxx portal reviewed. Answered Yes to beneficiaries located in U.S./Haiti/Mexico; registration form opened. No account or LOI submitted, no EIN entered. Manual new-account signup required by browser authentication guidance. GuideStar search is optional: portal permits manually entering organization information if not found.",
+      "nextAction": "User completes prepared Fluxx registration and password setup, then prepare required LOI using current master budget; do not submit duplicate account requests.",
+      "notes": "Official national food/family priorities and always-open Fluxx LOI route; outside core geographies is competitive. Broad unrestricted operating eligibility is not guaranteed.\n\nResearch prospect only. No application, inquiry or award created in this research batch. Proposed amount is a planning target, not a funder cap or submitted request. Current operating/pantry eligibility and access must be confirmed. Use the single authoritative master budget; preserve existing allocations for the same purpose/amount. Do not invent prior distributions, partnerships, secured premises or outcomes. Award accounting must prevent duplicate reimbursement of expenses. Unrestricted awards may support future approved activity/reserves subject to terms; restricted awards remain tied to their approved uses.\n\nOctober 7: Official grantseekers page and Fluxx portal reviewed. Answered Yes to beneficiaries located in U.S./Haiti/Mexico; registration form opened. No account or LOI submitted, no EIN entered. Manual new-account signup required by browser authentication guidance. GuideStar search is optional: portal permits manually entering organization information if not found.\n\nOctober 9: registration populated with verified organization/EIN/address and Chad contact information. Account request not submitted; user must complete new-account registration under browser authentication guidance. Required LOI remains unsubmitted.",
       "portalUrl": "https://www.wkkf.org/grantseekers/",
       "funderUrl": "https://www.wkkf.org/grantseekers/",
       "applicationUrl": "https://www.wkkf.org/grantseekers/",
@@ -5730,7 +5738,7 @@
       "fit": "Unconfirmed — priority eligibility screen",
       "awardedAmount": 0,
       "addedDate": "2026-10-07",
-      "lastUpdated": "2026-10-07",
+      "lastUpdated": "2026-10-09",
       "researchBatch": "general-operations-50-20261007",
       "researchPriority": "A",
       "askAmountBasis": "Provisional first-request target; validate with current guidelines/award history and master budget before submission",
@@ -7321,6 +7329,81 @@
         "Community Facilities & Capacity",
         "Food Security & Basic Needs"
       ]
+    },
+    {
+      "id": "transamerica-foundation-operating-20261009",
+      "funder": "Transamerica Foundation",
+      "opportunity": "Operating support screening",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Researching",
+      "stage": "Application route open — required attachments incomplete",
+      "submittedDate": null,
+      "nextDate": "2026-11-01",
+      "nextAction": "Review limitations and complete required attachments, including verified board business affiliations and current financial statements. Respect 7 a.m. Eastern email preference.",
+      "notes": "Official live page checked Oct. 9: Baltimore-area 501(c)(3) applications accepted Jan. 1–Nov. 1. PDF application sent by email to shtransamericafound@transamerica.com. Required current W-9, IRS letter, governing board titles/business affiliations, financial statements and annual budget. No application prepared or sent; general operating fit and exclusions still require review.",
+      "portalUrl": "https://www.transamerica.com/about-us/foundation-grant",
+      "funderUrl": "https://www.transamerica.com/about-us/foundation-grant",
+      "applicationUrl": "https://www.transamerica.com/about-us/foundation-grant",
+      "supportType": "Grant prospect — not submitted",
+      "fit": "Conditional",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-09",
+      "lastUpdated": "2026-10-09"
+    },
+    {
+      "id": "serini-major-operating-screened-20261009",
+      "funder": "Helen J. Serini Foundation",
+      "opportunity": "Operating support screening",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "On hold",
+      "stage": "Major grants closed for 2026 and 2027",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Recheck published major-grant cycle for spring 2028.",
+      "notes": "Official application page checked Oct. 9: major operating grants closed to new requests for 2026 and 2027; spring 2028 next stated cycle. Small grants do not fund broad hub operations. No application submitted.",
+      "portalUrl": "https://www.hjsfoundation.org/grant-applications",
+      "funderUrl": "https://www.hjsfoundation.org/grant-applications",
+      "applicationUrl": "https://www.hjsfoundation.org/grant-applications",
+      "supportType": "Grant prospect — not submitted",
+      "fit": "Conditional",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-09",
+      "lastUpdated": "2026-10-09"
+    },
+    {
+      "id": "svp-nyc-former-ncf-screened-20261009",
+      "funder": "SVP NYC / former Nonprofit Collective Foundation",
+      "opportunity": "Operating support screening",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "On hold",
+      "stage": "No open grant applications",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Monitor official openings; do not use outdated grant listings.",
+      "notes": "Former Nonprofit Collective Foundation website redirects to SVP NYC. Official current program page reports no open grants. Historic unrestricted startup offer is not a current application route. No application submitted.",
+      "portalUrl": "https://www.svpnyc.org/propelyourpurpose",
+      "funderUrl": "https://www.svpnyc.org/propelyourpurpose",
+      "applicationUrl": "https://www.svpnyc.org/propelyourpurpose",
+      "supportType": "Grant prospect — not submitted",
+      "fit": "Conditional",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-09",
+      "lastUpdated": "2026-10-09"
     }
   ]
 }
