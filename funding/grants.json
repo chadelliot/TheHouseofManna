@@ -663,6 +663,14 @@
       "registrationRequestsSubmitted": 1,
       "newProspectsRecorded": 3,
       "note": "User requested five immediate operating applications; none submitted. Pending requests not duplicated; portal and required-document barriers recorded. Authoritative master budget is $75,000 unallocated 2027 annual operating plan; historical request models are not a newly approved detailed allocation. Kellogg registration subsequently confirmed on live portal; required LOI remains unsubmitted."
+    },
+    "latestImmediateFormSearch": {
+      "date": "2026-10-09",
+      "newApplicationsSubmitted": 0,
+      "directShortOperatingFormsFound": 1,
+      "requiredLOIRoutesFound": 1,
+      "requestedThreeImmediatelySubmittableOperatingGrants": false,
+      "note": "KWD direct form has stale 2024 revenue field. Baugh requires account and LOI; full application financial requirements unresolved. No third immediately submittable operating form verified. Existing pending grants excluded from duplicate requests."
     }
   },
   "grants": [
@@ -7399,6 +7407,58 @@
       "portalUrl": "https://www.svpnyc.org/propelyourpurpose",
       "funderUrl": "https://www.svpnyc.org/propelyourpurpose",
       "applicationUrl": "https://www.svpnyc.org/propelyourpurpose",
+      "supportType": "Grant prospect — not submitted",
+      "fit": "Conditional",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-09",
+      "lastUpdated": "2026-10-09"
+    },
+    {
+      "id": "kwd-empowerment-operating-20261009",
+      "funder": "Kingdom Wealth Dominion",
+      "opportunity": "KWD Empowerment Grant",
+      "askAmount": 1000,
+      "stage": "Direct Google Form available — stale-year question flagged",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScN_D2WdIEKBVqcrHloL-8nyfMdcCFzOr0nGyFwofysHihNJA/viewform?usp=sf_link",
+      "notes": "Official site advertises $1,000 monthly grants, general operating use, active U.S. faith-based 501(c)(3) public charities. Direct form publicly readable and has Submit control. Form asks anticipated revenue for 2024 and this year's outreach; House formed July 2026, so do not invent 2024 operations or completed distributions. Required photo-sent question allows No. No application submitted. Published $3,000 past giving claim not independently verified.",
+      "nextAction": "Review direct form; answer startup status honestly and clarify stale 2024 question before treating request as fully ready. No fee observed on published form.",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "currency": "USD",
+      "status": "Researching",
+      "submittedDate": null,
+      "nextDate": null,
+      "portalUrl": "https://docs.google.com/forms/d/e/1FAIpQLScN_D2WdIEKBVqcrHloL-8nyfMdcCFzOr0nGyFwofysHihNJA/viewform?usp=sf_link",
+      "funderUrl": "https://www.kingdomwealthdominion.com/services-3",
+      "applicationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScN_D2WdIEKBVqcrHloL-8nyfMdcCFzOr0nGyFwofysHihNJA/viewform?usp=sf_link",
+      "supportType": "Grant prospect — not submitted",
+      "fit": "Conditional",
+      "awardedAmount": 0,
+      "addedDate": "2026-10-09",
+      "lastUpdated": "2026-10-09"
+    },
+    {
+      "id": "baugh-foundation-general-support-20261009",
+      "funder": "Eula Mae and John Baugh Foundation",
+      "opportunity": "General Support — required LOI",
+      "askAmount": null,
+      "stage": "Required LOI route — portal registration needed",
+      "url": "https://www.grantinterface.com/Home/Logon?urlkey=maebaugh",
+      "notes": "Official process supports general support and basic human needs; no pre-existing relationship necessary. Most new awards $5,000–$20,000; not a cap. Required LOI followed by invitation to full application. Portal requires Foundant registration/sign-in. Full application asks most recent 990; first-year substitute acceptance unconfirmed. Prioritizes progressive inclusive nonprofits and welcoming/affirming LGBTQIA+ organizations; do not claim unverified board policy. No LOI or application submitted.",
+      "nextAction": "User can register and begin required LOI now; confirm startup financial-document acceptance and actual policy alignment. Do not label full application immediately available.",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "currency": "USD",
+      "status": "Researching",
+      "submittedDate": null,
+      "nextDate": null,
+      "portalUrl": "https://www.grantinterface.com/Home/Logon?urlkey=maebaugh",
+      "funderUrl": "https://baughfoundation.org/grant-application-process/",
+      "applicationUrl": "https://www.grantinterface.com/Home/Logon?urlkey=maebaugh",
       "supportType": "Grant prospect — not submitted",
       "fit": "Conditional",
       "awardedAmount": 0,
