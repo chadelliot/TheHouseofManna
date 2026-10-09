@@ -660,9 +660,9 @@
       "date": "2026-10-09",
       "newFullApplicationsSubmitted": 0,
       "registrationFormsPopulated": 1,
-      "registrationRequestsSubmitted": 0,
+      "registrationRequestsSubmitted": 1,
       "newProspectsRecorded": 3,
-      "note": "User requested five immediate operating applications; none submitted. Pending requests not duplicated; portal and required-document barriers recorded. Authoritative master budget is $75,000 unallocated 2027 annual operating plan; historical request models are not a newly approved detailed allocation."
+      "note": "User requested five immediate operating applications; none submitted. Pending requests not duplicated; portal and required-document barriers recorded. Authoritative master budget is $75,000 unallocated 2027 annual operating plan; historical request models are not a newly approved detailed allocation. Kellogg registration subsequently confirmed on live portal; required LOI remains unsubmitted."
     }
   },
   "grants": [
@@ -5726,11 +5726,11 @@
       "askAmount": 25000,
       "currency": "USD",
       "status": "Researching",
-      "stage": "Registration populated — manual account completion needed",
+      "stage": "Registration confirmed — credential email pending",
       "submittedDate": null,
       "nextDate": null,
-      "nextAction": "User completes prepared Fluxx registration and password setup, then prepare required LOI using current master budget; do not submit duplicate account requests.",
-      "notes": "Official national food/family priorities and always-open Fluxx LOI route; outside core geographies is competitive. Broad unrestricted operating eligibility is not guaranteed.\n\nResearch prospect only. No application, inquiry or award created in this research batch. Proposed amount is a planning target, not a funder cap or submitted request. Current operating/pantry eligibility and access must be confirmed. Use the single authoritative master budget; preserve existing allocations for the same purpose/amount. Do not invent prior distributions, partnerships, secured premises or outcomes. Award accounting must prevent duplicate reimbursement of expenses. Unrestricted awards may support future approved activity/reserves subject to terms; restricted awards remain tied to their approved uses.\n\nOctober 7: Official grantseekers page and Fluxx portal reviewed. Answered Yes to beneficiaries located in U.S./Haiti/Mexico; registration form opened. No account or LOI submitted, no EIN entered. Manual new-account signup required by browser authentication guidance. GuideStar search is optional: portal permits manually entering organization information if not found.\n\nOctober 9: registration populated with verified organization/EIN/address and Chad contact information. Account request not submitted; user must complete new-account registration under browser authentication guidance. Required LOI remains unsubmitted.",
+      "nextAction": "Await Kellogg email to create portal credentials. User completes password setup; then prepare and submit required LOI. No grant application submitted yet.",
+      "notes": "Official national food/family priorities and always-open Fluxx LOI route; outside core geographies is competitive. Broad unrestricted operating eligibility is not guaranteed.\n\nResearch prospect only. No application, inquiry or award created in this research batch. Proposed amount is a planning target, not a funder cap or submitted request. Current operating/pantry eligibility and access must be confirmed. Use the single authoritative master budget; preserve existing allocations for the same purpose/amount. Do not invent prior distributions, partnerships, secured premises or outcomes. Award accounting must prevent duplicate reimbursement of expenses. Unrestricted awards may support future approved activity/reserves subject to terms; restricted awards remain tied to their approved uses.\n\nOctober 7: Official grantseekers page and Fluxx portal reviewed. Answered Yes to beneficiaries located in U.S./Haiti/Mexico; registration form opened. No account or LOI submitted, no EIN entered. Manual new-account signup required by browser authentication guidance. GuideStar search is optional: portal permits manually entering organization information if not found.\n\nOctober 9: registration populated with verified organization/EIN/address and Chad contact information. Account request not submitted; user must complete new-account registration under browser authentication guidance. Required LOI remains unsubmitted.\n\nOctober 9: after manual browser handoff, live portal showed: Thank you for submitting your registration; processing within one business day; email to create portal credentials follows. Registration confirmed, not an LOI or full grant application.",
       "portalUrl": "https://www.wkkf.org/grantseekers/",
       "funderUrl": "https://www.wkkf.org/grantseekers/",
       "applicationUrl": "https://www.wkkf.org/grantseekers/",
