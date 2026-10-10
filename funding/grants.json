@@ -688,38 +688,24 @@
       "note": "Live funding page and repository reviewed. Madeline and Charles T. Bauer confirmed preselected-only; Bunting, Heming and Norman/Florence Brody have no verified active route. No applications submitted and no ask amounts changed."
     },
     "automationCheckpoint": {
-      "state": "review_completed",
+      "state": "in_progress",
       "date": "2026-10-09",
       "submissionInProgress": false,
       "confirmedNewSubmissionIds": [],
-      "resumeInstruction": "Continue unresolved eligible prospects not previously reviewed, prioritizing direct active routes. Current next research candidates include Louis H. Shaman, Rogers-Wilbur, O'Neil, Mary Jean & Oliver Travers, and Haugh. Avoid United Bank work underway elsewhere and do not duplicate written-route reviews already completed."
+      "resumeInstruction": "Current run screening Israel & Mollie Myers, Mechanic, Aber D. Unger, Weinberg, and Bastinelli; avoid duplicate submissions."
     },
     "grantApplicationAutomation": {
-      "state": "completed_review",
-      "startedAt": "2026-10-10T00:33:36Z",
-      "completedAt": "2026-10-10T00:37:33Z",
-      "leaseExpiresAt": null,
-      "reviewedIds": [
-        "transamerica-foundation-operating-20261009",
-        "nora-roberts-foundation-prospect-2026",
-        "sc-johnson-community-grant-2026",
-        "thomas-wilson-foundation-2027",
-        "panera-dough-nation-2026",
-        "designer-brands-foundation-community-2026",
-        "frank-e-miriam-loveman-foundation-operating-prospect-20261007",
-        "fordi-family-foundation-operating-prospect-20261007",
-        "alvin-louise-myerberg-family-foundation-operating-prospect-20261007",
-        "hecht-levi-foundation-operating-prospect-20261007",
-        "huether-foundation-huether-mcclelland-foundation-operating-prospect-20261007",
-        "brown-advisory-charitable-foundation-operating-prospect-20261007",
-        "allegis-group-foundation-operating-prospect-20261007"
-      ],
+      "state": "in_progress",
+      "startedAt": "2026-10-10T01:27:25Z",
+      "completedAt": null,
+      "leaseExpiresAt": "2026-10-10T02:20:00Z",
+      "reviewedIds": [],
       "fullApplicationsSubmitted": 0,
       "newAmountRequested": 0,
       "emailsScheduled": 0,
       "receipts": [],
       "financialRecordBlocker": "No current authoritative master budget/ledger and interim financial statements located in available Library or repository records. Historical launch documents/public hub planning budget not treated as current actual statements.",
-      "continuation": "Do not retry blocked records without changed access or required records. Continue next unresolved General Operations prospects; eligible queue not declared exhausted. No prior application tabs available; external Gift Card Bank request remains unconfirmed and excluded from submission counts.",
+      "continuation": "Reviewing next unresolved General Operations prospects from durable checkpoint; no submission is counted without a receipt or visible confirmation.",
       "nextResearchIds": [
         "israel-mollie-myers-foundation-operating-prospect-20261007",
         "morris-a-clarisse-b-mechanic-foundation-operating-prospect-20261007",
