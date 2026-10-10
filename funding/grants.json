@@ -688,30 +688,24 @@
       "note": "Five written-route General Operations prospects reviewed. Gordon Croft is qualified for a required $5,000 pantry letter but remains undispatched. Peggy Meyerhoff Pearlstone and Benno/Elayne Hurwitz lack verified current submission routes; Lyn Meyerhoff lacks required current financial records and board occupations; Dimick's six-week deadline cannot be calculated without unpublished meeting dates."
     },
     "automationCheckpoint": {
-      "state": "review_completed",
+      "state": "in_progress",
       "date": "2026-10-09",
       "submissionInProgress": false,
       "confirmedNewSubmissionIds": [],
-      "resumeInstruction": "Continue with Philip & Harriet Klein, Jacob & Hilda Blaustein, Nourishing Neighbors Innovation Incubation, BJ's, and PepsiCo. Gordon Croft is Ready for a required $5,000 postal letter but is not submitted until dispatch is verified; Dimick remains blocked on meeting dates."
+      "resumeInstruction": "Current run screening the saved five prospects; preserve asks and separate partnership outreach from grant applications."
     },
     "grantApplicationAutomation": {
-      "state": "completed_review",
-      "startedAt": "2026-10-10T02:32:34Z",
-      "completedAt": "2026-10-10T02:45:00Z",
-      "leaseExpiresAt": null,
-      "reviewedIds": [
-        "peggy-meyerhoff-pearlstone-foundation-operating-prospect-20261007",
-        "lyn-p-meyerhoff-foundation-operating-prospect-20261007",
-        "gordon-croft-foundation-operating-prospect-20261007",
-        "benno-elayne-hurwitz-family-foundation-operating-prospect-20261007",
-        "dimick-foundation-operating-prospect-20261007"
-      ],
+      "state": "in_progress",
+      "startedAt": "2026-10-10T03:26:57Z",
+      "completedAt": null,
+      "leaseExpiresAt": "2026-10-10T04:20:00Z",
+      "reviewedIds": [],
       "fullApplicationsSubmitted": 0,
       "newAmountRequested": 0,
       "emailsScheduled": 0,
       "receipts": [],
       "financialRecordBlocker": "Lyn P. Meyerhoff requires current budget/funding sources, major contributions, financial statements, and board occupations. Available interim statements are dated Oct. 4 and no newer authoritative master budget/ledger was located.",
-      "continuation": "Gordon Croft is Ready for a required $5,000 postal pantry letter; it is not submitted until dispatch is verified. Dimick also requires a letter but its meeting-based deadline is unresolved. Continue remaining unresolved prospects without retrying unchanged blockers.",
+      "continuation": "Screening Klein, Blaustein, Nourishing Neighbors, BJ's, and PepsiCo against current official routes; no duplicate submissions.",
       "nextResearchIds": [
         "philip-harriet-klein-foundation-operating-prospect-20261007",
         "jacob-hilda-blaustein-foundation-operating-prospect-20261007",
