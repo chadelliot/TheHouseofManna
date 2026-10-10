@@ -697,7 +697,7 @@
     "grantApplicationAutomation": {
       "state": "completed_review",
       "startedAt": "2026-10-10T00:33:36Z",
-      "completedAt": "2026-10-10T00:38:00Z",
+      "completedAt": "2026-10-10T00:37:33Z",
       "leaseExpiresAt": null,
       "reviewedIds": [
         "transamerica-foundation-operating-20261009",
@@ -726,7 +726,8 @@
         "aber-d-unger-foundation-operating-prospect-20261007",
         "carroll-a-weinberg-charlotte-cohen-weinberg-foundation-operating-prospect-20261007",
         "bastinelli-family-foundation-operating-prospect-20261007"
-      ]
+      ],
+      "publicPageVerification": "Repository changes confirmed; public funding page still served previous Transamerica status immediately after commit. Recheck propagation next run."
     }
   },
   "grants": [
