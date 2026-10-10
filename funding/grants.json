@@ -693,35 +693,24 @@
       "note": "Ten General Operations prospects were screened against current filings and public routes. Nine lack a verified official submission route and were placed on hold. Rogers-Wilbur is qualified for a required postal letter accepted at any time; no letter was dispatched and no application was counted."
     },
     "automationCheckpoint": {
-      "state": "review_completed",
+      "state": "in_progress",
       "date": "2026-10-09",
       "submissionInProgress": false,
       "confirmedNewSubmissionIds": [],
-      "resumeInstruction": "Continue with Peggy Meyerhoff Pearlstone, Lyn P. Meyerhoff, Gordon Croft, Benno & Elayne Hurwitz, and Dimick. Rogers-Wilbur is Ready for a required $2,000 postal letter but is not submitted until physical dispatch is verified. Avoid duplicate pending requests."
+      "resumeInstruction": "Current run screening the five saved written-route prospects; avoid duplicates and preserve existing asks."
     },
     "grantApplicationAutomation": {
-      "state": "completed_review",
-      "startedAt": "2026-10-10T01:27:25Z",
-      "completedAt": "2026-10-10T01:39:00Z",
-      "leaseExpiresAt": null,
-      "reviewedIds": [
-        "israel-mollie-myers-foundation-operating-prospect-20261007",
-        "morris-a-clarisse-b-mechanic-foundation-operating-prospect-20261007",
-        "aber-d-unger-foundation-operating-prospect-20261007",
-        "carroll-a-weinberg-charlotte-cohen-weinberg-foundation-operating-prospect-20261007",
-        "bastinelli-family-foundation-operating-prospect-20261007",
-        "earle-annette-shawe-family-charitable-foundation-trp-shawe-operating-prospect-20261007",
-        "o-neil-family-foundation-operating-prospect-20261007",
-        "mary-jean-oliver-travers-foundation-operating-prospect-20261007",
-        "rogers-wilbur-foundation-operating-prospect-20261007",
-        "haugh-family-charitable-foundation-operating-prospect-20261007"
-      ],
+      "state": "in_progress",
+      "startedAt": "2026-10-10T02:32:34Z",
+      "completedAt": null,
+      "leaseExpiresAt": "2026-10-10T03:25:00Z",
+      "reviewedIds": [],
       "fullApplicationsSubmitted": 0,
       "newAmountRequested": 0,
       "emailsScheduled": 0,
       "receipts": [],
       "financialRecordBlocker": "The available interim statements are dated Oct. 4 and show no cash activity; they predate the Oct. 5 Safeway award and are not a current authoritative master budget/ledger. Applications requiring current statements or actual financial results remain blocked.",
-      "continuation": "Rogers-Wilbur is the only newly qualified route from this screen and requires postal dispatch; it remains Ready, not Submitted. Continue unresolved General Operations written-route prospects. Do not count research, drafts, inquiries, or undispatched letters as applications.",
+      "continuation": "Reviewing Peggy Meyerhoff Pearlstone, Lyn P. Meyerhoff, Gordon Croft, Benno & Elayne Hurwitz, and Dimick; no submission counted without dispatch receipt.",
       "nextResearchIds": [
         "peggy-meyerhoff-pearlstone-foundation-operating-prospect-20261007",
         "lyn-p-meyerhoff-foundation-operating-prospect-20261007",
