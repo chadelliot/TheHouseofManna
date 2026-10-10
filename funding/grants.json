@@ -693,6 +693,20 @@
       "submissionInProgress": false,
       "confirmedNewSubmissionIds": [],
       "resumeInstruction": "Continue unresolved eligible prospects not previously reviewed, prioritizing direct active routes. Current next research candidates include Louis H. Shaman, Rogers-Wilbur, O'Neil, Mary Jean & Oliver Travers, and Haugh. Avoid United Bank work underway elsewhere and do not duplicate written-route reviews already completed."
+    },
+    "grantApplicationAutomation": {
+      "state": "in_progress",
+      "startedAt": "2026-10-10T00:40:00Z",
+      "leaseExpiresAt": "2026-10-10T01:10:00Z",
+      "selectedIds": [
+        "transamerica-foundation-operating-20261009",
+        "nora-roberts-foundation-prospect-2026",
+        "sc-johnson-community-grant-2026",
+        "thomas-wilson-foundation-2027",
+        "panera-dough-nation-2026"
+      ],
+      "fullApplicationsSubmitted": 0,
+      "note": "No submission without receipt. Existing submitted and awaiting-response records excluded."
     }
   },
   "grants": [
