@@ -43,3 +43,8 @@ ERIE / The Standard: proposed $5,000 food-access program request, allocated $4,5
 State Farm: food-insecurity support questionnaire, not a full application. Same truthful pantry summary and planned expense allocation. Do not claim an invitation, existing partnership or guaranteed funding.
 
 Peoples Bank: investigate equipment request under Health and Human Services; exclude rent/payroll/operating expenses. Proposed $5,000 contribution toward the existing $8,000 refrigeration/freezer planning line, subject to securing a suitable facility, confirming vendor quotes and funder acceptance. No purchase, lease or match is committed.
+
+
+## Subsequent submission update — October 11, 2026
+
+After Chad approved retrying the exact request and destination, the $5,000 Klein’s ShopRite corporate funding request was successfully emailed to Sarah Klein at the published intake address, with the approved-style request PDF attached. Gmail returned SENT confirmation. This resolves the prior send hold. The original screening table above describes the earlier screening result; the live tracker now records ShopRite as Submitted. Current batch total: one funding request submitted toward the 25-application target; no award confirmed. No financial-package or IRS-letter attachment was sent in this message; both were offered on request.
