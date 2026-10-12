@@ -2,7 +2,7 @@
   "meta": {
     "title": "House of Manna Funding Pipeline",
     "lastUpdated": "2026-10-12",
-    "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications. October 11: environmental projects removed from active pursuit at Chad's direction. Screened 25 new replacement prospects; seven current/conditional/future prospects added, none submitted. Eligibility failures recorded separately in docs/funding/replacement-grant-screening-20261011.md. ShopRite request successfully submitted October 11 following approved retry; one new request submitted toward the 25-application target. October 12 continuation: three portal-support inquiries sent October 11; Benevity ticket 4923065 acknowledged. Standard lookup also failed for a known established charity, so missing-registry conclusions remain unproven. Kroger December review added as an access/verification hold. Count remains one new funding request submitted; technical inquiries excluded.",
+    "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications. October 11: environmental projects removed from active pursuit at Chad's direction. Screened 25 new replacement prospects; seven current/conditional/future prospects added, none submitted. Eligibility failures recorded separately in docs/funding/replacement-grant-screening-20261011.md. ShopRite request successfully submitted October 11 following approved retry; one new request submitted toward the 25-application target. October 12 continuation: three portal-support inquiries sent October 11; Benevity ticket 4923065 acknowledged. Standard lookup also failed for a known established charity, so missing-registry conclusions remain unproven. Kroger December review added as an access/verification hold. Count remains one new funding request submitted; technical inquiries excluded. October 12: Chad set submitted-request sourcing targets of $500,000 General Operations and $500,000 Pantry. Nine distinct new leads added; Bob Evans $5,000 financial-support inquiry sent, other eight not submitted. Program names normalized for recent food-access records; no budget or award amount changed.",
     "statusDefinitions": {
       "Researching": "Fit, route or eligibility still needs research",
       "Ready": "Qualified and ready for the next application or outreach action",
@@ -717,6 +717,57 @@
       "prepared": 4,
       "submitted": 0,
       "note": "User authorized preparing and submitting attachments without routine permission. Prepared financial/budget package, Transamerica narrative and form, and two postal letters. Hub model reconciled to $75,000 by reducing setup contingency $1,060; no award receipt invented. Factual/access/signature/dispatch gaps remain."
+    },
+    "applicationTargets": {
+      "setDate": "2026-10-12",
+      "currency": "USD",
+      "generalOperations": 500000,
+      "pantry": 500000,
+      "total": 1000000,
+      "basis": "Target value of submitted requests, not an income forecast, award total or spending budget. Full applications/direct funding requests count separately from LOIs/preapplications/intake inquiries. Shared requests count once and remain unallocated until a documented program split is validated. Null/unknown asks, prospects, holds, declined and in-kind-only records excluded from current open baseline.",
+      "conservativeOpenBaseline": {
+        "asOf": "2026-10-12",
+        "generalFull": 25000,
+        "pantryFull": 40600,
+        "generalInquiry": 65000,
+        "pantryInquiry": 32500,
+        "mixedFull": 35000,
+        "groups": {
+          "generalFull": [
+            "brightstar-after-school-advantage-2026"
+          ],
+          "pantryFull": [
+            "harris-teeter-donation-2026",
+            "safeway-eastern-hunger-2026",
+            "zekauskas-family-foundation-2026",
+            "baltimore-life-community-grants-prospect-2026",
+            "lawrence-foundation-prospect-2026",
+            "sbb-research-group-foundation-2026",
+            "fulton-bank-pantry-operations-2027",
+            "pennrose-foundation-operating-prospect-20261007",
+            "kleins-shoprite-pantry-20261011",
+            "wegmans-community-giving-2026"
+          ],
+          "generalInquiry": [
+            "mark-wahlberg-youth-foundation-2026",
+            "vulcan-foundation-baltimore-education-2026",
+            "david-barbara-b-hirschhorn-foundation-prospect-2026"
+          ],
+          "pantryInquiry": [
+            "bge-exelon-community-grants-2026",
+            "cfg-bank-community-giving-2026",
+            "teazey-foundation-pantry-2027",
+            "rnp-foundation-pantry-2027",
+            "rosedale-bank-pantry-giving-2026",
+            "bob-evans-farms-pantry-20261012"
+          ],
+          "mixedFull": [
+            "costco-charitable-contributions-2026",
+            "mccormick-charitable-donations-2026"
+          ]
+        },
+        "note": "Minimum documented current open requests from specifically reviewed records; not a certified cumulative all-history total. Unknown-amount submissions and declined historical requests excluded. No inferred splits."
+      }
     }
   },
   "grants": [
@@ -1460,10 +1511,8 @@
       "id": "wegmans-community-giving-2026",
       "funder": "Wegmans",
       "opportunity": "Donation & Sponsorship Request",
-      "program": "General Operations",
+      "program": "Pantry",
       "programs": [
-        "General Operations",
-        "Youth Innovation Lab",
         "Pantry"
       ],
       "supportType": "Donation / Sponsorship",
@@ -1479,7 +1528,7 @@
       "notes": "Wegmans account created and donation request started Sept. 20, 2026. Application is not yet marked submitted. Oct. 5: Sign-in verified. Existing proposal 495801 already submitted Sept. 21, status Under Consideration. Request: $100 gift card plus unspecified product donations via Hunt Valley; proposed program date Nov. 14 and requested decision Oct. 18, 2026. No duplicate submitted. Existing narrative describes an ongoing pantry and annual persons served of 250, conflicting with subsequently confirmed pre-launch status; treat as a correction/follow-up item, not an established operating history. W-9 attached; portal IRS database status displays Not a 501(c) Organization despite submitted 501(c)(3) selection and known IRS letter. Oct. 5 user preference: future grocery gift-card requests should seek a larger justified total or several cards (suggested $500–$1,000 subject to funder limits). Existing $100 request remains under review; do not duplicate.",
       "portalUrl": "https://www.wegmans.com/values-in-action/community-giving",
       "funderUrl": "https://www.wegmans.com/values-in-action/community-giving",
-      "lastUpdated": "2026-10-05",
+      "lastUpdated": "2026-10-12",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.wegmans.com/values-in-action/community-giving",
       "applicationLinkLabel": "Apply",
@@ -5569,9 +5618,8 @@
       "id": "fulton-bank-pantry-operations-2027",
       "funder": "Fulton Bank",
       "opportunity": "General Donation / Contribution — Baltimore Neighborhood Food Access & Family Wellness",
-      "program": "General Operations",
+      "program": "Pantry",
       "programs": [
-        "General Operations",
         "Pantry"
       ],
       "askAmount": 5000,
@@ -5589,7 +5637,7 @@
       "fit": "High — pantry operating request",
       "awardedAmount": 0,
       "addedDate": "2026-10-06",
-      "lastUpdated": "2026-10-07",
+      "lastUpdated": "2026-10-12",
       "subcategories": [
         "Community Facilities & Capacity",
         "Food Security & Basic Needs"
@@ -7521,10 +7569,9 @@
       "url": "https://www.kleinsshopritecharitablefund.com/",
       "notes": "$5,000 pantry request completed in approved style. Official corporate funding email verified. Automatic approval review rejected the attempted email; no message sent. Reviewed October 11, 2026. No application submitted.\n\nOctober 11, 2026 update: Chad approved retrying the exact prepared request to Sarah Klein after reviewing the destination and organizational data. Email sent from chad@houseofmannamd.com to sarah.klein@wakefern.com with the approved-style House_of_Manna_Kleins_ShopRite_Request_20261011.pdf attached. Requested $5,000: $4,500 groceries, $300 packing supplies, $200 food-preparation information. Gmail returned SENT confirmation. Financial package and IRS letter offered on request; not attached to this email. Prior automatic-review hold is resolved. No award confirmed.",
       "nextAction": "Await funding review; supply IRS determination letter or financial package if requested.",
-      "program": "Food Access",
+      "program": "Pantry",
       "programs": [
-        "Food Access",
-        "General Operations"
+        "Pantry"
       ],
       "currency": "USD",
       "status": "Submitted",
@@ -7537,7 +7584,7 @@
       "fit": "Conditional",
       "awardedAmount": 0,
       "addedDate": "2026-10-11",
-      "lastUpdated": "2026-10-11"
+      "lastUpdated": "2026-10-12"
     },
     {
       "id": "erie-giving-network-pantry-20261011",
@@ -7548,10 +7595,9 @@
       "url": "https://www.erieinsurance.com/givingnetwork",
       "notes": "Basic needs and Maryland fit. Portal returned no organization choices for House of Manna/name/EIN searches. Required secondary-contact phone still unavailable. Reviewed October 11, 2026. No application submitted.\nOctober 11: Sent organization-lookup troubleshooting inquiry to the official Giving Network contact. No application submitted. Lookup failure does not establish that the organization is absent from the registry.",
       "nextAction": "Await ERIE/Benevity lookup guidance and obtain Briana's required secondary contact phone.",
-      "program": "Food Access",
+      "program": "Pantry",
       "programs": [
-        "Food Access",
-        "General Operations"
+        "Pantry"
       ],
       "currency": "USD",
       "status": "On hold",
@@ -7575,10 +7621,9 @@
       "url": "https://www.standard.com/get-to-know-standard/community-impact/apply-funds",
       "notes": "Healthy communities; other geographies can be considered. Benevity organization search returned no matching choices. Employer/customer relationship answer requires verification. Reviewed October 11, 2026. No application submitted.\nOctober 11: Lookup returned no choices for American Red Cross as well as House of Manna. This may be a lookup service issue rather than missing organization registration. Sent technical inquiry to giving@standard.com and Benevity Causes Support; Benevity acknowledged ticket 4923065. No application submitted.",
       "nextAction": "Await Standard/Benevity technical guidance; verify employer/customer relationship before completing the form.",
-      "program": "Food Access",
+      "program": "Pantry",
       "programs": [
-        "Food Access",
-        "General Operations"
+        "Pantry"
       ],
       "currency": "USD",
       "status": "On hold",
@@ -7602,10 +7647,10 @@
       "url": "https://www.peoplesbancorp.com/about-us/commitment-to-communities/peoples-bank-foundation/",
       "notes": "Maryland footprint and food-bank support. Operating/payroll costs excluded; consider hub equipment only after confirming site, quotes and eligibility. Blackbaud organization account/registration required. Reviewed October 11, 2026. No application submitted.",
       "nextAction": "Confirm equipment/startup eligibility and facility/quotes; establish organization portal access.",
-      "program": "Food Access",
+      "program": "General Operations",
       "programs": [
-        "Food Access",
-        "General Operations"
+        "General Operations",
+        "Pantry"
       ],
       "currency": "USD",
       "status": "Researching",
@@ -7629,10 +7674,9 @@
       "url": "https://www.statefarm.com/about-us/corporate-responsibility/community-grants",
       "notes": "Food insecurity is eligible. Uninvited applicants can submit a support questionnaire; full grant application remains invitation-only. No questionnaire submitted. Reviewed October 11, 2026. No application submitted.",
       "nextAction": "Complete eligibility/support questionnaire before any invited full application; distinguish stages.",
-      "program": "Food Access",
+      "program": "Pantry",
       "programs": [
-        "Food Access",
-        "General Operations"
+        "Pantry"
       ],
       "currency": "USD",
       "status": "Researching",
@@ -7645,7 +7689,7 @@
       "fit": "Conditional",
       "awardedAmount": 0,
       "addedDate": "2026-10-11",
-      "lastUpdated": "2026-10-11"
+      "lastUpdated": "2026-10-12"
     },
     {
       "id": "clif-family-food-access-2027",
@@ -7656,10 +7700,9 @@
       "url": "https://cliffamilyfoundation.org/?country=us",
       "notes": "Healthy food access may fit, subject to strategic-priority review. Portal closed until early 2027; next published deadline March 1, 2027. No environmental project proposed. Reviewed October 11, 2026. No application submitted.",
       "nextAction": "Review healthy food access strategic fit and next cycle eligibility when portal reopens.",
-      "program": "Food Access",
+      "program": "Pantry",
       "programs": [
-        "Food Access",
-        "General Operations"
+        "Pantry"
       ],
       "currency": "USD",
       "status": "On hold",
@@ -7672,7 +7715,7 @@
       "fit": "Conditional",
       "awardedAmount": 0,
       "addedDate": "2026-10-11",
-      "lastUpdated": "2026-10-11"
+      "lastUpdated": "2026-10-12"
     },
     {
       "id": "maryland-md-farm-next-cycle",
@@ -7683,10 +7726,9 @@
       "url": "https://onestop.md.gov/forms/farm-to-foodbank-69a87083f59d9602c8faff1b",
       "notes": "2026 deadline April 10 passed. Supports purchasing food from certified local farms/fisheries; future application needs eligible supplier plan and state registrations. Reviewed October 11, 2026. No application submitted.",
       "nextAction": "Verify next cycle and develop a certified local supplier plan; confirm state registrations.",
-      "program": "Food Access",
+      "program": "Pantry",
       "programs": [
-        "Food Access",
-        "General Operations"
+        "Pantry"
       ],
       "currency": "USD",
       "status": "On hold",
@@ -7699,7 +7741,7 @@
       "fit": "Conditional",
       "awardedAmount": 0,
       "addedDate": "2026-10-11",
-      "lastUpdated": "2026-10-11"
+      "lastUpdated": "2026-10-12"
     },
     {
       "id": "kroger-food-access-20261012",
@@ -7725,6 +7767,275 @@
       "applicationUrl": "https://thekrogerco.versaic.com/login?ReturnTo=%2FDefault.aspx&Zip-Code-Locator=Enabled",
       "addedDate": "2026-10-12",
       "lastUpdated": "2026-10-12",
+      "subcategories": [
+        "Food Access & Pantry",
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "bob-evans-farms-pantry-20261012",
+      "funder": "Bob Evans Farms Foundation",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "opportunity": "Food & Nutrition financial-support inquiry",
+      "status": "Awaiting response",
+      "askAmount": 5000,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "stage": "Financial-support inquiry sent; eligibility review pending",
+      "nextAction": "Await first-year/geographic eligibility guidance and required financial-support application materials.",
+      "notes": "Official policy invites inquiries naming organization, support type/amount and timing. Sent a $5,000 request October 12 to the official philanthropy address; Gmail confirmed SENT. Proposed 2027 implementation, groceries $4,500 / packing $300 / food-preparation information $200. Disclosed new nonprofit and no regular distributions. This is a financial-support inquiry, not a completed full grant application. No EIN, financial statements or attachments sent.",
+      "portalUrl": "https://www.bobevansgrocery.com/about-us/culture/bob-evans-farms-foundation-charitable-giving-policy/",
+      "funderUrl": "https://www.bobevansgrocery.com/about-us/culture/bob-evans-farms-foundation-charitable-giving-policy/",
+      "applicationUrl": "https://www.bobevansgrocery.com/about-us/culture/bob-evans-farms-foundation-charitable-giving-policy/",
+      "submittedDate": "2026-10-12",
+      "nextDate": null,
+      "addedDate": "2026-10-12",
+      "lastUpdated": "2026-10-12",
+      "supportType": "Cash contribution prospect",
+      "fit": "Conditional — current intake and eligibility review",
+      "researchBatch": "million-dollar-request-targets-20261012",
+      "subcategories": [
+        "Food Access & Pantry",
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "united-bank-pantry-giving-20261012",
+      "funder": "United Bank",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "opportunity": "Donation / sponsorship request",
+      "status": "Researching",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "stage": "Public request form; branch routing to verify",
+      "nextAction": "Confirm local branch intake, startup eligibility and pantry scope; then complete required donation/sponsorship form.",
+      "notes": "Official community page provides mandatory request form and directs applicants to local branch. Prioritizes community development and existing banking relationships; House relationship unverified. No published cap identified. No application or amount submitted.",
+      "portalUrl": "https://www.bankwithunited.com/about-united/commitment-to-community.html",
+      "funderUrl": "https://www.bankwithunited.com/about-united/commitment-to-community.html",
+      "applicationUrl": "https://www.bankwithunited.com/about-united/commitment-to-community.html",
+      "submittedDate": null,
+      "nextDate": null,
+      "addedDate": "2026-10-12",
+      "lastUpdated": "2026-10-12",
+      "supportType": "Cash contribution prospect",
+      "fit": "Conditional — current intake and eligibility review",
+      "researchBatch": "million-dollar-request-targets-20261012",
+      "subcategories": [
+        "Food Access & Pantry",
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "shore-united-pantry-giving-20261012",
+      "funder": "Shore United Bank",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "opportunity": "Health & Human Services community giving",
+      "status": "Researching",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "stage": "Food-pantry giving confirmed; intake route unverified",
+      "nextAction": "Request the charitable giving coordinator and current application instructions through official bank contact.",
+      "notes": "2024 official Community Impact Report explicitly supports food banks and pantries in Maryland, Delaware and Virginia. Current startup eligibility, award range and application channel remain unverified; contact form is general customer routing, not a grant application. No amount submitted.",
+      "portalUrl": "https://www.shoreunitedbank.com/assets/files/iTCUnvEs",
+      "funderUrl": "https://www.shoreunitedbank.com/assets/files/iTCUnvEs",
+      "applicationUrl": "https://www.shoreunitedbank.com/assets/files/iTCUnvEs",
+      "submittedDate": null,
+      "nextDate": null,
+      "addedDate": "2026-10-12",
+      "lastUpdated": "2026-10-12",
+      "supportType": "Cash contribution prospect",
+      "fit": "Conditional — current intake and eligibility review",
+      "researchBatch": "million-dollar-request-targets-20261012",
+      "subcategories": [
+        "Food Access & Pantry",
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "mecu-pantry-giving-20261012",
+      "funder": "MECU Credit Union",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "opportunity": "Corporate charitable contributions",
+      "status": "Researching",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "stage": "Baltimore charitable giving; request process to confirm",
+      "nextAction": "Verify corporate charitable contribution intake and first-year pantry eligibility; use corporate giving rather than financial-literacy-only MECU Foundation.",
+      "notes": "Official corporate community page confirms support to 100+ charities and names Maryland Food Bank and Helping Up Mission. MECU Foundation is a distinct financial-literacy-focused entity and is not a pantry route. No grant cap, current open application or startup eligibility verified. No amount submitted.",
+      "portalUrl": "https://www.mecu.com/why-mecu/mission-values/community-involvement",
+      "funderUrl": "https://www.mecu.com/why-mecu/mission-values/community-involvement",
+      "applicationUrl": "https://www.mecu.com/why-mecu/mission-values/community-involvement",
+      "submittedDate": null,
+      "nextDate": null,
+      "addedDate": "2026-10-12",
+      "lastUpdated": "2026-10-12",
+      "supportType": "Cash contribution prospect",
+      "fit": "Conditional — current intake and eligibility review",
+      "researchBatch": "million-dollar-request-targets-20261012",
+      "subcategories": [
+        "Food Access & Pantry",
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "point-breeze-pantry-giving-20261012",
+      "funder": "Point Breeze Credit Union",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "opportunity": "Community charitable giving",
+      "status": "Researching",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "stage": "Local hunger-support precedent; intake unverified",
+      "nextAction": "Confirm the charitable giving coordinator and whether startup pantry requests are accepted.",
+      "notes": "Official community impact page documents Meals on Wheels of Central Maryland support. This establishes giving precedent, not open eligibility or a grant-size entitlement. Current intake and operating-support rules require verification. No amount submitted.",
+      "portalUrl": "https://www.pbcu.com/about/why-point-breeze/community-impact",
+      "funderUrl": "https://www.pbcu.com/about/why-point-breeze/community-impact",
+      "applicationUrl": "https://www.pbcu.com/about/why-point-breeze/community-impact",
+      "submittedDate": null,
+      "nextDate": null,
+      "addedDate": "2026-10-12",
+      "lastUpdated": "2026-10-12",
+      "supportType": "Cash contribution prospect",
+      "fit": "Conditional — current intake and eligibility review",
+      "researchBatch": "million-dollar-request-targets-20261012",
+      "subcategories": [
+        "Food Access & Pantry",
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "fnb-hub-community-giving-20261012",
+      "funder": "First National Bank / F.N.B.",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "opportunity": "Community charitable contribution / hub capacity",
+      "status": "Researching",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "stage": "Maryland community giving; operating eligibility unverified",
+      "nextAction": "Confirm regional giving contact, startup eligibility and whether facility rent/coordination costs qualify.",
+      "notes": "Official community involvement page confirms financial support across Maryland to charities and community service agencies. Public page does not verify unrestricted operating support, an award cap or current direct application intake. No amount submitted.",
+      "portalUrl": "https://www.fnb-online.com/about-us/corporate-information/community-involvement",
+      "funderUrl": "https://www.fnb-online.com/about-us/corporate-information/community-involvement",
+      "applicationUrl": "https://www.fnb-online.com/about-us/corporate-information/community-involvement",
+      "submittedDate": null,
+      "nextDate": null,
+      "addedDate": "2026-10-12",
+      "lastUpdated": "2026-10-12",
+      "supportType": "Cash contribution prospect",
+      "fit": "Conditional — current intake and eligibility review",
+      "researchBatch": "million-dollar-request-targets-20261012",
+      "subcategories": [
+        "Community Facilities & Capacity"
+      ]
+    },
+    {
+      "id": "atlas-pantry-community-giving-20261012",
+      "funder": "Atlas Restaurant Group",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "opportunity": "Donation / community-event sponsorship",
+      "status": "Researching",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "stage": "Public form; request type and event details to confirm",
+      "nextAction": "Confirm monetary donation option, event date and 30-day lead time; supply W-9/logo only through approved submission process.",
+      "notes": "Official community page confirms monetary giving and public donation form; requires 30 days before event, W-9, logo, support type, allocation and event details. House's exact event date and cash option remain unverified. Do not invent date or count restaurant gift cards as cash grants. No request submitted.",
+      "portalUrl": "https://atlasrestaurantgroup.com/community-engagement/",
+      "funderUrl": "https://atlasrestaurantgroup.com/community-engagement/",
+      "applicationUrl": "https://atlasrestaurantgroup.com/community-engagement/",
+      "submittedDate": null,
+      "nextDate": null,
+      "addedDate": "2026-10-12",
+      "lastUpdated": "2026-10-12",
+      "supportType": "Donation / sponsorship",
+      "fit": "Conditional — current intake and eligibility review",
+      "researchBatch": "million-dollar-request-targets-20261012",
+      "subcategories": [
+        "Food Access & Pantry",
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "atlantic-union-pantry-event-20261012",
+      "funder": "Atlantic Union Bank",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "opportunity": "Local event donation / sponsorship",
+      "status": "Researching",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "stage": "Rolling event route; date and fit to verify",
+      "nextAction": "Verify food-giveaway event eligibility, date and 4–6-week review lead time; distinguish from closed annual grant program.",
+      "notes": "Official page accepts rolling philanthropically centered local event donation requests; response may take 4–6 weeks. Annual Community Impact Grant is closed and reopens February 2027, prioritizing financial education, workforce and housing. Do not label event sponsorship unrestricted operating support or invent event commitments. No amount submitted.",
+      "portalUrl": "https://www.atlanticunionbank.com/about/corporate-responsibility",
+      "funderUrl": "https://www.atlanticunionbank.com/about/corporate-responsibility",
+      "applicationUrl": "https://www.atlanticunionbank.com/about/corporate-responsibility",
+      "submittedDate": null,
+      "nextDate": null,
+      "addedDate": "2026-10-12",
+      "lastUpdated": "2026-10-12",
+      "supportType": "Donation / sponsorship",
+      "fit": "Conditional — current intake and eligibility review",
+      "researchBatch": "million-dollar-request-targets-20261012",
+      "subcategories": [
+        "Food Access & Pantry",
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "whole-foods-community-first-next-cycle-20261012",
+      "funder": "Whole Foods Market Foundation",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "opportunity": "Community First Grant — future employee nomination",
+      "status": "On hold",
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "stage": "Employee nomination required; next cycle not verified",
+      "nextAction": "Build actual Whole Foods employee relationship and verify next nomination cycle; no duplicate store-giving request.",
+      "notes": "Distinct from declined Whole Foods store-giving proposal. Official recurring timetable: May–June employee nominations, July invitations, November partner announcements; quarterly volunteer participation expected. 2027 dates/award amount unverified. No nomination or application submitted. Pantry food access only; no environmental project proposed.",
+      "portalUrl": "https://www.wholefoodsmarketfoundation.org/our-work/food-access/comm-first-grant",
+      "funderUrl": "https://www.wholefoodsmarketfoundation.org/our-work/food-access/comm-first-grant",
+      "applicationUrl": "https://www.wholefoodsmarketfoundation.org/our-work/food-access/comm-first-grant",
+      "submittedDate": null,
+      "nextDate": null,
+      "addedDate": "2026-10-12",
+      "lastUpdated": "2026-10-12",
+      "supportType": "Foundation grant",
+      "fit": "Conditional — current intake and eligibility review",
+      "researchBatch": "million-dollar-request-targets-20261012",
       "subcategories": [
         "Food Access & Pantry",
         "Food Security & Basic Needs"
