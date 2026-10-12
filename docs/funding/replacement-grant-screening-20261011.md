@@ -48,3 +48,16 @@ Peoples Bank: investigate equipment request under Health and Human Services; exc
 ## Subsequent submission update — October 11, 2026
 
 After Chad approved retrying the exact request and destination, the $5,000 Klein’s ShopRite corporate funding request was successfully emailed to Sarah Klein at the published intake address, with the approved-style request PDF attached. Gmail returned SENT confirmation. This resolves the prior send hold. The original screening table above describes the earlier screening result; the live tracker now records ShopRite as Submitted. Current batch total: one funding request submitted toward the 25-application target; no award confirmed. No financial-package or IRS-letter attachment was sent in this message; both were offered on request.
+
+
+## October 12 continuation — portal support and next route
+
+- Sent three routine technical inquiries on October 11: The Standard community giving, ERIE Giving Network and Benevity Causes Support. These are not applications or funding requests.
+- Benevity acknowledged ticket 4923065. No substantive response found as of October 12.
+- Corrected the Standard hold: searching American Red Cross also returned no choices. Lookup failure cannot establish that House of Manna is missing from the registry.
+- Kroger: official portal lists December 4, 2026 review deadline and hunger-relief cash requests. Existing account activation found in October 4 email. Secure sign-in request timed out; no verified access or submission. Guidestar Charity Check verification and relationship to the pending Harris Teeter request must be resolved. Source: https://thekrogerco.versaic.com/login?ReturnTo=%2FDefault.aspx&Zip-Code-Locator=Enabled and linked official Giving Guidelines.
+- Labcorp remains an existing access hold, rather than a new prospect. Current official rules permit food-security programs and exclude general operating support; Blackbaud Verified Network registration required. No new submission. Source: https://www.labcorp.com/about/our-impact/charitable-foundation
+- Popeyes is invitation-only and its 2026 grantees were notified by July 1. Future consideration also excludes organizations with a specific religious affiliation; House's eligibility unresolved. No submission. Source: https://www.popeyesfoundation.org/programs/food-love-grants
+- Horizon Hope is restricted to Greater Cincinnati, Baton Rouge and Athens, Ohio, so Baltimore is not eligible. KFC current Kentucky Fried Wishes is invitation-only. No submissions.
+
+**Verified progress toward 25 new requests remains 1/25 (Klein's ShopRite).** Support inquiries, account setup, screened opportunities and held applications are excluded.

@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "House of Manna Funding Pipeline",
-    "lastUpdated": "2026-10-11",
-    "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications. October 11: environmental projects removed from active pursuit at Chad's direction. Screened 25 new replacement prospects; seven current/conditional/future prospects added, none submitted. Eligibility failures recorded separately in docs/funding/replacement-grant-screening-20261011.md. ShopRite request successfully submitted October 11 following approved retry; one new request submitted toward the 25-application target.",
+    "lastUpdated": "2026-10-12",
+    "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications. October 11: environmental projects removed from active pursuit at Chad's direction. Screened 25 new replacement prospects; seven current/conditional/future prospects added, none submitted. Eligibility failures recorded separately in docs/funding/replacement-grant-screening-20261011.md. ShopRite request successfully submitted October 11 following approved retry; one new request submitted toward the 25-application target. October 12 continuation: three portal-support inquiries sent October 11; Benevity ticket 4923065 acknowledged. Standard lookup also failed for a known established charity, so missing-registry conclusions remain unproven. Kroger December review added as an access/verification hold. Count remains one new funding request submitted; technical inquiries excluded.",
     "statusDefinitions": {
       "Researching": "Fit, route or eligibility still needs research",
       "Ready": "Qualified and ready for the next application or outreach action",
@@ -7546,8 +7546,8 @@
       "askAmount": 5000,
       "stage": "Application started; nonprofit registry and secondary phone unresolved",
       "url": "https://www.erieinsurance.com/givingnetwork",
-      "notes": "Basic needs and Maryland fit. Portal returned no organization choices for House of Manna/name/EIN searches. Required secondary-contact phone still unavailable. Reviewed October 11, 2026. No application submitted.",
-      "nextAction": "Resolve nonprofit registry listing and obtain the required secondary contact phone.",
+      "notes": "Basic needs and Maryland fit. Portal returned no organization choices for House of Manna/name/EIN searches. Required secondary-contact phone still unavailable. Reviewed October 11, 2026. No application submitted.\nOctober 11: Sent organization-lookup troubleshooting inquiry to the official Giving Network contact. No application submitted. Lookup failure does not establish that the organization is absent from the registry.",
+      "nextAction": "Await ERIE/Benevity lookup guidance and obtain Briana's required secondary contact phone.",
       "program": "Food Access",
       "programs": [
         "Food Access",
@@ -7564,7 +7564,7 @@
       "fit": "Conditional",
       "awardedAmount": 0,
       "addedDate": "2026-10-11",
-      "lastUpdated": "2026-10-11"
+      "lastUpdated": "2026-10-12"
     },
     {
       "id": "standard-corporate-pantry-20261011",
@@ -7573,8 +7573,8 @@
       "askAmount": 5000,
       "stage": "Registry selection unavailable; application not submitted",
       "url": "https://www.standard.com/get-to-know-standard/community-impact/apply-funds",
-      "notes": "Healthy communities; other geographies can be considered. Benevity organization search returned no matching choices. Employer/customer relationship answer requires verification. Reviewed October 11, 2026. No application submitted.",
-      "nextAction": "Resolve organization listing and verify employer/customer relationship answer before completing the form.",
+      "notes": "Healthy communities; other geographies can be considered. Benevity organization search returned no matching choices. Employer/customer relationship answer requires verification. Reviewed October 11, 2026. No application submitted.\nOctober 11: Lookup returned no choices for American Red Cross as well as House of Manna. This may be a lookup service issue rather than missing organization registration. Sent technical inquiry to giving@standard.com and Benevity Causes Support; Benevity acknowledged ticket 4923065. No application submitted.",
+      "nextAction": "Await Standard/Benevity technical guidance; verify employer/customer relationship before completing the form.",
       "program": "Food Access",
       "programs": [
         "Food Access",
@@ -7591,7 +7591,7 @@
       "fit": "Conditional",
       "awardedAmount": 0,
       "addedDate": "2026-10-11",
-      "lastUpdated": "2026-10-11"
+      "lastUpdated": "2026-10-12"
     },
     {
       "id": "peoples-bank-equipment-20261011",
@@ -7700,6 +7700,35 @@
       "awardedAmount": 0,
       "addedDate": "2026-10-11",
       "lastUpdated": "2026-10-11"
+    },
+    {
+      "id": "kroger-food-access-20261012",
+      "funder": "The Kroger Co. Foundation / Kroger charitable giving",
+      "opportunity": "Hunger-relief cash request — December 2026 review",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "supportType": "Foundation grant / corporate contribution",
+      "fit": "Conditional — verification and portal access",
+      "askAmount": 5000,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Existing account; secure sign-in unresolved",
+      "submittedDate": null,
+      "nextDate": "2026-12-04",
+      "nextAction": "Restore secure sign-in; verify Guidestar Charity Check eligibility and Maryland routing; check relationship to the existing Harris Teeter request before submitting.",
+      "notes": "Official portal lists December 4, 2026 foundation deadline and hunger-relief cash support. Guidelines require 501(c)(3) verification via Guidestar Charity Check. House has reported no Candid listing. Inbox confirms Kroger account activation October 4. October 11 secure sign-in request timed out; access and submission unverified. Existing Harris Teeter $5,000 request must be checked to prevent duplicate requests through related company channels. Proposed $5,000 planning request, not a published limit. No environmental project proposed and no application submitted.",
+      "portalUrl": "https://thekrogerco.versaic.com/login?ReturnTo=%2FDefault.aspx&Zip-Code-Locator=Enabled",
+      "funderUrl": "https://www.thekrogerco.com/Community/",
+      "applicationUrl": "https://thekrogerco.versaic.com/login?ReturnTo=%2FDefault.aspx&Zip-Code-Locator=Enabled",
+      "addedDate": "2026-10-12",
+      "lastUpdated": "2026-10-12",
+      "subcategories": [
+        "Food Access & Pantry",
+        "Food Security & Basic Needs"
+      ]
     }
   ]
 }
