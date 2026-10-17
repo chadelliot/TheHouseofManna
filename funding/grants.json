@@ -7687,10 +7687,10 @@
       "funder": "State Farm community grants",
       "opportunity": "Community Development — food insecurity support questionnaire",
       "askAmount": 5000,
-      "stage": "Support questionnaire opened — YourCause sign-in required",
+      "stage": "Support questionnaire blocked — Blackbaud sign-in returned 403",
       "url": "https://www.statefarm.com/about-us/corporate-responsibility/community-grants",
-      "notes": "Food insecurity is eligible. Uninvited applicants can submit a support questionnaire; full grant application remains invitation-only. No questionnaire submitted. Reviewed October 11, 2026. No application submitted.",
-      "nextAction": "Sign in to GrantsConnect to access State Farm support questionnaire; food insecurity is an eligible focus. Not an invited full grant application; no request submitted.",
+      "notes": "Food insecurity is eligible. Uninvited applicants can submit a support questionnaire; full grant application remains invitation-only. No questionnaire submitted. Reviewed October 11, 2026. No application submitted. October 16 live attempt: secure email sign-in submitted, but Blackbaud returned 403 ERROR / request could not be satisfied. Authentication success is unknown; no grant application started beyond portal access.",
+      "nextAction": "Retry only when Blackbaud access is available. Secure email sign-in redirected to a CloudFront 403 request-blocked page; no questionnaire accessed and no request submitted.",
       "program": "Pantry",
       "programs": [
         "Pantry"
