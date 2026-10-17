@@ -1669,6 +1669,46 @@
     .phase-panel{ transition:none; }
   }
 </style>
+<style>
+
+/* Phoenix Academy school-based ecommerce pilot; scoped to this initiative. */
+.phx-section{padding:clamp(64px,8vw,112px) 24px;background:var(--hom-cream,#F7F4EC);color:var(--hom-navy-2,#172334)}
+.phx-inner{width:min(1180px,100%);margin:0 auto}
+.phx-eyebrow{font:700 .76rem/1.5 var(--font-body,Inter,sans-serif);letter-spacing:.15em;text-transform:uppercase;color:#8a6514;margin:0 0 18px}
+.phx-section h2{font-family:var(--font-display,Anton,Impact,sans-serif);font-size:clamp(2.45rem,5vw,4.4rem);font-weight:400;line-height:1.09;text-transform:uppercase;margin:0 0 22px;color:var(--hom-navy-2,#172334)}
+.phx-section h3{font-family:var(--font-display,Anton,Impact,sans-serif);text-transform:uppercase;font-weight:400;color:var(--hom-navy-2,#172334);line-height:1.15}
+.phx-lead{max-width:870px;font-size:clamp(1.07rem,1.5vw,1.27rem);line-height:1.75;margin:0 0 24px}
+.phx-pills{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 38px}
+.phx-pills span{border:1px solid rgba(23,35,52,.23);border-radius:99px;padding:10px 16px;font-weight:650;font-size:.86rem}
+.phx-photo-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:22px;margin:34px 0}
+.phx-photo-grid figure,.phx-video-grid figure{margin:0;background:#fff;overflow:hidden;border-radius:6px;box-shadow:0 12px 38px rgba(23,35,52,.07)}
+.phx-photo-grid img{width:100%;height:355px;object-fit:cover;display:block}
+.phx-photo-grid figure:nth-child(2) img{object-position:center 40%}
+.phx-photo-grid figcaption,.phx-video-grid figcaption{padding:15px 18px;font-size:.92rem;line-height:1.5;color:var(--hom-navy,#2D3B4F)}
+.phx-text-card{border-left:4px solid var(--hom-gold,#C8941F);background:#fff;padding:25px 30px;margin:34px 0;line-height:1.75}
+.phx-text-card strong{color:#172334}
+.phx-video-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:26px}
+.phx-video-grid video{width:100%;height:220px;object-fit:cover;background:#172334;display:block}
+.phx-video-grid figcaption strong{display:block;margin-bottom:5px}
+.phx-curriculum{background:#fff;padding-top:80px;padding-bottom:85px}
+.phx-weeks{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.phx-weeks li{display:flex;gap:16px;padding:24px;border:1px solid #e9e6dc;background:#F7F4EC;border-radius:4px;min-width:0}
+.phx-week-num{flex:none;color:var(--hom-gold,#C8941F);font-family:var(--font-display,Anton,Impact,sans-serif);font-size:2rem;line-height:1}
+.phx-weeks h3{font-size:1.3rem;margin:0 0 7px}
+.phx-weeks p{margin:0 0 8px;line-height:1.55}
+.phx-weeks .phx-output{font-size:.87rem;color:#576171;font-weight:650}
+.phx-highlight{border-color:#cdb16f!important;background:#fcf5e4!important}
+.phx-after{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start;margin-top:38px}
+.phx-after h3{font-size:1.8rem;margin:0 0 12px}
+.phx-after p{line-height:1.7}
+.phx-awards{background:#F7F4EC;border-left:4px solid var(--hom-gold,#C8941F);padding:28px}
+.phx-awards p:last-child{margin-bottom:0}
+.phx-note{margin-top:24px;font-size:.89rem;color:#606a77;line-height:1.7}
+.phx-link{display:inline-block;margin-top:19px;text-decoration:underline;text-underline-offset:4px;color:#172334;font-weight:750}
+@media(max-width:900px){.phx-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.phx-photo-grid{grid-template-columns:1fr 1fr}.phx-photo-grid img{height:300px}}
+@media(max-width:650px){.phx-photo-grid,.phx-weeks,.phx-after{grid-template-columns:1fr}.phx-photo-grid img{height:auto;aspect-ratio:4/3;object-fit:cover}.phx-video-grid{grid-template-columns:1fr 1fr;gap:10px}.phx-video-grid video{height:180px}.phx-video-grid figcaption{padding:12px;font-size:.8rem}.phx-weeks li{padding:20px}.phx-section{padding-left:20px;padding-right:20px}}
+
+</style>
 </head>
 <nav class="site-nav">
     <div class="nav-inner">
@@ -1725,7 +1765,7 @@
     <div class="page-hero-inner">
       <p class="eyebrow">Youth &amp; Education Project</p>
       <h1>Youth Business, AI &amp; Community Innovation Lab</h1>
-      <p>Practical, project-based education in entrepreneurship, financial literacy, and responsible AI &mdash; preparing young people for a changing economy.</p>
+      <p>Practical, project-based education in entrepreneurship, financial literacy, and responsible AI &mdash; beginning with a ten-week school-based eCommerce pilot being developed with Phoenix Academy.</p>
       <div class="project-hero-progress">
         <div class="progress-card on-dark" data-goal="25000" data-raised="0">
           <div class="progress-top">
@@ -1785,6 +1825,61 @@
       </div>
     </div>
   </section>
+
+
+<section class="phx-section" id="phoenix-pilot" data-theme="light">
+  <div class="phx-inner">
+    <p class="phx-eyebrow">Developing our first school-based pilot · Annapolis, Maryland</p>
+    <h2>From Exposure to Opportunity: Phoenix Academy</h2>
+    <p class="phx-lead">The House of Manna is working with Phoenix Academy in Annapolis to develop a school-based Youth Innovation Lab pilot for students, including young people from Baltimore County. The goal is to bring practical business and future-ready skills into a familiar, supported school environment—starting with eCommerce.</p>
+    <p class="phx-lead">The first pilot adapts the existing <strong>Hidden Gems LLC “The Blueprint” eCommerce curriculum</strong> into a ten-week series of one-hour guided sessions, supported by short course lessons, mentorship, group exercises, live product sourcing and a student competition. Additional hands-on learning pathways can be explored as the program develops.</p>
+    <div class="phx-pills"><span>10 weekly sessions</span><span>1 hour per session</span><span>3 live sourcing labs</span><span>1 first competition</span><span>School-based instruction</span></div>
+    <div class="phx-photo-grid">
+      <figure><img loading="lazy" src="images/phoenix-academy/IMG_4246.webp" alt="Two adults during a planning visit in the Phoenix Academy entrance hallway"><figcaption>A visit to Phoenix Academy—building a local path from classroom learning to real-world skills.</figcaption></figure>
+      <figure><img loading="lazy" src="images/phoenix-academy/IMG_4249.webp" alt="Two adults standing in front of the Phoenix Academy welcome sign"><figcaption>Conversations about practical skills, student confidence and expanded opportunity.</figcaption></figure>
+    </div>
+    <div class="phx-text-card"><strong>Why a school setting matters.</strong> Students can explore market research, business decisions, teamwork and professional communication within existing school infrastructure and adult supervision. Our first subject is eCommerce; campus facilities and other experiential spaces illustrate the broader possibilities for future hands-on learning and are <em>not</em> presented as established components of the initial course.</div>
+    <p class="phx-eyebrow">Inside the learning environment · original campus footage</p>
+    <div class="phx-video-grid">
+      <figure><video controls muted playsinline preload="none" poster="images/phoenix-academy/IMG_4236-poster.webp" aria-label="Greenhouse & workspace at Phoenix Academy"><source src="images/phoenix-academy/IMG_4236.mp4" type="video/mp4">Your browser does not support video playback.</video><figcaption><strong>Greenhouse & workspace</strong>A look at an on-campus workspace.</figcaption></figure>
+      <figure><video controls muted playsinline preload="none" poster="images/phoenix-academy/IMG_4233-poster.webp" aria-label="Campus grounds at Phoenix Academy"><source src="images/phoenix-academy/IMG_4233.mp4" type="video/mp4">Your browser does not support video playback.</video><figcaption><strong>Campus grounds</strong>Outdoor areas seen during the visit.</figcaption></figure>
+      <figure><video controls muted playsinline preload="none" poster="images/phoenix-academy/IMG_4234-poster.webp" aria-label="Garden beds at Phoenix Academy"><source src="images/phoenix-academy/IMG_4234.mp4" type="video/mp4">Your browser does not support video playback.</video><figcaption><strong>Garden beds</strong>A glimpse of experiential learning space.</figcaption></figure>
+      <figure><video controls muted playsinline preload="none" poster="images/phoenix-academy/IMG_4235-poster.webp" aria-label="Animal-care area at Phoenix Academy"><source src="images/phoenix-academy/IMG_4235.mp4" type="video/mp4">Your browser does not support video playback.</video><figcaption><strong>Animal-care area</strong>On-campus agricultural surroundings.</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="phx-section phx-curriculum" id="ten-week-curriculum" data-theme="light">
+  <div class="phx-inner">
+    <p class="phx-eyebrow">Pilot learning plan · proposed schedule</p>
+    <h2>10 Weeks. One Hour at a Time.</h2>
+    <p class="phx-lead">Each session blends approximately 10–15 minutes of recap and instruction, 30–35 minutes of guided activity, and 10–15 minutes of discussion, feedback and reflection. The approximately four-hour Hidden Gems Blueprint video curriculum is assigned in short segments between sessions; the live hour is for coaching and application, not ten straight lectures. Exact lesson assignments will follow the approved course materials and school calendar.</p>
+    <ol class="phx-weeks"><li><span class="phx-week-num" aria-hidden="true">01</span><div><h3>Week 1 — The Big Why</h3><p>Orientation, entrepreneurship pathways, marketplace opportunity and community impact.</p><p class="phx-output">Student takeaway: A personal learning goal and first product idea.</p></div></li>
+<li><span class="phx-week-num" aria-hidden="true">02</span><div><h3>Week 2 — How eCommerce Works</h3><p>Hidden Gems Blueprint fundamentals: ecommerce models, customer demand and responsible marketplace participation.</p><p class="phx-output">Student takeaway: A simple marketplace map.</p></div></li>
+<li><span class="phx-week-num" aria-hidden="true">03</span><div><h3>Week 3 — Proven Sourcing Methods</h3><p>Compare sourcing channels, good product characteristics and responsible research.</p><p class="phx-output">Student takeaway: A product-screening checklist.</p></div></li>
+<li><span class="phx-week-num" aria-hidden="true">04</span><div><h3>Week 4 — SellerAmp & Product Economics</h3><p>Guided analysis of sourcing costs, marketplace fees, margin and return; no seller account required.</p><p class="phx-output">Student takeaway: A sample profit worksheet.</p></div></li>
+<li><span class="phx-week-num" aria-hidden="true">05</span><div><h3>Week 5 — Retail & Online Arbitrage</h3><p>Instructor-led examples of sourcing workflows, product restrictions, supplier ethics and risk.</p><p class="phx-output">Student takeaway: Three documented practice evaluations.</p></div></li>
+<li><span class="phx-week-num" aria-hidden="true">06</span><div><h3>Week 6 — Keepa & Reverse Sourcing</h3><p>Read demand history, competition and price changes; use evidence rather than assumptions.</p><p class="phx-output">Student takeaway: A defensible product shortlist.</p></div></li>
+<li><span class="phx-week-num" aria-hidden="true">07</span><div><h3>Week 7 — From Research to Business Case</h3><p>Listing/pricing basics, inventory, reordering, AI-assisted research and a clear presentation.</p><p class="phx-output">Student takeaway: A one-page product business case.</p></div></li>
+<li class="phx-highlight"><span class="phx-week-num" aria-hidden="true">08</span><div><h3>Week 8 — Live Sourcing Lab 01</h3><p>Real-time, instructor-supervised research and collaborative product screening.</p><p class="phx-output">Student takeaway: A team opportunity board.</p></div></li>
+<li class="phx-highlight"><span class="phx-week-num" aria-hidden="true">09</span><div><h3>Week 9 — Live Sourcing Lab 02</h3><p>Compare candidates, test profitability assumptions and practice peer feedback.</p><p class="phx-output">Student takeaway: A ranked short list and revised business case.</p></div></li>
+<li class="phx-highlight"><span class="phx-week-num" aria-hidden="true">10</span><div><h3>Week 10 — Live Sourcing Lab 03</h3><p>Final sourcing practice, presentation coaching and competition-ready recommendations.</p><p class="phx-output">Student takeaway: A final product case and practice pitch.</p></div></li></ol>
+    <div class="phx-after">
+      <div>
+        <p class="phx-eyebrow">After Week 10 · Capstone</p>
+        <h3>The First Student Opportunity Competition</h3>
+        <p>Students or teams present one well-researched product opportunity and explain demand, costs, potential margin, risks, ethical considerations and what they learned. An instructor or school-approved judging panel evaluates the <strong>quality of reasoning, evidence, teamwork and communication</strong>—not actual sales, company revenue or the quantity of leads sourced for a business.</p>
+        <p>The showcase is a separate culminating event after the ten weekly classes; its date and format will be set with Phoenix Academy.</p>
+      </div>
+      <div class="phx-awards">
+        <h3>Milestone Gift Cards & Competition Recognition</h3>
+        <p>Gift-card recognition is planned around learning milestones such as the first evidence-based research worksheet, a completed profitability analysis and a final business case. Final gift cards will recognize competition winners, subject to secured funding and published judging rules.</p>
+        <p><strong>Scholarships are a future goal.</strong> Until scholarship funding is secured, the pilot will use educational gift-card awards; no specific award amounts are promised in advance.</p>
+      </div>
+    </div>
+    <p class="phx-note">This is an educational program for minors, not employment or independent commercial sourcing. Students are not required to buy inventory, open seller accounts, generate sales or produce leads for Hidden Gems LLC. Adult supervision, school approval, accessibility, safeguarding, media consent and award criteria will be established before the cohort begins.</p>
+    <a class="phx-link" href="academy">Explore the full House of Manna Academy →</a>
+  </div>
+</section>
 
   <section class="project-supports" data-theme="dark">
     <div class="project-supports-inner">
