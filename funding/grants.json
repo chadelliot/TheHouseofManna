@@ -2,7 +2,7 @@
   "meta": {
     "title": "House of Manna Funding Pipeline",
     "lastUpdated": "2026-10-16",
-    "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications. October 11: environmental projects removed from active pursuit at Chad's direction. Screened 25 new replacement prospects; seven current/conditional/future prospects added, none submitted. Eligibility failures recorded separately in docs/funding/replacement-grant-screening-20261011.md. ShopRite request successfully submitted October 11 following approved retry; one new request submitted toward the 25-application target. October 12 continuation: three portal-support inquiries sent October 11; Benevity ticket 4923065 acknowledged. Standard lookup also failed for a known established charity, so missing-registry conclusions remain unproven. Kroger December review added as an access/verification hold. Count remains one new funding request submitted; technical inquiries excluded. October 12: Chad set submitted-request sourcing targets of $500,000 General Operations and $500,000 Pantry. Nine distinct new leads added; Bob Evans $5,000 financial-support inquiry sent, other eight not submitted. Program names normalized for recent food-access records; no budget or award amount changed. October 14 sync: Regeneron $25,000 LOI declined; Wegmans Hunt Valley $100 gift card approved/pickup pending; prior Fulton $5,000 decline and T. Rowe invitation hold reconciled; Straus LOI review timeline and Benevity lookup guidance recorded; Safeway $5,000 award check deposited but held by bank through Oct. 23 pending clearance. No new cash grant awards. October 16: added 20 new *screened research prospects* for food-pantry rent/warehousing, staffing, utilities, distribution and other operational costs, after duplicate checking. No new application or monetary request submitted. Maryland charitable solicitation number 55451 approved Oct 16; use if a portal requires Secretary of State charity registration; it does not lift startup/partner/fiscal barriers. Most new prospects are conditional, invitation-only, closed, or require volunteers/partners. Do not count them as ready submissions or unrestricted-rent grants.",
+    "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications. October 11: environmental projects removed from active pursuit at Chad's direction. Screened 25 new replacement prospects; seven current/conditional/future prospects added, none submitted. Eligibility failures recorded separately in docs/funding/replacement-grant-screening-20261011.md. ShopRite request successfully submitted October 11 following approved retry; one new request submitted toward the 25-application target. October 12 continuation: three portal-support inquiries sent October 11; Benevity ticket 4923065 acknowledged. Standard lookup also failed for a known established charity, so missing-registry conclusions remain unproven. Kroger December review added as an access/verification hold. Count remains one new funding request submitted; technical inquiries excluded. October 12: Chad set submitted-request sourcing targets of $500,000 General Operations and $500,000 Pantry. Nine distinct new leads added; Bob Evans $5,000 financial-support inquiry sent, other eight not submitted. Program names normalized for recent food-access records; no budget or award amount changed. October 14 sync: Regeneron $25,000 LOI declined; Wegmans Hunt Valley $100 gift card approved/pickup pending; prior Fulton $5,000 decline and T. Rowe invitation hold reconciled; Straus LOI review timeline and Benevity lookup guidance recorded; Safeway $5,000 award check deposited but held by bank through Oct. 23 pending clearance. No new cash grant awards. October 16: added 20 new *screened research prospects* for food-pantry rent/warehousing, staffing, utilities, distribution and other operational costs, after duplicate checking. No new application or monetary request submitted. Maryland charitable solicitation number 55451 approved Oct 16; use if a portal requires Secretary of State charity registration; it does not lift startup/partner/fiscal barriers. Most new prospects are conditional, invitation-only, closed, or require volunteers/partners. Do not count them as ready submissions or unrestricted-rent grants. October 16, 2026: Added 20 distinct, primary-source-screened pantry operating funding prospects. All are Researching/On hold; no applications submitted, no requested/awarded dollars assumed. Each records application timing, geographic/partner/service-history constraints and unconfirmed allowable costs. Funding target and master financial budgets unchanged.",
     "statusDefinitions": {
       "Researching": "Fit, route or eligibility still needs research",
       "Ready": "Qualified and ready for the next application or outreach action",
@@ -768,6 +768,35 @@
         },
         "note": "Minimum documented current open requests from specifically reviewed records; not a certified cumulative all-history total. Unknown-amount submissions and declined historical requests excluded. No inferred splits."
       }
+    },
+    "latestPantryOperatingProspectResearch": {
+      "date": "2026-10-16",
+      "added": 20,
+      "ids": [
+        "jhhp-food-access-program-20261016",
+        "pearl-elegance-community-grant-20261016",
+        "umms-ignite-food-access-2027-20261016",
+        "acds-community-support-pantry-overhead-fy28-20261016",
+        "acds-public-service-grants-fy28-20261016",
+        "acds-live-casino-ldc-fy28-20261016",
+        "acds-laurel-impact-food-access-fy28-20261016",
+        "south-baltimore-gateway-food-hub-2027-20261016",
+        "quest-healthy-communities-2026-20261016",
+        "new-york-life-community-impact-20261016",
+        "new-york-life-volunteer-team-grants-20261016",
+        "cvs-volunteer-challenge-20261016",
+        "starbucks-neighborhood-grants-2027-20261016",
+        "sodexo-heroes-2027-food-pantry-20261016",
+        "md-dhcd-technical-assistance-2027-20261016",
+        "md-dhcd-brni-pantry-hub-2027-20261016",
+        "kaiser-midatlantic-community-food-health-20261016",
+        "land-o-lakes-hunger-region-2027-20261016",
+        "buckingham-food-insecurity-2027-20261016",
+        "jhu-community-academic-food-access-2027-20261016"
+      ],
+      "submitted": 0,
+      "focus": "Pantry rent, utilities, refrigeration, storage, staffing, insurance, logistics and proportional overhead when specifically allowed",
+      "note": "Prospect list NOT a list of twenty currently eligible open grants. 501(c)(3) and new MD charitable number 55451 do not cure separate geographic, prior-results, co-applicant or nomination requirements. Direct lease expense permission not presumed."
     }
   },
   "grants": [
@@ -8659,6 +8688,606 @@
       "funderUrl": "https://dhcd.maryland.gov/neighborhood-revitalization/community-development-funding/state-revitalization-programs/baltimore-regional-neighborhood-initiative",
       "applicationUrl": "https://dhcd.maryland.gov/neighborhood-revitalization/community-development-funding/state-revitalization-programs/baltimore-regional-neighborhood-initiative",
       "applicationLinkLabel": "Eligibility / Apply",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "jhhp-food-access-program-20261016",
+      "funder": "Johns Hopkins Health Plans",
+      "opportunity": "Corporate Giving — Food Insecurity and Pantry Operations",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Researching",
+      "stage": "Open through Oct 30, 2026; outcome evidence and eligible expenses need confirmation",
+      "submittedDate": null,
+      "nextDate": "2026-10-30",
+      "nextAction": "Prioritize: review application and ask whether pantry coordination/storage/utilities may be budgeted; prepare truthful proposed outcomes and documents by Oct 30.",
+      "notes": "Official program accepts 501(c)(3) nonprofit applications serving local region and awards up to $10,000. Fresh-food access is an explicitly named priority; calls for programs with trackable proven outcomes. House is a startup; do not present future activity as past evidence. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://www.hopkinsmedicine.org/johns-hopkins-health-plans/about-us/giving",
+      "applicationUrl": "https://www.hopkinsmedicine.org/johns-hopkins-health-plans/about-us/giving",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Strong food-access fit / expense eligibility unverified",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "pearl-elegance-community-grant-20261016",
+      "funder": "Pearl Elegance Foundation",
+      "opportunity": "2026 Community Grant — Pantry Operating Project",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "Researching",
+      "stage": "Oct 31, 2026 application; local impact/award/use restrictions unverified",
+      "submittedDate": null,
+      "nextDate": "2026-10-31",
+      "nextAction": "Review current-year grant guidelines and geography, then submit only if a nonsectarian Baltimore food distribution project and operating-expense budget qualify.",
+      "notes": "Official Maryland-based funder has open Community Grant application and requires proposal narrative plus budget. 2026 deadline October 31; award size, locality, overhead/rent permission still need direct guideline verification. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://pefinc.org/what-we-do/give-community-grants/",
+      "applicationUrl": "https://pefinc.org/what-we-do/give-community-grants/",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Potential Maryland fit",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "umms-ignite-food-access-2027-20261016",
+      "funder": "University of Maryland Medical System",
+      "opportunity": "Community Impact — Ignite Grant (Food Access / Social Drivers of Health)",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "2026 cycle closed Oct 14; new cycle and 501(c)(3) community partner needed",
+      "submittedDate": null,
+      "nextDate": "2027-08-01",
+      "nextAction": "Identify nonprofit collaborator and follow next cycle; clarify whether pantry staffing, storage or logistics are eligible.",
+      "notes": "Official grant focuses Maryland counties including Baltimore and Anne Arundel. Ignite tier $25,000 for smaller nonprofits/pilots; requires collaboration with at least one separate 501(c)(3) nonprofit. The 2026 application window ended October 14; do not imply current submission possible. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://www.umms.org/community/grants",
+      "applicationUrl": "https://www.umms.org/community/grants",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Strong regional issue fit / future round",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "acds-community-support-pantry-overhead-fy28-20261016",
+      "funder": "Anne Arundel County / ACDS",
+      "opportunity": "FY2028 Community Support Grant — Pantry Program Operations",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Jan 6–Feb 10, 2027; AA County actual delivery site/services not established",
+      "submittedDate": null,
+      "nextDate": "2027-01-06",
+      "nextAction": "Confirm/document real Anne Arundel County service geography; prepare project expenses and proportionate overhead for Jan 2027 portal opening.",
+      "notes": "Official guidelines explicitly allow project-specific staff, supplies and proportionate administrative overhead; grants can fund continuing or piloting programs for Anne Arundel residents. Not a Baltimore-only service grant. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://acdsinc.org/funding-opportunities/community-support-grant/",
+      "applicationUrl": "https://acdsinc.org/funding-opportunities/community-support-grant/",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Strong expense fit / county geography conditional",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "acds-public-service-grants-fy28-20261016",
+      "funder": "Anne Arundel County / ACDS",
+      "opportunity": "FY2028 Public Service Funding — Community Pantry Activities",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Application opens Oct 21, 2026; Anne Arundel County services required",
+      "submittedDate": null,
+      "nextDate": "2026-10-21",
+      "nextAction": "Review FY2028 Public Service guidelines Oct 21 and evaluate service territory, permitted staff/facility costs and new-nonprofit documentation.",
+      "notes": "ACDS FY2028 public-service application window October 21 through December 9, 2026, Neighborly portal. Intended for local housing/community development and social services, not an unrestricted Baltimore warehouse grant. Funding appropriations and allowable costs to confirm. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://acdsinc.org/community-planning-development/development-budget-process/",
+      "applicationUrl": "https://acdsinc.org/community-planning-development/development-budget-process/",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Conditional AA County service prospect",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "acds-live-casino-ldc-fy28-20261016",
+      "funder": "Anne Arundel County / ACDS Local Development Council",
+      "opportunity": "FY2028 Live! Casino Video Lottery Terminal Community Grant",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Open Oct 14–Dec 2, 2026; benefits must be within 3 miles of Live! Casino",
+      "submittedDate": null,
+      "nextDate": "2026-12-02",
+      "nextAction": "Verify designated three-mile service area and a real pantry benefit to residents before preparing a request; invitation-only route is separate.",
+      "notes": "ACDS official LDC Community Grants up to $40,000, including Human Services for Success. Geographic restriction is a hard constraint: must benefit residents within three-mile radius of Live! Casino in Anne Arundel County. No eligible service site confirmed. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://acdsinc.org/funding-opportunities/local-development-council-grants/",
+      "applicationUrl": "https://acdsinc.org/funding-opportunities/local-development-council-grants/",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Strong if 3-mile service area met",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "acds-laurel-impact-food-access-fy28-20261016",
+      "funder": "Anne Arundel County / ACDS",
+      "opportunity": "FY2028 Laurel Race Course Impact Fund — Community Pantry Services",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Nov 4–Dec 16, 2026; AA portion within 3 miles of Laurel Race Track",
+      "submittedDate": null,
+      "nextDate": "2026-11-04",
+      "nextAction": "Pursue only if verified real pantry service delivery within the Anne Arundel County portion of the three-mile Laurel Race Track boundary.",
+      "notes": "Official FY2028 cycle runs November 4–December 16, 2026 via Neighborly. Geographically limited community benefit, not eligible solely due to Maryland incorporation. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://acdsinc.org/funding-opportunities/laurel-race-course-impact-fund-grants/",
+      "applicationUrl": "https://acdsinc.org/funding-opportunities/laurel-race-course-impact-fund-grants/",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Specific area required",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "south-baltimore-gateway-food-hub-2027-20261016",
+      "funder": "South Baltimore Gateway Partnership",
+      "opportunity": "Winter 2027 Community Grants — Food Pantry Access and Hub Services",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Winter 2027 round pending; only designated South Baltimore Gateway District benefits",
+      "submittedDate": null,
+      "nextDate": "2027-01-01",
+      "nextAction": "Map/document service footprint in the district, align with neighborhood priorities and confirm whether storage/operating expenses are allowable.",
+      "notes": "Faith-based nonprofit applicants explicitly welcome. Grant tiers Spark up to $2,000, Small up to $5,000, Medium below $50,000 and Large up to $100,000. All grant projects must directly benefit the designated South Baltimore Gateway District. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://sbgpartnership.org/community-grants/",
+      "applicationUrl": "https://sbgpartnership.org/community-grants/",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Strong only if district service established",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "quest-healthy-communities-2026-20261016",
+      "funder": "Quest Diagnostics Foundation",
+      "opportunity": "Quest for Healthy Communities Champions — Food Security",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Oct 14–Nov 19, 2026 nomination; active measurable programs required",
+      "submittedDate": null,
+      "nextDate": "2026-11-19",
+      "nextAction": "Identify whether House can substantiate existing service results; otherwise defer nomination until pantry has demonstrable outcomes.",
+      "notes": "Official nominations October 14–November 19, 2026. $10,000 award supports food security and social drivers of health. Requires active programs demonstrating measurable outcomes; a proposal for future services alone is insufficient. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://www.questdiagnostics.com/our-company/foundation/current-opportunities/healthy-communities-champions",
+      "applicationUrl": "https://www.questdiagnostics.com/our-company/foundation/current-opportunities/healthy-communities-champions",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Issue fit but startup results gap",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "new-york-life-community-impact-20261016",
+      "funder": "New York Life Foundation",
+      "opportunity": "Community Impact Grants — Agent-Championed Pantry Support",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Needs engaged New York Life employee or financial professional to apply",
+      "submittedDate": null,
+      "nextDate": "2027-01-01",
+      "nextAction": "Find an authentic local NYL agent/employee champion involved with House of Manna, then determine sponsor application timeline.",
+      "notes": "Employee/agent champions of local nonprofits may pursue $5,000–$25,000 competitive Community Impact Grants; not self-application by unaffiliated nonprofit. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://www.newyorklife.com/foundation/grant-opportunities/workplace-grants",
+      "applicationUrl": "https://www.newyorklife.com/foundation/grant-opportunities/workplace-grants",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Strong operational-cash potential if champion",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "new-york-life-volunteer-team-grants-20261016",
+      "funder": "New York Life Foundation",
+      "opportunity": "Volunteers for Good Team Grants — Pantry Operations",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Needs organized employee volunteering; distinct from Community Impact Grant",
+      "submittedDate": null,
+      "nextDate": "2027-01-01",
+      "nextAction": "Develop actual employee-led pantry volunteer team and have qualified NYL team apply for nonprofit support.",
+      "notes": "Official employee team grants fund nonprofit partners up to $10,000 based on company employee involvement; individual volunteer grants up to $1,000. Distinct program route from agent Community Impact grants. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://www.newyorklife.com/careers/our-culture/our-communities",
+      "applicationUrl": "https://www.newyorklife.com/careers/our-culture/our-communities",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Conditional employer partner",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "cvs-volunteer-challenge-20261016",
+      "funder": "CVS Health Foundation",
+      "opportunity": "Volunteer Challenge Grant — Food Pantry Support",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "CVS colleague must volunteer and log qualifying hours",
+      "submittedDate": null,
+      "nextDate": "2027-01-01",
+      "nextAction": "Recruit genuine CVS colleague volunteers; document at least 10 verified hours under current program rules before exploring application.",
+      "notes": "CVS official statement shows $150–$3,000 employee-linked Volunteer Challenge Grants for qualifying nonprofit volunteer service; program is not a conventional direct foundation application. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://www.cvshealth.com/impact/healthy-community",
+      "applicationUrl": "https://www.cvshealth.com/impact/healthy-community",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Small operational cash if employee",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "starbucks-neighborhood-grants-2027-20261016",
+      "funder": "The Starbucks Foundation",
+      "opportunity": "Neighborhood Grants — Grassroots Hunger Relief",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Starbucks partner nomination required; 2027 dates unannounced",
+      "submittedDate": null,
+      "nextDate": "2027-01-01",
+      "nextAction": "Build a genuine local Starbucks employee community relationship and seek nomination in next program cycle.",
+      "notes": "Official program supports hunger-relief groups and makes local nonprofit grants based on nominations from Starbucks partners. No self-service grant application available; 2026 awards already made. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://about.starbucks.com/neighborhood-grants/",
+      "applicationUrl": "https://about.starbucks.com/neighborhood-grants/",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Grassroots good-fit / nomination-only",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "sodexo-heroes-2027-food-pantry-20261016",
+      "funder": "Sodexo Stop Hunger Foundation",
+      "opportunity": "Heroes of Everyday Life — Employee-Nominated Pantry Grant",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "2026 nominations ended Oct 15; future year requires Sodexo employee hero",
+      "submittedDate": null,
+      "nextDate": "2027-08-15",
+      "nextAction": "Identify a Sodexo employee actively volunteering against hunger and evaluate next annual nomination.",
+      "notes": "Official grant recognizes Sodexo employee hunger-relief hero, with $5,000 sent to a charity of awardee's choice. Annual nomination August 15–October 15; 2026 has closed and route cannot be self-submitted. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://www.us.stop-hunger.org/grants",
+      "applicationUrl": "https://www.us.stop-hunger.org/grants",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Nomination-linked conditional",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "md-dhcd-technical-assistance-2027-20261016",
+      "funder": "Maryland DHCD",
+      "opportunity": "Technical Assistance Grant — Community Revitalization Administrative Costs",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "2026 closed; must tie to qualified community/economic revitalization project",
+      "submittedDate": null,
+      "nextDate": "2027-02-01",
+      "nextAction": "Identify sustainable-community initiative and check next FY round; verify eligible salaries, professional services and administrative spend, not warehouse lease by default.",
+      "notes": "Official program supports operating costs of qualifying community revitalization efforts; max $50,000 and no match, with priority funding area project requirement. 2026 application closed March 20. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://dhcd.maryland.gov/neighborhood-revitalization/community-development-funding/technical-assistance-grant",
+      "applicationUrl": "https://dhcd.maryland.gov/neighborhood-revitalization/community-development-funding/technical-assistance-grant",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Direct operating-cost language / strategic-fit contingent",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "md-dhcd-brni-pantry-hub-2027-20261016",
+      "funder": "Maryland DHCD",
+      "opportunity": "Baltimore Regional Neighborhood Initiative — Community Enhancement Operating Costs",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Qualified community development organization + strategic plan + eligible Baltimore-area site required",
+      "submittedDate": null,
+      "nextDate": "2027-06-01",
+      "nextAction": "Locate eligible site and partner CDO with approved neighborhood plan before considering next state funding round.",
+      "notes": "Official BRNI program allows operating costs necessary to implement a community enhancement project, but applicant must be CDO and project within qualifying Sustainable Community Area; not generic pantry rent. 2026 application closed August 6. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://dhcd.maryland.gov/neighborhood-revitalization/community-development-funding/state-revitalization-programs/baltimore-regional-neighborhood-initiative",
+      "applicationUrl": "https://dhcd.maryland.gov/neighborhood-revitalization/community-development-funding/state-revitalization-programs/baltimore-regional-neighborhood-initiative",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Strong with eligible community-development partner",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "kaiser-midatlantic-community-food-health-20261016",
+      "funder": "Kaiser Permanente Mid-Atlantic",
+      "opportunity": "Food & Nutritional Security Community Grant — Future Invitation",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Currently invitation only; existing food-security RFP page shows 2024 dates",
+      "submittedDate": null,
+      "nextDate": "2027-01-01",
+      "nextAction": "Seek regional community health lead, clarify whether free food distribution/coordination qualifies and whether invitations are available.",
+      "notes": "Kaiser offers invited community-health grants and welcomes newer grassroots nonprofits. Historical food-security strategy favors medically tailored groceries and produce prescriptions, not unrestricted warehouse rent. No active 2026 open cycle confirmed. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://about.kaiserpermanente.org/expertise-and-impact/healthy-communities/communities-we-serve/mid-atlantic-community/grants-and-sponsorships",
+      "applicationUrl": "https://about.kaiserpermanente.org/expertise-and-impact/healthy-communities/communities-we-serve/mid-atlantic-community/grants-and-sponsorships",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Conditional food-health alignment",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "land-o-lakes-hunger-region-2027-20261016",
+      "funder": "Land O'Lakes Foundation",
+      "opportunity": "Region Grants — Hunger Relief",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "Next typical May cycle; dairy member-owner/employee footprint must be proven",
+      "submittedDate": null,
+      "nextDate": "2027-05-01",
+      "nextAction": "Check whether Baltimore-area pantry is within Region Grants eligible Land O'Lakes dairy communities and verify 2027 application dates.",
+      "notes": "Official Region Grants Hunger Relief round May 1–31, $1,000–$20,000. Designed for locations where Land O'Lakes dairy member owners live and work, primarily rural; no qualifying Baltimore member-owner relationship verified. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://foundation.landolakesinc.com/",
+      "applicationUrl": "https://foundation.landolakesinc.com/",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Geography/relationship uncertain",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "buckingham-food-insecurity-2027-20261016",
+      "funder": "Buckingham Foundation",
+      "opportunity": "Food Insecurity Community Grant — 2027 Prospect",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "2026 closed July 15; priority Buckingham Companies property communities",
+      "submittedDate": null,
+      "nextDate": "2027-06-01",
+      "nextAction": "Check 2027 portal, Maryland geographic footprint and whether startup pantry coordination/site costs qualify.",
+      "notes": "Official foundation grants align with food insecurity; $20,000 grants in 2026, one application per 12 months, financial statements required. Strong preference for communities with Buckingham presence; no eligible House area verified. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://www.buckinghamfoundationinc.org/apply",
+      "applicationUrl": "https://www.buckinghamfoundationinc.org/apply",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Geography/expense check required",
+      "addedDate": "2026-10-16",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "jhu-community-academic-food-access-2027-20261016",
+      "funder": "Johns Hopkins University",
+      "opportunity": "Innovation Fund — Community-Based Project/Research Food Access Partnership",
+      "program": "General Operations",
+      "programs": [
+        "General Operations",
+        "Pantry"
+      ],
+      "subcategories": [
+        "Pantry facility operating expenses",
+        "Storage / distribution logistics"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "awardedAmount": 0,
+      "status": "On hold",
+      "stage": "2027 applications Oct 30–Jan 31; JHU faculty must lead; typically one year prior partnership",
+      "submittedDate": null,
+      "nextDate": "2026-10-30",
+      "nextAction": "Explore only with genuine existing JHU faculty partnership; outline evaluation of food-access logistics; do not submit as a nonprofit-led stand-alone grant.",
+      "notes": "Official Community-Based Project and Research awards up to $30,000/$80,000 depending on one-year/two-year existing partnership, faculty led. Personnel/supplies for partner eligible, indirect not. New House of Manna may not meet 2027 partnership tenure. Research verified October 16, 2026. No application or request submitted; rent is NOT assumed allowable unless funder confirms.",
+      "funderUrl": "https://communityimpact.jhu.edu/community-partnerships/innovation-fund/",
+      "applicationUrl": "https://communityimpact.jhu.edu/community-partnerships/innovation-fund/",
+      "applicationLinkLabel": "Program / Eligibility",
+      "supportType": "Grant / Funding Prospect",
+      "fit": "Longer-term partnership not current rent",
       "addedDate": "2026-10-16",
       "lastUpdated": "2026-10-16"
     }
