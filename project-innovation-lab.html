@@ -1681,15 +1681,12 @@
 .phx-pills{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 38px}
 .phx-pills span{border:1px solid rgba(23,35,52,.23);border-radius:99px;padding:10px 16px;font-weight:650;font-size:.86rem}
 .phx-photo-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:22px;margin:34px 0}
-.phx-photo-grid figure,.phx-video-grid figure{margin:0;background:#fff;overflow:hidden;border-radius:6px;box-shadow:0 12px 38px rgba(23,35,52,.07)}
+.phx-photo-grid figure{margin:0;background:#fff;overflow:hidden;border-radius:6px;box-shadow:0 12px 38px rgba(23,35,52,.07)}
 .phx-photo-grid img{width:100%;height:355px;object-fit:cover;display:block}
 .phx-photo-grid figure:nth-child(2) img{object-position:center 40%}
-.phx-photo-grid figcaption,.phx-video-grid figcaption{padding:15px 18px;font-size:.92rem;line-height:1.5;color:var(--hom-navy,#2D3B4F)}
+.phx-photo-grid figcaption{padding:15px 18px;font-size:.92rem;line-height:1.5;color:var(--hom-navy,#2D3B4F)}
 .phx-text-card{border-left:4px solid var(--hom-gold,#C8941F);background:#fff;padding:25px 30px;margin:34px 0;line-height:1.75}
 .phx-text-card strong{color:#172334}
-.phx-video-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:26px}
-.phx-video-grid video{width:100%;height:220px;object-fit:cover;background:#172334;display:block}
-.phx-video-grid figcaption strong{display:block;margin-bottom:5px}
 .phx-curriculum{background:#fff;padding-top:80px;padding-bottom:85px}
 .phx-weeks{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .phx-weeks li{display:flex;gap:16px;padding:24px;border:1px solid #e9e6dc;background:#F7F4EC;border-radius:4px;min-width:0}
@@ -1705,8 +1702,8 @@
 .phx-awards p:last-child{margin-bottom:0}
 .phx-note{margin-top:24px;font-size:.89rem;color:#606a77;line-height:1.7}
 .phx-link{display:inline-block;margin-top:19px;text-decoration:underline;text-underline-offset:4px;color:#172334;font-weight:750}
-@media(max-width:900px){.phx-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.phx-photo-grid{grid-template-columns:1fr 1fr}.phx-photo-grid img{height:300px}}
-@media(max-width:650px){.phx-photo-grid,.phx-weeks,.phx-after{grid-template-columns:1fr}.phx-photo-grid img{height:auto;aspect-ratio:4/3;object-fit:cover}.phx-video-grid{grid-template-columns:1fr 1fr;gap:10px}.phx-video-grid video{height:180px}.phx-video-grid figcaption{padding:12px;font-size:.8rem}.phx-weeks li{padding:20px}.phx-section{padding-left:20px;padding-right:20px}}
+@media(max-width:900px){.phx-photo-grid{grid-template-columns:1fr 1fr}.phx-photo-grid img{height:300px}}
+@media(max-width:650px){.phx-photo-grid,.phx-weeks,.phx-after{grid-template-columns:1fr}.phx-photo-grid img{height:auto;aspect-ratio:4/3;object-fit:cover}.phx-weeks li{padding:20px}.phx-section{padding-left:20px;padding-right:20px}}
 
 </style>
 </head>
@@ -1839,13 +1836,7 @@
       <figure><img loading="lazy" src="images/phoenix-academy/IMG_4249.webp" alt="Two adults standing in front of the Phoenix Academy welcome sign"><figcaption>Conversations about practical skills, student confidence and expanded opportunity.</figcaption></figure>
     </div>
     <div class="phx-text-card"><strong>Why a school setting matters.</strong> Students can explore market research, business decisions, teamwork and professional communication within existing school infrastructure and adult supervision. Our first subject is eCommerce; campus facilities and other experiential spaces illustrate the broader possibilities for future hands-on learning and are <em>not</em> presented as established components of the initial course.</div>
-    <p class="phx-eyebrow">Inside the learning environment · original campus footage</p>
-    <div class="phx-video-grid">
-      <figure><video controls muted playsinline preload="none" poster="images/phoenix-academy/IMG_4236-poster.webp" aria-label="Greenhouse & workspace at Phoenix Academy"><source src="images/phoenix-academy/IMG_4236.mp4" type="video/mp4">Your browser does not support video playback.</video><figcaption><strong>Greenhouse & workspace</strong>A look at an on-campus workspace.</figcaption></figure>
-      <figure><video controls muted playsinline preload="none" poster="images/phoenix-academy/IMG_4233-poster.webp" aria-label="Campus grounds at Phoenix Academy"><source src="images/phoenix-academy/IMG_4233.mp4" type="video/mp4">Your browser does not support video playback.</video><figcaption><strong>Campus grounds</strong>Outdoor areas seen during the visit.</figcaption></figure>
-      <figure><video controls muted playsinline preload="none" poster="images/phoenix-academy/IMG_4234-poster.webp" aria-label="Garden beds at Phoenix Academy"><source src="images/phoenix-academy/IMG_4234.mp4" type="video/mp4">Your browser does not support video playback.</video><figcaption><strong>Garden beds</strong>A glimpse of experiential learning space.</figcaption></figure>
-      <figure><video controls muted playsinline preload="none" poster="images/phoenix-academy/IMG_4235-poster.webp" aria-label="Animal-care area at Phoenix Academy"><source src="images/phoenix-academy/IMG_4235.mp4" type="video/mp4">Your browser does not support video playback.</video><figcaption><strong>Animal-care area</strong>On-campus agricultural surroundings.</figcaption></figure>
-    </div>
+
   </div>
 </section>
 <section class="phx-section phx-curriculum" id="ten-week-curriculum" data-theme="light">
