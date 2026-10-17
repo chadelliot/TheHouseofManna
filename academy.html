@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The House of Manna Academy — entrepreneurship education, financial literacy, career discovery, and the Entrepreneurship Scholarship Program for Baltimore students.">
+<meta name="description" content="The House of Manna Academy — school-based eCommerce learning with Phoenix Academy, entrepreneurship education, financial literacy, and career discovery for Maryland youth.">
 <meta name="author" content="The House of Manna">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#172334">
@@ -1291,6 +1291,24 @@
     .ecosystem-links-grid{ grid-template-columns:1fr; }
   }
 </style>
+<style>
+
+/* School-based Phoenix Academy pilot spotlight */
+.academy-phoenix{background:var(--hom-cream,#F7F4EC);padding:80px 24px 105px;color:var(--hom-navy-2,#172334)}
+.academy-phoenix-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(24px,5vw,76px);align-items:center}
+.academy-phoenix-media{margin:0;min-width:0}
+.academy-phoenix-media img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.academy-phoenix-media figcaption{font-size:.83rem;line-height:1.6;margin-top:12px;color:#5e6975}
+.academy-phoenix-copy .eyebrow{font-size:.81rem;letter-spacing:.15em;text-transform:uppercase;font-weight:750;color:#8a6514;margin:0 0 18px}
+.academy-phoenix-copy h2{font:400 clamp(2.25rem,4.8vw,4.3rem)/1.07 var(--font-display,Anton,Impact,sans-serif);text-transform:uppercase;margin:0 0 24px;color:#172334}
+.academy-phoenix-copy p{line-height:1.75;margin:0 0 18px}
+.academy-phoenix-facts{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}
+.academy-phoenix-facts span{padding:9px 14px;border:1px solid #c5bca8;border-radius:50px;font-size:.85rem;font-weight:750}
+.academy-phoenix-link{display:inline-block;background:var(--hom-navy-2,#172334);padding:14px 24px;color:#fff!important;border-radius:3px;font-weight:700;text-decoration:none}
+.academy-phoenix-link:hover{background:var(--hom-navy,#2D3B4F)}
+@media(max-width:790px){.academy-phoenix-inner{grid-template-columns:1fr}.academy-phoenix{padding:64px 20px}.academy-phoenix-media{order:1}.academy-phoenix-copy{order:0}}
+
+</style>
 </head>
 <nav class="site-nav">
     <div class="nav-inner">
@@ -1401,6 +1419,24 @@
           <p class="label">Academy Vision</p>
           <p class="copy">To become a nationally recognized educational model that equips students with practical skills, entrepreneurial thinking, career awareness, and future-ready capabilities while helping create sustainable charitable impact within underserved communities.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="academy-phoenix" id="academy-phoenix-pilot" data-theme="light">
+    <div class="academy-phoenix-inner">
+      <figure class="academy-phoenix-media">
+        <img loading="lazy" src="images/phoenix-academy/IMG_4246.webp" alt="Planning visit in the Phoenix Academy entrance hall in Annapolis, Maryland">
+        <figcaption>On the ground at Phoenix Academy as we develop our first school-based eCommerce pilot.</figcaption>
+      </figure>
+      <div class="academy-phoenix-copy">
+        <p class="eyebrow">A School-Based Pilot in Development</p>
+        <h2>Building Opportunity at Phoenix Academy</h2>
+        <p>The House of Manna is working with Phoenix Academy in Annapolis, Maryland to build a hands-on Youth Innovation Lab experience for students, including youth who live in Baltimore County. We begin with something tangible: <strong>eCommerce skills, practical research, and business decision-making.</strong></p>
+        <p>Based on the 22-lesson Hidden Gems LLC <em>Blueprint</em> curriculum, the proposed format includes ten weekly one-hour sessions, three supervised live product-sourcing labs, milestone gift cards and a first educational competition. Scholarships remain a future goal as funding grows.</p>
+        <div class="academy-phoenix-facts"><span>10 Weeks</span><span>1 Hour Each</span><span>3 Sourcing Labs</span><span>Final Showcase</span></div>
+        <a class="academy-phoenix-link" href="project-innovation-lab#ten-week-curriculum">Explore the 10-Week Pilot &amp; Campus Media →</a>
       </div>
     </div>
   </section>
@@ -1555,8 +1591,8 @@
   <section class="scholarship-section" id="scholarship" data-theme="light">
     <div class="scholarship-inner">
       <p class="eyebrow">The Academy&rsquo;s Flagship Initiative</p>
-      <h2>Entrepreneurship Scholarship Program</h2>
-      <p>The House of Manna Entrepreneurship Scholarship Program teaches practical entrepreneurship and business analysis skills, exposes students to real-world opportunity evaluation, and inspires participants to understand how economic activity can create community impact. It is not designed to generate business profits or recruit labor &mdash; it is designed to teach students how opportunities are identified, evaluated, and assessed.</p>
+      <h2>Entrepreneurship Challenges &amp; Future Scholarships</h2>
+      <p>The Academy uses educational business challenges to reinforce entrepreneurship, research, critical thinking, and communication. The first Phoenix Academy pilot plans to recognize learning milestones and competition winners with gift cards as funding permits. Future scholarship awards remain an aspiration rather than a currently funded prize commitment. Students learn to evaluate real-world opportunities, not to generate business profits or perform labor for an outside company.</p>
       <span class="scholarship-belief">Opportunity Can Be Learned.</span>
       <p>Entrepreneurial thinking, opportunity identification, and business evaluation are all skills &mdash; and all of them can be developed through repetition, practice, and exposure.</p>
 
@@ -1585,8 +1621,8 @@
             <button class="phase-toggle" type="button" aria-expanded="false">
               <span class="phase-num">02</span>
               <span class="phase-title-wrap">
-                <span class="phase-title">Opportunity Evaluation</span>
-                <span class="phase-tagline">Minimum: 50 product evaluations</span>
+                <span class="phase-title">Product Research Practice</span>
+                <span class="phase-tagline">Guided practice and evidence-based evaluation</span>
               </span>
               <span class="phase-chevron">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
@@ -1594,7 +1630,7 @@
             </button>
             <div class="phase-panel">
               <div class="phase-panel-inner">
-                <p class="phase-desc">The fifty-submission requirement encourages consistency and repetition. Entrepreneurial thinking develops through practice &mdash; a student evaluating fifty opportunities begins to recognize patterns, develop judgment, and improve decision-making. The requirement exists to build competency, not simply determine winners.</p>
+                <p class="phase-desc">Students practice screening and comparing product opportunities, recording evidence about demand, costs, restrictions and risks. The pilot prioritizes learning quality and improvement through feedback over a fixed number of product leads.</p>
               </div>
             </div>
           </div>
@@ -1603,8 +1639,8 @@
             <button class="phase-toggle" type="button" aria-expanded="false">
               <span class="phase-num">03</span>
               <span class="phase-title-wrap">
-                <span class="phase-title">Qualified Opportunities</span>
-                <span class="phase-tagline">Minimum: five qualified opportunities</span>
+                <span class="phase-title">Competition-Ready Business Case</span>
+                <span class="phase-tagline">Explain one well-researched opportunity</span>
               </span>
               <span class="phase-chevron">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
@@ -1612,7 +1648,7 @@
             </button>
             <div class="phase-panel">
               <div class="phase-panel-inner">
-                <p class="phase-desc">Qualified opportunities are determined through review by an expert evaluation team of business professionals, entrepreneurs, and Academy leadership. The objective isn&rsquo;t perfection &mdash; it&rsquo;s demonstrating a foundational understanding of the opportunity evaluation principles taught throughout the Academy. Students are never scored on revenue, purchases, or commercial outcomes.</p>
+                <p class="phase-desc">Students or teams build one defensible business case and present their reasoning to a school-approved review panel. Judging centers on research quality, cost analysis, ethics, teamwork, reflection and communication—never purchases, sales or commercial outcomes.</p>
               </div>
             </div>
           </div>
@@ -1628,16 +1664,16 @@
           <span>Learning Tracks</span>
         </div>
         <div class="stat-item">
-          <strong>50</strong>
-          <span>Evaluations Required</span>
+          <strong>10</strong>
+          <span>Weekly Pilot Sessions</span>
         </div>
         <div class="stat-item">
-          <strong>$1,000</strong>
-          <span>Top Scholarship Award</span>
+          <strong>3</strong>
+          <span>Live Sourcing Labs</span>
         </div>
         <div class="stat-item">
-          <strong>2</strong>
-          <span>Program Phases</span>
+          <strong>1</strong>
+          <span>First Competition Showcase</span>
         </div>
       </div>
     </div>
@@ -1646,12 +1682,12 @@
       <div class="pilot-phase-card">
         <p class="pilot-phase-tag">Phase One</p>
         <h3>Pilot Launch</h3>
-        <p>Initial pilot activities are anticipated through existing educational and community relationships within the Glen Burnie community &mdash; validating curriculum, refining scoring models, and gathering student feedback.</p>
+        <p>The first pilot is being developed with Phoenix Academy in Annapolis, Maryland. A ten-week eCommerce course, guided live sourcing and student showcase will help validate the curriculum, scoring and learning experience.</p>
       </div>
       <div class="pilot-phase-card">
         <p class="pilot-phase-tag">Phase Two</p>
         <h3>Baltimore Expansion</h3>
-        <p>Following successful pilot implementation, House of Manna intends to expand the Academy into Baltimore schools and communities throughout the region.</p>
+        <p>Following an evaluated pilot, House of Manna hopes to expand learning cohorts to Baltimore-area schools and other interested communities.</p>
       </div>
     </div>
   </section>
@@ -1819,7 +1855,7 @@
 
   <section class="cta-strip" data-theme="light">
     <h2>Give a Student Access to Opportunity</h2>
-    <p>Sponsor a learning track, mentor a student, or support the Entrepreneurship Scholarship Program directly.</p>
+    <p>Sponsor a learning session, mentor students, or help fund educational milestones and future scholarships.</p>
     <div class="cta-strip-actions">
       <a class="donate-btn" href="https://givebutter.com/house-of-manna-pantry" target="_blank" rel="noopener noreferrer">Donate Now</a>
       <a class="cta-secondary-btn" href="get-involved">Get Involved</a>
