@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "House of Manna Funding Pipeline",
-    "lastUpdated": "2026-10-17",
+    "lastUpdated": "2026-10-18",
     "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications. October 11: environmental projects removed from active pursuit at Chad's direction. Screened 25 new replacement prospects; seven current/conditional/future prospects added, none submitted. Eligibility failures recorded separately in docs/funding/replacement-grant-screening-20261011.md. ShopRite request successfully submitted October 11 following approved retry; one new request submitted toward the 25-application target. October 12 continuation: three portal-support inquiries sent October 11; Benevity ticket 4923065 acknowledged. Standard lookup also failed for a known established charity, so missing-registry conclusions remain unproven. Kroger December review added as an access/verification hold. Count remains one new funding request submitted; technical inquiries excluded. October 12: Chad set submitted-request sourcing targets of $500,000 General Operations and $500,000 Pantry. Nine distinct new leads added; Bob Evans $5,000 financial-support inquiry sent, other eight not submitted. Program names normalized for recent food-access records; no budget or award amount changed. October 14 sync: Regeneron $25,000 LOI declined; Wegmans Hunt Valley $100 gift card approved/pickup pending; prior Fulton $5,000 decline and T. Rowe invitation hold reconciled; Straus LOI review timeline and Benevity lookup guidance recorded; Safeway $5,000 award check deposited but held by bank through Oct. 23 pending clearance. No new cash grant awards. October 16: added 20 new *screened research prospects* for food-pantry rent/warehousing, staffing, utilities, distribution and other operational costs, after duplicate checking. No new application or monetary request submitted. Maryland charitable solicitation number 55451 approved Oct 16; use if a portal requires Secretary of State charity registration; it does not lift startup/partner/fiscal barriers. Most new prospects are conditional, invitation-only, closed, or require volunteers/partners. Do not count them as ready submissions or unrestricted-rent grants. October 16, 2026: Added 20 distinct, primary-source-screened pantry operating funding prospects. All are Researching/On hold; no applications submitted, no requested/awarded dollars assumed. Each records application timing, geographic/partner/service-history constraints and unconfirmed allowable costs. Funding target and master financial budgets unchanged. Follow-up deduplication: five second-batch duplicate opportunities merged into corresponding earlier Oct 16 records (JHHP, Quest Champions, Starbucks, Kaiser, MD BRNI), with five distinct additional conditional funding routes substituted. Count reflects unique opportunity programs; 40 distinct new prospects since initial 226, not 40 immediately eligible applications. Alpha Gamma Delta flagged currently ineligible (3-year establishment + 990/990-EZ). October 16 application continuation: Pearl Elegance, JHHP and Sunstone live forms begun but incomplete/unsubmitted; blockers recorded. Morgan CARES and LifeStyles prerequisites reviewed and held. Zero new submitted applications or awards. October 16 documents follow-through: prepared Pearl proposal/budget, FY2026 launch-plan reproduction and source-limited financial report. Hopkins request drafted for $10,000, not submitted. Live attachment controls did not open file chooser; tracker does not count these as submitted. October 17 reconciliation: five evidence-backed corrections from Oct 14–17 funder emails; no new awards or formal applications, financial totals unchanged.",
     "statusDefinitions": {
       "Researching": "Fit, route or eligibility still needs research",
@@ -1426,20 +1426,20 @@
       "fit": "High",
       "askAmount": 10000,
       "currency": "USD",
-      "awardedAmount": 0,
-      "status": "Awaiting response",
-      "stage": "Regional Review",
+      "awardedAmount": 500,
+      "status": "Awarded",
+      "stage": "Awarded $500; payment pending",
       "submittedDate": "2026-09-19",
-      "nextDate": "2026-10-31",
-      "nextAction": "Monitor Costco/Benevity for a decision or information request. Application is in Regional Review; Costco indicated a 4–6 week review window.",
-      "notes": "Costco portal shows Regional Review for the House of Manna Community Food Access & Learning Infrastructure Project. Submitted Sept. 19, 2026. Requested amount: $10,000. Regional Review indicates the application remains under consideration; no award has been made.",
+      "nextDate": null,
+      "nextAction": "Await payment; record receipt when confirmed. Track designated project use and outcomes. Obtain Costco approval before public recognition.",
+      "notes": "Costco portal shows Regional Review for the House of Manna Community Food Access & Learning Infrastructure Project. Submitted Sept. 19, 2026. Requested amount: $10,000. Regional Review indicates the application remains under consideration; no award has been made.\nOct. 18, 2026: Costco NE Regional Donations approved $500 for House of Manna Community Food Access & Learning Infrastructure Project, request Ref#2026090470. Email 1a14f7930c320c63. Payment to be sent; not yet received. Partial award versus $10,000 request. Future support depends on measurable results; Costco asks for consultation before public recognition.",
       "portalUrl": "https://www.costco.com/charitable-giving.html",
       "funderUrl": "https://www.costco.com/f/-/communities-giving",
-      "lastUpdated": "2026-09-23",
+      "lastUpdated": "2026-10-18",
       "addedDate": "2026-09-18",
       "applicationUrl": "https://www.costco.com/charitable-giving.html",
       "applicationLinkLabel": "Apply / Instructions",
-      "previousStatus": "Submitted / Pending",
+      "previousStatus": "Awaiting response",
       "originalPrograms": [
         "Food Access & Pantry",
         "Community Development"
