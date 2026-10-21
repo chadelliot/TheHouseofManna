@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "House of Manna Funding Pipeline",
-    "lastUpdated": "2026-10-17",
+    "lastUpdated": "2026-10-21",
     "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications. October 11: environmental projects removed from active pursuit at Chad's direction. Screened 25 new replacement prospects; seven current/conditional/future prospects added, none submitted. Eligibility failures recorded separately in docs/funding/replacement-grant-screening-20261011.md. ShopRite request successfully submitted October 11 following approved retry; one new request submitted toward the 25-application target. October 12 continuation: three portal-support inquiries sent October 11; Benevity ticket 4923065 acknowledged. Standard lookup also failed for a known established charity, so missing-registry conclusions remain unproven. Kroger December review added as an access/verification hold. Count remains one new funding request submitted; technical inquiries excluded. October 12: Chad set submitted-request sourcing targets of $500,000 General Operations and $500,000 Pantry. Nine distinct new leads added; Bob Evans $5,000 financial-support inquiry sent, other eight not submitted. Program names normalized for recent food-access records; no budget or award amount changed. October 14 sync: Regeneron $25,000 LOI declined; Wegmans Hunt Valley $100 gift card approved/pickup pending; prior Fulton $5,000 decline and T. Rowe invitation hold reconciled; Straus LOI review timeline and Benevity lookup guidance recorded; Safeway $5,000 award check deposited but held by bank through Oct. 23 pending clearance. No new cash grant awards. October 16: added 20 new *screened research prospects* for food-pantry rent/warehousing, staffing, utilities, distribution and other operational costs, after duplicate checking. No new application or monetary request submitted. Maryland charitable solicitation number 55451 approved Oct 16; use if a portal requires Secretary of State charity registration; it does not lift startup/partner/fiscal barriers. Most new prospects are conditional, invitation-only, closed, or require volunteers/partners. Do not count them as ready submissions or unrestricted-rent grants. October 16, 2026: Added 20 distinct, primary-source-screened pantry operating funding prospects. All are Researching/On hold; no applications submitted, no requested/awarded dollars assumed. Each records application timing, geographic/partner/service-history constraints and unconfirmed allowable costs. Funding target and master financial budgets unchanged. Follow-up deduplication: five second-batch duplicate opportunities merged into corresponding earlier Oct 16 records (JHHP, Quest Champions, Starbucks, Kaiser, MD BRNI), with five distinct additional conditional funding routes substituted. Count reflects unique opportunity programs; 40 distinct new prospects since initial 226, not 40 immediately eligible applications. Alpha Gamma Delta flagged currently ineligible (3-year establishment + 990/990-EZ). October 16 application continuation: Pearl Elegance, JHHP and Sunstone live forms begun but incomplete/unsubmitted; blockers recorded. Morgan CARES and LifeStyles prerequisites reviewed and held. Zero new submitted applications or awards. October 16 documents follow-through: prepared Pearl proposal/budget, FY2026 launch-plan reproduction and source-limited financial report. Hopkins request drafted for $10,000, not submitted. Live attachment controls did not open file chooser; tracker does not count these as submitted. October 17 reconciliation: five evidence-backed corrections from Oct 14–17 funder emails; no new awards or formal applications, financial totals unchanged.",
     "statusDefinitions": {
       "Researching": "Fit, route or eligibility still needs research",
@@ -2248,19 +2248,19 @@
       "askAmount": null,
       "currency": "USD",
       "awardedAmount": 0,
-      "status": "Awaiting response",
-      "stage": "New Partner Review",
+      "status": "Declined",
+      "stage": "Partner intake declined — limited capacity and existing area coverage",
       "submittedDate": "2026-09-09",
       "nextDate": null,
-      "nextAction": "Await Maryland Food Bank partner review and onboarding instructions.",
-      "notes": "Maryland Food Bank confirmed receipt of House of Manna's New Partner Interest Form on Sept. 9, 2026.",
+      "nextAction": "Seek alternative food supply partners; revisit only if MFB partnership capacity changes.",
+      "notes": "Maryland Food Bank confirmed receipt of House of Manna's New Partner Interest Form on Sept. 9, 2026.\nOct 21, 2026: Maryland Food Bank Regional Program Directors declined New Partner Interest screening form due to limited expansion capacity and existing partners serving the area (email 1a15e7684998195b). This was a partnership decision, not a cash-grant decision.",
       "portalUrl": null,
       "funderUrl": "https://mdfoodbank.org/",
       "applicationUrl": "https://mdfoodbank.org/",
       "applicationLinkLabel": "Partner Info",
       "addedDate": "2026-09-21",
-      "lastUpdated": "2026-09-21",
-      "previousStatus": "Partner Interest Submitted / Pending",
+      "lastUpdated": "2026-10-21",
+      "previousStatus": "Awaiting response",
       "originalPrograms": [
         "Food Access & Pantry",
         "Mobile Distribution",
@@ -3865,15 +3865,15 @@
       ],
       "askAmount": null,
       "currency": "USD",
-      "status": "Awaiting response",
-      "stage": "Eligibility inquiry submitted",
+      "status": "On hold",
+      "stage": "Ineligible for 2026 — Southern California prior-grantee schools only",
       "submittedDate": "2026-10-05",
-      "nextDate": "2026-10-19",
-      "nextAction": "Await clarification of independent nonprofit and Maryland eligibility before submitting a STEM grant application.",
-      "notes": "50-prospect review (Oct. 4, 2026). Published funding guidance: $1,000–$10,000. Timing: Rolling; monthly review. Program fit: AI / coding / STEM learning. No application submitted in this research.\nOctober 5: Rechecked official application page. It welcomes nonprofit education programs but also states grants only available to public educational institutions. House is a community nonprofit; eligibility cannot be asserted. No application submitted.\nOctober 5: submitted official website contact form asking whether an independent Baltimore community 501(c)(3) without a confirmed public-school partnership qualifies, whether a school applicant/partner is required, and whether Maryland is within geographic scope. Website confirmed: Thank you for your message; team will reply to inquiry email. This is an eligibility inquiry, not a full grant application. No dollar amount requested; askAmount remains null.",
+      "nextDate": null,
+      "nextAction": "Recheck future-cycle eligibility; 2026 grants restricted to previously supported Southern California schools.",
+      "notes": "50-prospect review (Oct. 4, 2026). Published funding guidance: $1,000–$10,000. Timing: Rolling; monthly review. Program fit: AI / coding / STEM learning. No application submitted in this research.\nOctober 5: Rechecked official application page. It welcomes nonprofit education programs but also states grants only available to public educational institutions. House is a community nonprofit; eligibility cannot be asserted. No application submitted.\nOctober 5: submitted official website contact form asking whether an independent Baltimore community 501(c)(3) without a confirmed public-school partnership qualifies, whether a school applicant/partner is required, and whether Maryland is within geographic scope. Website confirmed: Thank you for your message; team will reply to inquiry email. This is an eligibility inquiry, not a full grant application. No dollar amount requested; askAmount remains null.\nOct 20, 2026: Foundation Grants Director confirmed 2026 awards restricted to previously supported Southern California schools. NGO support generally must benefit qualifying public schools with >70% free/reduced-price lunches (email 1a159d44944640ed). Inquiry only; no application submitted.",
       "portalUrl": null,
       "funderUrl": "https://www.robnettfoundation.org/apply",
-      "lastUpdated": "2026-10-05",
+      "lastUpdated": "2026-10-20",
       "supportType": "Grant",
       "fit": "Medium",
       "awardedAmount": 0,
@@ -3882,7 +3882,8 @@
       "applicationLinkLabel": "Grant Details",
       "subcategories": [
         "Education & Economic Opportunity"
-      ]
+      ],
+      "previousStatus": "Awaiting response"
     },
     {
       "id": "discovere-engineers-week-outreach-grant-prospect-2026",
