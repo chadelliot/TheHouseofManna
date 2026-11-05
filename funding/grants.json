@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "House of Manna Funding Pipeline",
-    "lastUpdated": "2026-10-30",
+    "lastUpdated": "2026-11-05",
     "note": "Internal management view. Date Added reflects when an opportunity was first added to this tracker, not when the application was submitted. Pantry food-source prospects added Sept. 23, 2026 were screened for the ability to provide inventory House of Manna can hold for scheduled pantry distributions; prepared-meal and immediate-redistribution-only programs were excluded. Twenty additional cash-grant prospects for the pantry and Youth Innovation Lab were added Oct. 3, 2026, including five Versaic opportunities and deadline-driven fall 2026 applications. October 11: environmental projects removed from active pursuit at Chad's direction. Screened 25 new replacement prospects; seven current/conditional/future prospects added, none submitted. Eligibility failures recorded separately in docs/funding/replacement-grant-screening-20261011.md. ShopRite request successfully submitted October 11 following approved retry; one new request submitted toward the 25-application target. October 12 continuation: three portal-support inquiries sent October 11; Benevity ticket 4923065 acknowledged. Standard lookup also failed for a known established charity, so missing-registry conclusions remain unproven. Kroger December review added as an access/verification hold. Count remains one new funding request submitted; technical inquiries excluded. October 12: Chad set submitted-request sourcing targets of $500,000 General Operations and $500,000 Pantry. Nine distinct new leads added; Bob Evans $5,000 financial-support inquiry sent, other eight not submitted. Program names normalized for recent food-access records; no budget or award amount changed. October 14 sync: Regeneron $25,000 LOI declined; Wegmans Hunt Valley $100 gift card approved/pickup pending; prior Fulton $5,000 decline and T. Rowe invitation hold reconciled; Straus LOI review timeline and Benevity lookup guidance recorded; Safeway $5,000 award check deposited but held by bank through Oct. 23 pending clearance. No new cash grant awards. October 16: added 20 new *screened research prospects* for food-pantry rent/warehousing, staffing, utilities, distribution and other operational costs, after duplicate checking. No new application or monetary request submitted. Maryland charitable solicitation number 55451 approved Oct 16; use if a portal requires Secretary of State charity registration; it does not lift startup/partner/fiscal barriers. Most new prospects are conditional, invitation-only, closed, or require volunteers/partners. Do not count them as ready submissions or unrestricted-rent grants. October 16, 2026: Added 20 distinct, primary-source-screened pantry operating funding prospects. All are Researching/On hold; no applications submitted, no requested/awarded dollars assumed. Each records application timing, geographic/partner/service-history constraints and unconfirmed allowable costs. Funding target and master financial budgets unchanged. Follow-up deduplication: five second-batch duplicate opportunities merged into corresponding earlier Oct 16 records (JHHP, Quest Champions, Starbucks, Kaiser, MD BRNI), with five distinct additional conditional funding routes substituted. Count reflects unique opportunity programs; 40 distinct new prospects since initial 226, not 40 immediately eligible applications. Alpha Gamma Delta flagged currently ineligible (3-year establishment + 990/990-EZ). October 16 application continuation: Pearl Elegance, JHHP and Sunstone live forms begun but incomplete/unsubmitted; blockers recorded. Morgan CARES and LifeStyles prerequisites reviewed and held. Zero new submitted applications or awards. October 16 documents follow-through: prepared Pearl proposal/budget, FY2026 launch-plan reproduction and source-limited financial report. Hopkins request drafted for $10,000, not submitted. Live attachment controls did not open file chooser; tracker does not count these as submitted. October 17 reconciliation: five evidence-backed corrections from Oct 14–17 funder emails; no new awards or formal applications, financial totals unchanged. October 26: Society of St. Andrew coordinator offered to explore a Baltimore frozen-food donor; House of Manna replied with limited freezer capacity and handling guidance. Track as awaiting donor coordination, not a confirmed food donation or award. No financial change. October 27: reconciled Food Lion Feeds affiliation dependency and Giant Food next action with Maryland Food Bank's verified October 21 partner-intake decline; statuses remain On hold and Declined respectively, with no new applications or awards.",
     "statusDefinitions": {
       "Researching": "Fit, route or eligibility still needs research",
@@ -784,6 +784,27 @@
       ],
       "submitted": 0,
       "note": "New additions are screened leads, not claims of 40 open or qualified grant applications; restricted/partner-based/noncash pathways explicitly labeled. Operational rent eligible only when confirmed."
+    },
+    "latestUnrestrictedOperatingProspectReconciliation": {
+      "date": "2026-11-05",
+      "sourceCandidates": 20,
+      "previousRecords": 266,
+      "alreadyTrackedDistinctOpportunities": 8,
+      "newScreeningRecords": 12,
+      "currentTotal": 278,
+      "previousDeclinesPreserved": [
+        "Baltimore City Community Grants",
+        "Abell Foundation",
+        "Goldseker Foundation"
+      ],
+      "statusOfNewRecords": {
+        "notPursuing": 10,
+        "onHold": 2
+      },
+      "highlight": "Baltimore Women's Giving Circle 2027 intake open, eligibility unverified; no application or email sent",
+      "publicPage": "https://houseofmannamd.com/funding/",
+      "noClaimsOfSubmission": true,
+      "notes": "Operating/food-security programs prioritized. Geographic exclusions remain screened records. Do not count unsubmitted asks as pending; Bank of America Neighborhood Builders distinct from Basic Needs RFP."
     }
   },
   "grants": [
@@ -4330,17 +4351,17 @@
       ],
       "askAmount": 25000,
       "currency": "USD",
-      "status": "On hold",
-      "stage": "November cycle and defined eligible participant program required",
+      "status": "Researching",
+      "stage": "2027 application OPEN — participant eligibility not yet established",
       "submittedDate": null,
-      "nextDate": null,
-      "nextAction": "Interactive 2027 application Nov. 1–Dec. 15, 2026; confirm program eligibility first.",
-      "notes": "50-prospect review (Oct. 4, 2026). Published funding guidance: Amount: verify 2027 application guide. Timing: Interactive portal Nov. 1–Dec. 15, 2026, 5 p.m.. Program fit: Women / adolescent girls / families. No application submitted in this research. Application readiness review: prerequisite not established in current House of Manna facts. No application submitted.\nOctober 6 pantry operating-support review: Unrestricted general operating or project support. Future cycle; participant fit conditional. Women/families must meet current program criteria; actual participant demographics not yet established. Interactive 2027 application Nov. 1–Dec. 15, 2026; confirm program eligibility first. Listed $25000 is proposed for an unsent operating request or the unchanged existing request; not a new submitted full application. Source: https://www.thebwgc.org/apply_for_a_grant",
+      "nextDate": "2026-12-15",
+      "nextAction": "URGENT: Verify actual Baltimore City/County service population, women/girls/families eligibility (including 75% women priority for mixed adult populations), program access without mandatory religious participation, and 2027 delivery plan. If qualified, prepare application by Dec 15, 2026 at 5 p.m. ET. Do not submit before eligibility is documented.",
+      "notes": "50-prospect review (Oct. 4, 2026). Published funding guidance: Amount: verify 2027 application guide. Timing: Interactive portal Nov. 1–Dec. 15, 2026, 5 p.m.. Program fit: Women / adolescent girls / families. No application submitted in this research. Application readiness review: prerequisite not established in current House of Manna facts. No application submitted.\nOctober 6 pantry operating-support review: Unrestricted general operating or project support. Future cycle; participant fit conditional. Women/families must meet current program criteria; actual participant demographics not yet established. Interactive 2027 application Nov. 1–Dec. 15, 2026; confirm program eligibility first. Listed $25000 is proposed for an unsent operating request or the unchanged existing request; not a new submitted full application. Source: https://www.thebwgc.org/apply_for_a_grant\nNov. 5, 2026 reconciliation: Official 2027 grant application is open November 1–December 15, 2026. Up to $25,000 general operating or project funding; priority for women/girls 12–18 and children 11 or under. House of Manna's participant mix and proposed recipient demographics have NOT been verified; no new request sent. Treat listed $25,000 as an unsent planning amount, not booked or requested funding. Official guide: https://www.thebwgc.org/apply_for_a_grant",
       "portalUrl": null,
       "funderUrl": "https://www.thebwgc.org/apply_for_a_grant",
-      "lastUpdated": "2026-10-06",
+      "lastUpdated": "2026-11-05",
       "supportType": "Grant",
-      "fit": "Medium",
+      "fit": "Conditional — open 2027 intake; participant fit unverified",
       "awardedAmount": 0,
       "addedDate": "2026-10-04",
       "applicationUrl": "https://www.thebwgc.org/apply_for_a_grant",
@@ -9273,6 +9294,378 @@
       "fit": "Conditional / specific constraints",
       "addedDate": "2026-10-16",
       "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "dresher-foundation-general-operating-screen-20261105",
+      "funder": "Dresher Foundation",
+      "opportunity": "General Operating / Human Services",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not pursuing",
+      "stage": "Harford County activity requirement not established",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Do not apply until House of Manna documents that it is based in or manages significant activity in Harford County.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. Official eligibility requires organization based in or managing significant activities in Harford County; House of Manna's currently documented Baltimore operation does not establish this. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://www.dresherfoundation.org/apply-for-a-grant/guidelines/",
+      "funderUrl": "https://www.dresherfoundation.org/apply-for-a-grant/guidelines/",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Low — geography",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://www.dresherfoundation.org/apply-for-a-grant/guidelines/",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "C",
+      "subcategories": [
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "howard-community-grants-operating-screen-20261105",
+      "funder": "Community Foundation of Howard County",
+      "opportunity": "Community Grants — Food Security / Flexible Support",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not pursuing",
+      "stage": "Howard County service requirement not established; 2026 cycle closed",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Do not apply absent verified Howard County beneficiary/service footprint; 2026 deadline was Nov 2; revisit only with documented Howard County activity.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. Official funding is for nonprofits serving Howard County. Baltimore operations do not establish Howard County service; 2026 applications closed November 2. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://cfhoco.org/2026-community-grants/",
+      "funderUrl": "https://cfhoco.org/2026-community-grants/",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Low — geography",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://cfhoco.org/2026-community-grants/",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "C",
+      "subcategories": [
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "ausherman-general-operating-screen-20261105",
+      "funder": "Ausherman Family Foundation",
+      "opportunity": "General Grants — Operating Costs",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not pursuing",
+      "stage": "Frederick County service requirement not established",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "No application unless House of Manna documents qualifying services to Frederick County residents, and board giving / other eligibility.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. Published criteria require serving Frederick County residents, board giving and other conditions; currently no Frederick County activities documented. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://www.aushermanfamilyfoundation.org/grants/general-grants/",
+      "funderUrl": "https://www.aushermanfamilyfoundation.org/grants/general-grants/",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Low — geography",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://www.aushermanfamilyfoundation.org/grants/general-grants/",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "C",
+      "subcategories": [
+        "Community Facilities & Capacity"
+      ]
+    },
+    {
+      "id": "ausherman-idea-operating-screen-20261105",
+      "funder": "Ausherman Family Foundation",
+      "opportunity": "IDEA Grants — Traditional General Operating",
+      "program": "Youth Innovation Lab",
+      "programs": [
+        "Youth Innovation Lab"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not pursuing",
+      "stage": "Frederick footprint and leadership qualification unverified; July cycle closed",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Do not apply: Frederick County service is unverified; leadership identity and 100% board giving must not be presumed. Recheck future July cycle only if verified.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. Distinct grant program from Ausherman's General Grants. Requires Frederick County service and Black-led eligibility, which have not been documented. Do not infer leadership characteristics. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://www.aushermanfamilyfoundation.org/grants/idea-grants/",
+      "funderUrl": "https://www.aushermanfamilyfoundation.org/grants/idea-grants/",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Low — geography and eligibility",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://www.aushermanfamilyfoundation.org/grants/idea-grants/",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "C",
+      "subcategories": [
+        "Education & Economic Opportunity"
+      ]
+    },
+    {
+      "id": "delaplaine-operating-screen-20261105",
+      "funder": "Delaplaine Foundation",
+      "opportunity": "Possible General Operating / Human Needs Support",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not pursuing",
+      "stage": "Limited operating support; Frederick geographic fit unverified",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Do not pursue a generic pantry/operating ask without verified Frederick-area service and funder confirmation that unrestricted support is available.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. Frederick-centric philanthropy; public guidance allows general operating only in limited cases, not a reliably open unrestricted program. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://delaplainefoundation.org/what-we-support/",
+      "funderUrl": "https://delaplainefoundation.org/what-we-support/",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Low — footprint and operating fit",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://delaplainefoundation.org/what-we-support/",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "C",
+      "subcategories": [
+        "Community Facilities & Capacity"
+      ]
+    },
+    {
+      "id": "cafritz-operating-screen-20261105",
+      "funder": "Morris and Gwendolyn Cafritz Foundation",
+      "opportunity": "General Operating Grants",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not pursuing",
+      "stage": "Washington-region Maryland service requirement not established",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Do not apply unless substantive direct service in Montgomery or Prince George's County is documented; confirm revenue/operating-history thresholds.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. Prior description targets Montgomery and Prince George's counties in Maryland, not Baltimore. Organization needs at least one year of operation and $100,000 revenue per published rules (verify latest). No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://cafritzfoundation.org/apply/application-process/",
+      "funderUrl": "https://cafritzfoundation.org/apply/application-process/",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Low — geography",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://cafritzfoundation.org/apply/application-process/",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "C",
+      "subcategories": [
+        "Community Facilities & Capacity"
+      ]
+    },
+    {
+      "id": "philip-graham-fund-operating-screen-20261105",
+      "funder": "Philip L. Graham Fund",
+      "opportunity": "General Operating / Health & Human Services LOI",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not pursuing",
+      "stage": "Geographic mismatch despite December 1 LOI deadline",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Do not submit December 1, 2026 LOI without verified service to Charles, Montgomery or Prince George's County (or other eligible DC-area locations).",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. Official giving footprint in Maryland is Charles, Montgomery and Prince George's counties. The December 1, 2026 6 p.m. ET LOI is currently open, but the Baltimore program is outside service geography. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://plgrahamfund.org/eligibility/",
+      "funderUrl": "https://plgrahamfund.org/eligibility/",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Low — geography",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://plgrahamfund.org/eligibility/",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "C",
+      "subcategories": [
+        "Food Security & Basic Needs"
+      ]
+    },
+    {
+      "id": "bank-of-america-neighborhood-builders-2027-screen-20261105",
+      "funder": "Bank of America",
+      "opportunity": "Neighborhood Builders Leadership & Operating Support",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "On hold",
+      "stage": "2026 closed; spring 2027 cycle announced",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Watch spring 2027 Neighborhood Builders criteria for Maryland; validate operating history, organizational scale and location. Keep SEPARATE from existing Bank of America Basic Needs RFP.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. Separate leadership-development and organizational support opportunity from Bank of America's existing Basic Needs & Income Creation RFP record. 2026 applications closed; spring 2027 announced, criteria/amount must be reverified. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://about.bankofamerica.com/en/making-an-impact/grant-funding-for-nonprofits-sponsorship-programs",
+      "funderUrl": "https://about.bankofamerica.com/en/making-an-impact/grant-funding-for-nonprofits-sponsorship-programs",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Conditional — next cycle; leadership and market fit",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://about.bankofamerica.com/en/making-an-impact/grant-funding-for-nonprofits-sponsorship-programs",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "B",
+      "subcategories": [
+        "Community Facilities & Capacity"
+      ]
+    },
+    {
+      "id": "cfes-black-excellence-fund-screen-20261105",
+      "funder": "Community Foundation of the Eastern Shore",
+      "opportunity": "Black Excellence Community Fund",
+      "program": "Youth Innovation Lab",
+      "programs": [
+        "Youth Innovation Lab"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not pursuing",
+      "stage": "Eastern Shore geographic and program/leadership fit unverified",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Do not pursue absent an Eastern Shore service presence, verified mission fit, and applicable leadership eligibility.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. Eastern Shore regional giving circle prioritizing African American-led community organizations and youth/senior outcomes. Baltimore operations do not establish this footprint; do not infer leadership identity. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://www.cfes.org/becf",
+      "funderUrl": "https://www.cfes.org/becf",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Low — geography and mission",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://www.cfes.org/becf",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "C",
+      "subcategories": [
+        "Education & Economic Opportunity"
+      ]
+    },
+    {
+      "id": "backblack-impact-grants-2027-screen-20261105",
+      "funder": "BackBlack Movement",
+      "opportunity": "BackBlack Impact Grant — Future Cycle",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "On hold",
+      "stage": "2026 closed; national future cycle not announced",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Monitor for a 2027 cycle. Confirm Black-led directory eligibility if appropriate and prepare an August fundraising campaign only after next-cycle rules are published.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. 2026 program offered four $5,000 unrestricted awards. 2026 application closed August 31; required verified BackBlack Directory listing and active August 2026 fundraising campaign. No 2027 cycle established. Do not assume leadership eligibility. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://backblackmovement.org/impact-grants",
+      "funderUrl": "https://backblackmovement.org/impact-grants",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Conditional — verification and next cycle",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://backblackmovement.org/impact-grants",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "B",
+      "subcategories": [
+        "Community Facilities & Capacity"
+      ]
+    },
+    {
+      "id": "meyer-foundation-core-operating-screen-20261105",
+      "funder": "Meyer Foundation",
+      "opportunity": "Core General Operating Grants",
+      "program": "General Operations",
+      "programs": [
+        "General Operations"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not pursuing",
+      "stage": "Greater Washington footprint and organizing mission mismatch",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Do not apply for standalone Baltimore food distribution. Reassess only for substantive, documented Greater Washington organizing/systems-change work.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. This is the Greater Washington Meyer Foundation, DISTINCT from the already tracked Meyerhoff foundations. Maryland service geography is Montgomery / Prince George's County and strategic focus is organizing/systems change. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://meyerfoundation.org/our-grantmaking/",
+      "funderUrl": "https://meyerfoundation.org/our-grantmaking/",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Low — geography and strategy",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://meyerfoundation.org/our-grantmaking/",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "C",
+      "subcategories": [
+        "Community Facilities & Capacity"
+      ]
+    },
+    {
+      "id": "frederick-county-feed-screen-20261105",
+      "funder": "Frederick County FEED Grant Program",
+      "opportunity": "Food Equity and Emergency Distribution (FEED)",
+      "program": "Pantry",
+      "programs": [
+        "Pantry"
+      ],
+      "askAmount": null,
+      "currency": "USD",
+      "status": "Not pursuing",
+      "stage": "Frederick residency threshold not met on known facts; 2026 round closed",
+      "submittedDate": null,
+      "nextDate": null,
+      "nextAction": "Do not apply unless at least 51% of proposed program beneficiaries are documented Frederick County residents; 2026 application round is closed.",
+      "notes": "Nov. 5, 2026 screening of 20 potential unrestricted/operating funders. Official program supports food-service operating expenses and refrigeration, but at least 51% of program participants must be Frederick County residents; no qualifying House of Manna program verified. No application or outreach sent. No proposed ask assigned; an amount can be set only after geography, operating-history, program, and current intake are verified. This is a research record, not pending revenue.",
+      "portalUrl": "https://frederickcountymd.gov/9166/Food-Equity-and-Emergency-Distribution-G",
+      "funderUrl": "https://frederickcountymd.gov/9166/Food-Equity-and-Emergency-Distribution-G",
+      "lastUpdated": "2026-11-05",
+      "supportType": "Unrestricted/operating grant prospect — not submitted",
+      "fit": "Low — geography",
+      "awardedAmount": 0,
+      "addedDate": "2026-11-05",
+      "applicationUrl": "https://frederickcountymd.gov/9166/Food-Equity-and-Emergency-Distribution-G",
+      "applicationLinkLabel": "Official funding guidelines",
+      "researchBatch": "unrestricted-operating-20-20261105",
+      "researchPriority": "C",
+      "subcategories": [
+        "Food Security & Basic Needs"
+      ]
     }
   ]
 }
