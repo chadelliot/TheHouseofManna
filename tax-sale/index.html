@@ -240,6 +240,15 @@
 .ts-statusbar{margin-top:28px;font-size:11px;color:#65736e}
 @media(max-width:1000px){.ts-market-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ts-overview{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.ts-hero{padding:136px 22px 82px}.ts-hero h1{font-size:52px}.ts-body{padding:28px 17px 60px}.ts-bundle-grid,.ts-property-grid,.ts-market-grid,.ts-method-grid{grid-template-columns:1fr}.ts-overview{margin-top:-58px;gap:9px}.ts-kpi{min-height:110px;padding:17px}.ts-kpi strong{font-size:30px}.ts-kpi small{font-size:9px}.ts-section{margin-top:42px}.ts-toolbar input,.ts-toolbar select{flex:auto;width:100%}.ts-method{padding:25px}.ts-metrics{padding:13px 16px}.ts-bundle-top{padding:18px}.ts-bundle-links{padding:16px}.ts-details{padding:0 15px 15px}}
+
+.ts-archive{padding:23px;background:white;border:1px solid #e2e6de;border-radius:12px}
+.ts-archive h3{font-family:Anton,Impact,sans-serif;font-size:28px;margin:9px 0 5px;color:#172334}
+.ts-archive-meta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:12px 0 14px}
+.ts-archive-meta strong{font-size:18px}.ts-archive-meta small{font-size:11px;color:#657270}
+.ts-archive p{font-size:12px;line-height:1.7;color:#54646b}
+.ts-archive address{font-style:normal;font-size:12px;color:#5a6b71;margin:12px 0}
+.ts-archive address a{color:#1d5873;text-decoration:none;font-weight:700}
+.ts-archive .ts-badge{display:inline-flex}
 </style></head><body><nav class="site-nav">
     <div class="nav-inner">
       <ul class="nav-left">
@@ -308,7 +317,7 @@
       </div>
       <div class="ts-toolbar" role="search" aria-label="Filter investment opportunities">
         <input id="tsSearch" type="search" placeholder="Search county, address, bundle ID..." aria-label="Search"/>
-        <select id="tsState" aria-label="Filter state"><option value="">All states</option><option value="MD">Maryland</option><option value="DE">Delaware</option><option value="CT">Connecticut</option></select>
+        <select id="tsState" aria-label="Filter state"><option value="">All states</option><option value="MD">Maryland</option><option value="DE">Delaware</option><option value="CT">Connecticut</option><option value="OH">Ohio</option><option value="MI">Michigan</option></select>
         <select id="tsType" aria-label="Filter asset type"><option value="">Any acquisition type</option><option value="lien">Tax-lien interests</option><option value="deed">Property / deed interests</option></select>
       </div>
       <div id="tsBundles" class="ts-bundle-grid" style="margin-top:17px" aria-live="polite"></div>
@@ -318,6 +327,13 @@
         <p>The county catalogs reviewed have not established a new offer to buy multiple properties together. We will not turn auction batches or lists of unrelated tax liens into false “bundles.”</p>
         <a href="#ts-markets">Explore the official county sources ↓</a>
       </div>
+    </section>
+    
+    <section class="ts-section" id="ts-archive" data-theme="light">
+      <div class="ts-section-head">
+        <div><div class="ts-eyebrow">Closed sale examples · verified auction catalogs</div><h2>WHAT REAL BUNDLES LOOK LIKE</h2><p>These 2026 Michigan group lots are no longer open for bidding. They illustrate the multi-property packages we track and include direct links to individual parcel lists, not just auction summaries.</p></div>
+      </div>
+      <div id="tsArchives" class="ts-bundle-grid" aria-live="polite"></div>
     </section>
     <section class="ts-section" id="ts-markets" data-theme="light">
       <div class="ts-section-head">
@@ -351,7 +367,7 @@ const noteVal=(x,label)=>x!=null?money(x):'Not assessed';
 let data={bundles:[],watchMarkets:[],meta:{}};
 const filters={search:'',state:'',type:''};
 function date(d){ if(!d)return 'Not specified';const x=new Date(d+'T12:00:00');return isNaN(x)?String(d):x.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});}
-function eligible(b){return b&&b.verifiedBundle===true&&b.officialSourceUrl&&(b.parcels||[]).length>=2;}
+function eligible(b){return b&&b.verifiedBundle===true&&b.officialSourceUrl&&((b.parcels||[]).length>=2||(Number(b.parcelCount)>=2&&b.parcelScheduleInOfficialSource===true));}
 function matches(b){
 const words=[b.name,b.county,b.state,b.id,...(b.parcels||[]).map(x=>x.address)].join(' ').toLowerCase();
 return (!filters.search||words.includes(filters.search))&&(!filters.state||b.state===filters.state)&&(!filters.type||String(b.acquisitionType||'').toLowerCase().includes(filters.type));
@@ -370,19 +386,27 @@ return '<article class="ts-property"><div class="ts-photo">'+photo+'</div><div c
 function bundleCard(b,i){
 const isLien=String(b.acquisitionType||'').toLowerCase().includes('lien');
 const parcelRows=(b.parcels||[]).map(p=>'<tr><td>'+esc(p.address||'Address pending')+'</td><td>'+esc(p.parcelId||'—')+'</td><td>'+money(p.asIsMarketValue)+'</td><td>'+money(p.afterRepairValue)+'</td><td>'+money(p.rehabEstimate)+'</td></tr>').join('');
-const details='<div class="ts-details" id="tsDetail'+i+'" hidden><div class="ts-brief"><strong>What is being acquired:</strong> '+esc(b.acquisitionDescription||b.acquisitionType||'Requires legal review')+'<br><strong>Material risks:</strong> '+esc(b.risks||'Redemption, title, occupancy, physical condition and fees must be reviewed.')+'<br><strong>Deadline:</strong> '+esc(b.deadline?date(b.deadline):'Not announced')+'</div><div class="ts-table-scroll"><table class="ts-table"><thead><tr><th>Street address</th><th>Parcel ID</th><th>As-is market</th><th>ARV</th><th>Rehab</th></tr></thead><tbody>'+parcelRows+'</tbody></table></div><div class="ts-property-grid">'+(b.parcels||[]).map(parcelCard).join('')+'</div></div>';
-return '<article class="ts-bundle"><div class="ts-bundle-top"><div><span class="ts-badge">'+esc(b.state)+' · '+esc(b.county)+'</span><h3>'+esc(b.name||b.id||'Verified package')+'</h3><p>'+esc(b.summary||'Multi-parcel acquisition confirmed in official notice.')+'</p></div><span class="ts-badge ts-badge-amber">'+(isLien?'Tax-lien interest':'Property / deed interest')+'</span></div><div class="ts-metrics"><div><small>Parcels</small><strong>'+b.parcels.length+'</strong></div><div><small>Minimum total bid</small><strong>'+money(b.minimumBid)+'</strong></div><div><small>Deadline</small><strong>'+esc(date(b.deadline))+'</strong></div></div><div class="ts-bundle-links"><button class="ts-btn" type="button" aria-controls="tsDetail'+i+'" aria-expanded="false" data-toggle="'+i+'">Review parcels ▾</button>'+link(b.officialSourceUrl,'Official auction / catalog','ts-btn ts-btn-alt')+'</div>'+details+'</article>';
+const details='<div class="ts-details" id="tsDetail'+i+'" hidden><div class="ts-brief"><strong>What is being acquired:</strong> '+esc(b.acquisitionDescription||b.acquisitionType||'Requires legal review')+'<br><strong>Material risks:</strong> '+esc(b.risks||'Redemption, title, occupancy, physical condition and fees must be reviewed.')+'<br><strong>Deadline:</strong> '+esc(b.deadline?date(b.deadline):'Not announced')+'</div><div class="ts-table-scroll"><table class="ts-table"><thead><tr><th>Street address</th><th>Parcel ID</th><th>As-is market</th><th>ARV</th><th>Rehab</th></tr></thead><tbody>'+parcelRows+'</tbody></table></div><div class="ts-property-grid">'+(b.parcels||[]).map(parcelCard).join('')+'</div>'+(!(b.parcels||[]).length?'<p class="ts-note">The official RFP contains a parcel schedule, but individual address records have not yet been imported or verified. '+link(b.parcelScheduleUrl||b.officialSourceUrl,'Open official parcel schedule')+'</p>':'')+'</div>;
+return '<article class="ts-bundle"><div class="ts-bundle-top"><div><span class="ts-badge">'+esc(b.state)+' · '+esc(b.county)+'</span><h3>'+esc(b.name||b.id||'Verified package')+'</h3><p>'+esc(b.summary||'Multi-parcel acquisition confirmed in official notice.')+'</p></div><span class="ts-badge ts-badge-amber">'+(isLien?'Tax-lien interest':'Property / deed interest')+'</span></div><div class="ts-metrics"><div><small>Parcels</small><strong>'+(b.parcelCount||(b.parcels||[]).length)+'</strong></div><div><small>Minimum total bid</small><strong>'+(b.minimumBid!=null?money(b.minimumBid):'Final amount pending')+'</strong></div><div><small>Deadline</small><strong>'+esc(date(b.deadline))+'</strong></div></div><div class="ts-bundle-links"><button class="ts-btn" type="button" aria-controls="tsDetail'+i+'" aria-expanded="false" data-toggle="'+i+'">Review parcels ▾</button>'+link(b.officialSourceUrl,'Official auction / catalog','ts-btn ts-btn-alt')+'</div>'+details+'</article>';
 }
 function render(){
 const bs=(data.bundles||[]).filter(eligible).filter(matches);
 $('tsCount').textContent=(data.bundles||[]).filter(eligible).length;
-$('tsParcelCount').textContent=(data.bundles||[]).filter(eligible).reduce((s,b)=>s+(b.parcels||[]).length,0);
+$('tsParcelCount').textContent=(data.bundles||[]).filter(eligible).reduce((s,b)=>s+(b.parcelCount||(b.parcels||[]).length),0);
 $('tsMarketCount').textContent=(data.watchMarkets||[]).length;
 $('tsBundles').innerHTML=bs.map(bundleCard).join('');
 $('tsEmpty').hidden=bs.length>0;
 if(!bs.length){const h=$('tsEmpty').querySelector('h3'),p=$('tsEmpty').querySelector('p');h.textContent=(data.bundles||[]).some(eligible)?'NO BUNDLES MATCH THE FILTERS':'NO VERIFIED ACTIVE BUNDLES YET';p.textContent=(data.bundles||[]).some(eligible)?'Try a different search, state, or acquisition type.':'The county catalogs reviewed have not established a new offer to buy multiple properties together. We will not turn auction batches or lists of unrelated tax liens into false “bundles.”';}
 $('tsCsv').disabled=bs.length===0;
 $('tsBundles').querySelectorAll('[data-toggle]').forEach(btn=>btn.addEventListener('click',()=>{const d=$('tsDetail'+btn.dataset.toggle);d.hidden=!d.hidden;btn.setAttribute('aria-expanded',String(!d.hidden));btn.textContent=d.hidden?'Review parcels ▾':'Hide parcels ▴';}));
+}
+
+function renderArchive(){
+const items=data.archiveExamples||[];
+$('tsArchives').innerHTML=items.map(a=>{
+const addr=(a.sampleParcels||[]).map(p=>'<div>'+link('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.address+', '+(a.county||'')+', '+a.state),p.address,'ts-comp-link')+(p.parcelId?' <span style="color:#6a7375">('+esc(p.parcelId)+')</span>':'')+'</div>').join('');
+return '<article class="ts-archive"><span class="ts-badge">'+esc(a.state)+' · '+esc(a.county)+' · CLOSED '+esc(a.auctionDate)+'</span><h3>'+esc(a.name)+'</h3><div class="ts-archive-meta"><div><small>Advertised parcels</small><strong>'+esc(a.parcelCountLabel||a.parcelCount)+'</strong></div><div><small>Historical minimum bid</small><strong>'+money(a.minimumBid)+'</strong></div></div><p>'+esc(a.note)+'</p><address>'+addr+'</address>'+link(a.officialSourceUrl,'Full auction parcel catalog','ts-btn ts-btn-alt')+'</article>';
+}).join('');
 }
 function renderMarkets(){
 $('tsMarkets').innerHTML=(data.watchMarkets||[]).sort((a,b)=>a.priority-b.priority).map(m=>'<article class="ts-market"><div class="ts-market-title"><div><h3>'+esc(m.county)+'</h3><small>'+esc(m.state)+' · '+esc(m.kind||'Official listings')+'</small></div><span class="ts-priority ts-priority-'+esc(m.priority)+'">Priority '+esc(m.priority)+'</span></div><p>'+esc(m.note||'Verify current county sale terms.')+'</p>'+link(m.sourceUrl,'Open official source')+'</article>').join('');
@@ -397,6 +421,6 @@ $('tsSearch').addEventListener('input',e=>{filters.search=e.target.value.trim().
 $('tsState').addEventListener('change',e=>{filters.state=e.target.value;render();});
 $('tsType').addEventListener('change',e=>{filters.type=e.target.value;render();});
 $('tsCsv').addEventListener('click',csv);
-fetch('./data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Data not available');return r.json()}).then(d=>{data=d;$('tsUpdated').textContent=date(d.meta?.verifiedThrough||d.meta?.updated);renderMarkets();render();}).catch(()=>{$('tsMarkets').innerHTML='<p role="alert">Unable to load the county list. <a href="https://dat.maryland.gov/Pages/Tax-Sale-Schedule.aspx" target="_blank" rel="noopener noreferrer">Open the Maryland state tax-sale schedule ↗</a>.</p>';render();});
+fetch('./data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Data not available');return r.json()}).then(d=>{data=d;$('tsUpdated').textContent=date(d.meta?.verifiedThrough||d.meta?.updated);renderMarkets();renderArchive();render();}).catch(()=>{$('tsMarkets').innerHTML='<p role="alert">Unable to load the county list. <a href="https://dat.maryland.gov/Pages/Tax-Sale-Schedule.aspx" target="_blank" rel="noopener noreferrer">Open the Maryland state tax-sale schedule ↗</a>.</p>';render();});
 })();
 </script><script>(function(){const b=document.body,menu=document.getElementById('navMobilePanel'),btn=document.getElementById('navHamburgerBtn'),close=document.getElementById('navMobilePanelClose');function sync(){b.classList.toggle('deep-scroll',window.scrollY>160)}sync();addEventListener('scroll',sync,{passive:true});btn?.addEventListener('click',()=>{menu.classList.add('is-open');btn.setAttribute('aria-expanded','true')});close?.addEventListener('click',()=>{menu.classList.remove('is-open');btn?.setAttribute('aria-expanded','false')});menu?.querySelectorAll('a').forEach(x=>x.addEventListener('click',()=>menu.classList.remove('is-open')));})();</script></body></html>
