@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "Tax Sale Investment Research",
+    "title": "Maryland Property Deal Watch",
     "updated": "2026-11-13",
     "verifiedThrough": "2026-11-12",
     "disclaimer": "Research aid only. A tax lien is not ownership of a property. No listing shown as a bundle without official current documentation. Value estimates require comps and a dated method. This independent research page is not an offer, charitable program, or use of charitable funds.",
     "imagePolicy": "Property photographs must be licensed or supplied by authorized auction sources. Google Street View opens on Google Maps; Google imagery is not downloaded or rehosted.",
-    "summary": "Maryland-first investment workspace. Non-Maryland prior examples are retained in a collapsed research archive; new discovery and alerts should be Maryland only.",
+    "summary": "Maryland individual-property deals are PRIMARY; a single well-priced house/townhouse with a legal path to title and investor as-is resale margin qualifies without a bundle. Historical out-of-state bundles retained as reference only.",
     "investmentCriteria": {
       "maximumTotalAcquisitionUSD": 1000000,
       "preferredTotalAcquisitionUSD": 250000,
-      "preferredParcelCount": "2–20",
+      "preferredParcelCount": "1",
       "excludeMultimillionDollarPortfolios": true,
       "requirePriceEstimateOrClearFlag": true,
       "notes": "Maryland only; prioritize quality location and investor resale liquidity ahead of absolute low bid. Distinguish deed/foreclosed asset from assignable tax-lien interest. Previous non-Maryland examples retained only in collapsed reference archive.",
@@ -35,11 +35,30 @@
         "Baltimore City (select corridors)"
       ],
       "preferredAcquisitionUSD": 150000,
-      "maxAcquisitionUSD": 250000
+      "maxAcquisitionUSD": 250000,
+      "purchaseUnit": "One individual property is preferred; bundles are optional only",
+      "requireBundle": false,
+      "minimumPropertiesPerOpportunity": 1,
+      "prioritizeSingleProperty": true,
+      "acquisitionCategoryPriority": [
+        "clear-title deed/property sale",
+        "court/sheriff/foreclosure deed opportunity",
+        "REO/owned distressed property",
+        "assignable tax lien (separate lien underwriting)"
+      ],
+      "evaluationOrder": [
+        "Official active listing & parcel ID",
+        "Transferable rights, deed vs lien",
+        "Exact address and location due diligence",
+        "Three or more relevant completed sale comparables",
+        "As-is resale price to cash rehab buyer",
+        "All-in cash required and conservative net spread",
+        "Inspect risks, title and possession"
+      ]
     },
-    "focus": "Maryland only — prioritize established residential resale markets and independently evidenced reinvestment corridors near Glen Burnie. Do not label neighborhoods as unsafe or inferior based on demographics. Review each property/block using evidence.",
+    "focus": "Maryland individual properties first. Genuine bundles are optional. Target established or positively reinvesting local housing markets with buyer liquidity, title clarity, and verified as-is comparable sales.",
     "valuationMethod": {
-      "subject": "Maryland tax-deed / acquired fee-simple property wholesale as-is resale; tax liens modeled separately",
+      "subject": "Primary: single Maryland house/townhouse resold as-is to rehab buyer after verified deed acquisition; bundles optional. Tax-lien certificates priced using lien/redemption/assignment economics separately.",
       "dataSource": "https://mdgeodata.md.gov/imap/rest/services/PlanningCadastre/MD_PropertySales/FeatureServer/0",
       "manualRecords": "https://sdat.dat.maryland.gov/RealProperty/Pages/default.aspx",
       "map": "https://planning.maryland.gov/MSDC/Pages/91_property_mapping/finder-online.aspx",
