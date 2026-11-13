@@ -5,7 +5,7 @@
     "verifiedThrough": "2026-11-12",
     "disclaimer": "Research aid only. A tax lien is not ownership of a property. No listing shown as a bundle without official current documentation. Value estimates require comps and a dated method. This independent research page is not an offer, charitable program, or use of charitable funds.",
     "imagePolicy": "Property photographs must be licensed or supplied by authorized auction sources. Google Street View opens on Google Maps; Google imagery is not downloaded or rehosted.",
-    "summary": "Research tracker prioritizing smaller multi-parcel sale bundles. Institutional-scale multimillion-dollar portfolio excluded from opportunity display; three historical Michigan examples retained.",
+    "summary": "No independently budget-qualified active tax-sale bundle confirmed in this review. Five additional closed 2–3-parcel Michigan deed bundles archived; one unpriced upcoming Tennessee bankruptcy multi-package auction tracked separately for diligence (NOT tax sale).",
     "investmentCriteria": {
       "maximumTotalAcquisitionUSD": 1000000,
       "preferredTotalAcquisitionUSD": 250000,
@@ -192,6 +192,148 @@
           "parcelId": "07-05-200-003"
         }
       ]
+    },
+    {
+      "id": "mi-kalamazoo-8132",
+      "name": "Lot 8132 · Two vacant lots, E Alcott Street",
+      "county": "Kalamazoo",
+      "state": "MI",
+      "auctionDate": "2026-10-30",
+      "parcelCount": 2,
+      "minimumBid": 200,
+      "currentTax": 347.5,
+      "officialSourceUrl": "https://tax-sale.info/lot/showPreview/id/162886",
+      "note": "Verified single auction lot with both vacant parcels (~0.27 acres combined). Historical minimum $200 before tax, 10% buyer's premium and recording fees. Closed; no current sale confirmed. Due diligence: land use, access, utilities, contamination.",
+      "sampleParcels": [
+        {
+          "address": "1702 E Alcott St, Kalamazoo, MI",
+          "parcelId": "06-26-221-008"
+        },
+        {
+          "address": "1706 E Alcott St, Kalamazoo, MI",
+          "parcelId": "06-26-221-109"
+        }
+      ]
+    },
+    {
+      "id": "mi-oakland-5446",
+      "name": "Lot 5446 · Liberty Street vacant-land bundle",
+      "county": "Oakland",
+      "state": "MI",
+      "auctionDate": "2026-10-30",
+      "parcelCount": 2,
+      "minimumBid": 5466.73,
+      "currentTax": 245.84,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/163129",
+      "note": "Two tax parcels sold only together; ~0.16 acres combined. Historical bid minimum, not a current purchase price. County's old SEV is not market value.",
+      "sampleParcels": [
+        {
+          "address": "Liberty St (unnumbered), Pontiac, MI",
+          "parcelId": "64 14-29-306-018"
+        },
+        {
+          "address": "4 Liberty St, Pontiac, MI",
+          "parcelId": "64 14-29-306-019"
+        }
+      ]
+    },
+    {
+      "id": "mi-oakland-5448",
+      "name": "Lot 5448 · Washington Street vacant-land bundle",
+      "county": "Oakland",
+      "state": "MI",
+      "auctionDate": "2026-10-30",
+      "parcelCount": 2,
+      "minimumBid": 6351.47,
+      "currentTax": 332.87,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/163130",
+      "note": "Two adjacent tax parcels sold as one lot (~0.15 acres combined). Historical minimum only; final winning bid not independently confirmed.",
+      "sampleParcels": [
+        {
+          "address": "200 Washington St, Pontiac, MI",
+          "parcelId": "64 14-29-308-012"
+        },
+        {
+          "address": "196 Washington St, Pontiac, MI",
+          "parcelId": "64 14-29-308-013"
+        }
+      ]
+    },
+    {
+      "id": "mi-oakland-5450",
+      "name": "Lot 5450 · Three Henderson Street parcels",
+      "county": "Oakland",
+      "state": "MI",
+      "auctionDate": "2026-10-30",
+      "parcelCount": 3,
+      "minimumBid": 8053.61,
+      "currentTax": 824.91,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/163131",
+      "note": "Three tax parcels (~0.35 acres combined) sold in one lot. Historical minimum and 2026 current tax, buyer premium and recording not included; closed October 30.",
+      "sampleParcels": [
+        {
+          "address": "102 Henderson St, Pontiac, MI",
+          "parcelId": "64 14-29-309-008"
+        },
+        {
+          "address": "96 Henderson St, Pontiac, MI",
+          "parcelId": "64 14-29-309-009"
+        },
+        {
+          "address": "92 Henderson St, Pontiac, MI",
+          "parcelId": "64 14-29-309-010"
+        }
+      ]
+    },
+    {
+      "id": "mi-saint-clair-6306",
+      "name": "Lot 6306 · Port Huron house and adjacent lot",
+      "county": "St. Clair",
+      "state": "MI",
+      "auctionDate": "2026-08-04",
+      "parcelCount": 2,
+      "minimumBid": 13200,
+      "currentTax": 1909.06,
+      "officialSourceUrl": "https://tax-sale.info/lot/showPreview/id/161399",
+      "note": "A two-story house and a second vacant tax parcel offered as one auction lot. Closed August 4; historical minimum, not current availability. House condition, title and vacant-lot legal description require verification.",
+      "sampleParcels": [
+        {
+          "address": "2515 Lapeer Ave, Port Huron, MI",
+          "parcelId": "06-264-0142-000"
+        },
+        {
+          "address": "2500 Lapeer Ave (vacant lot), Port Huron, MI",
+          "parcelId": "06-264-0143-000"
+        }
+      ]
+    }
+  ],
+  "researchLeads": [
+    {
+      "id": "tn-hickman-hidden-valley-10-packages",
+      "name": "Hidden Valley Lakes — Ten Multi-Parcel Packages",
+      "status": "Upcoming · unpriced · requires parcel schedule",
+      "category": "Court-ordered bankruptcy deed auction — NOT tax sale",
+      "county": "Hickman",
+      "state": "TN",
+      "city": "Nunnelly",
+      "location": "0 Hidden Valley Road, Hidden Valley Lakes, Nunnelly, TN 37137",
+      "officialSourceUrl": "https://www.tranzon.com/atlas26125",
+      "agency": "Tranzon Atlas / bankruptcy court",
+      "caseNumber": "1:26-bk-02432",
+      "totalParcelsInEvent": 100,
+      "confirmedPackageCount": 10,
+      "exactParcelsPerPackage": null,
+      "packageMinimumBid": null,
+      "buyerPremiumPercent": 10,
+      "depositPercentOfTotalSale": 10,
+      "biddingOpen": "2026-11-17",
+      "deadline": "2026-11-19",
+      "deadlineTime": "15:00 ET",
+      "dateVerified": "2026-11-12",
+      "note": "Court-ordered absolute bankruptcy sale of 100 recreational/residential parcels offered in ten separate packages. Auctioneer says highest bidders win regardless of price; NOT a tax sale. Individual package boundaries, parcel IDs and current bids were not visible in the public page; do NOT assume each package is ten parcels or affordable.",
+      "risks": "Unverified package-level prices and parcel descriptions, possible subdivision restrictions and assessments, rural access, unverified buildability, no contingencies, 10% buyer premium, 10% earnest deposit, closing 30 days or within 15 days of court approval. Buyer must inspect full property information package.",
+      "qualifier": "Research lead only, not approved as within budget. Do not convert to verified active affordable bundle until each package's parcels, acquisition cost and legal terms are verified."
     }
   ]
 }
