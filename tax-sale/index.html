@@ -249,6 +249,16 @@
 .ts-archive address{font-style:normal;font-size:12px;color:#5a6b71;margin:12px 0}
 .ts-archive address a{color:#1d5873;text-decoration:none;font-weight:700}
 .ts-archive .ts-badge{display:inline-flex}
+
+.ts-lead{background:#fff;border:1px solid #e2dfd4;border-radius:12px;padding:24px;box-shadow:0 10px 25px rgba(30,45,60,.05)}
+.ts-lead h3{font-size:29px;margin:13px 0 9px}
+.ts-lead p{font-size:13px;line-height:1.7;color:#56666a}
+.ts-lead .ts-badge{display:inline-block}
+.ts-lead-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:18px 0;padding:13px 0;border-top:1px solid #e7e9e4;border-bottom:1px solid #e7e9e4}
+.ts-lead-meta span{display:block;color:#657473;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+.ts-lead-meta strong{display:block;font-size:15px;margin-top:6px}
+.ts-lead-warning{background:#fcf6e9;border:1px solid #eedbc0;border-radius:8px;padding:13px 14px;font-size:12px;color:#735b34;line-height:1.65;margin:15px 0}
+@media(max-width:650px){.ts-lead-meta{grid-template-columns:1fr 1fr;gap:14px}.ts-lead{padding:18px}}
 </style></head><body><nav class="site-nav">
     <div class="nav-inner">
       <ul class="nav-left">
@@ -329,6 +339,13 @@
       </div>
     </section>
     
+
+    <section class="ts-section" id="ts-leads" data-theme="light">
+      <div class="ts-section-head">
+        <div><div class="ts-eyebrow">02 / Research leads · not budget-qualified</div><h2>UPCOMING GROUP OFFERS</h2><p>Possible multi-property package opportunities that still require pricing, package-level parcel lists or other checks. Includes explicitly labeled non-tax-sale auctions. These are not approved investments.</p></div>
+      </div>
+      <div id="tsResearchLeads" class="ts-bundle-grid" aria-live="polite"></div>
+    </section>
     <section class="ts-section" id="ts-archive" data-theme="light">
       <div class="ts-section-head">
         <div><div class="ts-eyebrow">Closed sale examples · verified auction catalogs</div><h2>WHAT REAL BUNDLES LOOK LIKE</h2><p>These 2026 Michigan group lots are no longer open for bidding. They illustrate the multi-property packages we track and include direct links to individual parcel lists, not just auction summaries.</p></div>
@@ -401,6 +418,17 @@ $('tsCsv').disabled=bs.length===0;
 $('tsBundles').querySelectorAll('[data-toggle]').forEach(btn=>btn.addEventListener('click',()=>{const d=$('tsDetail'+btn.dataset.toggle);d.hidden=!d.hidden;btn.setAttribute('aria-expanded',String(!d.hidden));btn.textContent=d.hidden?'Review parcels ▾':'Hide parcels ▴';}));
 }
 
+
+function renderLeads(){
+const items=data.researchLeads||[];
+$('tsResearchLeads').innerHTML=items.length?items.map(a=>{
+const paras=[
+a.note||'',
+'Key diligence: '+(a.risks||'Confirm official parcel schedule, title and required cash before any bid.')
+];
+return '<article class="ts-lead"><span class="ts-badge ts-badge-amber">'+esc(a.status||'Research only')+'</span><h3>'+esc(a.name||'Multi-property research lead')+'</h3><p><strong>'+esc(a.category||'Auction')+'</strong><br>'+esc(a.location||((a.county||'')+', '+(a.state||'')))+'</p><div class="ts-lead-meta"><div><span>Event parcels</span><strong>'+esc(a.totalParcelsInEvent||'Pending')+'</strong></div><div><span>Packages</span><strong>'+esc(a.confirmedPackageCount||'Pending')+'</strong></div><div><span>Closing / deadline</span><strong>'+esc(a.deadline||'Not listed')+'</strong></div><div><span>Package-level price</span><strong>Unverified</strong></div><div><span>Individual parcel IDs</span><strong>Not yet supplied</strong></div><div><span>Budget status</span><strong>Not qualified</strong></div></div><div class="ts-lead-warning"><strong>Not yet an investable listing.</strong> This event contains multi-parcel packages, but each package must be screened independently for parcel count, price and restrictions. A large combined auction total does not mean the entire event is one bundle.</div><p>'+paras.map(esc).join('</p><p>')+'</p>'+link(a.officialSourceUrl,'Official auction and photos','ts-btn ts-btn-alt')+'</article>';
+}).join(''):'<p class="ts-note">No unpriced grouped-auction research leads are currently listed.</p>';
+}
 function renderArchive(){
 const items=data.archiveExamples||[];
 $('tsArchives').innerHTML=items.map(a=>{
@@ -421,6 +449,6 @@ $('tsSearch').addEventListener('input',e=>{filters.search=e.target.value.trim().
 $('tsState').addEventListener('change',e=>{filters.state=e.target.value;render();});
 $('tsType').addEventListener('change',e=>{filters.type=e.target.value;render();});
 $('tsCsv').addEventListener('click',csv);
-fetch('./data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Data not available');return r.json()}).then(d=>{data=d;$('tsUpdated').textContent=date(d.meta?.verifiedThrough||d.meta?.updated);renderMarkets();renderArchive();render();}).catch(()=>{$('tsMarkets').innerHTML='<p role="alert">Unable to load the county list. <a href="https://dat.maryland.gov/Pages/Tax-Sale-Schedule.aspx" target="_blank" rel="noopener noreferrer">Open the Maryland state tax-sale schedule ↗</a>.</p>';render();});
+fetch('./data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Data not available');return r.json()}).then(d=>{data=d;$('tsUpdated').textContent=date(d.meta?.verifiedThrough||d.meta?.updated);renderMarkets();renderLeads();renderArchive();render();}).catch(()=>{$('tsMarkets').innerHTML='<p role="alert">Unable to load the county list. <a href="https://dat.maryland.gov/Pages/Tax-Sale-Schedule.aspx" target="_blank" rel="noopener noreferrer">Open the Maryland state tax-sale schedule ↗</a>.</p>';render();});
 })();
 </script><script>(function(){const b=document.body,menu=document.getElementById('navMobilePanel'),btn=document.getElementById('navHamburgerBtn'),close=document.getElementById('navMobilePanelClose');function sync(){b.classList.toggle('deep-scroll',window.scrollY>160)}sync();addEventListener('scroll',sync,{passive:true});btn?.addEventListener('click',()=>{menu.classList.add('is-open');btn.setAttribute('aria-expanded','true')});close?.addEventListener('click',()=>{menu.classList.remove('is-open');btn?.setAttribute('aria-expanded','false')});menu?.querySelectorAll('a').forEach(x=>x.addEventListener('click',()=>menu.classList.remove('is-open')));})();</script></body></html>
