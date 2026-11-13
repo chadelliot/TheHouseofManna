@@ -1,18 +1,52 @@
 {
   "meta": {
     "title": "Tax Sale Investment Research",
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "verifiedThrough": "2026-11-12",
     "disclaimer": "Research aid only. A tax lien is not ownership of a property. No listing shown as a bundle without official current documentation. Value estimates require comps and a dated method. This independent research page is not an offer, charitable program, or use of charitable funds.",
     "imagePolicy": "Property photographs must be licensed or supplied by authorized auction sources. Google Street View opens on Google Maps; Google imagery is not downloaded or rehosted.",
-    "summary": "Two verified budget-scale upcoming Roanoke VA two-parcel tax-deed lots (Nov 18, 2026). Nine additional closed 2–3-parcel Michigan tax-foreclosure deed bundles added to historical examples. One unpriced Nov 2026 TN bankruptcy auction remains research only.",
+    "summary": "Maryland-first investment workspace. Non-Maryland prior examples are retained in a collapsed research archive; new discovery and alerts should be Maryland only.",
     "investmentCriteria": {
       "maximumTotalAcquisitionUSD": 1000000,
       "preferredTotalAcquisitionUSD": 250000,
       "preferredParcelCount": "2–20",
       "excludeMultimillionDollarPortfolios": true,
       "requirePriceEstimateOrClearFlag": true,
-      "notes": "Prefer affordable genuine bundled acquisition opportunities. Estimated total cost includes minimum bid or portfolio face amount where relevant, fees, taxes, premium and mandatory known costs. Unknown price must be flagged for manual screening, not represented as affordable."
+      "notes": "Maryland only; prioritize quality location and investor resale liquidity ahead of absolute low bid. Distinguish deed/foreclosed asset from assignable tax-lien interest. Previous non-Maryland examples retained only in collapsed reference archive.",
+      "states": [
+        "MD"
+      ],
+      "focusPropertyTypes": [
+        "existing single-family",
+        "townhouse",
+        "two-to-four unit residential when verified and appropriate",
+        "buildable infill with legal road access"
+      ],
+      "favorEstablishedAndUpAndComing": true,
+      "avoid": "low-liquidity or hard-to-resell locations; severe unknown structural/title/access risks; insufficient relevant sold comparables; tiny unbuildable parcels. Avoid subjective labels for communities.",
+      "preferredCounties": [
+        "Anne Arundel",
+        "Baltimore County",
+        "Howard",
+        "Harford",
+        "Carroll",
+        "Prince George's",
+        "Montgomery",
+        "Baltimore City (select corridors)"
+      ],
+      "preferredAcquisitionUSD": 150000,
+      "maxAcquisitionUSD": 250000
+    },
+    "focus": "Maryland only — prioritize established residential resale markets and independently evidenced reinvestment corridors near Glen Burnie. Do not label neighborhoods as unsafe or inferior based on demographics. Review each property/block using evidence.",
+    "valuationMethod": {
+      "subject": "Maryland tax-deed / acquired fee-simple property wholesale as-is resale; tax liens modeled separately",
+      "dataSource": "https://mdgeodata.md.gov/imap/rest/services/PlanningCadastre/MD_PropertySales/FeatureServer/0",
+      "manualRecords": "https://sdat.dat.maryland.gov/RealProperty/Pages/default.aspx",
+      "map": "https://planning.maryland.gov/MSDC/Pages/91_property_mapping/finder-online.aspx",
+      "compsGuidance": "Require ideally 3+ closed arm's-length sales within 0.5 mile (expand carefully to 1 mile if necessary) and last 6–12 months, similar type/sqft/condition; verify transfer type. Exclude non-arm's-length, transfers for $0, and outliers. Use signed MLS/verified sale data when available. Never infer condition from assessed values.",
+      "dealMath": "Resale value to a rehabber based on AS-IS investor comps or conservative ARV minus their renovation, carry, closing and required margin. Seller net profit = projected rehabber resale proceeds less actual auction/deed acquisition, all premiums, taxes, title, legal, holding, contingency and seller closing costs. Maximum bid derived backward from target net profit. Lien-certificate assignments are not house flips.",
+      "areaQuality": "Use objective recent sales velocity, comparable buyer demand, visible condition, code/hazard indicators, permitting/rehab trends, announced public investments, property-specific access and zoning. Do not use demographic stereotypes or assign false precision.",
+      "eligibility": "Only under budget and in Maryland, with clear rights being acquired. Acquisition feasibility and buyer demand before upside scenario."
     }
   },
   "bundles": [
@@ -628,5 +662,81 @@
       "risks": "Unverified package-level prices and parcel descriptions, possible subdivision restrictions and assessments, rural access, unverified buildability, no contingencies, 10% buyer premium, 10% earnest deposit, closing 30 days or within 15 days of court approval. Buyer must inspect full property information package.",
       "qualifier": "Research lead only, not approved as within budget. Do not convert to verified active affordable bundle until each package's parcels, acquisition cost and legal terms are verified."
     }
-  ]
+  ],
+  "preferredAreas": [
+    {
+      "id": "md-glen-burnie",
+      "name": "Glen Burnie Town Center / Cromwell corridor",
+      "county": "Anne Arundel",
+      "state": "MD",
+      "city": "Glen Burnie",
+      "tier": "Reinvestment",
+      "priority": 1,
+      "sourceUrl": "https://www.aacounty.org/planning-and-zoning/community-planning/glen-burnie-town-center",
+      "secondarySourceUrl": "https://aaedc.org/business/revitalization/redevelopment/",
+      "reason": "County-designated priority growth area with a revitalization plan, redevelopment opportunity sites and Cromwell transit-oriented development designation.",
+      "evaluation": "Inspect street-by-street condition, zoning, buyer renovation sales, nearby recent as-is transfers, flood exposure and transit access. Public investment is not proof of appreciation."
+    },
+    {
+      "id": "md-odenton",
+      "name": "Odenton Town Center / MARC station area",
+      "county": "Anne Arundel",
+      "state": "MD",
+      "city": "Odenton",
+      "tier": "Reinvestment",
+      "priority": 1,
+      "sourceUrl": "https://aaedc.org/business/revitalization/town-centers/odenton/",
+      "reason": "2024 master plan and announced transit-oriented mixed-use project around MARC/major employers; planned public parking infrastructure.",
+      "evaluation": "Match property type and square footage to comps; station vicinity may have price premium, zoning constraints, and scarce distressed inventory."
+    },
+    {
+      "id": "md-parole",
+      "name": "Parole Town Center / western Annapolis",
+      "county": "Anne Arundel",
+      "state": "MD",
+      "city": "Annapolis",
+      "tier": "Established",
+      "priority": 2,
+      "sourceUrl": "https://aaedc.org/business/revitalization/town-centers/",
+      "reason": "Established commercial and residential destination with an adopted 2023 master plan for mobility and walkability.",
+      "evaluation": "Premium locations may leave less discount relative to auction carrying costs; compare rehab investor cash offers and existing-home comps."
+    },
+    {
+      "id": "md-arbutus",
+      "name": "Arbutus / Halethorpe",
+      "county": "Baltimore County",
+      "state": "MD",
+      "city": "Arbutus",
+      "tier": "Established / reinvestment",
+      "priority": 1,
+      "sourceUrl": "https://www.baltimorecountymd.gov/files/departments/planning/documents/commimprovementcipfy2026presentation01232025.pdf",
+      "reason": "County's FY2026 community-improvement planning includes a Greater Arbutus Business Association partnership for storefront investment.",
+      "evaluation": "Commercial program support is only one indicator. Confirm residential comps, days on market and street condition before scoring."
+    },
+    {
+      "id": "md-catonsville",
+      "name": "Catonsville",
+      "county": "Baltimore County",
+      "state": "MD",
+      "city": "Catonsville",
+      "tier": "Established",
+      "priority": 1,
+      "sourceUrl": "https://www.baltimorecountymd.gov/files/departments/planning/documents/commimprovementcipfy2026presentation01232025.pdf",
+      "reason": "Mature residential/commercial center; county FY2026 community-improvement work includes Greater Catonsville chamber facade initiative.",
+      "evaluation": "Seek substantial acquisition discount; avoid paying established-market prices for distressed condition."
+    },
+    {
+      "id": "md-hamilton-lauraville",
+      "name": "Hamilton–Lauraville / Harford Road corridor",
+      "county": "Baltimore City",
+      "state": "MD",
+      "city": "Baltimore",
+      "tier": "Selective reinvestment",
+      "priority": 2,
+      "sourceUrl": "https://mayor.baltimorecity.gov/files/baltimore-togetherintroduction2025pdf",
+      "reason": "City economic development report identifies the 4500 Harford Road 'The Lot' project as a completed community development investment.",
+      "evaluation": "Screen on the individual block: recent investor resales, code violations, vacant properties, title/ground rent and buyer liquidity. Avoid treating all of Northeast Baltimore as one market."
+    }
+  ],
+  "parcelCandidates": []
 }
