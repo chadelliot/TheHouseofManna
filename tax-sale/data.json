@@ -4,9 +4,38 @@
     "updated": "2026-11-12",
     "verifiedThrough": "2026-11-12",
     "disclaimer": "Research aid only. A tax lien is not ownership of a property. No listing shown as a bundle without official current documentation. Value estimates require comps and a dated method. This independent research page is not an offer, charitable program, or use of charitable funds.",
-    "imagePolicy": "Property photographs must be licensed or supplied by authorized auction sources. Google Street View opens on Google Maps; Google imagery is not downloaded or rehosted."
+    "imagePolicy": "Property photographs must be licensed or supplied by authorized auction sources. Google Street View opens on Google Maps; Google imagery is not downloaded or rehosted.",
+    "summary": "One open, verified all-or-nothing tax-certificate offering (Lucas County OH) identified. Three October 2026 closed Michigan tax-foreclosure deed bundles retained as examples."
   },
-  "bundles": [],
+  "bundles": [
+    {
+      "id": "oh-lucas-2026-certificate-rfp",
+      "name": "Lucas County 2026 — All-or-Nothing Tax Certificate Portfolio",
+      "county": "Lucas",
+      "state": "OH",
+      "verifiedBundle": true,
+      "status": "Open RFP as of 2026-11-12",
+      "acquisitionType": "lien",
+      "parcelCount": 398,
+      "parcelCountQualification": "Preliminary schedule; final number may decrease",
+      "parcelScheduleInOfficialSource": true,
+      "parcels": [],
+      "officialSourceUrl": "https://www.lucascountytreasurer.org/tax-liens",
+      "parcelScheduleUrl": "https://www.lucascountytreasurer.org/s/Lucas_County_RFP_v2_Redline.pdf",
+      "sourceDate": "2026-11-06",
+      "deadline": "2026-11-30",
+      "deadlineTime": "16:30 America/New_York",
+      "minimumBid": null,
+      "indicativeDelinquentBalance": 3640138.24,
+      "indicativeBalanceAsOf": "2026-10-23",
+      "earliestClosing": "2026-12-04",
+      "summary": "County is offering its entire final eligible pool of delinquent real-property tax certificates to one buyer. 398 preliminary parcels; $3,640,138.24 delinquent balance as of Oct 23, 2026 (not the final minimum bid). Minimum offer is 100% of the final aggregate certificate purchase price plus required fees, and a premium bid may be included.",
+      "acquisitionDescription": "One negotiated, all-or-nothing purchase of tax LIEN certificates, not deeds to the underlying properties. No partial-pool bids. All 398 preliminary parcels are in the county's official RFP schedule, but individual addresses were not independently imported because the linked PDF could not be extracted reliably.",
+      "risks": "Large institutional-scale cash commitment. Full payment immediately available at closing; $300 administrative fee per initial certificate, certified-letter and recording costs; purchaser's proposed interest rate under Ohio law; foreclosure or redemption and delayed recovery; potential exclusions or redemptions can change pool, count and price. The county's updated parcel pricing schedule is due November 20. Review RFP eligibility, bidder documentation and legal counsel.",
+      "pricingNote": "Historical tax delinquency balance only; not the full offer price, as of Oct 23.",
+      "lastReviewed": "2026-11-12"
+    }
+  ],
   "watchMarkets": [
     {
       "id": "anne-arundel",
@@ -97,6 +126,101 @@
       "sourceUrl": "https://portal.ct.gov/",
       "kind": "Municipal tax / deed sales",
       "note": "Longer-distance market; towns administer sales separately. No current verified group lot."
+    },
+    {
+      "id": "ohio-lucas",
+      "county": "Lucas",
+      "state": "OH",
+      "priority": 3,
+      "sourceUrl": "https://www.lucascountytreasurer.org/tax-liens",
+      "kind": "Tax-lien bulk RFP",
+      "note": "Verified live Nov 2026 all-or-nothing 398-parcel preliminary pool; proposals due Nov 30, 2026. Institutional-scale cash requirement."
+    },
+    {
+      "id": "michigan-bundles",
+      "county": "Saginaw / Genesee",
+      "state": "MI",
+      "priority": 3,
+      "sourceUrl": "https://tax-sale.info/",
+      "kind": "Tax-foreclosed deeds",
+      "note": "Confirmed grouped lots in Oct 2026 closed auction; continue monitoring future annual multi-parcel deed bundles."
+    }
+  ],
+  "archiveExamples": [
+    {
+      "id": "mi-saginaw-lot-7965",
+      "name": "Lot 7965 · Saginaw 97-parcel bundle",
+      "county": "Saginaw",
+      "state": "MI",
+      "auctionDate": "2026-10-30",
+      "parcelCount": 97,
+      "minimumBid": 9700,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/163350",
+      "note": "Actual tax-foreclosed deed parcels, grouped in one lot; $17,828.30 in current-year taxes and performance-bond conditions were also shown in the catalog. Closed 30 October 2026; not available at this minimum today.",
+      "sampleParcels": [
+        {
+          "address": "113 W Cornell St, Saginaw, MI",
+          "parcelId": "02-12-5-06-0190-000"
+        },
+        {
+          "address": "3417 Chalmers Rd, Saginaw, MI",
+          "parcelId": "09-11-5-04-2004-000"
+        },
+        {
+          "address": "2720 Eddy St, Saginaw, MI",
+          "parcelId": "11-12-4-05-2383-000"
+        }
+      ]
+    },
+    {
+      "id": "mi-genesee-lot-8798",
+      "name": "Lot 8798 · Genesee vacant-lot bundle",
+      "county": "Genesee",
+      "state": "MI",
+      "auctionDate": "2026-10-30",
+      "parcelCountLabel": "114–115*",
+      "minimumBid": 39900,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/163415",
+      "note": "Vacant-lot deed bundle. Catalog title says 114 parcels, but detailed list enumerates 115; reconcile before any future offer. Current taxes shown $17,397.61. Closed 30 October 2026; advertised minimum no longer available.",
+      "sampleParcels": [
+        {
+          "address": "128 W Jamieson St, Flint, MI",
+          "parcelId": "40-01-127-027"
+        },
+        {
+          "address": "602 Spencer St, Flint, MI",
+          "parcelId": "40-01-227-010"
+        },
+        {
+          "address": "338 E Genesee St, Flint, MI",
+          "parcelId": "40-01-252-012"
+        }
+      ]
+    },
+    {
+      "id": "mi-genesee-lot-8799",
+      "name": "Lot 8799 · Genesee demolition bundle",
+      "county": "Genesee",
+      "state": "MI",
+      "auctionDate": "2026-10-30",
+      "parcelCountLabel": "198–199*",
+      "minimumBid": 69300,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/163416",
+      "note": "Tax-foreclosed property bundle with demolition and performance-bond requirements. Title says 198 but detailed list enumerates 199. Current-year taxes shown $182,849.97 in addition to minimum. Closed 30 October 2026; major liability and occupancy concerns.",
+      "sampleParcels": [
+        {
+          "address": "613 W Marengo Ave, Flint, MI",
+          "parcelId": "46-36-103-010"
+        },
+        {
+          "address": "3068 Stratford St, Flint, MI",
+          "parcelId": "07-10-576-047"
+        },
+        {
+          "address": "5105 Flushing Rd, Flushing, MI",
+          "parcelId": "07-05-200-003"
+        }
+      ]
     }
   ]
 }
