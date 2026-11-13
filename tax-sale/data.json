@@ -5,7 +5,7 @@
     "verifiedThrough": "2026-11-12",
     "disclaimer": "Research aid only. A tax lien is not ownership of a property. No listing shown as a bundle without official current documentation. Value estimates require comps and a dated method. This independent research page is not an offer, charitable program, or use of charitable funds.",
     "imagePolicy": "Property photographs must be licensed or supplied by authorized auction sources. Google Street View opens on Google Maps; Google imagery is not downloaded or rehosted.",
-    "summary": "No independently budget-qualified active tax-sale bundle confirmed in this review. Five additional closed 2–3-parcel Michigan deed bundles archived; one unpriced upcoming Tennessee bankruptcy multi-package auction tracked separately for diligence (NOT tax sale).",
+    "summary": "Two verified budget-scale upcoming Roanoke VA two-parcel tax-deed lots (Nov 18, 2026). Nine additional closed 2–3-parcel Michigan tax-foreclosure deed bundles added to historical examples. One unpriced Nov 2026 TN bankruptcy auction remains research only.",
     "investmentCriteria": {
       "maximumTotalAcquisitionUSD": 1000000,
       "preferredTotalAcquisitionUSD": 250000,
@@ -15,7 +15,88 @@
       "notes": "Prefer affordable genuine bundled acquisition opportunities. Estimated total cost includes minimum bid or portfolio face amount where relevant, fees, taxes, premium and mandatory known costs. Unknown price must be flagged for manual screening, not represented as affordable."
     }
   },
-  "bundles": [],
+  "bundles": [
+    {
+      "id": "va-roanoke-2026-11-n1",
+      "name": "Roanoke Lot N1 — Kennedy Street NE · 2-lot vacant land package",
+      "county": "City of Roanoke",
+      "state": "VA",
+      "verifiedBundle": true,
+      "status": "Upcoming tax deed · November 18, 2026",
+      "acquisitionType": "deed",
+      "parcelCount": 2,
+      "sourceDate": "2026-11-12",
+      "lastReviewed": "2026-11-12",
+      "minimumBid": 200,
+      "minimumBidDescription": "Auctioneer's displayed starting bid, not final or guaranteed",
+      "deadline": "2026-11-18",
+      "deadlineTime": "11:00 AM America/New_York",
+      "auctionType": "Nonjudicial delinquent-tax deed sale; two legally separate tax parcels offered as one lot",
+      "officialSourceUrl": "https://bid.walkercommercialservices.com/ui/auctions/170897/26457552",
+      "countyNoticeUrl": "https://taxva.com/rs-tax-sales/city-of-roanoke-real-estate-tax-sales-2/",
+      "summary": "Two vacant land parcels near Kennedy Street NE sold together as one N1 auction lot; ~0.4629 acres combined. Auctioneer lists a $200 starting bid, with final bid subject to competition and city approval.",
+      "acquisitionDescription": "One two-parcel group offered together for deed conveyance. Total acreage ~0.4629. N1 is nonjudicial; deeds conveyed by special warranty deed subject to record interests.",
+      "buyerPremiumPercent": 10,
+      "minimumBuyerPremium": 150,
+      "registrationFee": 0,
+      "depositRule": "Full winning bid + buyer premium + deed recording due within seven days of close for online bidder (by Nov 25); for in-person bidders payment due at auction. Confirm final instructions.",
+      "risks": "Vacant land with unverified title, access, frontage, buildability, soil and services; seller does not guarantee right of way; special warranty deed, as-is; city may reject bids deemed unreasonable. 10% buyer premium, minimum $150, recording costs and subsequent property taxes additional. Auction listings are not evidence of market value or zoning eligibility.",
+      "parcels": [
+        {
+          "address": "Near Kennedy Street NE, Lot 6 Block 5, Roanoke, VA",
+          "parcelId": "3101015",
+          "propertyType": "Vacant land · 0.2238 ac (approx)",
+          "valuationNotes": "Tax map 3101015 / tax account 125472. Verify legal access, frontage, zoning, utilities and site suitability through official Roanoke GIS before attributing land value."
+        },
+        {
+          "address": "Near Kennedy Street NE, part of Lot 7 Block 5, Roanoke, VA",
+          "parcelId": "3101016",
+          "propertyType": "Vacant land · 0.2391 ac (approx)",
+          "valuationNotes": "Tax map 3101016 / account 125473. No individual postal address published; map location remains approximate."
+        }
+      ]
+    },
+    {
+      "id": "va-roanoke-2026-11-n8",
+      "name": "Roanoke Lot N8 — Pleasant View Avenue NW · 2 micro-lots",
+      "county": "City of Roanoke",
+      "state": "VA",
+      "verifiedBundle": true,
+      "status": "Upcoming tax deed · November 18, 2026",
+      "acquisitionType": "deed",
+      "parcelCount": 2,
+      "sourceDate": "2026-11-12",
+      "lastReviewed": "2026-11-12",
+      "minimumBid": null,
+      "currentBidSnapshot": 400,
+      "currentBidSnapshotDate": "2026-11-12",
+      "deadline": "2026-11-18",
+      "deadlineTime": "11:00 AM America/New_York",
+      "officialSourceUrl": "https://bid.walkercommercialservices.com/ui/auctions/170897/26457559",
+      "countyNoticeUrl": "https://taxva.com/rs-tax-sales/city-of-roanoke-real-estate-tax-sales-2/",
+      "summary": "Two small vacant parcels on Pleasant View Avenue NW sold together in one N8 lot. Auctioneer displayed high bid $400 during review (not a reserve or final price). Combined land area only ~0.0451 acres; very high feasibility risk.",
+      "acquisitionDescription": "One nonjudicial tax sale lot comprising two tax map IDs; small fragments of lots in Round Hill Park Section 5. Not a tax certificate.",
+      "buyerPremiumPercent": 10,
+      "minimumBuyerPremium": 150,
+      "registrationFee": 0,
+      "depositRule": "Full winning bid, buyer premium and deed recording due within seven days of close for online bidder; confirm auctioneer's currently posted N8 terms.",
+      "risks": "Very small combined area (~0.0451 acre) may be non-buildable; verify legal access and ability to use separately or together. As-is; deed subject to rights of record; city may reject low bid; special warranty deed, minimum $150 buyer premium and recordation charges. Current high bid is not a price guarantee.",
+      "parcels": [
+        {
+          "address": "Pleasant View Avenue NW, part of Lot 1 Block 14, Roanoke, VA",
+          "parcelId": "2141501",
+          "propertyType": "Vacant land · 0.0324 ac (approx)",
+          "valuationNotes": "Tax map 2141501, account 115592. Exact frontage and zoning not established."
+        },
+        {
+          "address": "Pleasant View Avenue NW, part of Lot 2 Block 14, Roanoke, VA",
+          "parcelId": "2141502",
+          "propertyType": "Vacant land · 0.0127 ac (approx)",
+          "valuationNotes": "Tax map 2141502, account 115593. Unusually small remnant—potential unusable sliver."
+        }
+      ]
+    }
+  ],
   "watchMarkets": [
     {
       "id": "anne-arundel",
@@ -115,6 +196,15 @@
       "sourceUrl": "https://tax-sale.info/",
       "kind": "Tax-foreclosed deeds",
       "note": "Confirmed grouped lots in Oct 2026 closed auction; continue monitoring future annual multi-parcel deed bundles."
+    },
+    {
+      "id": "virginia-roanoke",
+      "county": "City of Roanoke",
+      "state": "VA",
+      "priority": 3,
+      "sourceUrl": "https://taxva.com/rs-tax-sales/city-of-roanoke-real-estate-tax-sales-2/",
+      "kind": "Tax-deed grouped lot",
+      "note": "Nov 18, 2026 auction verified with two 2-parcel groups (N1 Kennedy Street NE; N8 Pleasant View Avenue NW). Verify bids and sale terms through Walker Commercial Services."
     }
   ],
   "archiveExamples": [
@@ -304,6 +394,209 @@
         {
           "address": "2500 Lapeer Ave (vacant lot), Port Huron, MI",
           "parcelId": "06-264-0143-000"
+        }
+      ]
+    },
+    {
+      "id": "mi-gladwin-7234",
+      "name": "Lot 7234 · Mobile home plus land near Secord Lake",
+      "county": "Gladwin",
+      "state": "MI",
+      "auctionDate": "2026-10-30",
+      "parcelCount": 2,
+      "minimumBid": 200,
+      "currentTax": 1288.62,
+      "recordedAuctionResult": 23500,
+      "officialSourceUrl": "https://tax-sale.info/lot/showPreview/id/162848",
+      "note": "Closed tax-foreclosure deed bundle with mobile home + second lot (~1 acre combined); sold for $23,500 according to county catalog. Minimum bid $200 was not the winning price. Current-year tax listed separately at $1,288.62. Floodplain, condition and utilities need review.",
+      "sampleParcels": [
+        {
+          "address": "1901 Lakeshore Dr, Gladwin, MI",
+          "parcelId": "130-027-200-001-13"
+        },
+        {
+          "address": "Lakeshore Dr (unnumbered), Gladwin, MI",
+          "parcelId": "130-027-202-002-00"
+        }
+      ]
+    },
+    {
+      "id": "mi-kalamazoo-8108",
+      "name": "Lot 8108 · E Main Street 2-parcel vacant lot bundle",
+      "county": "Kalamazoo",
+      "state": "MI",
+      "auctionDate": "2026-10-30",
+      "parcelCount": 2,
+      "minimumBid": 200,
+      "currentTax": 67.58,
+      "recordedAuctionResult": 9100,
+      "officialSourceUrl": "https://tax-sale.info/lot/showPreview/id/162883",
+      "note": "Closed two-parcel tax-foreclosure deed bundle totaling ~0.84 acres; auction catalog later reported $9,100 sale price, not $200 minimum. Verify land use, road access, environmental constraints before any future offer.",
+      "sampleParcels": [
+        {
+          "address": "3701 E Main St, Kalamazoo, MI",
+          "parcelId": "06-12-435-090"
+        },
+        {
+          "address": "E Main St (unnumbered), Kalamazoo, MI",
+          "parcelId": "06-12-435-091"
+        }
+      ]
+    },
+    {
+      "id": "mi-allegan-7630",
+      "name": "Lot 7630 · Plainwell house and additional garage parcel",
+      "county": "Allegan",
+      "state": "MI",
+      "auctionDate": "2026-08-06",
+      "parcelCount": 2,
+      "minimumBid": 5050,
+      "currentTax": 300.07,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/161841",
+      "note": "Closed two-parcel tax-foreclosure sale involving a single-story home with multiple garages. Historical minimum only, NOT current price. Parcel 2 appears to contain a building. Condition, title and right of access unverified.",
+      "sampleParcels": [
+        {
+          "address": "334 Harmony Lane, Plainwell, MI",
+          "parcelId": "17-025-046-00"
+        },
+        {
+          "address": "Harmony Lane (unnumbered), Plainwell, MI",
+          "parcelId": "17-025-050-00"
+        }
+      ]
+    },
+    {
+      "id": "mi-clare-1910",
+      "name": "Lot 1910 · Harrison house and outbuilding parcels",
+      "county": "Clare",
+      "state": "MI",
+      "auctionDate": "2026-08-13",
+      "parcelCount": 2,
+      "minimumBid": 3950.72,
+      "currentTax": 234.05,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/160238",
+      "note": "Closed two-parcel tax-foreclosure auction comprising single-story structure/outbuildings. Second parcel lacks a public street address. Minimum bid does not include current taxes and closing fees.",
+      "sampleParcels": [
+        {
+          "address": "4102 Oak Woods Rd, Harrison, MI",
+          "parcelId": "007-355-053-00"
+        },
+        {
+          "address": "Adjacent parcel (address unpublished), Harrison, MI",
+          "parcelId": "007-355-054-00"
+        }
+      ]
+    },
+    {
+      "id": "mi-tuscola-6808",
+      "name": "Lot 6808 · Two lots on unimproved Jaywood Drive",
+      "county": "Tuscola",
+      "state": "MI",
+      "auctionDate": "2026-08-04",
+      "parcelCount": 2,
+      "minimumBid": 1285.18,
+      "currentTax": 5.98,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/161495",
+      "note": "Closed two-parcel bundle of ~0.24 acres on an unimproved road near Silverwood. Very low accessibility and development confidence. Parcel records list no conventional numbered address.",
+      "sampleParcels": [
+        {
+          "address": "Off Jaywood Dr, Silverwood, MI (parcel 1)",
+          "parcelId": "005-013-510-4800-00"
+        },
+        {
+          "address": "Off Jaywood Dr, Silverwood, MI (parcel 2)",
+          "parcelId": "005-013-510-4900-00"
+        }
+      ]
+    },
+    {
+      "id": "mi-genesee-8459",
+      "name": "Lot 8459 · Fenton Road former liquor store plus vacant lot",
+      "county": "Genesee",
+      "state": "MI",
+      "auctionDate": "2026-09-03",
+      "parcelCount": 2,
+      "minimumBid": 9792.29,
+      "currentTax": 3306.17,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/162452",
+      "note": "Closed tax-foreclosed grouped commercial structure and second vacant parcel in Flint. Historical minimum $9,792 plus current taxes; liquor license is NOT assumed included. Building, code, environmental and use restrictions must be assessed.",
+      "sampleParcels": [
+        {
+          "address": "4226 Fenton Rd, Flint, MI",
+          "parcelId": "07-36-528-033"
+        },
+        {
+          "address": "Fenton Rd (unnumbered), Flint, MI",
+          "parcelId": "07-36-528-068"
+        }
+      ]
+    },
+    {
+      "id": "mi-gladwin-7237",
+      "name": "Lot 7237 · Cottage plus second Jerry Road parcel",
+      "county": "Gladwin",
+      "state": "MI",
+      "auctionDate": "2026-08-03",
+      "parcelCount": 2,
+      "minimumBid": 5510.02,
+      "officialSourceUrl": "https://tax-sale.info/lot/showPreview/id/161730",
+      "note": "Closed two-parcel tax-foreclosure group of ~0.75 acres near Grass Lake; cottage present. The official catalog alternately showed current tax to be announced; don't assume none. Verify access and water exposure.",
+      "sampleParcels": [
+        {
+          "address": "Jerry Rd (unnumbered), Gladwin, MI",
+          "parcelId": "140-075-000-069-01"
+        },
+        {
+          "address": "5423 Jerry Rd, Gladwin, MI",
+          "parcelId": "140-075-000-070-00"
+        }
+      ]
+    },
+    {
+      "id": "mi-manistee-4401",
+      "name": "Lot 4401 · Bear Lake waterfront house and second parcel",
+      "county": "Manistee",
+      "state": "MI",
+      "auctionDate": "2026-08-27",
+      "parcelCount": 2,
+      "minimumBid": 18298.33,
+      "currentTax": 3374.67,
+      "officialSourceUrl": "https://www.tax-sale.info/lot/showPreview/id/160785",
+      "note": "Closed 2-parcel tax-foreclosure lakefront house offer totaling approximately 2.5 acres. Historical opening minimum; current tax due at checkout was $3,374.67. Old SEV is NOT market valuation; final winning bid not confirmed.",
+      "sampleParcels": [
+        {
+          "address": "7063 S Shore Dr, Bear Lake, MI",
+          "parcelId": "02-005-325-08"
+        },
+        {
+          "address": "S Shore Dr (unnumbered), Bear Lake, MI",
+          "parcelId": "02-005-350-08"
+        }
+      ]
+    },
+    {
+      "id": "mi-iron-3200",
+      "name": "Lot 3200 · Occupied house and two additional parcels",
+      "county": "Iron",
+      "state": "MI",
+      "auctionDate": "2026-08-18",
+      "parcelCount": 3,
+      "minimumBid": 4809.3,
+      "currentTax": 150.95,
+      "officialSourceUrl": "https://tax-sale.info/lot/showPreview/id/160481",
+      "note": "Closed 3-parcel tax-foreclosure auction featuring reportedly occupied house in Amasa; two parcels without posted addresses. Occupancy, possession, repairs and title risk elevated.",
+      "sampleParcels": [
+        {
+          "address": "115 Oakland, Amasa, MI",
+          "parcelId": "003-505-002-00"
+        },
+        {
+          "address": "Amasa, MI (address unpublished, parcel 2)",
+          "parcelId": "003-506-001-00"
+        },
+        {
+          "address": "Amasa, MI (address unpublished, parcel 3)",
+          "parcelId": "003-506-004-00"
         }
       ]
     }
