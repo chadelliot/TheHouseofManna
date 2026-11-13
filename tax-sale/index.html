@@ -259,6 +259,11 @@
 .ts-lead-meta strong{display:block;font-size:15px;margin-top:6px}
 .ts-lead-warning{background:#fcf6e9;border:1px solid #eedbc0;border-radius:8px;padding:13px 14px;font-size:12px;color:#735b34;line-height:1.65;margin:15px 0}
 @media(max-width:650px){.ts-lead-meta{grid-template-columns:1fr 1fr;gap:14px}.ts-lead{padding:18px}}
+
+.ts-area-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.ts-area{background:#fff;border:1px solid #e1e4dc;border-radius:11px;padding:22px;display:flex;flex-direction:column;gap:9px}.ts-area h3{font-family:Anton,Impact,sans-serif;font-size:27px;margin:3px 0 0}.ts-area p{font-size:12px;line-height:1.7;color:#596a6c;margin:0}.ts-area p:last-of-type{flex:1}.ts-area small{font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#637475}.ts-area .ts-area-tier{align-self:start;background:#eaf2e7;color:#435e46;padding:6px 9px;border-radius:24px;border:1px solid #d7e2d4;font-size:10px}.ts-area a{font-size:12px;font-weight:800;color:#225c75;text-decoration:none}.ts-lens{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:18px}.ts-lens strong{font-size:12px;margin-right:6px}.ts-lens span{font-size:11px;border-radius:30px;padding:7px 10px;background:#ecefe8;border:1px solid #dde4dc;color:#526462}
+.ts-calc{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr);gap:18px;background:#fff;border-radius:13px;border:1px solid #e0e3da;padding:21px}.ts-calc-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.ts-calc-fields label{font-size:12px;color:#3e5560;font-weight:700;display:flex;flex-direction:column;gap:7px}.ts-calc-fields input{border-radius:7px;border:1px solid #d6ddd5;background:#fafbf8;color:#1e3341;min-width:0;width:100%;padding:12px;font:inherit;font-weight:500}.ts-calc-fields input:focus{outline:2px solid #8e9c85;outline-offset:2px}.ts-calc-results{background:#172839;border-radius:9px;color:white;padding:23px;align-self:stretch}.ts-calc-eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:10px;color:#d9c8a0;font-weight:800;margin:0 0 21px}.ts-calc-result{padding:15px 0;border-bottom:1px solid #ffffff24;display:flex;justify-content:space-between;align-items:center;gap:14px}.ts-calc-result span{font-size:12px;line-height:1.5;color:#cbd6d4;max-width:57%}.ts-calc-result strong{font-size:19px;white-space:nowrap;font-variant-numeric:tabular-nums;text-align:right}.ts-calc-primary strong{color:#f0d28e}.ts-calc-note{font-size:12px;line-height:1.7;color:#f0d8a4;margin:22px 0 0}.ts-calc-foot{font-size:11px;line-height:1.65;color:#b9c7c7;margin:12px 0 0}.ts-sourcebar{display:flex;gap:15px;flex-wrap:wrap;margin-top:13px}.ts-sourcebar a{font-size:11px;color:#245b73;font-weight:800}.ts-old-research{background:#eff1ec;border:1px solid #dde1d9;border-radius:12px;padding:20px;margin-top:40px}.ts-old-research summary{cursor:pointer;font-weight:800;font-size:14px;color:#254251}.ts-old-research>p{font-size:12px;line-height:1.6;color:#657575;margin:15px 0}.ts-old-research .ts-section{margin-top:30px}
+@media(max-width:1000px){.ts-area-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ts-calc{grid-template-columns:1fr}}
+@media(max-width:680px){.ts-area-grid,.ts-calc-fields{grid-template-columns:1fr}.ts-calc{padding:12px}.ts-calc-results{padding:20px}.ts-old-research{padding:17px}}
 </style></head><body><nav class="site-nav">
     <div class="nav-inner">
       <ul class="nav-left">
@@ -301,11 +306,11 @@
 <div class="ts-page">
 <header class="ts-hero" data-theme="dark">
   <div class="ts-container">
-    <div class="ts-eyebrow"><span class="ts-dot"></span> Independent investment research workspace</div>
-    <h1>PROPERTY <em>OPPORTUNITY</em><br>INTELLIGENCE</h1>
+    <div class="ts-eyebrow"><span class="ts-dot"></span> Maryland only · independent investment research</div>
+    <h1>MARYLAND <em>PROPERTY</em><br>OPPORTUNITIES</h1>
     <div class="ts-hero-row">
       <div>
-        <p>Track verified multi-property tax-sale bundles, compare parcel-level values, and investigate the actual addresses before considering a bid. Starting close to Glen Burnie, then expanding outward.</p>
+        <p>Research Maryland tax liens, individual parcels, and true multi-property deed bundles—screened for resale demand, objective neighborhood reinvestment, and realistic as-is investor profit. Starting near Glen Burnie.</p>
         <div class="ts-updated">Verified data through <strong id="tsUpdated">November 12, 2026</strong> · Not a live auction feed</div>
       </div>
       <a class="ts-anchor" href="#ts-markets">Browse county sources ↓</a>
@@ -315,32 +320,57 @@
 <main class="ts-body">
   <div class="ts-container">
     <div class="ts-overview" aria-label="Research statistics">
-      <div class="ts-kpi"><small>Verified available bundles</small><strong id="tsCount">0</strong><span>Multi-parcel lots only</span></div>
-      <div class="ts-kpi"><small>Properties in bundles</small><strong id="tsParcelCount">0</strong><span>Actual parcel addresses</span></div>
-      <div class="ts-kpi"><small>Counties / markets watched</small><strong id="tsMarketCount">—</strong><span>MD · DE · CT</span></div>
-      <div class="ts-kpi"><small>Research coverage</small><strong>LOCAL →</strong><span>Glen Burnie outward</span></div>
+      <div class="ts-kpi"><small>Verified Maryland bundles</small><strong id="tsCount">0</strong><span>Multi-parcel lots only</span></div>
+      <div class="ts-kpi"><small>Maryland parcel candidates</small><strong id="tsParcelCount">0</strong><span>Actual parcel addresses</span></div>
+      <div class="ts-kpi"><small>Maryland counties watched</small><strong id="tsMarketCount">—</strong><span>MD only · official sources</span></div>
+      <div class="ts-kpi"><small>Research coverage</small><strong>MD FIRST</strong><span>Glen Burnie outward</span></div>
     </div>
+
+    <section class="ts-section" id="ts-areas" data-theme="light"><div class="ts-section-head"><div><div class="ts-eyebrow">01 / Location strategy</div><h2>MARYLAND TARGET AREAS</h2><p>Established resale markets and places with documented reinvestment—<strong>not blanket judgments about neighborhoods</strong>. Every actual street and property must pass its own comparable-sales, buyer-demand, legal, and condition checks.</p></div></div><div id="tsAreas" class="ts-area-grid" aria-live="polite">Loading Maryland area research…</div><div class="ts-lens"><strong>Property filters</strong><span>3+ closed comps</span><span>Buyer resale demand</span><span>Property condition</span><span>Title &amp; occupancy</span><span>Flood &amp; code review</span><span>Buildability / access</span></div></section>
+    <section class="ts-section" id="ts-parcels" data-theme="light"><div class="ts-section-head"><div><div class="ts-eyebrow">02 / Single-parcel opportunities</div><h2>MARYLAND PARCEL PIPELINE</h2><p>Individual properties are evaluated separately from bundles. Each candidate needs an official source, parcel ID, legal acquisition type, location check, actual sold comps, and a conservative investor resale analysis.</p></div><a href="https://sdat.dat.maryland.gov/RealProperty/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Manual SDAT lookup ↗</a></div><div id="tsParcelCandidates" class="ts-bundle-grid" aria-live="polite"></div><div id="tsParcelEmpty" class="ts-empty"><div class="ts-empty-icon" aria-hidden="true">⌕</div><h3>NO MARYLAND PROPERTY HAS PASSED DILIGENCE YET</h3><p>The county's remaining tax-lien list may reveal candidates, but a low certificate balance is not a house purchase price. We'll only add a parcel opportunity once its location, interest being sold, current availability and comparable sales are verified.</p><a href="https://www.aacounty.org/finance/tax-sale" target="_blank" rel="noopener noreferrer">Review Anne Arundel tax-sale sources ↗</a></div></section>
+    <section class="ts-section" id="ts-calculator" data-theme="light"><div class="ts-section-head"><div><div class="ts-eyebrow">03 / Property you can legally resell</div><h2>AS-IS DEAL SPREAD CALCULATOR</h2><p>For <strong>deed ownership acquisitions only</strong>, not the simple purchase of a tax-lien certificate. Use verified closed sales to estimate what a rehabber would pay, then work backward to your maximum auction bid.</p></div></div>
+    <div class="ts-calc"><div class="ts-calc-fields">
+      <label>As-is comparable investor resale ($)<input id="calcComp" type="number" min="0" placeholder="Verified closed as-is comps" inputmode="decimal"></label>
+      <label>After-repair value, ARV ($)<input id="calcARV" type="number" min="0" placeholder="Renovated closed comps" inputmode="decimal"></label>
+      <label>Rehab cost to end investor ($)<input id="calcRehab" type="number" min="0" placeholder="Expected contractor estimate" inputmode="decimal"></label>
+      <label>End investor's minimum profit (% of ARV)<input id="calcBuyerMargin" type="number" min="0" max="90" step="1" value="20" inputmode="decimal"></label>
+      <label>End investor's other costs ($)<input id="calcBuyerCosts" type="number" min="0" placeholder="Their holding, closing, financing" inputmode="decimal"></label>
+      <label>Your planned auction bid ($)<input id="calcBid" type="number" min="0" placeholder="Proposed winning price" inputmode="decimal"></label>
+      <label>Auction buyer premium (%)<input id="calcPremium" type="number" min="0" max="100" value="0" inputmode="decimal"></label>
+      <label>Your other acquisition/holding costs ($)<input id="calcCost" type="number" min="0" placeholder="Taxes, title, legal, hold, reserve" inputmode="decimal"></label>
+      <label>Your selling cost (%)<input id="calcSell" type="number" min="0" max="30" step="0.5" value="4" inputmode="decimal"></label>
+      <label>Your desired net profit ($)<input id="calcTarget" type="number" min="0" placeholder="Profit objective" inputmode="decimal"></label>
+    </div><div class="ts-calc-results" aria-live="polite">
+      <p class="ts-calc-eyebrow">Illustrative deed-acquisition underwriting</p>
+      <div class="ts-calc-result"><span>Conservative investor resale ceiling</span><strong id="calcOutResale">Enter sold comps</strong></div>
+      <div class="ts-calc-result"><span>Your total projected cash invested</span><strong id="calcOutCash">—</strong></div>
+      <div class="ts-calc-result ts-calc-primary"><span>Possible net spread</span><strong id="calcOutNet">—</strong></div>
+      <div class="ts-calc-result"><span>Maximum bid for your profit target</span><strong id="calcOutMax">—</strong></div>
+      <p id="calcNotice" class="ts-calc-note">Enter your own figures based on actual sold comps and legal auction terms. No valuation is assumed.</p>
+      <p class="ts-calc-foot">For Maryland liens, owner redemption and foreclosure rights are different. This calculator does not value lien-certificate assignments.</p>
+    </div></div><div class="ts-sourcebar"><a href="https://mdgeodata.md.gov/imap/rest/services/PlanningCadastre/MD_PropertySales/FeatureServer/0" target="_blank" rel="noopener noreferrer">Maryland official sold-property dataset ↗</a><a href="https://planning.maryland.gov/MSDC/Pages/91_property_mapping/finder-online.aspx" target="_blank" rel="noopener noreferrer">FINDER parcel maps ↗</a><a href="https://dat.maryland.gov/Pages/tax-sale-information.aspx" target="_blank" rel="noopener noreferrer">Maryland tax-sale rules ↗</a></div>
+    </section>
     <section class="ts-section" id="ts-opportunities" data-theme="light">
       <div class="ts-section-head">
-        <div><div class="ts-eyebrow">01 / Investment opportunities</div><h2>VERIFIED BUNDLES</h2><p>Only official offers that allow acquisition of multiple parcels or tax liens as a real group or package are listed here. Individual certificates sold in one auction are excluded.</p></div>
+        <div><div class="ts-eyebrow">01 / Investment opportunities</div><h2>VERIFIED BUNDLES</h2><p>Maryland only. Bundles require an explicitly grouped auction lot. Individual tax liens are never mislabeled as deeds.</p></div>
         <button type="button" class="ts-btn ts-btn-alt" id="tsCsv" disabled>Export parcel CSV</button>
       </div>
       <div class="ts-toolbar" role="search" aria-label="Filter investment opportunities">
         <input id="tsSearch" type="search" placeholder="Search county, address, bundle ID..." aria-label="Search"/>
-        <select id="tsState" aria-label="Filter state"><option value="">All states</option><option value="MD">Maryland</option><option value="DE">Delaware</option><option value="CT">Connecticut</option><option value="OH">Ohio</option><option value="MI">Michigan</option></select>
+        <select id="tsState" aria-label="Filter state"><option value="MD" selected>Maryland only</option><option value="">All states · older reference</option><option value="VA">Virginia · older reference</option></select>
         <select id="tsType" aria-label="Filter asset type"><option value="">Any acquisition type</option><option value="lien">Tax-lien interests</option><option value="deed">Property / deed interests</option></select>
       </div>
       <div id="tsBundles" class="ts-bundle-grid" style="margin-top:17px" aria-live="polite"></div>
       <div id="tsEmpty" class="ts-empty">
         <div class="ts-empty-icon" aria-hidden="true">⌕</div>
-        <h3>NO VERIFIED ACTIVE BUNDLES YET</h3>
-        <p>The county catalogs reviewed have not established a new offer to buy multiple properties together. We will not turn auction batches or lists of unrelated tax liens into false “bundles.”</p>
+        <h3>NO VERIFIED MARYLAND BUNDLES YET</h3>
+        <p>There is no verified current Maryland group offering listed. Individually offered liens and deed interests are researched separately.</p>
         <a href="#ts-markets">Explore the official county sources ↓</a>
       </div>
     </section>
     
 
-    <section class="ts-section" id="ts-leads" data-theme="light">
+    <details id="ts-old-research" class="ts-old-research"><summary>Previously saved out-of-state research (historical reference only)</summary><p>Maryland is now the active search. Old Michigan, Virginia and Tennessee records remain available when expanded, but are not current Maryland investment recommendations.</p><section class="ts-section" id="ts-leads" data-theme="light">
       <div class="ts-section-head">
         <div><div class="ts-eyebrow">02 / Research leads · not budget-qualified</div><h2>UPCOMING GROUP OFFERS</h2><p>Possible multi-property package opportunities that still require pricing, package-level parcel lists or other checks. Includes explicitly labeled non-tax-sale auctions. These are not approved investments.</p></div>
       </div>
@@ -352,12 +382,13 @@
       </div>
       <div id="tsArchives" class="ts-bundle-grid" aria-live="polite"></div>
     </section>
+    </details>
     <section class="ts-section" id="ts-markets" data-theme="light">
       <div class="ts-section-head">
-        <div><div class="ts-eyebrow">02 / Sourcing intelligence</div><h2>THE COUNTY WATCHLIST</h2><p>Original government and official-auction sources used to identify eligible bundles. The markets start around Glen Burnie, then widen across the region.</p></div>
+        <div><div class="ts-eyebrow">02 / Sourcing intelligence</div><h2>THE COUNTY WATCHLIST</h2><p>Official Maryland government and auction sources, prioritized around Glen Burnie.</p></div>
         <a href="https://dat.maryland.gov/Pages/Tax-Sale-Schedule.aspx" target="_blank" rel="noopener noreferrer">Maryland state auction schedule ↗</a>
       </div>
-      <div class="ts-market-intro"><span class="ts-chip">Priority 1 — Immediate region</span><span class="ts-chip">Priority 2 — Wider Maryland</span><span class="ts-chip">Priority 3 — DE / CT expansion</span></div>
+      <div class="ts-market-intro"><span class="ts-chip">Priority 1 — Immediate region</span><span class="ts-chip">Priority 2 — Wider Maryland</span><span class="ts-chip">Other MD counties · case-by-case</span></div>
       <div id="tsMarkets" class="ts-market-grid" aria-live="polite"><p>Loading the official county research list…</p></div>
     </section>
     <section class="ts-method" aria-label="How to interpret research data">
@@ -413,7 +444,7 @@ $('tsParcelCount').textContent=(data.bundles||[]).filter(eligible).reduce((s,b)=
 $('tsMarketCount').textContent=(data.watchMarkets||[]).length;
 $('tsBundles').innerHTML=bs.map(bundleCard).join('');
 $('tsEmpty').hidden=bs.length>0;
-if(!bs.length){const h=$('tsEmpty').querySelector('h3'),p=$('tsEmpty').querySelector('p');h.textContent=(data.bundles||[]).some(eligible)?'NO BUNDLES MATCH THE FILTERS':'NO VERIFIED ACTIVE BUNDLES YET';p.textContent=(data.bundles||[]).some(eligible)?'Try a different search, state, or acquisition type.':'The county catalogs reviewed have not established a new offer to buy multiple properties together. We will not turn auction batches or lists of unrelated tax liens into false “bundles.”';}
+if(!bs.length){const h=$('tsEmpty').querySelector('h3'),p=$('tsEmpty').querySelector('p');h.textContent=(data.bundles||[]).some(eligible)?'NO BUNDLES MATCH THE FILTERS':'NO VERIFIED ACTIVE BUNDLES YET';p.textContent=(data.bundles||[]).some(eligible)?'Try a different search, state, or acquisition type.':'There is no verified current Maryland group offering listed. Individually offered liens and deed interests are researched separately.';}
 $('tsCsv').disabled=bs.length===0;
 $('tsBundles').querySelectorAll('[data-toggle]').forEach(btn=>btn.addEventListener('click',()=>{const d=$('tsDetail'+btn.dataset.toggle);d.hidden=!d.hidden;btn.setAttribute('aria-expanded',String(!d.hidden));btn.textContent=d.hidden?'Review parcels ▾':'Hide parcels ▴';}));
 }
