@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Tax Sale Investment Research",
+    "updated": "2026-11-12",
+    "verifiedThrough": "2026-11-12",
+    "disclaimer": "Research aid only. A tax lien is not ownership of a property. No listing shown as a bundle without official current documentation. Value estimates require comps and a dated method. This independent research page is not an offer, charitable program, or use of charitable funds.",
+    "imagePolicy": "Property photographs must be licensed or supplied by authorized auction sources. Google Street View opens on Google Maps; Google imagery is not downloaded or rehosted."
+  },
+  "bundles": [],
+  "watchMarkets": [
+    {
+      "id": "anne-arundel",
+      "county": "Anne Arundel",
+      "state": "MD",
+      "priority": 1,
+      "sourceUrl": "https://www.aacounty.org/finance/tax-sale",
+      "kind": "Tax liens",
+      "note": "Closest to Glen Burnie. 2026 remaining liens published; a list of individual liens is not itself a bundle."
+    },
+    {
+      "id": "baltimore-city",
+      "county": "Baltimore City",
+      "state": "MD",
+      "priority": 1,
+      "sourceUrl": "https://taxsale.baltimorecity.gov/",
+      "kind": "Tax liens",
+      "note": "High parcel volume. Verify whether lots are jointly offered or independently auctioned."
+    },
+    {
+      "id": "baltimore-county",
+      "county": "Baltimore County",
+      "state": "MD",
+      "priority": 1,
+      "sourceUrl": "https://taxsale.baltimorecountymd.gov/",
+      "kind": "Tax liens",
+      "note": "Monitor official auction and subsequent assignments."
+    },
+    {
+      "id": "howard",
+      "county": "Howard",
+      "state": "MD",
+      "priority": 1,
+      "sourceUrl": "https://www.howardcountymd.gov/finance/tax-sale",
+      "kind": "Tax liens",
+      "note": "May conduct assignment sales for unsold certificates; individual certificates do not qualify as a bundle."
+    },
+    {
+      "id": "harford",
+      "county": "Harford",
+      "state": "MD",
+      "priority": 2,
+      "sourceUrl": "https://harfordcountymd.gov/3350/Tax-sale",
+      "kind": "Tax liens",
+      "note": "Check annual terms and any documented group or bulk assignments."
+    },
+    {
+      "id": "carroll",
+      "county": "Carroll",
+      "state": "MD",
+      "priority": 2,
+      "sourceUrl": "https://www.carrollcountymd.gov/government/directory/comptroller/collectionstaxes/",
+      "kind": "Tax liens",
+      "note": "RealAuction-hosted annual sale. Check for actual multi-parcel lot conditions."
+    },
+    {
+      "id": "prince-georges",
+      "county": "Prince George's",
+      "state": "MD",
+      "priority": 2,
+      "sourceUrl": "https://taxsale.princegeorgescountymd.gov/Home.aspx",
+      "kind": "Tax liens",
+      "note": "2026 assignment certificates available individually; not a verified group offer."
+    },
+    {
+      "id": "montgomery",
+      "county": "Montgomery",
+      "state": "MD",
+      "priority": 2,
+      "sourceUrl": "https://assets.montgomerycountymd.gov/files/2026-06/tax_lien_sale_result_2026.pdf",
+      "kind": "Tax liens · group bidding",
+      "note": "2026 historical results document group bidders; not a currently available bundle."
+    },
+    {
+      "id": "delaware-new-castle",
+      "county": "New Castle",
+      "state": "DE",
+      "priority": 3,
+      "sourceUrl": "https://www.nccde.org/sheriff",
+      "kind": "Sheriff / tax deed",
+      "note": "Secondary market. Verify auction terms and whether a multi-property lot is offered; deed sale terms differ from MD liens."
+    },
+    {
+      "id": "connecticut",
+      "county": "Connecticut municipalities",
+      "state": "CT",
+      "priority": 3,
+      "sourceUrl": "https://portal.ct.gov/",
+      "kind": "Municipal tax / deed sales",
+      "note": "Longer-distance market; towns administer sales separately. No current verified group lot."
+    }
+  ]
+}
