@@ -413,7 +413,7 @@ const link=(u,label,klass)=>{const url=safeUrl(u);return url?'<a '+(klass?'class
 const money=v=>typeof v==='number'&&isFinite(v)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v):'Not assessed';
 const noteVal=(x,label)=>x!=null?money(x):'Not assessed';
 let data={bundles:[],watchMarkets:[],meta:{}};
-const filters={search:'',state:'',type:''};
+const filters={search:'',state:'MD',type:''};
 function date(d){ if(!d)return 'Not specified';const x=new Date(d+'T12:00:00');return isNaN(x)?String(d):x.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});}
 function eligible(b){return b&&b.verifiedBundle===true&&b.officialSourceUrl&&((b.parcels||[]).length>=2||(Number(b.parcelCount)>=2&&b.parcelScheduleInOfficialSource===true));}
 function matches(b){
@@ -439,16 +439,55 @@ return '<article class="ts-bundle"><div class="ts-bundle-top"><div><span class="
 }
 function render(){
 const bs=(data.bundles||[]).filter(eligible).filter(matches);
-$('tsCount').textContent=(data.bundles||[]).filter(eligible).length;
-$('tsParcelCount').textContent=(data.bundles||[]).filter(eligible).reduce((s,b)=>s+(b.parcelCount||(b.parcels||[]).length),0);
-$('tsMarketCount').textContent=(data.watchMarkets||[]).length;
+$('tsCount').textContent=(data.bundles||[]).filter(b=>eligible(b)&&b.state==='MD').length;
+$('tsParcelCount').textContent=(data.parcelCandidates||[]).filter(p=>p.state==='MD').length;
+$('tsMarketCount').textContent=(data.watchMarkets||[]).filter(m=>m.state==='MD').length;
 $('tsBundles').innerHTML=bs.map(bundleCard).join('');
 $('tsEmpty').hidden=bs.length>0;
-if(!bs.length){const h=$('tsEmpty').querySelector('h3'),p=$('tsEmpty').querySelector('p');h.textContent=(data.bundles||[]).some(eligible)?'NO BUNDLES MATCH THE FILTERS':'NO VERIFIED ACTIVE BUNDLES YET';p.textContent=(data.bundles||[]).some(eligible)?'Try a different search, state, or acquisition type.':'There is no verified current Maryland group offering listed. Individually offered liens and deed interests are researched separately.';}
+if(!bs.length){const h=$('tsEmpty').querySelector('h3'),p=$('tsEmpty').querySelector('p');h.textContent=(data.bundles||[]).some(b=>eligible(b)&&b.state===filters.state)?'NO BUNDLES MATCH THE FILTERS':'NO VERIFIED MARYLAND BUNDLES YET';p.textContent=(data.bundles||[]).some(b=>eligible(b)&&b.state===filters.state)?'Try a different search or acquisition type.':'No current verified Maryland multi-parcel lot has been added. Individual Maryland parcel research is shown separately above.';}
 $('tsCsv').disabled=bs.length===0;
 $('tsBundles').querySelectorAll('[data-toggle]').forEach(btn=>btn.addEventListener('click',()=>{const d=$('tsDetail'+btn.dataset.toggle);d.hidden=!d.hidden;btn.setAttribute('aria-expanded',String(!d.hidden));btn.textContent=d.hidden?'Review parcels ▾':'Hide parcels ▴';}));
 }
 
+
+
+function renderAreas(){
+const areas=(data.preferredAreas||[]).filter(a=>a.state==='MD').sort((a,b)=>a.priority-b.priority);
+$('tsAreas').innerHTML=areas.length?areas.map(a=>'<article class="ts-area"><span class="ts-area-tier">'+esc(a.tier||'Research priority')+'</span><h3>'+esc(a.name)+'</h3><small>'+esc(a.county)+' County · Priority '+esc(a.priority)+'</small><p>'+esc(a.reason)+'</p><p><strong>Address-level check:</strong> '+esc(a.evaluation)+'</p>'+link(a.sourceUrl,'County investment plan')+'</article>').join(''):'<p class="ts-note">Maryland target area research is not yet loaded.</p>';
+}
+function renderParcelCandidates(){
+const parcels=(data.parcelCandidates||[]).filter(p=>p.state==='MD'&&safeUrl(p.officialSourceUrl||p.sourceUrl));
+$('tsParcelCandidates').innerHTML=parcels.map(p=>{
+const photo=(safeUrl(p.photoUrl)&&p.photoAttribution)?'<img loading="lazy" src="'+esc(p.photoUrl)+'" alt="Licensed listing photo for '+esc(p.address||'property')+'"><span class="ts-photo-label">'+esc(p.photoAttribution)+'</span>':'<div class="ts-building" aria-hidden="true">⌂</div><span class="ts-photo-label">Open map to inspect location</span>';
+const comps=(p.comps||[]).map(c=>'<div>'+esc(c.address||'Comparable property')+' · '+money(c.salePrice)+' · '+esc(c.saleDate||'date pending')+' '+link(c.sourceUrl,'Sale source')+'</div>').join('');
+return '<article class="ts-property"><div class="ts-photo">'+photo+'</div><div class="ts-property-inner"><h4>'+esc(p.address||'Address verification pending')+'</h4><div class="ts-property-sub">'+esc(p.county)+' County · '+esc(p.status||'Diligence pending')+' · Parcel '+esc(p.parcelId||'pending')+'</div><p class="ts-note"><strong>Interest offered:</strong> '+esc(p.acquisitionType||'Not yet confirmed')+'. Tax liens are not property deeds.</p><div class="ts-property-kpis"><div class="ts-property-kpi"><small>Auction bid / lien</small><strong>'+money(p.auctionMinBid)+'</strong></div><div class="ts-property-kpi"><small>As-is buyer resale</small><strong>'+money(p.estimatedAsIsResale)+'</strong></div><div class="ts-property-kpi"><small>ARV · renovated</small><strong>'+money(p.afterRepairValue)+'</strong></div><div class="ts-property-kpi"><small>Likely rehab</small><strong>'+money(p.rehabEstimate)+'</strong></div></div>'+(p.liquidityNotes?'<p class="ts-note"><strong>Market / location evidence:</strong> '+esc(p.liquidityNotes)+'</p>':'')+(comps?'<div class="ts-comp"><strong>Verified comparable sales</strong>'+comps+'</div>':'<p class="ts-note">Sold comparable sales have not been verified.</p>')+'<div class="ts-property-actions">'+link(p.officialSourceUrl||p.sourceUrl,'Official opportunity')+link(street(p),'Map / street view')+link(p.officialParcelUrl,'Parcel record')+'</div></div></article>';
+}).join('');
+$('tsParcelEmpty').hidden=parcels.length>0;
+}
+const calcIds=['calcComp','calcARV','calcRehab','calcBuyerMargin','calcBuyerCosts','calcBid','calcPremium','calcCost','calcSell','calcTarget'];
+function renderCalculator(){
+function v(id){const input=$(id),s=input.value.trim();if(s==='')return null;const n=Number(s);return Number.isFinite(n)&&n>=0?n:null}
+const comp=v('calcComp'),arv=v('calcARV'),rehab=v('calcRehab'),buyerMargin=v('calcBuyerMargin'),buyerCosts=v('calcBuyerCosts'),bid=v('calcBid'),prem=v('calcPremium'),cost=v('calcCost'),selling=v('calcSell'),target=v('calcTarget');
+const endBuyerMax=arv!==null&&rehab!==null&&buyerMargin!==null&&buyerCosts!==null?arv-rehab-(buyerMargin/100*arv)-buyerCosts:null;
+let resale=null;
+if(comp!==null&&comp>0)resale=comp;
+if(endBuyerMax!==null){resale=resale===null?endBuyerMax:Math.min(resale,endBuyerMax)}
+const cash=bid!==null&&prem!==null&&cost!==null?bid*(1+prem/100)+cost:null;
+const net=cash!==null&&resale!==null&&selling!==null?resale*(1-selling/100)-cash:null;
+const maxBid=resale!==null&&target!==null&&cost!==null&&selling!==null&&prem!==null?(resale*(1-selling/100)-cost-target)/(1+prem/100):null;
+$('calcOutResale').textContent=resale===null?'Enter sold comps':money(resale);
+$('calcOutCash').textContent=cash===null?'Enter bid and costs':money(cash);
+$('calcOutNet').textContent=net===null?'Enter buyer resale + bid':money(net);
+$('calcOutMax').textContent=maxBid===null?'Enter profit target + costs':maxBid<0?'No viable bid':money(maxBid);
+const flags=[];
+if(comp===null)flags.push('No as-is sold-comparable estimate; verify investor resale liquidity.');
+if(arv!==null&&(rehab===null||buyerCosts===null))flags.push('ARV-based rehabber ceiling needs rehab and buyer costs.');
+if(cost===null)flags.push('Enter all auction taxes, legal, title, holding and contingency costs.');
+if(resale!==null&&resale<=0)flags.push('The end-investor pricing assumptions leave no feasible positive resale value.');
+$('calcNotice').textContent=flags.length?flags.join(' '):'Hypothetical estimate only, not an appraisal or an offer recommendation. Check sold-comps recency, costs, title, transfer and cash-buyer interest.';
+}
+calcIds.forEach(id=>$(id).addEventListener('input',renderCalculator));
+renderCalculator();
 
 function renderLeads(){
 const items=data.researchLeads||[];
@@ -468,7 +507,7 @@ return '<article class="ts-archive"><span class="ts-badge">'+esc(a.state)+' · '
 }).join('');
 }
 function renderMarkets(){
-$('tsMarkets').innerHTML=(data.watchMarkets||[]).sort((a,b)=>a.priority-b.priority).map(m=>'<article class="ts-market"><div class="ts-market-title"><div><h3>'+esc(m.county)+'</h3><small>'+esc(m.state)+' · '+esc(m.kind||'Official listings')+'</small></div><span class="ts-priority ts-priority-'+esc(m.priority)+'">Priority '+esc(m.priority)+'</span></div><p>'+esc(m.note||'Verify current county sale terms.')+'</p>'+link(m.sourceUrl,'Open official source')+'</article>').join('');
+$('tsMarkets').innerHTML=(data.watchMarkets||[]).filter(m=>m.state==='MD').sort((a,b)=>a.priority-b.priority).map(m=>'<article class="ts-market"><div class="ts-market-title"><div><h3>'+esc(m.county)+'</h3><small>'+esc(m.state)+' · '+esc(m.kind||'Official listings')+'</small></div><span class="ts-priority ts-priority-'+esc(m.priority)+'">Priority '+esc(m.priority)+'</span></div><p>'+esc(m.note||'Verify current county sale terms.')+'</p>'+link(m.sourceUrl,'Open official source')+'</article>').join('');
 }
 function csv(){
 const rows=[['Bundle','County','State','Acquisition type','Address','Parcel ID','Minimum bundle bid','As-is market estimate','ARV estimate','Rehab estimate','Official listing URL','Official parcel URL']];
@@ -480,6 +519,6 @@ $('tsSearch').addEventListener('input',e=>{filters.search=e.target.value.trim().
 $('tsState').addEventListener('change',e=>{filters.state=e.target.value;render();});
 $('tsType').addEventListener('change',e=>{filters.type=e.target.value;render();});
 $('tsCsv').addEventListener('click',csv);
-fetch('./data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Data not available');return r.json()}).then(d=>{data=d;$('tsUpdated').textContent=date(d.meta?.verifiedThrough||d.meta?.updated);renderMarkets();renderLeads();renderArchive();render();}).catch(()=>{$('tsMarkets').innerHTML='<p role="alert">Unable to load the county list. <a href="https://dat.maryland.gov/Pages/Tax-Sale-Schedule.aspx" target="_blank" rel="noopener noreferrer">Open the Maryland state tax-sale schedule ↗</a>.</p>';render();});
+fetch('./data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Data not available');return r.json()}).then(d=>{data=d;$('tsUpdated').textContent=date(d.meta?.verifiedThrough||d.meta?.updated);renderMarkets();renderAreas();renderParcelCandidates();renderLeads();renderArchive();render();}).catch(()=>{$('tsMarkets').innerHTML='<p role="alert">Unable to load the county list. <a href="https://dat.maryland.gov/Pages/Tax-Sale-Schedule.aspx" target="_blank" rel="noopener noreferrer">Open the Maryland state tax-sale schedule ↗</a>.</p>';render();});
 })();
 </script><script>(function(){const b=document.body,menu=document.getElementById('navMobilePanel'),btn=document.getElementById('navHamburgerBtn'),close=document.getElementById('navMobilePanelClose');function sync(){b.classList.toggle('deep-scroll',window.scrollY>160)}sync();addEventListener('scroll',sync,{passive:true});btn?.addEventListener('click',()=>{menu.classList.add('is-open');btn.setAttribute('aria-expanded','true')});close?.addEventListener('click',()=>{menu.classList.remove('is-open');btn?.setAttribute('aria-expanded','false')});menu?.querySelectorAll('a').forEach(x=>x.addEventListener('click',()=>menu.classList.remove('is-open')));})();</script></body></html>
