@@ -7,7 +7,7 @@ Prepared October 12, 2026. Targets: $500,000 General Operations and $500,000 Pan
 | Bucket | Full application/direct request | LOI/preapplication/intake inquiry | Target |
 |---|---:|---:|---:|
 | General Operations | $25,000 | $65,000 | $500,000 |
-| Pantry | $40,600 | $32,500 | $500,000 |
+| Pantry | $40,600 | $25,000 | $500,000 |
 
 $35,000 of Costco/McCormick full requests span multiple programs and remain separately counted once. Do not assign their entire values to both program targets. Baseline is a minimum drawn from individually reviewed records, not a certified all-history total. Unknown-amount requests, declined historic requests, unsubmitted prospects, in-kind-only values and duplicate records are excluded. Full/direct-request gaps before shared allocations: General Operations $475,000; Pantry $459,400. Amount-bearing inquiries/preapplications do not count as completed full applications.
 
@@ -16,7 +16,7 @@ $35,000 of Costco/McCormick full requests span multiple programs and remain sepa
 - generalFull: brightstar-after-school-advantage-2026. Total $25,000.
 - pantryFull: harris-teeter-donation-2026, safeway-eastern-hunger-2026, zekauskas-family-foundation-2026, baltimore-life-community-grants-prospect-2026, lawrence-foundation-prospect-2026, sbb-research-group-foundation-2026, fulton-bank-pantry-operations-2027, pennrose-foundation-operating-prospect-20261007, kleins-shoprite-pantry-20261011, wegmans-community-giving-2026. Total $40,600.
 - generalInquiry: mark-wahlberg-youth-foundation-2026, vulcan-foundation-baltimore-education-2026, david-barbara-b-hirschhorn-foundation-prospect-2026. Total $65,000.
-- pantryInquiry: bge-exelon-community-grants-2026, cfg-bank-community-giving-2026, teazey-foundation-pantry-2027, rnp-foundation-pantry-2027, rosedale-bank-pantry-giving-2026, bob-evans-farms-pantry-20261012. Total $32,500.
+- pantryInquiry: bge-exelon-community-grants-2026, cfg-bank-community-giving-2026, rnp-foundation-pantry-2027, rosedale-bank-pantry-giving-2026, bob-evans-farms-pantry-20261012. Total $25,000.
 - mixedFull: costco-charitable-contributions-2026, mccormick-charitable-donations-2026. Total $35,000.
 
 ## New sourcing batch
