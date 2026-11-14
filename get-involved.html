@@ -1279,6 +1279,30 @@
     font-size:15px; line-height:1.7;
     color:var(--hom-cream); opacity:.78;
   }
+  .contact-hours{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+    margin:22px auto 0;
+    padding:16px 24px;
+    width:fit-content;
+    max-width:100%;
+    border:1px solid rgba(217,200,160,.3);
+    border-radius:12px;
+    background:rgba(247,244,236,.06);
+    color:var(--hom-cream);
+    font-family:var(--font-body);
+    font-size:14px;
+    line-height:1.55;
+  }
+  .contact-hours-label{
+    color:var(--hom-tan);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+  }
 
   .involve-form{
     background:rgba(247,244,236,.06);
@@ -1540,6 +1564,10 @@
         <p class="eyebrow">Tell Us How To Reach You</p>
         <h2>Get In Touch</h2>
         <p>Whether it&rsquo;s a question, a volunteer interest, a partnership idea, or a sponsorship inquiry &mdash; this goes straight to our team.</p>
+        <div class="contact-hours" aria-label="Hours of Operation">
+          <span class="contact-hours-label">Hours of Operation</span>
+          <span>Monday&ndash;Friday, 9:00 AM&ndash;5:00 PM ET</span>
+        </div>
       </div>
 
       <div class="form-thanks" id="involveThanks">
